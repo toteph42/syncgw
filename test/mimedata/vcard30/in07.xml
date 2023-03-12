@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+VERSION:2.1
+N;CHARSET=UTF-8:Test;Abe
+ADR;TYPE=dom,home,postal,parcel:;;123 Mai
+ n Street;Any Town;CA;91921-1234
+AGENT:BEGIN:VCARD\nFN:Joe Friday\nTEL:+1-919-555-7878\n
+ TITLE:Area Administrator\, Assistant\nEMAIL\;TYPE=INTERNET:
+ friday@host.com\nEND:VCARD\n
+X-NICKNAME:Jim,Jimmie
+END:VCARD
+</Data>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:4.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:firstname (all fields) lastname
+N:lastname;firstname (all fields);middle name;title;suffix
+NICKNAME:nickname
+BDAY:20081029
+ADR;TYPE=home:;;street home;city home;state/prov. home;postal/zip home;co
+ untry/region home
+
+ADR;TYPE=work:;;street bus;city bus;state/prov. bus;postal/zip bus;countr
+ y/region bus
+
+ADR:;;street;city;state/province;postal/zip code;country/region
+TEL;PREF=1;TYPE=home:telephone home
+TEL;TYPE=home,fax:fax home
+TEL;PREF=1;TYPE=work:telephone business
+TEL;PREF=1;TYPE=work:assistants number
+TEL;TYPE=work,fax:fax business
+TEL;TYPE=pager:pager
+TEL;TYPE=cell:mobile
+TEL;TYPE=cell:mobile home
+TEL;TYPE=cell:mobile business
+TEL;TYPE=x-car:car phone
+TEL;TYPE=video:video call
+TEL;TYPE=video:cideo call home
+TEL;TYPE=video:video call business
+TEL;PREF=1;TYPE=x-other:telephone
+TEL;PREF=1;TYPE=x-other:fax
+TITLE:job title
+ORG:company
+NOTE:This is a short text. \n # comment  \n This <Pitty>tag</Pitty>should
+  survive. \n $%äöü)([]=^\\'"1! \n &nbsp\;&auml\;#
+ 
+
+REV:20131230T115856Z
+URL;TYPE=home:http://web address home
+URL;TYPE=work:http://web address business
+URL;TYPE=x-other:http://web address
+END:VCARD
+]]></Data>

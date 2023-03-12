@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+VERSION:2.1
+REV:20060301T021807Z
+N:Lastname;Firstname;Middlename;Title;Suffix
+ADR;HOME:PostBox;;Street;City;State;Postcode;RegionCountry
+ADR;WORK:PotsBox;;Street;City;State;Postcode;RegionCountry
+ORG:Company;
+TITLE:Job
+TEL;VOICE:0000000000
+TEL;CELL:0000000000
+TEL;FAX:0000000000000
+EMAIL;INTERNET:test@example.com
+EMAIL;INTERNET:test2@example.com
+TEL;WORK;VOICE:0000000000000
+BDAY:20060228
+END:VCARD
+</Data>

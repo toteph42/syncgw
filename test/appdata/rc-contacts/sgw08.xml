@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>firstname (all fields) lastname</FullName>
+    <FirstName>firstname (all fields)</FirstName>
+    <LastName>lastname</LastName>
+    <MiddleName>middle name</MiddleName>
+    <NickName>nickname</NickName>
+    <Organization>company</Organization>
+    <Prefix>title</Prefix>
+    <Suffix>suffix</Suffix>
+    <HomePhone>telephone home</HomePhone>
+    <WorkPhone>telephone business</WorkPhone>
+    <WorkPhone>assistants number</WorkPhone>
+    <MobilePhone>mobile</MobilePhone>
+    <MobilePhone>mobile home</MobilePhone>
+    <MobilePhone>mobile business</MobilePhone>
+    <HomeFax>fax home</HomeFax>
+    <BusinessFax>fax business</BusinessFax>
+    <CarPhone>car phone</CarPhone>
+    <Pager>pager</Pager>
+    <VideoPhone>video call</VideoPhone>
+    <VideoPhone>cideo call home</VideoPhone>
+    <VideoPhone>video call business</VideoPhone>
+    <UmCallerID>telephone</UmCallerID>
+    <UmCallerID>fax</UmCallerID>
+    <Birthday VALUE="date">1225238400</Birthday>
+    <URLHome>http://web address home</URLHome>
+    <URLWork>http://web address business</URLWork>
+    <URLOther>http://web address</URLOther>
+    <Body X-TYP="1">This is a short text. 
+ # comment  
+ This &lt;Pitty&gt;tag&lt;/Pitty&gt;should survive. 
+ $%äöü)([]=^\'"1! 
+ &amp;nbsp;&amp;auml;#&amp;tag 
+ tab tab --END</Body>
+    <AddressHome>
+      <Street>street home</Street>
+      <City>city home</City>
+      <Region>state/prov. home</Region>
+      <PostalCode>postal/zip home</PostalCode>
+      <Country>country/region home</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>street bus</Street>
+      <City>city bus</City>
+      <Region>state/prov. bus</Region>
+      <PostalCode>postal/zip bus</PostalCode>
+      <Country>country/region bus</Country>
+    </AddressBusiness>
+    <AddressOther>
+      <Street>street</Street>
+      <City>city</City>
+      <Region>state/province</Region>
+      <PostalCode>postal/zip code</PostalCode>
+      <Country>country/region</Country>
+    </AddressOther>
+    <Title>job title</Title>
+  </Data>
+</syncgw>

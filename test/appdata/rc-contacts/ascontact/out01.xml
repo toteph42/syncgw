@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <AssistantName xml-ns="activesync:Contacts">Please contact my assistant Jane   Doe for any inquiries.</AssistantName>
+  <Birthday>1995-04-16T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>148</EstimatedDataSize>
+    <Data>This facsimile machine if operational0830 to 1715 hours
+Monday through Friday. Call +1-213-555-1234 if you have problems
+with access to the machine.</Data>
+  </Body>
+  <BusinessPhoneNumber xml-ns="activesync:Contacts">03333333333</BusinessPhoneNumber>
+  <BusinessPhoneNumber>09999999999</BusinessPhoneNumber>
+  <Categories>
+    <Category>cat1</Category>
+    <Category>cat2</Category>
+    <Category>cat3</Category>
+  </Categories>
+  <Department>Marketing</Department>
+  <Email3Address>john.public@abc.com</Email3Address>
+  <FileAs>Anrede VNameX \ ZVName ; NName, NamZusatz</FileAs>
+  <FirstName>böttcher,</FirstName>
+  <HomeAddressStreet>123 Main Street</HomeAddressStreet>
+  <HomeAddressCity>Any Town</HomeAddressCity>
+  <HomeAddressState>CA</HomeAddressState>
+  <HomeAddressPostalCode>91921-1234</HomeAddressPostalCode>
+  <HomeAddressStreet>123 Main Street</HomeAddressStreet>
+  <HomeAddressCity>Any Town</HomeAddressCity>
+  <HomeAddressState>CA</HomeAddressState>
+  <HomeAddressPostalCode>91921-1234</HomeAddressPostalCode>
+  <HomeFaxNumber>+1-800-555-1234</HomeFaxNumber>
+  <LastName>thomas</LastName>
+  <MobilePhoneNumber>number</MobilePhoneNumber>
+  <OtherAddressStreet>122 street</OtherAddressStreet>
+  <OtherAddressCity>Any Town</OtherAddressCity>
+  <OtherAddressState>CA</OtherAddressState>
+  <OtherAddressPostalCode>91921-1234</OtherAddressPostalCode>
+  <Title>V.P., Research and Development</Title>
+  <WebPage>http://abc.com/pub/directory/northam/jpublic.ecd</WebPage>
+</ApplicationData>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1661796344</LastMod>
+  <Created>1661796344</Created>
+  <extID>R10004</extID>
+  <extGroup>G10001</extGroup>
+  <CRC/>
+  <Data>
+    <UID>56F7DE6319C7C47218ADE8148B577143-126173DDA6F62D88</UID>
+    <StartTime>1662022800</StartTime>
+    <EndTime>1662026400</EndTime>
+    <Summary>Cal #2 - with all (no attachment) - start</Summary>
+    <Location>
+      <DisplayName>Location</DisplayName>
+    </Location>
+    <Body X-TYP="1">This is first
+and this is second line</Body>
+    <Conference>xxx.com</Conference>
+    <Recurrence>
+      <Frequency>DAILY</Frequency>
+      <Interval>1</Interval>
+      <Count>4</Count>
+    </Recurrence>
+    <Exceptions>
+      <Exception>
+        <InstanceId>1662109200</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <UID>56F7DE6319C7C47218ADE8148B577143-126173DDA6F62D88</UID>
+        <StartTime>1662195600</StartTime>
+        <EndTime>1662199200</EndTime>
+        <Summary>Cal #2 - with all (no attachment) - middle</Summary>
+        <Location>
+          <DisplayName>Location</DisplayName>
+        </Location>
+        <Body X-TYP="1">This is first
+and this is second line</Body>
+        <Conference>xxx.com</Conference>
+        <Recurrence>
+          <Frequency>DAILY</Frequency>
+          <Interval>1</Interval>
+          <Count>4</Count>
+        </Recurrence>
+        <Exceptions>
+          <Exception>
+            <InstanceId>1662109200</InstanceId>
+            <Delete/>
+          </Exception>
+        </Exceptions>
+        <InstanceId>1662109200</InstanceId>
+        <Category>Work</Category>
+        <BusyStatus>TENTATIV</BusyStatus>
+        <Status>TENTATIVE</Status>
+        <Priority>8</Priority>
+        <Class>PUBLIC</Class>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">-60</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="date-time">1662026400</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">0</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">518400</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">18000</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">240</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">-259200</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">-7200</Trigger>
+        </Alarm>
+        <Organizer PARTSTAT="ACCEPTED" RSVP="true" ROLE="ORGANIZER">mailto:t1@x.com</Organizer>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="REQ-PARTICIPANT">mailto:t2@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="OPT-PARTICIPANT">mailto:t3@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="NON-PARTICIPANT">mailto:t4@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="CHAIR">mailto:t5@x.com</Attendee>
+      </Exception>
+      <Exception>
+        <UID>56F7DE6319C7C47218ADE8148B577143-126173DDA6F62D88</UID>
+        <StartTime>1662282000</StartTime>
+        <EndTime>1662285600</EndTime>
+        <Summary>Cal #2 - with all (no attachment) - last</Summary>
+        <Location>
+          <DisplayName>Location</DisplayName>
+        </Location>
+        <Body X-TYP="1">This is first
+and this is second line</Body>
+        <Conference>xxx.com</Conference>
+        <Recurrence>
+          <Frequency>DAILY</Frequency>
+          <Interval>1</Interval>
+          <Count>4</Count>
+        </Recurrence>
+        <Exceptions>
+          <Exception>
+            <InstanceId>1662109200</InstanceId>
+            <Delete/>
+          </Exception>
+        </Exceptions>
+        <InstanceId>1662282000</InstanceId>
+        <Category>Work</Category>
+        <BusyStatus>TENTATIV</BusyStatus>
+        <Status>TENTATIVE</Status>
+        <Priority>8</Priority>
+        <Class>PUBLIC</Class>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">-60</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">-7200</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">-259200</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">240</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">18000</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="end">518400</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="duration" RELATED="start">0</Trigger>
+        </Alarm>
+        <Alarm>
+          <Action>DISPLAY</Action>
+          <Trigger VALUE="date-time">1662026400</Trigger>
+        </Alarm>
+        <Organizer PARTSTAT="ACCEPTED" RSVP="true" ROLE="ORGANIZER">mailto:t1@x.com</Organizer>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="REQ-PARTICIPANT">mailto:t2@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="OPT-PARTICIPANT">mailto:t3@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="NON-PARTICIPANT">mailto:t4@x.com</Attendee>
+        <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="CHAIR">mailto:t5@x.com</Attendee>
+      </Exception>
+    </Exceptions>
+    <Category>Work</Category>
+    <BusyStatus>TENTATIV</BusyStatus>
+    <Status>TENTATIVE</Status>
+    <Priority>8</Priority>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-60</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">1662026400</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">0</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="end">518400</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">18000</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="end">240</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-259200</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="end">-7200</Trigger>
+    </Alarm>
+    <Organizer PARTSTAT="ACCEPTED" RSVP="true" ROLE="ORGANIZER">mailto:t1@x.com</Organizer>
+    <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="REQ-PARTICIPANT">mailto:t2@x.com</Attendee>
+    <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="OPT-PARTICIPANT">mailto:t3@x.com</Attendee>
+    <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="NON-PARTICIPANT">mailto:t4@x.com</Attendee>
+    <Attendee CUTYPE="INDIVIDUAL" PARTSTAT="NEEDS-ACTION" RSVP="true" ROLE="CHAIR">mailto:t5@x.com</Attendee>
+  </Data>
+</syncgw>

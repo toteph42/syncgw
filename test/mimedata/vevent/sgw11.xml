@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>L9BOe63g4EGSW508DC2Tx0</UID>
+    <StartTime>1274421600</StartTime>
+    <Class>PRIVATE</Class>
+    <Location>
+      <DisplayName>Uno</DisplayName>
+    </Location>
+    <Priority>2</Priority>
+    <Sequence>0</Sequence>
+    <Summary>Uno</Summary>
+    <EndTime>1274437800</EndTime>
+    <Category>APPOINTMENT</Category>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1274416200</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>N00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Summary>Title</Summary>
+    <Body X-TYP="1">This is the body of the text
+in multiple lines with internal Organizer.OR6 
+format as used in Nokia cell phones.
+</Body>
+    <MessageClass>IPM.StickyNote</MessageClass>
+  </Data>
+</syncgw>

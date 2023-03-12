@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+VERSION:2.1
+REV:20060506T100811Z
+N:last&amp;name;first&lt;&gt;name;second firstname;title;addon name
+ADR;HOME:homepost-office-box;addonHome;homestreet;homecity;homestate;homepostcode;homecountry
+ADR;WORK:workpost-office-box;addon-work;workstreet;workcity;workstate;workpostcode;workcountry
+ADR;PREF:otherpost-office-box;;otherstreet;othercity;otherstate;otherpostcode;othercountry
+ORG:company;
+TITLE:position
+TEL;WORK;VOICE:+4900
+TEL;HOME;VOICE:+4901
+TEL;CELL:+4902
+TEL;WORK;FAX:+4904
+EMAIL;INTERNET:MailHome@example.org
+EMAIL;INTERNET:MailWork@example.org
+NOTE:memo
+NOTE:memo2
+TEL;PAGER:+4903
+URL:www1.example.org
+URL:www2.example.org
+BDAY:20060508
+END:VCARD
+</Data>

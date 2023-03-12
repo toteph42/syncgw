@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>dde34c0e-1099-13c4-a128-130ecf29</UID>
+    <StartTime>-944092800</StartTime>
+    <EndTime>-944092800</EndTime>
+    <Summary>--- TEST FUER MEHRERE DAYLIGHT SAVING TIMES UND AALARM + DALARM ---</Summary>
+    <Recurrence>
+      <Frequency>YEARLY</Frequency>
+      <Month>2</Month>
+    </Recurrence>
+    <Category>APPOINTMENT</Category>
+    <BusyStatus>FREE</BusyStatus>
+    <Status>CONFIRMED</Status>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1274869800</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">1274869800</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

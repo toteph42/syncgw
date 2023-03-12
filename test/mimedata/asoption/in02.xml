@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Find>
+ <SearchId>7dc6ffa0-2aa5-43f6-b441-bdda13785428</SearchId>
+ <ExecuteSearch>
+  <MailBoxSearchCriterion>
+   <Query> 
+    <Class>Email</Class> 
+    <FreeText>subject: mobile</FreeText>
+   </Query>
+   <Options>
+    <Range>0-5</Range>
+    <DeepTraversal>1</DeepTraversal> 
+    <Picture>
+     <MaxSize>9987</MaxSize>
+     <MaxPictures>99</MaxPictures>
+    </Picture>
+   </Options> 
+  </MailBoxSearchCriterion>
+ </ExecuteSearch> 
+ </Find>

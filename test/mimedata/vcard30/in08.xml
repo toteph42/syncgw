@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+VERSION:2.1
+REV:20081029T091146Z
+N:lastname;firstname (all fields);middle name;title;suffix
+ADR;HOME:p.o. box home;extension home;street home;city
+  home;state/prov. home;postal/zip home;country/region home
+ADR;WORK:p.o.box business;extension bus;street bus;city
+  bus;state/prov. bus;postal/zip bus;country/region bus
+ADR:p.o.box;extension;street;city;state/province;postal/zip
+  code;country/region
+ORG:company;department
+X-CLASS:private
+TITLE:job title
+TEL;VOICE:telephone
+TEL;CELL:mobile
+TEL;VIDEO:video call
+X-SIP;VOIP:internet telephone
+X-SIP;POC:push to talk
+EMAIL;INTERNET:e-mail
+X-EPOCSECONDNAME:nickname
+NOTE:This is a short text.%x0d %x0a # comment %x0d %x0a This &lt;Pitty&gt;tag&lt;/Pitty&gt;
+ should survive.%x0d %x0a $%äöü)([]=^\'"1!%x0d %x0a &amp;nbsp;&amp;auml;#&amp;tag %x0d
+ %x0a tab tab --END
+
+TEL;CELL;HOME:mobile home
+TEL;CELL;WORK:mobile business
+TEL;VOICE;HOME:telephone home
+TEL;VOICE;WORK:telephone business
+EMAIL;INTERNET;HOME:e-mail home
+EMAIL;INTERNET;WORK:e-mail business
+TEL;VOICE;CAR:car phone
+TEL;VIDEO;HOME:cideo call home
+TEL;VIDEO;WORK:video call business
+TEL;FAX:fax
+TEL;FAX;HOME:fax home
+TEL;FAX;WORK:fax business
+TEL;PAGER:pager
+X-SIP;VOIP;HOME:internet telephone home
+X-SIP;VOIP;WORK:internet telephone business
+X-SIP;SWIS:share video
+X-SIP:sip
+X-ASSISTANT:assistants name
+TEL;TYPE=WORK,CO-WORKER:assistants number
+X-SPOUSE:spouse
+X-CHILDREN:children
+URL:http://web address
+URL;HOME:http://web address home
+URL;WORK:http://web address business
+BDAY:20081029
+X-ANNIVERSARY:20081029
+END:VCARD
+</Data>

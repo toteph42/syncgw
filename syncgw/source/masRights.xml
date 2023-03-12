@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	ActiveSync right management settings [MS-ASRM]
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<Rigths xmlns="https://github.com/Toteph42/syncgw/downloads/schema/activesync.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/activesync.xsd" ver="1.0">
+
+  <!-- 
+ 	comment <DisableRightsManagementTemplates> out to enable the template definitions
+   -->
+ 
+   <DisableRightsManagementTemplates/>
+ 
+   <RightsManagementTemplate>
+   <TemplateID>cf5cf348-a8d7-40d5-91ef-a600b88a395d</TemplateID>
+   <TemplateName>Do Not Forward</TemplateName>
+   <TemplateDescription>Recipients can read this message, but they can't forward, print, or copy content. 
+The conversation owner has full permission to their message and all replies.</TemplateDescription>
+  </RightsManagementTemplate>
+ 
+  <RightsManagementTemplate>
+   <TemplateID>abfafb18-80a0-4763-ac37-48deb93e51e4</TemplateID>
+   <TemplateName>DoNotReplyAll</TemplateName>
+   <TemplateDescription>Description for template 'DoNotReplyAll'</TemplateDescription>
+  </RightsManagementTemplate>
+  
+  <RightsManagementLicense>
+   <Owner>0</Owner>
+   <ContentOwner>T0SyncUser1@contoso.com</ContentOwner>
+   <ReplyAllAllowed>1</ReplyAllAllowed>
+   <EditAllowed>1</EditAllowed>
+   <ReplyAllowed>1</ReplyAllowed>
+   <ForwardAllowed>0</ForwardAllowed>
+   <ExportAllowed>0</ExportAllowed>
+   <ModifyRecipientsAllowed>0</ModifyRecipientsAllowed>
+   <TemplateID>cf5cf348-a8d7-40d5-91ef-a600b88a395d</TemplateID>
+   <ExtractAllowed>0</ExtractAllowed>
+   <TemplateDescription>Recipients can read this message, but they can't
+forward, print, or copy content. The conversation owner has full permission to their message
+and all replies.</TemplateDescription>
+   <ContentExpiryDate>9999-12-30T23:59:59.999Z</ContentExpiryDate>
+   <TemplateName>Do Not Forward</TemplateName>
+   <PrintAllowed>0</PrintAllowed>
+   <ProgrammaticAccessAllowed>0</ProgrammaticAccessAllowed>
+  </RightsManagementLicense>
+  
+ </Rigths>

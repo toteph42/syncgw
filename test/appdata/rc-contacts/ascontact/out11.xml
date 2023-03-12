@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">Schloßstr. 123-124</BusinessAddressStreet>
+  <BusinessAddressCity>Jillytown</BusinessAddressCity>
+  <BusinessFaxNumber>+49111277888</BusinessFaxNumber>
+  <BusinessPhoneNumber>+491117777</BusinessPhoneNumber>
+  <FileAs>Zubehör-;Mods</FileAs>
+  <LastName>Zubehör-;Mods</LastName>
+</ApplicationData>

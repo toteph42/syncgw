@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Subject xml-ns="activesync:Notes">This is a summary</Subject>
+  <MessageClass>IPM.StickyNote</MessageClass>
+  <LastModifiedDate>20131230T115900Z</LastModifiedDate>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>19</EstimatedDataSize>
+    <Data>This is just a test</Data>
+  </Body>
+</ApplicationData>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>01 given name 01 family name</FullName>
+    <FirstName>01 given name</FirstName>
+    <LastName>01 family name</LastName>
+    <MiddleName>additional name</MiddleName>
+    <NickName>nick name</NickName>
+    <Organization>organization</Organization>
+    <Prefix>hon.pref.</Prefix>
+    <Suffix>hon.suff.</Suffix>
+    <HomePhone>+0001</HomePhone>
+    <WorkPhone>+0002</WorkPhone>
+    <MobilePhone>+0003</MobilePhone>
+    <Birthday VALUE="date">-302486400</Birthday>
+    <Body X-TYP="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere orci sapien. Donec fringilla, nunc id imperdiet blandit, diam massa hendrerit ante, vel laciniauris sed sapien viverra a tincidunt enim dignissim. Nam vitae leo velit. Maecenas sollicitudin blandit volutpat. Vestibulum ante ipsum primis in faucibus orci amet.</Body>
+    <MailHome>email@x.com</MailHome>
+    <AddressHome>
+      <Street>home street</Street>
+      <City>home city</City>
+      <Region>home region</Region>
+      <PostalCode>home postal</PostalCode>
+      <Country>home country</Country>
+    </AddressHome>
+    <Title>titel</Title>
+    <Photo>sgw-8111e2f9</Photo>
+    <Category>agga</Category>
+  </Data>
+</syncgw>

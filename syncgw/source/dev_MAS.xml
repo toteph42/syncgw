@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	Default ActiveSync device
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<Data xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <DeviceIP/>
+ <DeviceType/>
+ <FriendlyName/>
+ <Model>Default ActiveSync device</Model>
+ <UserAgent/> 
+ <IMEI/>
+ <PhoneNumber/>
+ <EnableOutboundSMS/>
+ <Password/>
+ <OS/>
+ <OSLanguage/>
+ <MobileOperator/>
+ <Options>
+  <Sync/>
+  <Search/>
+ </Options>
+ <ClientManaged/>
+
+ <DataStore>
+  <HandlerID>DataStore::CONTACT</HandlerID>
+  <MIME>
+   <Name>application/activesync.contact+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>
+
+ <DataStore>
+  <HandlerID>DataStore::GAL</HandlerID>
+  <MIME>
+   <Name>application/activesync.gal+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>
+
+ <DataStore>
+  <HandlerID>DataStore::CALENDAR</HandlerID>
+  <MIME>
+   <Name>application/activesync.calendar+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>
+
+ <DataStore>
+  <HandlerID>DataStore::TASK</HandlerID>
+  <MIME>
+   <Name>application/activesync.task+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>    
+
+ <DataStore>
+  <HandlerID>DataStore::NOTE</HandlerID>
+  <MIME>
+   <Name>application/activesync.note+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>
+
+ <DataStore>
+  <HandlerID>DataStore::MAIL</HandlerID>
+  <MIME>
+   <Name>application/activesync.mail+xml</Name>
+   <Version>1.0</Version>
+  </MIME>
+ </DataStore>
+ 
+</Data> 

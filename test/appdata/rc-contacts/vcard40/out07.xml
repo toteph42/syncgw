@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:4.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:Abe Test
+N:Test;Abe;;;
+NICKNAME:Jim\,Jimmie
+ADR;TYPE=home:;;123 Main Street;Any Town;CA;91921-1234;
+REV:20131230T115856Z
+END:VCARD
+]]></Data>

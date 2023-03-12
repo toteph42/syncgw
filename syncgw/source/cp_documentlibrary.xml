@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync DocumentLibrary code page definition
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8211</PID>
+  <Name>-//ActiveSync//DTD DocumentLibrary//EN</Name>
+  <Tag>[MS-ASDOC]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asdoc</Link>
+  <Title>DocumentLibrary Request and Response Schema</Title>
+  <Ver>16.0</Ver>
+  <URI>activesync:DocumentLibrary</URI>
+  <CodePage>19</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <LinkId>0x05</LinkId>
+   <DisplayName>0x06</DisplayName>
+   <IsFolder>0x07</IsFolder>
+   <CreationDate>0x08</CreationDate>
+   <LastModifiedDate>0x09</LastModifiedDate>
+   <IsHidden>0x0a</IsHidden>
+   <ContentLength>0x0b</ContentLength>
+   <ContentType>0x0c</ContentType>
+ </Defs>
+
+</CodePage>

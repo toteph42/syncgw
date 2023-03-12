@@ -1,0 +1,326 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https:///github.com/Toteph42/syncgw/blob/master/downloads/schema/syncml.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SyncML">
+    <xs:annotation>
+    <xs:documentation><![CDATA[
+
+	SyncML Representation Protocol V1.2 Document Type Definition 
+
+  	@package	sync*gw
+ 	@subpackage	Core
+	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+	]]></xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="SyncHdr">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:float" name="VerDTD"/>
+              <xs:element type="xs:string" name="VerProto"/>
+              <xs:element type="xs:byte" name="SessionID"/>
+              <xs:element type="xs:byte" name="MsgID"/>
+              <xs:element name="Target">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:anyURI" name="LocURI"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Source">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="LocURI"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Cred">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Meta">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Type">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="xml-ns"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Data">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="xml-ns"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Meta">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MaxMsgSize">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:int">
+                            <xs:attribute type="xs:string" name="xml-ns"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SyncBody">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Alert" maxOccurs="1" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="CmdID"/>
+                    <xs:element type="xs:short" name="Data"/>
+                    <xs:element name="Item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Target">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="LocURI"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Source">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="LocURI"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Meta">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Anchor">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="Last"/>
+                                      <xs:element type="xs:string" name="Next"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="xml-ns"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Put" maxOccurs="1" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="CmdID"/>
+                    <xs:element name="Meta">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Type">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="xml-ns"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Source">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="LocURI"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Data">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="DevInf">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:float" name="VerDTD"/>
+                                      <xs:element type="xs:string" name="Man"/>
+                                      <xs:element type="xs:string" name="Mod"/>
+                                      <xs:element type="xs:string" name="FwV"/>
+                                      <xs:element type="xs:string" name="SwV"/>
+                                      <xs:element type="xs:string" name="HwV"/>
+                                      <xs:element type="xs:string" name="DevID"/>
+                                      <xs:element type="xs:string" name="DevTyp"/>
+                                      <xs:element type="xs:string" name="UTC"/>
+                                      <xs:element type="xs:string" name="SupportLargeObjs"/>
+                                      <xs:element type="xs:string" name="SupportNumberOfChanges"/>
+                                      <xs:element name="DataStore">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="HandlerID" maxOccurs="1" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="SourceRef" maxOccurs="1" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="TargetRef" maxOccurs="1" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="DisplayName" maxOccurs="1" minOccurs="0"/>
+                                            <xs:element type="xs:byte" name="MaxGUIDSize" maxOccurs="1" minOccurs="0"/>
+                                            <xs:element name="Rx-Pref">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="CTType"/>
+                                                  <xs:element type="xs:float" name="VerCT"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Rx" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="CTType"/>
+                                                  <xs:element type="xs:float" name="VerCT"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Tx-Pref">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="CTType"/>
+                                                  <xs:element type="xs:float" name="VerCT"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Tx" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="CTType"/>
+                                                  <xs:element type="xs:float" name="VerCT"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="CTCap" maxOccurs="1" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="CTType"/>
+                                                  <xs:element type="xs:float" name="VerCT"/>
+                                                  <xs:element name="Property" maxOccurs="unbounded" minOccurs="0">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element type="xs:string" name="PropName"/>
+                                                        <xs:element type="xs:string" name="DataType" minOccurs="0"/>
+                                                        <xs:element type="xs:short" name="MaxSize" minOccurs="0"/>
+                                                        <xs:element type="xs:string" name="ValEnum" maxOccurs="unbounded" minOccurs="0"/>
+                                                        <xs:element type="xs:string" name="DisplayName" minOccurs="0"/>
+                                                        <xs:element name="PropParam" minOccurs="0">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element type="xs:string" name="ParamName"/>
+                                                              <xs:element type="xs:string" name="DataType"/>
+                                                              <xs:element type="xs:string" name="ValEnum" maxOccurs="unbounded" minOccurs="0"/>
+                                                              <xs:element type="xs:string" name="DisplayName"/>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="SyncCap">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:byte" name="SyncType" maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="CTCap">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="CTType"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="CHARSET"/>
+                                    <xs:attribute type="xs:string" name="xml-ns"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="xml-ns"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="xml-ns"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Get" maxOccurs="1" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="CmdID"/>
+                    <xs:element name="Meta">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Type">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="xml-ns"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Target">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="LocURI"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="xml-ns"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Final"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="xml-ns"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="CHARSET"/>
+      <xs:attribute type="xs:string" name="xml-ns"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

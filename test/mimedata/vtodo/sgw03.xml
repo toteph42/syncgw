@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>T00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Organizer>mailto:unclesam@us.gov</Organizer>
+    <Sequence>2</Sequence>
+    <Status X-PC="0">NEEDS-ACTION</Status>
+    <Summary>Submit Income Taxes</Summary>
+    <DueDate>892684799</DueDate>
+    <Attendee PARTSTAT="accepted">mailto:jqpublic@example.com</Attendee>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">891604800</Trigger>
+      <Attachment X-TYP="audio/basic">
+        <ContentLocation>http://example.com/pub/audio-files/ssbanner.aud</ContentLocation>
+      </Attachment>
+      <Repeat>4</Repeat>
+      <Duration>3600</Duration>
+    </Alarm>
+  </Data>
+</syncgw>

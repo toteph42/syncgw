@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Sync CHARSET="utf-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>1611069064</SyncKey>
+      <CollectionId>C1</CollectionId>
+      <DeletesAsMoves>1</DeletesAsMoves>
+      <GetChanges>1</GetChanges>
+      <WindowSize>8</WindowSize>
+      <Options>
+        <FilterType>4</FilterType>
+        <Conflict>1</Conflict>
+        <BodyPreference xml-ns="activesync:AirSyncBase">
+          <Type>1</Type>
+          <TruncationSize>20480</TruncationSize>
+          <AllOrNone>0</AllOrNone>
+        </BodyPreference>
+      </Options>
+      <Commands xml-ns="activesync:AirSync">
+        <Change>
+          <ServerId>C2</ServerId>
+          <ApplicationData>
+            <Timezone xml-ns="activesync:Calendar">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</Timezone>
+            <StartTime>20201215T130000Z</StartTime>
+            <Subject>Titel #4YX - Grosser Anhang</Subject>
+            <EndTime>20201215T140000Z</EndTime>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <Data> </Data>
+            </Body>
+            <Categories xml-ns="activesync:Calendar"/>
+            <Sensitivity>0</Sensitivity>
+            <BusyStatus>2</BusyStatus>
+            <AllDayEvent>0</AllDayEvent>
+            <Reminder/>
+            <MeetingStatus>0</MeetingStatus>
+            <DisallowNewTimeProposal>0</DisallowNewTimeProposal>
+            <ResponseRequested>1</ResponseRequested>
+            <Location xml-ns="activesync:AirSyncBase">
+              <DisplayName/>
+            </Location>
+          </ApplicationData>
+        </Change>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

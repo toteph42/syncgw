@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>398434774</SyncKey>
+   <CollectionId>8</CollectionId>
+   <DeletesAsMoves>1</DeletesAsMoves>
+   <GetChanges>1</GetChanges>
+   <WindowSize>512</WindowSize>
+   <Options>
+    <BodyPreference xml-ns="activesync:AirSyncBase">
+	 <Type>2</Type>
+	 <TruncationSize>5120</TruncationSize>
+	 <AllOrNone>1</AllOrNone>
+	</BodyPreference>
+   </Options>
+   <Commands>
+	<Change>
+	 <ServerId>bb18e2a7-3e65-41a1-b0b2-9815539f98ad</ServerId>
+	 <ApplicationData>
+	  <Body>
+		<Type>2</Type>
+		<Data>&lt;strong&gt;This is my second note.&lt;/strong&gt;</Data>
+	  </Body>
+	  <Categories>
+	   <Category>Business</Category>
+	   <Category>Funny</Category>
+	   <Category>Error, nop</Category>
+	  </Categories>
+	  <Subject>Second Note</Subject>
+	  <MessageClass>IPM.StickyNote</MessageClass>
+	 </ApplicationData>  
+	</Change>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

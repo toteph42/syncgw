@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>664578668</SyncKey>
+   <CollectionId>1</CollectionId>
+   <Status>1</Status>
+   <Commands>
+	<Add>
+	 <ServerId>1:13</ServerId>
+	 <ApplicationData>
+	  <Timezone xml-ns="activesync:Calendar">5P3//0FLU1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmBwsAAAABAAEAAAAAAAAA4AEAAEFLRFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmBwMAAAACAAMAAAAAAAAAIP7//w==</Timezone>
+      <DtStamp>20081002T231335Z</DtStamp>
+	  <StartTime>20081013T170000Z</StartTime>
+	  <Subject>Dry Run of TechEd Presentation</Subject>
+	  <UID>040000008200E00074C5B7101A82E008000000009003C9E1A924C901000000000000000010000000B3635D1E1A2FF54FA575AB96797F532F</UID>
+	  <OrganizerName>Anat Kerry</OrganizerName>
+	  <OrganizerEmail>anatcontoso.com</OrganizerEmail>
+	  <Location>
+	    <DisplayName>Conf Room 33-A/1298</DisplayName>
+	  </Location>
+	  <EndTime>20081013T180000Z</EndTime>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>3</Type>
+		<EstimatedDataSize>5669</EstimatedDataSize>
+		<Truncated>1</Truncated>
+	  </Body>
+	  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+	  <BusyStatus>2</BusyStatus>
+	  <AllDayEvent>0</AllDayEvent>
+	  <Reminder>15</Reminder>
+	  <MeetingStatus>0</MeetingStatus>
+	  <NativeBodyType xml-ns="activesync:AirSync">3</NativeBodyType>
+	 </ApplicationData>
+	</Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Subject xml-ns="activesync:Notes">Second Note</Subject>
+  <MessageClass>IPM.StickyNote</MessageClass>
+  <LastModifiedDate>20131230T115900Z</LastModifiedDate>
+  <Categories>
+    <Category>Business</Category>
+    <Category>Funny</Category>
+    <Category>Error, nop</Category>
+  </Categories>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>2</Type>
+    <EstimatedDataSize>40</EstimatedDataSize>
+    <Data>&lt;strong&gt;This is my second note.&lt;/strong&gt;</Data>
+  </Body>
+</ApplicationData>

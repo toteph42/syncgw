@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>todoz79893056.-1539577512.1114802217</UID>
+    <StartTime>1273478400</StartTime>
+    <EndTime>1273492800</EndTime>
+    <Summary>Prova 2</Summary>
+    <Location>
+      <DisplayName>La</DisplayName>
+    </Location>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

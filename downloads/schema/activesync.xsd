@@ -1,0 +1,356 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://github.com/Toteph42/syncgw/blob/master/downloads/schema/policy.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+    <xs:documentation>
+
+   	Exchange ActiveSync Schema
+   	
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+	</xs:documentation>
+    </xs:annotation>
+  	<xs:element name="ActiceSync">
+    <xs:annotation>
+    <xs:documentation>
+
+    Microsoft Exchange ActiveSync DTD definitions
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cmds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Autodiscover">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Sync">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SendMail">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:byte" name="MailHandler"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SmartForward">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:byte" name="MailHandler"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SmartReply">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:byte" name="MailHandler"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GetAttachment">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FolderSync">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FolderCreate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FolderDelete">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FolderUpdate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="MoveItems">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GetItemEstimate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="MeetingResponse">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                     <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Search">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Settings">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Ping">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ItemOperations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Provision">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ResolveRecipients">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ValidateCert">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Find">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:float" name="Version"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GetHierarchy">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Code"/>
+                    <xs:element type="xs:string" name="Version"/>
+                    <xs:element type="xs:byte" name="MailHandler"/>
+                    <xs:element type="xs:string" name="DTD"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CmdParm">
+           <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="AttachmentName"/>
+              <xs:element type="xs:byte" name="CollectionId"/>
+              <xs:element type="xs:byte" name="ItemId"/>
+              <xs:element type="xs:byte" name="LongId"/>
+              <xs:element type="xs:byte" name="Occurrence"/>
+              <xs:element type="xs:byte" name="Options"/>
+              <xs:element type="xs:byte" name="User"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Options">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="SaveInSent"/>
+              <xs:element type="xs:byte" name="AcceptMultiPart"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LcID">
+         <xs:complexType>
+            <xs:sequence>
+           	  <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  	</xs:element>
+  	<xs:element name="Policy">
+    <xs:annotation>
+    <xs:documentation>
+
+   	ActiveSync server policy settings [MS-APROV]
+   	
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="DevicePasswordEnabled" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AlphanumericDevicePasswordRequired" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="PasswordRecoveryEnabled" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireStorageCardEncryption" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AttachmentsEnabled" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MinDevicePasswordLength" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:short" name="MaxInactivityTimeDeviceLock" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MaxDevicePasswordFailedAttempts" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:int" name="MaxAttachmentSize" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowSimpleDevicePassword" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="DevicePasswordExpiration" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="DevicePasswordHistory" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowStorageCard" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowCamera" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireDeviceEncryption" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowUnsignedApplications" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowUnsignedInstallationPackages" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MinDevicePasswordComplexCharacters" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowWiFi" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowTextMessaging" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowPOPIMAPEmail" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowBluetooth" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowIrDA" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireManualSyncWhenRoaming" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowDesktopSync" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MaxCalendarAgeFilter" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowHTMLEmail" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MaxEmailAgeFilter" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MaxEmailBodyTruncationSize" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="MaxEmailHTMLBodyTruncationSize" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireSignedSMIMEMessages" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireEncryptedSMIMEMessages" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireSignedSMIMEAlgorithm" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="RequireEncryptionSMIMEAlgorithm" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowSMIMEEncryptionAlgorithmNegotiation" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowSMIMESoftCerts" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowBrowser" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowConsumerEmail" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowRemoteDesktop" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:byte" name="AllowInternetSharing" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:string" name="UnapprovedInROMApplicationList" minOccurs="1" maxOccurs="1"/>
+        <xs:element type="xs:string" name="ApprovedApplicationList" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="ver"/>
+    </xs:complexType>
+  	</xs:element>
+ 	<xs:element name="Rigths">
+    <xs:annotation>
+    <xs:documentation>
+
+   	ActiveSync right management settings [MS-ASRM]
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="DisableRightsManagementTemplates" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="RightsManagementTemplate" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="RightsManagementLicense" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="Owner"/>
+              <xs:element type="xs:string" name="ContentOwner"/>
+              <xs:element type="xs:byte" name="ReplyAllAllowed"/>
+              <xs:element type="xs:byte" name="EditAllowed"/>
+              <xs:element type="xs:byte" name="ReplyAllowed"/>
+              <xs:element type="xs:byte" name="ForwardAllowed"/>
+              <xs:element type="xs:byte" name="ExportAllowed"/>
+              <xs:element type="xs:byte" name="ModifyRecipientsAllowed"/>
+              <xs:element type="xs:string" name="TemplateID"/>
+              <xs:element type="xs:byte" name="ExtractAllowed"/>
+              <xs:element type="xs:string" name="TemplateDescription"/>
+              <xs:element type="xs:dateTime" name="ContentExpiryDate"/>
+              <xs:element type="xs:string" name="TemplateName"/>
+              <xs:element type="xs:byte" name="PrintAllowed"/>
+              <xs:element type="xs:byte" name="ProgrammaticAccessAllowed"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="ver"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

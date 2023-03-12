@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Email code page definition
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8194</PID>
+  <Name>-//ActiveSync//DTD Email//EN</Name>
+  <Tag>[MS-ASEMAIL]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asemail</Link>
+  <Title>Email Request and Response Schema</Title>
+  <Ver>21.0</Ver>
+  <URI>activesync:Mail</URI>
+  <CodePage>2</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5 -->
+   <Attachment>0x05</Attachment>
+   <Attachments>0x06</Attachments>
+   <AttName>0x07</AttName>
+   <AttSize>0x08</AttSize>
+   <Att0id>0x09</Att0id>
+   <AttMethod>0x0a</AttMethod>
+   <Body>0x0c</Body>
+   <BodySize>0x0d</BodySize>
+   <BodyTruncated>0x0e</BodyTruncated>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <DateReceived>0x0f</DateReceived>
+   <!-- 2.5 -->
+   <DisplayName>0x10</DisplayName>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <DisplayTo>0x11</DisplayTo>
+   <Importance>0x12</Importance>
+   <MessageClass>0x13</MessageClass>
+   <Subject>0x14</Subject>
+   <Read>0x15</Read>
+   <To>0x16</To>
+   <Cc>0x17</Cc>
+   <From>0x18</From>
+   <ReplyTo>0x19</ReplyTo>
+   <AllDayEvent>0x1a</AllDayEvent>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <Categories>0x1b</Categories>
+   <Category>0x1c</Category>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <DtStamp>0x1d</DtStamp>
+   <EndTime>0x1e</EndTime>
+   <InstanceType>0x1f</InstanceType>
+   <BusyStatus>0x20</BusyStatus>
+   <!-- 2.5,12.0,12.1,14.0,14.1 -->
+   <Location>0x21</Location>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <MeetingRequest>0x22</MeetingRequest>
+   <Organizer>0x23</Organizer>
+   <RecurrenceId>0x24</RecurrenceId>
+   <Reminder>0x25</Reminder>
+   <ResponseRequested>0x26</ResponseRequested>
+   <Recurrences>0x27</Recurrences>
+   <Recurrence>0x28</Recurrence>
+   <Type>0x29</Type>
+   <Until>0x2a</Until>
+   <Occurrences>0x2b</Occurrences>
+   <Interval>0x2c</Interval>
+   <DayOfWeek>0x2d</DayOfWeek>
+   <DayOfMonth>0x2e</DayOfMonth>
+   <WeekOfMonth>0x2f</WeekOfMonth>
+   <MonthOfYear>0x30</MonthOfYear>
+   <StartTime>0x31</StartTime>
+   <Sensitivity>0x32</Sensitivity>
+   <TimeZone>0x33</TimeZone>
+   <!-- 2.5,12.0,12.1,14.0,14.1 -->
+   <GlobalObjId>0x34</GlobalObjId>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <ThreadTopic>0x35</ThreadTopic>
+   <!-- 2.5 -->
+   <MIMEData>0x36</MIMEData>
+   <MIMETruncated>0x37</MIMETruncated>
+   <MIMESize>0x38</MIMESize>
+   <!-- all -->
+   <InternetCPID>0x39</InternetCPID>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Flag>0x3a</Flag>
+   <Status>0x3b</Status>
+   <ContentClass>0x3c</ContentClass>
+   <FlagType>0x3d</FlagType>
+   <CompleteTime>0x3e</CompleteTime>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <DisallowNewTimeProposal>0x3f</DisallowNewTimeProposal>
+ </Defs>
+
+</CodePage>

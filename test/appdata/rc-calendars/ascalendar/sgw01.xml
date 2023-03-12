@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>040000008200E00074C5B7101A82E008000000001027EAEDA124C901000000000000000010000000</UID>
+    <StartTime>1223665200</StartTime>
+    <EndTime>1223670600</EndTime>
+    <Summary>Lunch meeting</Summary>
+    <Location>
+      <DisplayName>Cafeteria A</DisplayName>
+    </Location>
+    <Body X-TYP="1">This data record contains a document which cannot be converted</Body>
+    <Recurrence>
+      <Frequency>DAILY</Frequency>
+      <EndTime>1224529200</EndTime>
+      <Interval>1</Interval>
+    </Recurrence>
+    <BusyStatus>OOF</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

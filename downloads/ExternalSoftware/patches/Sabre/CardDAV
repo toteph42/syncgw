@@ -1,0 +1,54 @@
+31c31,34
+<     const ADDRESSBOOK_ROOT = 'addressbooks';
+---
+>     ##syncGW >
+>     # const ADDRESSBOOK_ROOT = 'addressbooks';
+>     const ADDRESSBOOK_ROOT = 'contacts';
+>     ##syncGW <
+338c341,344
+<         $options = VObject\Node::PROFILE_CARDDAV;
+---
+>         ##syncGW >
+>         #$options = VObject\Node::PROFILE_CARDDAV;
+>         $options = 2;
+>         ##syncGW <
+387c393,396
+<         $vobj->destroy();
+---
+>         ##syncGW >
+>         if (method_exists($vobj,'destroy'))
+>             $vobj->destroy();
+>         ##syncGW <
+530c539,542
+<                 $vcard->destroy();
+---
+>                 ##syncGW >
+>                 if (method_exists($vcard,'destroy'))
+>                     $vcard->destroy();
+>                 ##syncGW <
+536c548,551
+<                 $vcard->destroy();
+---
+>                 ##syncGW >
+>                 if (method_exists($vcard,'destroy'))
+>                     $vcard->destroy();
+>                 ##syncGW <
+543c558,561
+<         $vcard->destroy();
+---
+>         ##syncGW >
+>         if (method_exists($vcard,'destroy'))
+>             $vcard->destroy();
+>         ##syncGW <
+847,848c865,870
+<             $input->destroy();
+<             if (!is_null($output)) {
+---
+>             ##syncGW >
+>             #$input->destroy();
+>             if (method_exists($input, 'destroy')) {
+>                 $input->destroy();
+>             }
+>             if (!is_null($output) && method_exists($output, 'destroy')) {
+850a873
+>             ##syncGW <

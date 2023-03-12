@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>000000010003</UID>
+    <StartTime>1159898400</StartTime>
+    <Location>
+      <DisplayName>Test</DisplayName>
+    </Location>
+    <Summary>Test</Summary>
+    <EndTime>1159902000</EndTime>
+  </Data>
+</syncgw>

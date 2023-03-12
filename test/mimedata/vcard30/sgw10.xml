@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Forrest Gump</FullName>
+    <LastName>Gump</LastName>
+    <FirstName>Forrest</FirstName>
+    <AddressBusiness>
+      <Street>100 Waters Edge</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressBusiness>
+    <AddressHome>
+      <Street>42 Plantation St.</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressHome>
+    <WorkPhone>(111) 555-1212</WorkPhone>
+    <HomePhone>(404) 555-1212</HomePhone>
+    <MailOther TYPE="x-pref,x-internet">forrestgump@example.com</MailOther>
+    <Title>Shrimp Man</Title>
+    <Organization>Bubba Gump Shrimp Co.</Organization>
+    <LabelWork>100 Waters Edge
+Baytown, LA 30314
+United States of America</LabelWork>
+    <LabelHome>42 Plantation St.
+Baytown, LA 30314
+United States of America</LabelHome>
+  </Data>
+</syncgw>

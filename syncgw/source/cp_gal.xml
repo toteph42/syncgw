@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Global Address List code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8208</PID>
+  <Name>-//ActiveSync//DTD GAL//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>GAL Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:GAL</URI>
+  <CodePage>16</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <DisplayName>0x05</DisplayName>
+   <Phone>0x06</Phone>
+   <Office>0x07</Office>
+   <Title>0x08</Title>
+   <Company>0x09</Company>
+   <Alias>0x0a</Alias>
+   <FirstName>0x0b</FirstName>
+   <LastName>0x0c</LastName>
+   <HomePhone>0x0d</HomePhone>
+   <MobilePhone>0x0e</MobilePhone>
+   <EmailAddress>0x0f</EmailAddress>
+   <!-- 14.1,16.0,16.1 -->
+   <Picture>0x10</Picture>
+   <Status>0x11</Status>
+   <Data>0x12</Data>
+ </Defs>
+
+</CodePage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync AirSync code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8192</PID>
+  <Name>-//ActiveSync//DTD AirSync//EN</Name>
+  <Tag>[MS-ASAIRS]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs</Link>
+  <Title>AirSync Request and Response Schema</Title>
+  <Ver>21.0</Ver>
+  <URI>activesync:AirSync</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Sync>0x05</Sync>
+   <Responses>0x06</Responses>
+   <Add>0x07</Add>
+   <Change>0x08</Change>
+   <Delete>0x09</Delete>
+   <Fetch>0x0a</Fetch>
+   <SyncKey>0x0b</SyncKey>
+   <ClientId>0x0c</ClientId>
+   <ServerId>0x0d</ServerId>
+   <Status>0x0e</Status>
+   <Collection>0x0f</Collection>
+   <Class>0x10</Class>
+   <CollectionId>0x12</CollectionId>
+   <GetChanges>0x13</GetChanges>
+   <MoreAvailable>0x14</MoreAvailable>
+   <WindowSize>0x15</WindowSize>
+   <Commands>0x16</Commands>
+   <Options>0x17</Options>
+   <FilterType>0x18</FilterType>
+   <!-- 2.5 -->
+   <Trucation>0x19</Trucation>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Conflict>0x1b</Conflict>
+   <Collections>0x1c</Collections>
+   <ApplicationData>0x1d</ApplicationData>
+   <DeletesAsMoves>0x1e</DeletesAsMoves>
+   <Supported>0x20</Supported>
+   <SoftDelete>0x21</SoftDelete>
+   <MIMESupport>0x22</MIMESupport>
+   <MIMETruncation>0x23</MIMETruncation>
+   <!-- 12.1,14.0,14.1,16.0,16.1 -->
+   <Wait>0x24</Wait>
+   <Limit>0x25</Limit>
+   <Partial>0x26</Partial>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <ConversationMode>0x27</ConversationMode>
+   <MaxItems>0x28</MaxItems>
+   <HeartbeatInterval>0x29</HeartbeatInterval>
+ </Defs>
+
+</CodePage>

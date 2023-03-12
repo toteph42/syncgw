@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activesync:AirSync PUBLIC "-//ActiveSync//DTD AirSync//EN" "https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs">
+<Sync CHARSET="utf-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>1510847351</SyncKey>
+      <CollectionId>C1</CollectionId>
+      <Status>1</Status>
+      <Commands>
+        <Add>
+          <Class>Calendar</Class>
+          <ServerId>C2</ServerId>
+          <ApplicationData>
+            <Timezone xml-ns="activesync:Calendar">xP///0V1cm9wZS9CZXJsaW4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAFAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAFAAIAAAAAAAAAxP///w==</Timezone>
+            <Subject>Titel</Subject>
+            <Location>Ort</Location>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <EstimatedDataSize>25</EstimatedDataSize>
+              <Data>Beschreibung
+Zweite Zeile</Data>
+            </Body>
+            <NativeBodyType>1</NativeBodyType>
+            <UID xml-ns="activesync:Calendar">C8C75C959B57E64436534769618230B9-126173DDA6F62D88</UID>
+            <StartTime>20171118T080000Z</StartTime>
+            <EndTime>20171118T083000Z</EndTime>
+            <Categories>
+              <Category/>
+            </Categories>
+            <Sensitivity>0</Sensitivity>
+            <Attendees>
+              <Attendee>
+                <Name/>
+                <Email>t1@wb28.de</Email>
+                <AttendeeStatus>0</AttendeeStatus>
+                <AttendeeType>0</AttendeeType>
+              </Attendee>
+            </Attendees>
+            <Attachments xml-ns="activesync:AirSyncBase">
+              <Add>
+                <Content>TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzBOQ201bGRXVnpJRVp2Y25WdFB3MEtiV3RzYVc1cklDOUtJRWs2WEhkM2QxeHlZMXh6Wld4bFkzUm1iM0p6ZVc1aklFazZYRDgvWEhObGJHVmpkR1p2Y25ONWJtTU5DaTB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRQaUJUZVc1alozY2dRMGhCVGtkRlV3MEtYMTlHU1V4RlgxOGdjbVZ3YkdGalpXUWdZbmtnWDE5RVNWSmZYdzBLUkdWbVlYVnNkQ0JuY205MWNDQm9ZVzVrYkdsdVp5QnRiMlJwWm1sbFpBMEtaWGgwUVhWMGFHOXlhWHBsS0NrZ1pYaDBaVzVrWldRTkNsTjVibU5vY205dWFYcGhkR2x2YmlCM2FYUm9JR1Y0ZEdWeWJtRnNJR1JoZEdFZ2MzUnZjbVVnWlhoMFpXNWtaV1FnZEc4Z2MzVndjRzl5ZENCamFHRnVaMlV0Wm14aFp5Qm1iM0lnVTJGaWNtVkVRVllOQ2tSVVUxUkJUVkFnY21WdGIzWmxaQ0JtY205dElHUmhkR0VnYVcxd2IzSjBEUXBGYlhCMGVTQThVM2x1WXo0Z1ptOXlJRUZqZEdsMlpWTjVibU1nYVcxd2JHVnRaVzUwWldRTkNqeFRlVzVqUzJWNVBpQm9ZVzVrYkdsdVp5QjFjR1JoZEdWa0RRb3RMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExUd2dVM2x1WTJkM0lFTklRVTVIUlZNTkNucDNMaUF4TkM0MUlDMGdNRGd1TURZZ1IzSnBaV05vWlc1c1lXNWtJQ2hoZEdobGJpQXRJRUYwZEdscllTa05DaTB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHREUXBhWldodVpHVnlJRmZEcEhKdFpYTndaV2xqYUdWeUlFaGxjbk4wWld4c2JuVnRiV1Z5SURBek56Y3hMVEkxTkRnNU9Ua2dNVEVnS0RFNUtTQkljaTRnU0dGb2JnMEtMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTME5Da1J2YzBKdmVDQjFjR1JoZEdWaGRXWWdjM2x1WTJkM0xtTnZiUTBLWVhSMFlXTm9iV1Z1ZENCb1lXNWtiR2x1WnlCRFlXeEVRVllOQ2kwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0RFFvdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFMwdExTMHRMUzB0TFEwS0RRb05DZz09</Content>
+                <ContentId TYPE="BASE64">sgw5a0db377c65d5</ContentId>
+                <ContentType>text/plain</ContentType>
+                <DisplayName>Todo.txt</DisplayName>
+                <Method>1</Method>
+              </Add>
+            </Attachments>
+            <DtStamp xml-ns="activesync:Calendar">20171116T154911Z</DtStamp>
+            <AllDayEvent>0</AllDayEvent>
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

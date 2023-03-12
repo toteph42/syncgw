@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activesync:AirSync PUBLIC "-//ActiveSync//DTD AirSync//EN" "https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs">
+<FolderSync CHARSET="utf-8" xml-ns="activesync:FolderHierarchy">
+  <Status>1</Status>
+  <SyncKey>1</SyncKey>
+  <Changes>
+    <Count>7</Count>
+    <Add>
+      <ServerId>A1</ServerId>
+      <ParentId>0</ParentId>
+      <DisplayName>Persönliches Adressbuch</DisplayName>
+      <Type>9</Type>
+    </Add>
+  </Changes>
+</FolderSync>

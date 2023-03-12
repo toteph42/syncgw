@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1626593608</LastMod>
+  <Created>1626593608</Created>
+  <CRC/>
+  <extID>R83#G04660181</extID>
+  <extGroup>G04660181</extGroup>
+  <Data>
+    <EmailTo>t1@wb28.de</EmailTo>
+    <EmailFrom>"Jil"&lt;jil@sycngw.com&gt;</EmailFrom>
+    <Subject>»Meeting« wurde abgesagt</Subject>
+    <Created>1577617442</Created>
+    <EmailSender>jil@sycngw.com</EmailSender>
+    <MessageId>&lt;156198ad6c853d62f7536ea33d0a2cd9@xxx.com&gt;</MessageId>
+    <ContentClass>urn:content-classes:message</ContentClass>
+    <Flag/>
+    <Status>Seen</Status>
+    <IsDraft>0</IsDraft>
+    <Read>1</Read>
+    <Body X-TYP="1">**
+Wann:
+Teilnehmer:
+Der Termin wurde von  abgesagt.
+Im Anhang finden Sie eine iCalendar-Datei mit den Termindaten.</Body>
+    <Attachment>
+      <DisplayName>event.ics</DisplayName>
+      <FileReference>sgw-f489bde2</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>715</EstimatedDataSize>
+    </Attachment>
+    <InternetCPID>65001</InternetCPID>
+    <MessageClass>IPM.Note</MessageClass>
+    <Importance>1</Importance>
+    <ConversationId>eec1864065bcc4ad</ConversationId>
+    <ConversationIndex>AdW+N6127sGGQGW8xK0=</ConversationIndex>
+  </Data>
+</syncgw>

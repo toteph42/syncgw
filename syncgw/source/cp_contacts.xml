@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Contacts code page definition
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8193</PID>
+  <Name>-//ActiveSync//DTD Contacts//EN</Name>
+  <Tag>[MS-ASCON]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascon</Link>
+  <Title>Contacts Request and Response Schema</Title>
+  <Ver>18.0</Ver>
+  <URI>activesync:Contacts</URI>
+  <CodePage>1</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Anniversary>0x05</Anniversary>
+   <AssistantName>0x06</AssistantName>
+   <AssistantPhoneNumber>0x07</AssistantPhoneNumber>
+   <Birthday>0x08</Birthday>
+   <!-- 2.5 -->
+   <Body>0x09</Body>
+   <BodySize>0x0a</BodySize>
+   <BodyTruncated>0x0b</BodyTruncated>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Business2PhoneNumber>0x0c</Business2PhoneNumber>
+   <BusinessAddressCity>0x0d</BusinessAddressCity>
+   <BusinessAddressCountry>0x0e</BusinessAddressCountry>
+   <BusinessAddressPostalCode>0x0f</BusinessAddressPostalCode>
+   <BusinessAddressState>0x10</BusinessAddressState>
+   <BusinessAddressStreet>0x11</BusinessAddressStreet>
+   <BusinessFaxNumber>0x12</BusinessFaxNumber>
+   <BusinessPhoneNumber>0x13</BusinessPhoneNumber>
+   <CarPhoneNumber>0x14</CarPhoneNumber>
+   <Categories>0x15</Categories>
+   <Category>0x16</Category>
+   <Children>0x17</Children>
+   <Child>0x18</Child>
+   <CompanyName>0x19</CompanyName>
+   <Department>0x1a</Department>
+   <Email1Address>0x1b</Email1Address>
+   <Email2Address>0x1c</Email2Address>
+   <Email3Address>0x1d</Email3Address>
+   <FileAs>0x1e</FileAs>
+   <FirstName>0x1f</FirstName>
+   <Home2PhoneNumber>0x20</Home2PhoneNumber>
+   <HomeAddressCity>0x21</HomeAddressCity>
+   <HomeAddressCountry>0x22</HomeAddressCountry>
+   <HomeAddressPostalCode>0x23</HomeAddressPostalCode>
+   <HomeAddressState>0x24</HomeAddressState>
+   <HomeAddressStreet>0x25</HomeAddressStreet>
+   <HomeFaxNumber>0x26</HomeFaxNumber>
+   <HomePhoneNumber>0x27</HomePhoneNumber>
+   <JobTitle>0x28</JobTitle>
+   <LastName>0x29</LastName>
+   <MiddleName>0x2a</MiddleName>
+   <MobilePhoneNumber>0x2b</MobilePhoneNumber>
+   <OfficeLocation>0x2c</OfficeLocation>
+   <OtherAddressCity>0x2d</OtherAddressCity>
+   <OtherAddressCountry>0x2e</OtherAddressCountry>
+   <OtherAddressPostalCode>0x2f</OtherAddressPostalCode>
+   <OtherAddressState>0x30</OtherAddressState>
+   <OtherAddressStreet>0x31</OtherAddressStreet>
+   <PagerNumber>0x32</PagerNumber>
+   <RadioPhoneNumber>0x33</RadioPhoneNumber>
+   <Spouse>0x34</Spouse>
+   <Suffix>0x35</Suffix>
+   <Title>0x36</Title>
+   <WebPage>0x37</WebPage>
+   <YomiCompanyName>0x38</YomiCompanyName>
+   <YomiFirstName>0x39</YomiFirstName>
+   <YomiLastName>0x3a</YomiLastName>
+   <Picture>0x3c</Picture>
+   <!-- 14.0, 14.1, 16.0, 16.1 -->
+   <Alias>0x3d</Alias>
+   <WeightedRank>0x3e</WeightedRank>
+ </Defs>
+
+</CodePage>

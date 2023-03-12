@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>301865454</SyncKey>
+   <CollectionId>11</CollectionId>
+   <DeletesAsMoves>1</DeletesAsMoves>
+   <GetChanges>1</GetChanges>
+   <WindowSize>100</WindowSize>
+   <Commands>
+    <Add>
+	 <ClientId>4717a10e-492d-45af-9fe3-227f74385b13</ClientId>
+	 <ApplicationData>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>2</Type>
+		<Data>&lt;strong&gt;Must&lt;/strong&gt; complete äöpoüß03 TPS reports using the new cover sheet.</Data>
+	  </Body>
+	  <Subject xml-ns="activesync:Task">TPS Reports for August 2009</Subject>
+	  <Importance>1</Importance>
+	  <Categories>
+		<Category>Busi, ness</Category>
+		<Category>Reports</Category>
+	  </Categories>
+	  <Complete>0</Complete>
+	  <DueDate>2009-09-03T13:00:00.000Z</DueDate>
+	  <UtcDueDate>2009-09-03T20:00:00.000Z</UtcDueDate>
+	  <Sensitivity>3</Sensitivity>
+	  <StartDate>2009-09-03T09:00:00.000Z</StartDate>
+	  <UtcStartDate>2009-09-03T16:00:00.000Z</UtcStartDate>
+	  <Recurrence>
+	   <Type>0</Type>
+	   <Start>2009-09-03T09:00:00.000Z</Start>
+	   <Until>2009-12-03T09:00:00.000Z</Until>
+	   <Interval>2</Interval>
+	   <DayOfWeek>42</DayOfWeek>
+	   <DayOfMonth>8</DayOfMonth>
+	   <WeekOfMonth>4</WeekOfMonth>
+	   <MonthOfYear>2</MonthOfYear>
+	   <Regenerate>1</Regenerate>
+	   <DeadOccur>0</DeadOccur>
+	   <CalendarType>15</CalendarType>
+	   <IsLeapMonth>0</IsLeapMonth>
+	   <FirstDayOfWeek>1</FirstDayOfWeek>
+	  </Recurrence>
+	 </ApplicationData>
+    </Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

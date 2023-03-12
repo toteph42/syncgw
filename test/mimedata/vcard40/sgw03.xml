@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <LastName>last&amp;name</LastName>
+    <FirstName>first&lt;&gt;name</FirstName>
+    <MiddleName>second firstname</MiddleName>
+    <Prefix>title</Prefix>
+    <Suffix>addon name</Suffix>
+    <FullName>first&lt;&gt;name last&amp;name</FullName>
+    <Birthday VALUE="date">1147046400</Birthday>
+    <AddressHome>
+      <PostOffice>homepost-office-box</PostOffice>
+      <ExtendedAddress>addonHome</ExtendedAddress>
+      <Street>homestreet</Street>
+      <City>homecity</City>
+      <Region>homestate</Region>
+      <PostalCode>homepostcode</PostalCode>
+      <Country>homecountry</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <PostOffice>workpost-office-box</PostOffice>
+      <ExtendedAddress>addon-work</ExtendedAddress>
+      <Street>workstreet</Street>
+      <City>workcity</City>
+      <Region>workstate</Region>
+      <PostalCode>workpostcode</PostalCode>
+      <Country>workcountry</Country>
+    </AddressBusiness>
+    <AddressOther>
+      <PostOffice>otherpost-office-box</PostOffice>
+      <Street>otherstreet</Street>
+      <City>othercity</City>
+      <Region>otherstate</Region>
+      <PostalCode>otherpostcode</PostalCode>
+      <Country>othercountry</Country>
+    </AddressOther>
+    <WorkPhone>+4900</WorkPhone>
+    <HomePhone>+4901</HomePhone>
+    <MobilePhone>+4902</MobilePhone>
+    <BusinessFax>+4904</BusinessFax>
+    <Pager>+4903</Pager>
+    <MailOther TYPE="x-internet">MailHome@example.org</MailOther>
+    <MailOther TYPE="x-internet">MailWork@example.org</MailOther>
+    <Title>position</Title>
+    <Organization>company</Organization>
+    <Body X-TYP="1">memo</Body>
+    <Body X-TYP="1">memo2</Body>
+    <URLOther>http://www1.example.org</URLOther>
+    <URLOther>http://www2.example.org</URLOther>
+  </Data>
+</syncgw>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync ComposeMail code page definition
+
+  	@package	sync*gw
+  	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8213</PID>
+  <Name>-//ActiveSync//DTD ComposeMail//EN</Name>
+   <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>ComposeMail Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:ComposeMail</URI>
+  <CodePage>21</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <SendMail>0x05</SendMail>
+   <SmartForward>0x06</SmartForward>
+   <SmartReply>0x07</SmartReply>
+   <SaveInSentItems>0x08</SaveInSentItems>
+   <ReplaceMime>0x09</ReplaceMime>
+   <Source>0x0b</Source>
+   <FolderId>0x0c</FolderId>
+   <ItemId>0x0d</ItemId>
+   <LongId>0x0e</LongId>
+   <InstanceId>0x0f</InstanceId>
+   <Mime>0x10</Mime>
+   <ClientId>0x11</ClientId>
+   <Status>0x12</Status>
+   <AccountId>0x13</AccountId>
+   <!-- 16.0,16.1 -->
+   <Forwardees>0x15</Forwardees>
+   <Forwardee>0x16</Forwardee>
+   <Name>0x17</Name>
+   <Email>0x18</Email>
+ </Defs>
+
+</CodePage>

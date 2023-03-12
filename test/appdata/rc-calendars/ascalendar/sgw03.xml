@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>040000008200E00074C5B7101A82E0080000000060043DFCA924C90100000000000000001000000097F14EF755AC454BA30EFA7B1B315E43</UID>
+    <StartTime>1223924400</StartTime>
+    <EndTime>1223926200</EndTime>
+    <Summary>Team Meeting</Summary>
+    <Location>
+      <DisplayName>My office</DisplayName>
+    </Location>
+    <Recurrence>
+      <Frequency>MONTHLY</Frequency>
+      <EndTime>1247511600</EndTime>
+      <Interval>1</Interval>
+      <DayPos>MO</DayPos>
+    </Recurrence>
+    <BusyStatus>BUSY</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

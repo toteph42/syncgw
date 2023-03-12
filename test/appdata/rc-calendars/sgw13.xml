@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>2D8C4305-B54C-43A4-B5F5-836BEB41D9DC</UID>
+    <StartTime>1218021300</StartTime>
+    <EndTime>1218023100</EndTime>
+    <Summary>---- LOKALE DATE-TIME IN UTC UMWANDELN ----</Summary>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>first&lt;&gt;name last&amp;name</FullName>
+    <FirstName>first&lt;&gt;name</FirstName>
+    <LastName>last&amp;name</LastName>
+    <MiddleName>second firstname</MiddleName>
+    <Organization>company</Organization>
+    <Prefix>title</Prefix>
+    <Suffix>addon name</Suffix>
+    <HomePhone>+4901</HomePhone>
+    <WorkPhone>+4900</WorkPhone>
+    <MobilePhone>+4902</MobilePhone>
+    <BusinessFax>+4904</BusinessFax>
+    <Pager>+4903</Pager>
+    <Birthday VALUE="date">1147046400</Birthday>
+    <URLOther>http://www1.example.org</URLOther>
+    <URLOther>http://www2.example.org</URLOther>
+    <Body X-TYP="1">memo</Body>
+    <Body X-TYP="1">memo2</Body>
+    <MailOther>MailHome@example.org</MailOther>
+    <MailOther>MailWork@example.org</MailOther>
+    <AddressHome>
+      <Street>homestreet</Street>
+      <City>homecity</City>
+      <Region>homestate</Region>
+      <PostalCode>homepostcode</PostalCode>
+      <Country>homecountry</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>workstreet</Street>
+      <City>workcity</City>
+      <Region>workstate</Region>
+      <PostalCode>workpostcode</PostalCode>
+      <Country>workcountry</Country>
+    </AddressBusiness>
+    <AddressOther>
+      <Street>otherstreet</Street>
+      <City>othercity</City>
+      <Region>otherstate</Region>
+      <PostalCode>otherpostcode</PostalCode>
+      <Country>othercountry</Country>
+    </AddressOther>
+    <Title>position</Title>
+  </Data>
+</syncgw>

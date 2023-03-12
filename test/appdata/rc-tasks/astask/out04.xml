@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Complete xml-ns="activesync:Tasks">0</Complete>
+  <DueDate>2010-07-31T00:00:00.000Z</DueDate>
+  <UtcDueDate>2010-07-31T00:00:00.000Z</UtcDueDate>
+  <StartDate>2010-07-01T00:00:00.000Z</StartDate>
+  <UtcStartDate>2010-07-01T00:00:00.000Z</UtcStartDate>
+  <Subject>TÜV für Mopped</Subject>
+</ApplicationData>

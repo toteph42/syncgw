@@ -1,0 +1,1 @@
+function QBox(c){var d=document.getElementById(c);var a=document.getElementById(c+"B");if(d.style.visibility=="visible"){d.style.visibility="hidden";d.style.display="none";a.value="+"}else{d.style.display="";d.style.visibility="visible";a.value="-"}};

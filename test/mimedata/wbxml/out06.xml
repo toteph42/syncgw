@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activesync:AirSync PUBLIC "-//ActiveSync//DTD AirSync//EN" "https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs">
+<Provision CHARSET="utf-8" xml-ns="activesync:Provision">
+  <DeviceInformation xml-ns="activesync:Settings">
+    <Status xml-ns="activesync:Provision">1</Status>
+  </DeviceInformation>
+  <Status>1</Status>
+  <Policies>
+    <Policy>
+      <PolicyType>MS-EAS-Provisioning-WBXML</PolicyType>
+      <Status>2</Status>
+      <PolicyKey>56507</PolicyKey>
+    </Policy>
+  </Policies>
+</Provision>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Alias xml-ns="activesync:Contacts">Jubba</Alias>
+  <Anniversary>1980-04-14T00:00:00.000Z</Anniversary>
+  <AssistantName>urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6</AssistantName>
+  <AssistantPhoneNumber>AssistantPhoneNumber</AssistantPhoneNumber>
+  <Birthday>1995-04-15T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>110</EstimatedDataSize>
+    <Data>This fax number is operational 0800 to 1715  EST, Mon-Fri. Please note
+the special characters "äÄöÖüÜß"</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">123 Main Street</BusinessAddressStreet>
+  <BusinessAddressCity>Any Town</BusinessAddressCity>
+  <BusinessAddressState>CA</BusinessAddressState>
+  <BusinessAddressPostalCode>91921-1234</BusinessAddressPostalCode>
+  <BusinessAddressCountry>U.S.A.</BusinessAddressCountry>
+  <BusinessFaxNumber>BusinessFaxNumber</BusinessFaxNumber>
+  <BusinessPhoneNumber>BusinessPhoneNumber</BusinessPhoneNumber>
+  <Business2PhoneNumber>Business2PhoneNumber</Business2PhoneNumber>
+  <CarPhoneNumber>CarPhoneNumber</CarPhoneNumber>
+  <Categories>
+    <Category>INTERNET</Category>
+    <Category>IETF</Category>
+    <Category>INDUSTRY</Category>
+    <Category>INFORMATION TECHNOLOGY</Category>
+  </Categories>
+  <Children>
+    <Child>Julia</Child>
+    <Child>Ben</Child>
+    <Child>James</Child>
+  </Children>
+  <CompanyName>ABC, Inc.</CompanyName>
+  <Department>Marketing</Department>
+  <Email1Address>home@usa.gov</Email1Address>
+  <Email2Address>work@usa.gov</Email2Address>
+  <Email3Address>other@usa.gov</Email3Address>
+  <FileAs>Text.doc</FileAs>
+  <FirstName>John</FirstName>
+  <HomeAddressStreet>42 Plantation St.</HomeAddressStreet>
+  <HomeAddressCity>Baytown</HomeAddressCity>
+  <HomeAddressState>LA</HomeAddressState>
+  <HomeAddressPostalCode>30314</HomeAddressPostalCode>
+  <HomeAddressCountry>United States of America</HomeAddressCountry>
+  <HomeFaxNumber>HomeFaxNumber</HomeFaxNumber>
+  <HomePhoneNumber>HomePhoneNumber</HomePhoneNumber>
+  <Home2PhoneNumber>Home2PhoneNumber</Home2PhoneNumber>
+  <JobTitle>Research Scientist</JobTitle>
+  <LastName>Stevenson</LastName>
+  <MiddleName>Philip,Paul</MiddleName>
+  <MobilePhoneNumber>MobilePhoneNumber</MobilePhoneNumber>
+  <OfficeLocation>North American Division</OfficeLocation>
+  <OtherAddressStreet>OtherAddressStreet</OtherAddressStreet>
+  <OtherAddressCity>OtherAddressCity</OtherAddressCity>
+  <OtherAddressState>OtherAddressState</OtherAddressState>
+  <OtherAddressPostalCode>OtherAddressPostalCode</OtherAddressPostalCode>
+  <OtherAddressCountry>OtherAddressCountry</OtherAddressCountry>
+  <PagerNumber>PagerNumber</PagerNumber>
+  <Picture>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</Picture>
+  <RadioPhoneNumber>RadioPhoneNumber</RadioPhoneNumber>
+  <Spouse>http://example.com/directory/jdoe.vcf</Spouse>
+  <Suffix>Jr.,M.D.,A.C.P.</Suffix>
+  <Title>Dr. med.</Title>
+  <WebPage>http://example.org/restaurant.french/~chezchic.html</WebPage>
+  <YomiCompanyName>CompanyPhoneticName</YomiCompanyName>
+  <YomiFirstName>PhoneticGivenName</YomiFirstName>
+  <YomiLastName>PhoneticFamilyName</YomiLastName>
+  <AccountName xml-ns="activesync:Contacts2">MyAccountName</AccountName>
+  <CompanyMainPhone>CompanyMainPhone</CompanyMainPhone>
+  <CustomerId>CU8276399</CustomerId>
+  <GovernmentId>GOV93KNLI</GovernmentId>
+  <IMAddress>im@address1</IMAddress>
+  <IMAddress2>ima@address2</IMAddress2>
+  <IMAddress3>im@address3</IMAddress3>
+  <ManagerName>Julian Manager</ManagerName>
+  <MMS>MMS</MMS>
+  <NickName>Big boss</NickName>
+</ApplicationData>

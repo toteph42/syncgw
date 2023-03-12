@@ -1,0 +1,200 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https:///github.com/Toteph42/syncgw/blob/master/downloads/schema/syncgw.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="syncgw">
+    <xs:annotation>
+    <xs:documentation>
+
+	sync*gw XSD schema
+
+  	@package	sync*gw
+ 	@subpackage	Core
+	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+	</xs:documentation>
+    <xs:documentation>
+
+	sync*gw internal record definition
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="GUID"/>
+        <xs:element type="xs:string" name="LUID"/>
+        <xs:element type="xs:string" name="SyncStat"/>
+        <xs:element type="xs:string" name="Group"/>
+        <xs:element type="xs:string" name="Type"/>
+        <xs:element type="xs:int" name="Created"/>
+        <xs:element type="xs:int" name="LastMod"/>
+        <xs:element type="xs:string" name="CRC"/>
+        <xs:element type="xs:string" name="extID"/>
+        <xs:element type="xs:string" name="extGroup"/>
+        <xs:element name="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CodePage">
+    <xs:annotation>
+    <xs:documentation>
+
+	Code page definition
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Header" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:short" name="PID" minOccurs="1"/>
+              <xs:element type="xs:string" name="Name" minOccurs="1"/>
+              <xs:element type="xs:string" name="Tag" minOccurs="1"/>
+              <xs:element type="xs:string" name="Link" minOccurs="1"/>
+              <xs:element type="xs:string" name="Title" minOccurs="1"/>
+              <xs:element type="xs:float" name="Ver" minOccurs="1"/>
+              <xs:element type="xs:string" name="URI" minOccurs="1"/>
+              <xs:element type="xs:byte" name="CodePage" minOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Defs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CharSet">
+    <xs:annotation>
+    <xs:documentation>
+
+	Charset definitions
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Charset" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:short" name="Id"/>
+              <xs:element type="xs:string" name="Cp"/>
+              <xs:element type="xs:string" name="Name"/>
+              <xs:element type="xs:string" name="Alias" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Device">
+    <xs:annotation>
+    <xs:documentation>
+
+   	Device deinition
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DevInf">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Man"/>
+              <xs:element type="xs:string" name="DevID"/>
+              <xs:element type="xs:string" name="VerDTD" minOccurs="0"/>
+              <xs:element type="xs:string" name="Mod" minOccurs="0"/>
+              <xs:element type="xs:string" name="UserAgent" minOccurs="0"/>
+              <xs:element type="xs:string" name="IMEI" minOccurs="0"/>
+              <xs:element type="xs:string" name="PhoneNumber" minOccurs="0"/>
+              <xs:element type="xs:string" name="Password" minOccurs="0"/>
+              <xs:element type="xs:string" name="OS" minOccurs="0"/>
+              <xs:element type="xs:string" name="OEM" minOccurs="0"/>
+              <xs:element type="xs:string" name="DevTyp" minOccurs="0"/>
+              <xs:element type="xs:string" name="FriendlyName" minOccurs="0"/>
+              <xs:element type="xs:string" name="OSLanguage" minOccurs="0"/>
+              <xs:element type="xs:string" name="MobileOperator" minOccurs="0"/>
+              <xs:element type="xs:string" name="SwV" minOccurs="0"/>
+              <xs:element type="xs:string" name="FwV" minOccurs="0"/>
+              <xs:element type="xs:string" name="HwV" minOccurs="0"/>
+              <xs:element type="xs:string" name="MaxMsgSize" minOccurs="0"/>
+              <xs:element name="DataStore" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="HandlerID"/>
+                    <xs:element type="xs:string" name="NotGhosted"/>
+                    <xs:element type="xs:string" name="SourceRef"/>
+                    <xs:element type="xs:string" name="TargetRef"/>
+                    <xs:element name="Rx-Pref">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="CTType"/>
+                          <xs:element type="xs:float" name="VerCT"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Rx" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="CTType"/>
+                          <xs:element type="xs:float" name="VerCT"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Tx-Pref">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="CTType"/>
+                          <xs:element type="xs:float" name="VerCT"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Tx" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="CTType"/>
+                          <xs:element type="xs:float" name="VerCT"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Options"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MIME">
+    <xs:annotation>
+    <xs:documentation>
+
+    MIME file extension mapping table
+
+	</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Application" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Name"/>
+              <xs:element type="xs:string" name="Ext"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>    

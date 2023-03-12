@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<!-- Should work and create one 'Body' - take care about "&XXX <> ;" -->
+<Data>Title
+This is the body of the text with a &amp;XXX &lt;&gt; ; inside
+abc äÄöÖüÜß (!"§$%&amp;/=?*+~|)
+{a}[b]&amp;&amp;&lt;
+c,;.:-_#'d 
+&lt;KK&gt; &lt;!-- comment --&gt;
+END###
+in multiple lines.
+</Data>

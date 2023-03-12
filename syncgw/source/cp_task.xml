@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Tasks code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8201</PID>
+  <Name>-//ActiveSync//DTD Tasks//EN</Name>
+  <Tag>[MS-ASTASK]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-astask</Link>
+  <Title>Tasks Request and Response Schema</Title>
+  <Ver>20.2</Ver>
+  <URI>activesync:Tasks</URI>
+  <CodePage>9</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5 -->
+   <Body>0x05</Body>
+   <BodySize>0x06</BodySize>
+   <BodyTruncated>0x07</BodyTruncated>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Categories>0x08</Categories>
+   <Category>0x09</Category>
+   <Complete>0x0a</Complete>
+   <DateCompleted>0x0b</DateCompleted>
+   <DueDate>0x0c</DueDate>
+   <UtcDueDate>0x0d</UtcDueDate>
+   <Importance>0x0e</Importance>
+   <Recurrence>0x0f</Recurrence>
+   <Type>0x10</Type>
+   <Start>0x11</Start>
+   <Until>0x12</Until>
+   <Occurrences>0x13</Occurrences>
+   <Interval>0x14</Interval>
+   <DayOfMonth>0x15</DayOfMonth>
+   <DayOfWeek>0x16</DayOfWeek>
+   <WeekOfMonth>0x17</WeekOfMonth>
+   <MonthOfYear>0x18</MonthOfYear>
+   <Regenerate>0x19</Regenerate>
+   <DeadOccur>0x1a</DeadOccur>
+   <ReminderSet>0x1b</ReminderSet>
+   <ReminderTime>0x1c</ReminderTime>
+   <Sensitivity>0x1d</Sensitivity>
+   <StartDate>0x1e</StartDate>
+   <UtcStartDate>0x1f</UtcStartDate>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Subject>0x20</Subject>
+   <OrdinalDate>0x22</OrdinalDate>
+   <SubOrdinalDate>0x23</SubOrdinalDate>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <CalendarType>0x24</CalendarType>
+   <IsLeapMonth>0x25</IsLeapMonth>
+   <!-- 14.1,16.0,16.1 -->
+   <FirstDayOfWeek>0x26</FirstDayOfWeek>
+ </Defs>
+
+</CodePage>

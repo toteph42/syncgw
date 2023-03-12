@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>04FFA3B3A869AB543F77798B87A32481-126173DDA6F62D88</UID>
+    <StartTime>1589968800</StartTime>
+    <Class>PUBLIC</Class>
+    <Body X-TYP="1">Description test</Body>
+    <Location>
+      <DisplayName>Location</DisplayName>
+    </Location>
+    <Sequence>0</Sequence>
+    <Summary>Repeating event</Summary>
+    <Transparency>OPAQUE</Transparency>
+    <URLOther>http://www.x.com</URLOther>
+    <Recurrence>
+      <Frequency>DAILY</Frequency>
+      <Interval>1</Interval>
+      <Count>10</Count>
+    </Recurrence>
+    <EndTime>1589972400</EndTime>
+    <Exceptions>
+      <Exception>
+        <InstanceId>1590055200</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <InstanceId>1590228000</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <UID>04FFA3B3A869AB543F77798B87A32481-126173DDA6F62D88</UID>
+        <StartTime>1590130800</StartTime>
+        <Class>PUBLIC</Class>
+        <Body X-TYP="1">Description test</Body>
+        <Location>
+          <DisplayName>Location</DisplayName>
+        </Location>
+        <Organizer>mailto:t0@x.com</Organizer>
+        <Sequence>1</Sequence>
+        <Summary>Repeating event</Summary>
+        <Transparency>OPAQUE</Transparency>
+        <URLOther>http://www.x.com</URLOther>
+        <RecurrenceId VALUE="date-time">1590130800</RecurrenceId>
+        <EndTime>1590134400</EndTime>
+        <Attendee PARTSTAT="needs-action" ROLE="req-participant" CUTYPE="individual" RSVP="true">mailto:t1@x.com</Attendee>
+        <Attendee PARTSTAT="needs-action" ROLE="opt-participant" CUTYPE="individual" RSVP="true">mailto:t2@x.com</Attendee>
+        <Attendee PARTSTAT="needs-action" ROLE="non-participant" CUTYPE="individual" RSVP="true">mailto:t3@x.com</Attendee>
+        <Attendee PARTSTAT="needs-action" ROLE="chair" CUTYPE="individual" RSVP="true">mailto:t4@x.com</Attendee>
+      </Exception>
+    </Exceptions>
+  </Data>
+</syncgw>

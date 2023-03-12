@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Attendees xml-ns="activesync:Calendar">
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>1</AttendeeType>
+      <Email>t2@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t3@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t4@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t5@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>1</AttendeeType>
+      <Email>t2@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t3@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t4@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t5@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>1</AttendeeType>
+      <Email>t2@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t3@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t4@x.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>5</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>t5@x.com</Email>
+    </Attendee>
+  </Attendees>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>37</EstimatedDataSize>
+    <Data>This is first
+and this is second line</Data>
+  </Body>
+  <BusyStatus xml-ns="activesync:Calendar">1</BusyStatus>
+  <Categories>
+    <Category>Work</Category>
+  </Categories>
+  <StartTime>20220901T090000Z</StartTime>
+  <EndTime>20220901T100000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Exceptions>
+    <Exception>
+      <Deleted>1</Deleted>
+      <InstanceId xml-ns="activesync:AirSyncBase">20220902T090000Z</InstanceId>
+    </Exception>
+    <Exception xml-ns="activesync:Calendar">
+      <Body xml-ns="activesync:AirSyncBase">
+        <Type>1</Type>
+        <EstimatedDataSize>37</EstimatedDataSize>
+        <Data>This is first
+and this is second line</Data>
+      </Body>
+      <BusyStatus xml-ns="activesync:Calendar">1</BusyStatus>
+      <Categories>
+        <Category>Work</Category>
+      </Categories>
+      <EndTime>20220903T100000Z</EndTime>
+      <AllDayEvent>0</AllDayEvent>
+      <InstanceId xml-ns="activesync:AirSyncBase">20220902T090000Z</InstanceId>
+      <Location>
+        <DisplayName>Location</DisplayName>
+      </Location>
+      <OnlineMeetingConfLink xml-ns="activesync:Calendar">xxx.com</OnlineMeetingConfLink>
+      <Reminder>1</Reminder>
+      <Reminder>-60</Reminder>
+      <Reminder>0</Reminder>
+      <Reminder>-8640</Reminder>
+      <Reminder>-300</Reminder>
+      <Reminder>-4</Reminder>
+      <Reminder>4320</Reminder>
+      <Reminder>120</Reminder>
+      <Sensitivity>0</Sensitivity>
+      <StartTime>20220903T090000Z</StartTime>
+      <Subject>Cal #2 - with all (no attachment) - middle</Subject>
+    </Exception>
+    <Exception>
+      <Body xml-ns="activesync:AirSyncBase">
+        <Type>1</Type>
+        <EstimatedDataSize>37</EstimatedDataSize>
+        <Data>This is first
+and this is second line</Data>
+      </Body>
+      <BusyStatus xml-ns="activesync:Calendar">1</BusyStatus>
+      <Categories>
+        <Category>Work</Category>
+      </Categories>
+      <EndTime>20220904T100000Z</EndTime>
+      <AllDayEvent>0</AllDayEvent>
+      <InstanceId xml-ns="activesync:AirSyncBase">20220904T090000Z</InstanceId>
+      <Location>
+        <DisplayName>Location</DisplayName>
+      </Location>
+      <OnlineMeetingConfLink xml-ns="activesync:Calendar">xxx.com</OnlineMeetingConfLink>
+      <Reminder>1</Reminder>
+      <Reminder>120</Reminder>
+      <Reminder>4320</Reminder>
+      <Reminder>-4</Reminder>
+      <Reminder>-300</Reminder>
+      <Reminder>-8640</Reminder>
+      <Reminder>0</Reminder>
+      <Reminder>-60</Reminder>
+      <Sensitivity>0</Sensitivity>
+      <StartTime>20220904T090000Z</StartTime>
+      <Subject>Cal #2 - with all (no attachment) - last</Subject>
+    </Exception>
+  </Exceptions>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Location</DisplayName>
+  </Location>
+  <OnlineMeetingConfLink xml-ns="activesync:Calendar">xxx.com</OnlineMeetingConfLink>
+  <Recurrence>
+    <Interval>1</Interval>
+    <Occurrences>4</Occurrences>
+    <Type>0</Type>
+  </Recurrence>
+  <Reminder>1</Reminder>
+  <Reminder>-60</Reminder>
+  <Reminder>0</Reminder>
+  <Reminder>-8640</Reminder>
+  <Reminder>-300</Reminder>
+  <Reminder>-4</Reminder>
+  <Reminder>4320</Reminder>
+  <Reminder>120</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Cal #2 - with all (no attachment) - start</Subject>
+  <UID>56F7DE6319C7C47218ADE8148B577143-126173DDA6F62D88</UID>
+</ApplicationData>

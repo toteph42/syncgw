@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404736</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <VFREEBUSY>
+      <ORGANIZER>mailto:jsmith@example.com</ORGANIZER>
+      <DTSTART>19980313T141711Z</DTSTART>
+      <DTEND>19980410T141711Z</DTEND>
+      <FREEBUSY>19980314T233000Z/19980315T003000Z</FREEBUSY>
+      <FREEBUSY>19980316T153000Z/19980316T163000Z</FREEBUSY>
+      <FREEBUSY>19980318T030000Z/19980318T040000Z</FREEBUSY>
+      <URL>http://www.host.com/calendar/busytime/jsmith.ifb</URL>
+    </VFREEBUSY>
+  </Data>
+</syncgw>

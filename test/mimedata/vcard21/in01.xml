@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+VERSION:2.1
+N;ENCODING=QUOTED-PRINTABLE:thomas;b=C3=B6ttcher\,
+FN;VALUE="\,":Anrede VNameX \\ ZVName \; NName\, NamZusatz
+PHOTO;VALUE=URL:file://jqpublic.gif
+BDAY:19950416
+ADR;DOM;HOME:P.O. Box 101;Suite \;101;123 Main Street;Any Town;CA;91921-1234;
+ADR;TYPE=dom,home,postal,parcel:;;123 Main Street;Any Town;CA;91921-1234
+ADR;TYPE=dom;TYPE=postal:;;122 street;Any Town;CA;91921-1234
+LABEL;DOM;POSTAL;ENCODING=QUOTED-PRINTABLE:P. O. Box 456=0D=0A=
+      123 Main Street=0D=0A=
+ Any Town, CA 91921-1234
+TEL;TYPe=WORK,HOME,VOICE,FAX:+1-800-555-1234
+TEL;VOICE;WORK:03333333333
+TEL;VOICE;WORK:09999999999
+EMAIL;INTERNET:john.public@abc.com
+MAILER:ccMail 2.2
+TZ:-08:00
+GEO:37.24;-17.87
+TITLE:V.P., Research and Development
+ROLE:Executive
+ORG:ABC, Inc.;North American Division;Marketing
+NOTE;ENCODING=QUOTED-PRINTABLE:This facsimile machine if operational=
+0830 to 1715 hours=0D=0A=
+Monday through Friday. Call +1-213-555-1234 if you have problems=0D=0A=
+with access to the machine.
+REV:1995-10-31T22:27:10Z
+SOUND;VALUE=URI:file://multimed/audio/jqpublic.wav
+URL:http://abc.com/pub/directory/northam/jpublic.ecd
+TEL;CELL:number
+CATEGORIES:cat1,cat2,cat3
+RELATED;TYPE=co-worker;VALUE=text:Please contact my assistant Jane
+    Doe for any inquiries.
+END:VCARD
+</Data>

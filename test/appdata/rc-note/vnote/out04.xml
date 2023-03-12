@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VNOTE
+VERSION:1.1
+X-PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+X-IRMC-LUID:5c9264179f3d9
+DCREATED:20131230T115856Z
+LAST-MODIFIED:20131230T115900Z
+SUMMARY:This is a summary
+BODY:This is a multi\nline\nbody with special chars
+END:VNOTE
+]]></Data>

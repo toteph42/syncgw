@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync ItemOperations code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8212</PID>
+  <Name>-//ActiveSync//DTD ItemOperations//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>ItemOperations Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:ItemOperations</URI>
+  <CodePage>20</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <ItemOperations>0x05</ItemOperations>
+   <Fetch>0x06</Fetch>
+   <Store>0x07</Store>
+   <Options>0x08</Options>
+   <Range>0x09</Range>
+   <Total>0x0a</Total>
+   <Properties>0x0b</Properties>
+   <Data>0x0c</Data>
+   <Status>0x0d</Status>
+   <Response>0x0e</Response>
+   <Version>0x0f</Version>
+   <Schema>0x10</Schema>
+   <Part>0x11</Part>
+   <EmptyFolderContents>0x12</EmptyFolderContents>
+   <DeleteSubFolders>0x13</DeleteSubFolders>
+   <!-- 12.1,14.0,14.1,16.0,16.1 -->
+   <UserName>0x14</UserName>
+   <Password>0x15</Password>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <Move>0x16</Move>
+   <DstFldId>0x17</DstFldId>
+   <ConversationId>0x18</ConversationId>
+   <MoveAlways>0x19</MoveAlways>
+ </Defs>
+
+</CodePage>

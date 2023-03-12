@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>18</EstimatedDataSize>
+    <Data>Note line1
+=line2
+</Data>
+  </Body>
+  <Complete xml-ns="activesync:Tasks">0</Complete>
+  <DueDate>2005-09-29T00:00:00.000Z</DueDate>
+  <UtcDueDate>2005-09-29T00:00:00.000Z</UtcDueDate>
+  <Subject>Synthesis todo entry on pal,</Subject>
+</ApplicationData>

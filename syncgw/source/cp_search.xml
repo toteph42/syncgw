@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Search code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8207</PID>
+  <Name>-//ActiveSync//DTD Search//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>Search Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:Search</URI>
+  <CodePage>15</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Search>0x05</Search>
+   <Store>0x07</Store>
+   <Name>0x08</Name>
+   <Query>0x09</Query>
+   <Options>0x0a</Options>
+   <Range>0x0b</Range>
+   <Status>0x0c</Status>
+   <Response>0x0d</Response>
+   <Result>0x0e</Result>
+   <Properties>0x0f</Properties>
+   <Total>0x10</Total>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <EqualTo>0x11</EqualTo>
+   <Value>0x12</Value>
+   <And>0x13</And>
+   <Or>0x14</Or>
+   <FreeText>0x15</FreeText>
+   <DeepTraversal>0x17</DeepTraversal>
+   <LongId>0x18</LongId>
+   <RebuildResults>0x19</RebuildResults>
+   <LessThan>0x1a</LessThan>
+   <GreaterThan>0x1b</GreaterThan>
+   <!-- 12.1,14.0,14.1,16.0,16.1 -->
+   <UserName>0x1e</UserName>
+   <Password>0x1f</Password>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <ConversationId>0x20</ConversationId>
+   <!-- 14.1,16.0,16.1 -->
+   <Picture>0x21</Picture>
+   <MaxSize>0x22</MaxSize>
+   <MaxPictures>0x23</MaxPictures>
+ </Defs>
+
+</CodePage>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>webmaster@memotoo.com</UID>
+    <Timezone>America/New_York</Timezone>
+    <StartTime>885193200</StartTime>
+    <Class>PRIVATE</Class>
+    <Body X-TYP="1">What is it ??</Body>
+    <Body ALTREP="cid:part1.0001@example.org" X-TYP="1">The Fall'98 Wild      Wizards Conference - - Las Vegas, NV, USA</Body>
+    <Location>
+      <DisplayName>New York</DisplayName>
+    </Location>
+    <Summary>Test event</Summary>
+    <URLOther>http://www.dmoz.org</URLOther>
+    <Recurrence>
+      <Frequency>WEEKLY</Frequency>
+      <Interval>1</Interval>
+      <DayPos>SU</DayPos>
+    </Recurrence>
+    <EndTime>1166097600</EndTime>
+    <Attendee>mailto:\"Luc Donovan\" &lt;luc@yahoo.fr&gt;</Attendee>
+    <Exceptions>
+      <Exception>
+        <InstanceId VALUE="date">1167177600</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <InstanceId VALUE="date">1167264000</InstanceId>
+        <Delete/>
+      </Exception>
+    </Exceptions>
+    <Alarm>
+      <Trigger RELATED="start" VALUE="duration">-432000</Trigger>
+      <Action>DISPLAY</Action>
+    </Alarm>
+  </Data>
+</syncgw>

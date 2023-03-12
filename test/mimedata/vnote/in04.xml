@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VNOTE
+VERSION:1.1
+DCREATED:20050405
+LAST-MODIFIED:20050406
+SUMMARY:This is a summary
+BODY:This is a multi\nline\nbody with special chars
+CLASS:CONFIDENTIAL
+END:VNOTE
+</Data>

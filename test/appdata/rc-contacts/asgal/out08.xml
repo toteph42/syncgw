@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">firstname (all fields) lastname</DisplayName>
+  <Phone>telephone business</Phone>
+  <Phone>assistants number</Phone>
+  <Title>job title</Title>
+  <FirstName>firstname (all fields)</FirstName>
+  <LastName>lastname</LastName>
+  <HomePhone>telephone home</HomePhone>
+  <MobilePhone>mobile</MobilePhone>
+  <MobilePhone>mobile home</MobilePhone>
+  <MobilePhone>mobile business</MobilePhone>
+</ApplicationData>

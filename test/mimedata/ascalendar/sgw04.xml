@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <BusyStatus>BUSY</BusyStatus>
+    <StartTime>1239987600</StartTime>
+    <EndTime>1239991200</EndTime>
+    <Exceptions>
+      <Exception>
+        <Delete/>
+        <StartTimeException>1240592400</StartTimeException>
+      </Exception>
+    </Exceptions>
+    <Location>
+      <DisplayName>My office</DisplayName>
+    </Location>
+    <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+    <BodyType>3</BodyType>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anat@contoso.com </MailOther>
+    <Recurrence>
+      <DayPos>FR</DayPos>
+      <Interval>1</Interval>
+      <Count>3</Count>
+      <Frequency>WEEKLY</Frequency>
+    </Recurrence>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>Recurring appointment test</Summary>
+    <UID>040000008200E00074C5B7101A82E00800000000B0CD1F52EBBDC901000000000000000010000000B05E442FCB2CA443BF3D99B51A729FE6</UID>
+  </Data>
+</syncgw>

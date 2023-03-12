@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Find code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8217</PID>
+  <Name>-//ActiveSync//DTD Find//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>Find Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:Find</URI>
+  <CodePage>25</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 16.1 -->
+   <Find>0x05</Find>
+   <SearchId>0x06</SearchId>
+   <ExecuteSearch>0x07</ExecuteSearch>
+   <MailBoxSearchCriterion>0x08</MailBoxSearchCriterion>
+   <Query>0x09</Query>
+   <Status>0x0a</Status>
+   <FreeText>0x0b</FreeText>
+   <Options>0x0c</Options>
+   <Range>0x0d</Range>
+   <DeepTraversal>0x0e</DeepTraversal>
+   <Response>0x11</Response>
+   <Result>0x12</Result>
+   <Properties>0x13</Properties>
+   <Preview>0x14</Preview>
+   <HasAttachments>0x15</HasAttachments>
+   <Total>0x16</Total>
+   <DisplayCc>0x17</DisplayCc>
+   <DisplayBcc>0x18</DisplayBcc>
+   <GalSearchCriterion>0x19</GalSearchCriterion>
+   <MaxPictures>0x20</MaxPictures>
+   <MaxSize>0x21</MaxSize>
+   <Picture>0x22</Picture>
+ </Defs>
+
+</CodePage>

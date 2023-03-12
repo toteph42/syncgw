@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE xml>
+<ItemOperations> 
+ <Fetch>
+  <Store>Mailbox</Store> 
+  <CollectionId>7</CollectionId> 
+  <ServerId>7:1</ServerId> 
+  <Options> 
+   <BodyPreference> 
+    <Type>1</Type> 
+    <TruncationSize>5120</TruncationSize> 
+    <AllOrNone>0</AllOrNone> 
+   </BodyPreference> 
+  </Options> 
+ </Fetch> 
+</ItemOperations>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Body X-TYP="1">This data record contains a document which cannot be converted</Body>
+    <BusyStatus>OOF</BusyStatus>
+    <StartTime>1223665200</StartTime>
+    <EndTime>1223670600</EndTime>
+    <Exceptions>
+      <Exception>
+        <EndTime>1223924400</EndTime>
+        <StartTimeException>1223665200</StartTimeException>
+        <StartTime>1223838000</StartTime>
+      </Exception>
+    </Exceptions>
+    <Location>
+      <DisplayName>Cafeteria A</DisplayName>
+    </Location>
+    <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+    <BodyType>1</BodyType>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anat@contoso.com</MailOther>
+    <MailOther>Anat Kerry</MailOther>
+    <MailOther>anat@contoso.com</MailOther>
+    <Recurrence>
+      <Interval>1</Interval>
+      <Frequency>DAILY</Frequency>
+      <EndTime>1224529200</EndTime>
+    </Recurrence>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>Lunch meeting</Summary>
+    <UID>040000008200E00074C5B7101A82E008000000001027EAEDA124C901000000000000000010000000</UID>
+  </Data>
+</syncgw>

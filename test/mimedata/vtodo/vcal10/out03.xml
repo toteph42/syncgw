@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCALENDAR
+VERSION:1.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+BEGIN:VTODO
+CREATED:20131230T115856Z
+LAST-MODIFIED:20131230T115900Z
+ORGANIZER:MAILTO:unclesam@us.gov
+SEQUENCE:2
+STATUS:NEEDS-ACTION
+SUMMARY:Submit Income Taxes
+DUE:19980415T235959Z
+ATTENDEE;PARTSTAT=ACCEPTED:MAILTO:jqpublic@example.com
+AALARM:19700101T000000;PT1H;4;http://example.com/pub/audio-files/ssbanner
+ .aud
+
+END:VTODO
+END:VCALENDAR
+]]></Data>

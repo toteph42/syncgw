@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>A551156FFDEF31862C32E59DFA928FF0-83F1535F99AB0BF4</UID>
+    <StartTime>1262304000</StartTime>
+    <EndTime>1262304000</EndTime>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

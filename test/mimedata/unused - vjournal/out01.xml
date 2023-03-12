@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VTIMZONE
+TZID:Europe/Berlin
+END:VTIMZONE
+BEGIN:VJOURNAL
+STATUS:DRAFT
+CLASS:PUBLIC
+DESCRIPTION:Project xyz Review Meeting Minutes\nAgenda\n1. Review of proj
+ ect version 1.0 requirements.\n2. Definition of project processes.\n3. R
+ eview of project schedule.\nParticipants: John Smith\, Jane Doe\, Jim Da
+ ndy\n-It was decided that the requirements &XXX <> \;:-_ need to be sign
+ ed off by product marketing.\n-Project processes were accepted.\n-Projec
+ t schedule needs to account for scheduled holidays and employee vacation
+  time. Check with HR for specific dates.\n-New schedule will be distribu
+ ted by Friday.\n-Next weeks meeting is cancelled. No meeting until 3/23.
+
+END:VJOURNAL
+END:VCALENDAR
+]]></Data>

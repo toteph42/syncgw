@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>T00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Body X-TYP="2">&lt;strong&gt;Must&lt;/strong&gt; complete TPS reports using the new cover sheet.</Body>
+    <Category>Business</Category>
+    <Category>Reports</Category>
+    <Status X-PC="0">IN-PROCESS</Status>
+    <DueDate>1252008000</DueDate>
+    <Priority>2</Priority>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">1251882000</Trigger>
+    </Alarm>
+    <Class>PERSONAL</Class>
+    <StartTime>1251993600</StartTime>
+    <Summary>TPS Reports for August 2009</Summary>
+  </Data>
+</syncgw>

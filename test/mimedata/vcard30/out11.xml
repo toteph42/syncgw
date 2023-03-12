@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN;CHARSET=UTF-8: Zubehör-\;Mods
+N;CHARSET=UTF-8:Zubehör-\;Mods;;;;
+ADR;TYPE=work;CHARSET=UTF-8:;;Schloßstr. 123-124 ;Jillytown;;;
+TEL;PREF=1;TYPE=work:+491117777
+TEL;TYPE=work,fax:+49111277888
+ORG:Motorrad
+REV:20131230T115856Z
+URL:http://www.myshop.de
+END:VCARD
+]]></Data>

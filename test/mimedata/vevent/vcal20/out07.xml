@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+BEGIN:VEVENT
+DTSTART:19970714T170000Z
+CREATED:20131230T115856Z
+LAST-MODIFIED:20131230T115900Z
+ORGANIZER:mailto:Hugo@bin.com
+SUMMARY:Bastille Day Party
+DTEND:19970715T035959Z
+SOURCE:http://ical.com/jsjs
+END:VEVENT
+END:VCALENDAR
+]]></Data>

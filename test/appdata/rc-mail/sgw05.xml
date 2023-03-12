@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>G</Type>
+  <Group/>
+  <LastMod>1628874434</LastMod>
+  <Created>1628874434</Created>
+  <CRC/>
+  <extID>G0fa70378</extID>
+  <extGroup/>
+  <Data>
+    <Name>Hiddenfolder</Name>
+ 	<MailBox>128</MailBox>
+ 	<Editable>1</Editable>
+  </Data>
+</syncgw>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>664578668</SyncKey>
+   <CollectionId>1</CollectionId>
+   <Status>1</Status>
+   <Commands>
+	<Add>
+	 <ServerId>1:14</ServerId>
+	 <ApplicationData>
+	  <Timezone xml-ns="activesync:Calendar">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</Timezone>
+      <DtStamp>20081002T231639Z</DtStamp>
+	  <StartTime>20081013T190000Z</StartTime>
+	  <Subject>Team Meeting</Subject>
+	  <UID>040000008200E00074C5B7101A82E0080000000060043DFCA924C90100000000000000001000000097F14EF755AC454BA30EFA7B1B315E43</UID>
+	  <OrganizerName>Anat Kerry</OrganizerName>
+	  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+	  <Location>
+	   <DisplayName>My office</DisplayName>
+	  </Location>
+	  <EndTime>20081013T193000Z</EndTime>
+	  <Recurrence>
+		<Type>3</Type>
+		<Interval>1</Interval>
+		<Until>20090713T190000Z</Until>
+		<WeekOfMonth>2</WeekOfMonth>
+		<DayOfWeek>2</DayOfWeek>
+	  </Recurrence>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>3</Type>
+		<EstimatedDataSize>5769</EstimatedDataSize>
+		<Truncated>1</Truncated>
+	  </Body>
+	  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+	  <BusyStatus>2</BusyStatus>
+	  <AllDayEvent>0</AllDayEvent>
+	  <Reminder>15</Reminder>
+	  <MeetingStatus>0</MeetingStatus>
+	  <NativeBodyType xml-ns="activesync:AirSync">3</NativeBodyType>
+	 </ApplicationData>
+	</Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

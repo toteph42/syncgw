@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>N00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Body X-TYP="1">Title
+This is the body of the text with a &amp;XXX &lt;&gt; ; inside
+abc äÄöÖüÜß (!"§$%&amp;/=?*+~|)
+{a}[b]&amp;&amp;&lt;
+c,;.:-_#'d 
+&lt;KK&gt; &lt;!-- comment --&gt;
+END###
+in multiple lines.
+</Body>
+    <MessageClass>IPM.StickyNote</MessageClass>
+  </Data>
+</syncgw>

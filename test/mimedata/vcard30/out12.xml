@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN: Depaartment II
+N:Depaartment II;;;;
+ADR;TYPE=work:;;Room 1.2.40;;;60305 Postfach 1;
+TEL;PREF=1;TYPE=work:+496911777826
+TEL;PREF=1;TYPE=x-other:+49690039377
+NOTE: Mo Mi 08:00-15:30\nDo 13:30-18:00\nFr 008:00-12:00\nKonto 51 01 15 
+ 04\n\nBLZ 500 000 00
+
+REV:20131230T115856Z
+END:VCARD
+]]></Data>

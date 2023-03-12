@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Settings code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8210</PID>
+  <Name>-//ActiveSync//DTD Settings//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>Settings Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:Settings</URI>
+  <CodePage>18</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Settings>0x05</Settings>
+   <Status>0x06</Status>
+   <Get>0x07</Get>
+   <Set>0x08</Set>
+   <Oof>0x09</Oof>
+   <OofState>0x0a</OofState>
+   <StartTime>0x0b</StartTime>
+   <EndTime>0x0c</EndTime>
+   <OofMessage>0x0d</OofMessage>
+   <AppliesToInternal>0x0e</AppliesToInternal>
+   <AppliesToExternalKnown>0x0f</AppliesToExternalKnown>
+   <AppliesToExternalUnknown>0x10</AppliesToExternalUnknown>
+   <Enabled>0x11</Enabled>
+   <ReplyMessage>0x12</ReplyMessage>
+   <BodyType>0x13</BodyType>
+   <DevicePassword>0x14</DevicePassword>
+   <Password>0x15</Password>
+   <DeviceInformation>0x16</DeviceInformation>
+   <Model>0x17</Model>
+   <IMEI>0x18</IMEI>
+   <FriendlyName>0x19</FriendlyName>
+   <OS>0x1a</OS>
+   <OSLanguage>0x1b</OSLanguage>
+   <PhoneNumber>0x1c</PhoneNumber>
+   <UserInformation>0x1d</UserInformation>
+   <EmailAddresses>0x1e</EmailAddresses>
+   <SMTPAddress>0x1f</SMTPAddress>
+   <!-- 12.1,14.0,14.1,16.0,16.1 -->
+   <UserAgent>0x20</UserAgent>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <EnableOutboundSMS>0x21</EnableOutboundSMS>
+   <MobileOperator>0x22</MobileOperator>
+   <!-- 14.1,16.0,16.1 -->
+   <PrimarySmtpAddress>0x23</PrimarySmtpAddress>
+   <Accounts>0x24</Accounts>
+   <Account>0x25</Account>
+   <AccountId>0x26</AccountId>
+   <AccountName>0x27</AccountName>
+   <UserDisplayName>0x28</UserDisplayName>
+   <SendDisabled>0x29</SendDisabled>
+   <RightsManagementInformation>0x2b</RightsManagementInformation>
+ </Defs>
+
+</CodePage>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<!-- Create multiple entries, output limited to "X-IRMC-LUID" and "BODY" -->
+<Data>BEGIN:VNOTE
+VERSION:1.1
+X-IRMC-LUID:someuid
+DCREATED:2005-04-05
+LAST-MODIFIED:2005-04-06
+SUMMARY:This is a summary
+BODY:This is just a test
+CATEGORIES:Birthday,Friends
+CLASS:PUBLIC
+END:VNOTE
+</Data>

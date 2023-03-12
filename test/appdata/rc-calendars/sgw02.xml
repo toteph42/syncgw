@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>770648B8111C05E2BD69BC49C8FA3B15-83F1535F99AB0BF4</UID>
+    <StartTime>1127480400</StartTime>
+    <EndTime>1127484000</EndTime>
+    <Summary>test</Summary>
+    <Body X-TYP="1">line1 aumlaut: ae
+line2
+</Body>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1127462400</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">1127462400</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Birthday xml-ns="activesync:Contacts">1957-10-04T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>22</EstimatedDataSize>
+    <Data>Noteworthy for contact</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">Corp street</BusinessAddressStreet>
+  <BusinessAddressCity>Jobtown</BusinessAddressCity>
+  <BusinessAddressState>Working state</BusinessAddressState>
+  <BusinessAddressPostalCode>5678</BusinessAddressPostalCode>
+  <BusinessAddressCountry>Usania</BusinessAddressCountry>
+  <BusinessPhoneNumber>22222222</BusinessPhoneNumber>
+  <Email1Address>private@example.com</Email1Address>
+  <Email3Address>test@example.com</Email3Address>
+  <FileAs>Test Contact</FileAs>
+  <FirstName>Test</FirstName>
+  <HomeAddressStreet>Home street</HomeAddressStreet>
+  <HomeAddressCity>Homeville</HomeAddressCity>
+  <HomeAddressState>Homeprovince</HomeAddressState>
+  <HomeAddressPostalCode>1234</HomeAddressPostalCode>
+  <HomeAddressCountry>Homia</HomeAddressCountry>
+  <HomePhoneNumber>33333333</HomePhoneNumber>
+  <LastName>Contact</LastName>
+  <MobilePhoneNumber>11111111</MobilePhoneNumber>
+  <Title>Cto</Title>
+  <WebPage>http://www.example.com</WebPage>
+</ApplicationData>

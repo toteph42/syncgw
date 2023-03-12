@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Test Contact</FullName>
+    <FirstName>Test</FirstName>
+    <LastName>Contact</LastName>
+    <Organization>Example Inc</Organization>
+    <Prefix>Ph.d.</Prefix>
+    <HomePhone>33333333</HomePhone>
+    <WorkPhone>22222222</WorkPhone>
+    <MobilePhone>11111111</MobilePhone>
+    <UmCallerID>77777777</UmCallerID>
+    <Birthday VALUE="date">-386380800</Birthday>
+    <URLOther>http://www.example.com</URLOther>
+    <Body X-TYP="1">Noteworthy for contact</Body>
+    <MailHome>private@example.com</MailHome>
+    <MailOther>test@example.com</MailOther>
+    <AddressHome>
+      <Street>Home street</Street>
+      <City>Homeville</City>
+      <Region>Homeprovince</Region>
+      <PostalCode>1234</PostalCode>
+      <Country>Homia</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>Corp street</Street>
+      <City>Jobtown</City>
+      <Region>Working state</Region>
+      <PostalCode>5678</PostalCode>
+      <Country>Usania</Country>
+    </AddressBusiness>
+    <Title>Cto</Title>
+    <Photo>sgw-8111e2f9</Photo>
+  </Data>
+</syncgw>

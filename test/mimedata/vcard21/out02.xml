@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Last=20Name=5C=2C=20First=20Na=
+me=20aumlaut=3A=20=C3=83=C2=AF=C3=82=C2=BF=C3=82=C2=BD
+
+N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Last=20Name;First=20Name=20auml=
+aut=3A=20=C3=83=C2=AF=C3=82=C2=BF=C3=82=C2=BD;;;
+
+ADR;LABEL=pstr\npplz port\npreg\nPLAND;TYPE=home:;;pstr;port;preg;pplz;pl
+ and
+
+ADR:;;Marienplatz 1;Munich;By;D-81777;Germany
+TEL;PREF=1;TYPE=home:+4989222
+TEL;PREF=1;TYPE=work:+4989111
+TEL;TYPE=cell:home mobile
+TEL;TYPE=cell:business mobile
+TEL;TYPE=cell:home #2 mobile
+TEL;PREF=1;TYPE=x-other:+4989333
+TEL;PREF=1;TYPE=x-other:whatagaga
+EMAIL: x@x.com
+TITLE:title
+ORG:company
+NOTE:line1\nline2\n
+REV:20131230T115856Z
+CLASS:PUBLIC
+END:VCARD
+]]></Data>

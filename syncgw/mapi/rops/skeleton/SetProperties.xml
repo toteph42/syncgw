@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopSetProperties">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+	<PropertyValueSize T="I" S="2"/>
+	<PropertyValueCount T="I" S="2"/>
+	<PropertyValues>
+	  <PropertyTag N="PropertyValueCount">
+	  	<PropertyType T="I" S="2" D="DATA_TYP"/>
+	  	<PropertyId T="I" S="2" D="PID"/>
+	  	<Count T="I" S="2"/>
+	  	<Value C="PropertyType=S" T="S" S="Count"/> 
+	  	<Value C="PropertyType=H" T="H" S="Count"/> 
+	    <Value C="PropertyType=I2" T="I" S="2"/>
+	    <Value C="PropertyType=I4" T="I" S="4"/>
+	    <Value C="PropertyType=I8" T="I" S="8"/>
+	  </PropertyTag>
+	</PropertyValues>
+  </RopRec>
+
+  <RopRec Typ="Resp" X="RopSetProperties">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<InputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<PropertyProblemCount T="I" S="2"/>
+	<PropertyProblems C="PropertyProblemCount!0" N="PropertyProblemCount">
+	  <Index T="I" S="2"/> 
+	  <PropertyTag>
+	  	<PropertyType T="I" S="2" D="DATA_TYP"/>
+	  	<PropertyId T="I" S="2" D="PID"/>
+	  </PropertyTag>
+	  <ErrorCode T="I" S="4" D="ERR_CODE"/>
+	</PropertyProblems>
+  </RopRec>
+     
+  <RopRec Typ="mkResp" X="RopSetProperties">
+ 	<RopId T="I" S="1" D="ROP_ID">SetProperties</RopId>
+	<InputHandleIndex T="I" S="1">0</InputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<PropertyProblemCount T="I" S="2">0</PropertyProblemCount>
+  </RopRec>
+ 
+  <RopRec Typ="mkRespErr" X="RopSetProperties">
+	<RopId T="I" S="1" D="ROP_ID">SetProperties</RopId>
+	<InputHandleIndex T="I" S="1">0</InputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+ 
+</syncgw>

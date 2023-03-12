@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Sync CHARSET="utf-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>1621589778</SyncKey>
+      <CollectionId>M1</CollectionId>
+      <DeletesAsMoves>1</DeletesAsMoves>
+      <GetChanges>1</GetChanges>
+      <WindowSize>30</WindowSize>
+    </Collection>
+   </Collections>
+</Sync>

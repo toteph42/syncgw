@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Email2 code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8214</PID>
+  <Name>-//ActiveSync//DTD Email2//EN</Name>
+  <Tag>[MS-ASEMAIL]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asemail</Link>
+  <Title>Email2 Request and Response Schema</Title>
+  <Ver>21.0</Ver>
+  <URI>activesync:Mail2</URI>
+  <CodePage>22</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <UmCallerID>0x05</UmCallerID>
+   <UmUserNotes>0x06</UmUserNotes>
+   <UmAttDuration>0x07</UmAttDuration>
+   <UmAttOrder>0x08</UmAttOrder>
+   <ConversationId>0x09</ConversationId>
+   <ConversationIndex>0x0a</ConversationIndex>
+   <LastVerbExecuted>0x0b</LastVerbExecuted>
+   <LastVerbExecutionTime>0x0c</LastVerbExecutionTime>
+   <ReceivedAsBcc>0x0d</ReceivedAsBcc>
+   <Sender>0x0e</Sender>
+   <CalendarType>0x0f</CalendarType>
+   <IsLeapMonth>0x10</IsLeapMonth>
+   <!-- 14.1,16.0,16.1 -->
+   <AccountId>0x11</AccountId>
+   <FirstDayOfWeek>0x12</FirstDayOfWeek>
+   <MeetingMessageType>0x13</MeetingMessageType>
+   <!-- 16.0,16.1 -->
+   <IsDraft>0x15</IsDraft>
+   <Bcc>0x16</Bcc>
+   <Send>0x17</Send>
+ </Defs>
+
+</CodePage>

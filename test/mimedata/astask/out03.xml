@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>2</Type>
+    <EstimatedDataSize>82</EstimatedDataSize>
+    <Data>&lt;strong&gt;Must&lt;/strong&gt; complete äöpoüß03 TPS reports using the new cover sheet.</Data>
+  </Body>
+  <Categories xml-ns="activesync:Tasks">
+    <Category>Busi, ness</Category>
+    <Category>Reports</Category>
+  </Categories>
+  <Complete>0</Complete>
+  <DueDate>2009-09-03T20:00:00.000Z</DueDate>
+  <UtcDueDate>2009-09-03T20:00:00.000Z</UtcDueDate>
+  <Importance>1</Importance>
+  <Recurrence>
+    <CalendarType>15</CalendarType>
+    <DayOfMonth>8</DayOfMonth>
+    <DayOfWeek>127</DayOfWeek>
+    <FirstDayOfWeek>1</FirstDayOfWeek>
+    <Interval>2</Interval>
+    <IsLeapMonth>0</IsLeapMonth>
+    <MonthOfYear>2</MonthOfYear>
+    <Regenerate>1</Regenerate>
+    <Start>2009-09-03T09:00:00.000Z</Start>
+    <Type>0</Type>
+    <Until>2009-12-03T09:00:00.000Z</Until>
+    <WeekOfMonth>5</WeekOfMonth>
+  </Recurrence>
+  <Sensitivity>3</Sensitivity>
+  <StartDate>2009-09-03T16:00:00.000Z</StartDate>
+  <UtcStartDate>2009-09-03T16:00:00.000Z</UtcStartDate>
+  <Subject>TPS Reports for August 2009</Subject>
+</ApplicationData>

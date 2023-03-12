@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Subject xml-ns="activesync:Notes">New note summary.</Subject>
+  <MessageClass>IPM.StickyNote</MessageClass>
+  <LastModifiedDate>20131230T115900Z</LastModifiedDate>
+  <Categories>
+    <Category>Business</Category>
+  </Categories>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>2</Type>
+    <EstimatedDataSize>45</EstimatedDataSize>
+    <Data>A new note I just created,
+and a second line.</Data>
+  </Body>
+</ApplicationData>

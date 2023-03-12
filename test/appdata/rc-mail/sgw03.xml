@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1627463276</LastMod>
+  <Created>1627463276</Created>
+  <CRC/>
+  <extID>R127#G04660181</extID>
+  <extGroup>G04660181</extGroup>
+  <Data>
+    <EmailTo>"t1@sunny.it"&lt;t1@wb28.de&gt;</EmailTo>
+    <EmailFrom>"F D"&lt;syncgw@sunny.it&gt;</EmailFrom>
+    <Subject>Inline attachment</Subject>
+    <Created>1627462743</Created>
+    <ThreadTopic>Inline attachment</ThreadTopic>
+    <ConversationId>AQHXg46VpJfMhvLi7kWL54wcZu8HrQ==</ConversationId>
+    <ContentClass>urn:content-classes:message</ContentClass>
+    <Flag/>
+    <Status>Seen</Status>
+    <IsDraft>0</IsDraft>
+    <Read>1</Read>
+    <InternetCPID>28591</InternetCPID>
+    <Body X-TYP="1">Here were one[cid:9c2fb824-e6a4-4157-8c9d-34da0dbadb50] two [cid:f4f2410d-6673-48d9-8806-73b5b7d34cf5] and three [cid:c83360ca-6d2b-4a34-9164-85abc674e877]  inline attachments.
+
+And two additional "real" attachment.</Body>
+    <Body X-TYP="2">&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;
+&lt;style type="text/css" style="display:none;"&gt; P {margin-top:0;margin-bottom:0;} &lt;/style&gt;
+&lt;/head&gt;
+&lt;body dir="ltr"&gt;
+&lt;div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);"&gt;
+Here were one&lt;img style="max-width: 100%;" size="700" contenttype="image/gif" data-outlook-trace="F:1|T:1" src="cid:9c2fb824-e6a4-4157-8c9d-34da0dbadb50"&gt; two
+&lt;img style="max-width: 100%;" size="1603" contenttype="image/gif" data-outlook-trace="F:1|T:1" src="cid:f4f2410d-6673-48d9-8806-73b5b7d34cf5"&gt;and three
+&lt;img style="max-width: 100%;" size="1339" contenttype="image/gif" data-outlook-trace="F:1|T:1" src="cid:c83360ca-6d2b-4a34-9164-85abc674e877"&gt; inline attachments.&lt;/div&gt;
+&lt;div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);"&gt;
+&lt;br&gt;
+&lt;/div&gt;
+&lt;div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);"&gt;
+And two additional &amp;quot;real&amp;quot; attachment.&lt;br&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Body>
+    <Attachment>
+      <DisplayName>27 Keule.gif</DisplayName>
+      <FileReference>sgw-15000d8c</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>700</EstimatedDataSize>
+      <ContentId>9c2fb824-e6a4-4157-8c9d-34da0dbadb50</ContentId>
+    </Attachment>
+    <Attachment>
+      <DisplayName>00006423.gif</DisplayName>
+      <FileReference>sgw-f67d84a0</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>1603</EstimatedDataSize>
+      <ContentId>f4f2410d-6673-48d9-8806-73b5b7d34cf5</ContentId>
+    </Attachment>
+    <Attachment>
+      <DisplayName>ag.gif</DisplayName>
+      <FileReference>sgw-c7970f79</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>1339</EstimatedDataSize>
+      <ContentId>c83360ca-6d2b-4a34-9164-85abc674e877</ContentId>
+    </Attachment>
+    <Attachment>
+      <DisplayName>15685_023.gif</DisplayName>
+      <FileReference>sgw-23db612f</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>345006</EstimatedDataSize>
+    </Attachment>
+    <Attachment>
+      <DisplayName>Aerger.gif</DisplayName>
+      <FileReference>sgw-70064adb</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>20464</EstimatedDataSize>
+    </Attachment>
+    <MessageClass>IPM.Note</MessageClass>
+    <Importance>1</Importance>
+    <ConversationIndex>AdeDjtAP</ConversationIndex>
+  </Data>
+</syncgw>

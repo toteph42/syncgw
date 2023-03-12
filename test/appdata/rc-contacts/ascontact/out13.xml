@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusinessPhoneNumber xml-ns="activesync:Contacts">+49202020202</BusinessPhoneNumber>
+  <Email3Address>work@x.de</Email3Address>
+  <FileAs>Janko Humo</FileAs>
+  <FirstName>Janko</FirstName>
+  <LastName>Humo</LastName>
+  <MobilePhoneNumber>+491198171</MobilePhoneNumber>
+  <OtherAddressStreet>Lindenstrße 17</OtherAddressStreet>
+  <OtherAddressCity>New York</OtherAddressCity>
+  <OtherAddressPostalCode>65817</OtherAddressPostalCode>
+  <OtherAddressCountry>Hessen</OtherAddressCountry>
+</ApplicationData>

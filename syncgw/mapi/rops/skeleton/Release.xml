@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopRelease">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+  </RopRec>
+
+  <RopRec Typ="Resp" X="RopRelease"/>
+     
+  <RopRec Typ="mkResp" X="RopRelease"/>
+
+</syncgw>

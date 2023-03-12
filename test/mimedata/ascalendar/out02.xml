@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">2</BusyStatus>
+  <StartTime>20081013T170000Z</StartTime>
+  <EndTime>20081013T180000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Conf Room 33-A/1298</DisplayName>
+  </Location>
+  <MeetingStatus xml-ns="activesync:Calendar">0</MeetingStatus>
+  <NativeBodyType xml-ns="activesync:AirSyncBase">3</NativeBodyType>
+  <OrganizerName xml-ns="activesync:Calendar">Anat Kerry</OrganizerName>
+  <OrganizerEmail>anatcontoso.com</OrganizerEmail>
+  <Reminder>15</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Dry Run of TechEd Presentation</Subject>
+  <Timezone>5P3//0FLU1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmBwsAAAABAAEAAAAAAAAAAAAAAEFLRFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnBwMAAAACAAMAAAAAAAAAAAAAAA==</Timezone>
+  <UID>040000008200E00074C5B7101A82E008000000009003C9E1A924C901000000000000000010000000B3635D1E1A2FF54FA575AB96797F532F</UID>
+</ApplicationData>

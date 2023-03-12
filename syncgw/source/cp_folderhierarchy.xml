@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync FolderHierarchy code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8199</PID>
+  <Name>-//ActiveSync//DTD FolderHierarchy//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>FolderHierarchy Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:FolderHierarchy</URI>
+  <CodePage>7</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1 -->
+   <Folders>0x05</Folders>
+   <Folder>0x06</Folder>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <DisplayName>0x07</DisplayName>
+   <ServerId>0x08</ServerId>
+   <ParentId>0x09</ParentId>
+   <Type>0x0a</Type>
+   <Status>0x0c</Status>
+   <Changes>0x0e</Changes>
+   <Add>0x0f</Add>
+   <Delete>0x10</Delete>
+   <Update>0x11</Update>
+   <SyncKey>0x12</SyncKey>
+   <FolderCreate>0x13</FolderCreate>
+   <FolderDelete>0x14</FolderDelete>
+   <FolderUpdate>0x15</FolderUpdate>
+   <FolderSync>0x16</FolderSync>
+   <Count>0x17</Count>
+ </Defs>
+
+</CodePage>

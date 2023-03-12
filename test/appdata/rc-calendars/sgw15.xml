@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1661796344</LastMod>
+  <Created>1661796344</Created>
+  <extID>R10001</extID>
+  <extGroup>G10001</extGroup>
+  <CRC/>
+  <Data>
+    <UID>4A0E9C9779E97C4192F5DF32ACBAA203-126173DDA6F62D88</UID>
+    <StartTime>1662030000</StartTime>
+    <EndTime>1662033600</EndTime>
+    <Summary>Cal #4 - Big attachment</Summary>
+    <BusyStatus>BUSY</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Attachment>
+      <DisplayName>Frog_on_river_4000x3000_26-09-2010_11-01am_2mb.jpg</DisplayName>
+      <FileReference>sgw-c63c5df1</FileReference>
+      <Method>1</Method>
+      <EstimatedDataSize>2697496</EstimatedDataSize>
+    </Attachment>
+  </Data>
+</syncgw>

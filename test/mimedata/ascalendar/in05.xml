@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>664578668</SyncKey>
+   <CollectionId>1</CollectionId>
+   <Status>1</Status>
+   <Commands>
+	<Add>
+	 <ServerId>1:2</ServerId>
+	 <ApplicationData>
+	  <Timezone xml-ns="activesync:Calendar">4AEAAFAAYQBjAGkAZgBpAGMAIABTAHQAYQBuAGQAYQByAGQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAFAAIAAAAAAAAAAAAAAFAAYQBjAGkAZgBpAGMAIABEAGEAeQBsAGkAZwBoAHQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAABAAIAAAAAAAAAxP///w==</Timezone>
+	  <DtStamp>20051103T010509Z</DtStamp>
+	  <StartTime>20051103T230000Z</StartTime>
+	  <Subject>test meeting</Subject>
+	  <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C5010000000000000000100000008</UID>
+	  <Attendees>
+		<Attendee>
+		 <Email>chris@fourthcoffee.com</Email>
+		 <Name>Chris Gray</Name>
+		 <AttendeeStatus>0</AttendeeStatus>
+		 <AttendeeType>1</AttendeeType>
+		</Attendee>
+		<Attendee>
+		 <Name>Room B213</Name>
+		 <AttendeeStatus>0</AttendeeStatus>
+		 <AttendeeType>3</AttendeeType>
+		</Attendee>
+	  </Attendees>
+	  <OrganizerName>Anat Kerry</OrganizerName>
+	  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+	  <Location>
+	    <DisplayName>34/1123</DisplayName>
+	  </Location>
+	  <EndTime>20051104T000000Z</EndTime>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>1</Type>
+		<NonTruncatedSize>28</NonTruncatedSize>
+	  </Body>
+	  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+	  <BusyStatus>2</BusyStatus>
+	  <AllDayEvent>0</AllDayEvent>
+	  <Reminder>15</Reminder>
+	  <MeetingStatus>1</MeetingStatus>
+	  <Recurrence>
+		// The Type element is set to monthly recurrence on the nth day (3).
+		<Type>3</Type>
+		// The Interval element is set to occur every month (1).
+		<Interval>1</Interval>
+		// The WeekOfMonth element is set to occur on the second day of the month,
+		// because the DayOfWeek element is set to 127.
+		<WeekOfMonth>2</WeekOfMonth>
+		<DayOfWeek>127</DayOfWeek>
+		// The CalendarType element is set to Gregorian (1).
+		<CalendarType>1</CalendarType>
+	  </Recurrence>	  
+	 </ApplicationData>
+	</Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

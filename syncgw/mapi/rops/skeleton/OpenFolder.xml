@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopOpenFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<FolderId>
+	  <ReplicaId T="I" S="2"/>
+	  <GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	</FolderId>
+	<OpenModeFlags T="I" S="1" F="OPEN_MOD"/>
+  </RopRec>
+  
+  <RopRec Typ="Resp" X="RopOpenFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<HasRules T="B"/>
+	<IsGhosted T="B"/>
+	<ServerCount T="I" S="2" C="IsGhosted=True"/>
+	<CheapServerCount T="I" S="2" C="IsGhosted=True"/>
+	<Servers T="A" C="IsGhosted=True"/>
+  </RopRec>
+ 
+  <RopRec Typ="mkResp" X="RopOpenFolder">
+	<RopId T="I" S="1" D="ROP_ID">OpenFolder</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<HasRules T="B">False</HasRules>
+	<IsGhosted T="B">False</IsGhosted>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopOpenFolder">
+	<RopId T="I" S="1" D="ROP_ID">OpenFolder</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+   
+</syncgw>

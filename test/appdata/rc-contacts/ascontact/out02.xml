@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>12</EstimatedDataSize>
+    <Data>line1
+line2
+</Data>
+  </Body>
+  <BusinessPhoneNumber xml-ns="activesync:Contacts">+4989111</BusinessPhoneNumber>
+  <Email3Address>x@x.com</Email3Address>
+  <FileAs>Last Name, First Name aumlaut: Ã¯Â¿Â½</FileAs>
+  <FirstName>First Name aumlaut: Ã¯Â¿Â½</FirstName>
+  <HomeAddressStreet>pstr</HomeAddressStreet>
+  <HomeAddressCity>port</HomeAddressCity>
+  <HomeAddressState>preg</HomeAddressState>
+  <HomeAddressPostalCode>pplz</HomeAddressPostalCode>
+  <HomeAddressCountry>pland</HomeAddressCountry>
+  <HomePhoneNumber>+4989222</HomePhoneNumber>
+  <LastName>Last Name</LastName>
+  <MobilePhoneNumber>home mobile</MobilePhoneNumber>
+  <MobilePhoneNumber>business mobile</MobilePhoneNumber>
+  <MobilePhoneNumber>home #2 mobile</MobilePhoneNumber>
+  <OtherAddressStreet>Marienplatz 1</OtherAddressStreet>
+  <OtherAddressCity>Munich</OtherAddressCity>
+  <OtherAddressState>By</OtherAddressState>
+  <OtherAddressPostalCode>D-81777</OtherAddressPostalCode>
+  <OtherAddressCountry>Germany</OtherAddressCountry>
+  <Title>title</Title>
+</ApplicationData>

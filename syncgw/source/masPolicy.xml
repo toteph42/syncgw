@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	ActiveSync server policy settings [MS-APROV]
+   	
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<Policy xmlns="https://github.com/Toteph42/syncgw/downloads/schema/activesync.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/activesync.xsd" ver="1.0">
+ <!--  
+ 	0 Device password is not required.
+	1 Device password is required. 
+ -->
+ <DevicePasswordEnabled>0</DevicePasswordEnabled>
+ <!-- 
+ 	0 Alphanumeric device password is not required.
+	1 Alphanumeric device password is required. 
+ -->
+ <AlphanumericDevicePasswordRequired>0</AlphanumericDevicePasswordRequired>
+ <!--
+ 	0 Password recovery is not enabled on the server.
+	1 Password recovery is enabled on the server.
+ -->
+ <PasswordRecoveryEnabled>0</PasswordRecoveryEnabled>
+ <!-- 
+ 	0 Encryption of the device storage card is not required.
+	1 Encryption of the device storage card is required.
+ -->
+ <RequireStorageCardEncryption>0</RequireStorageCardEncryption> 
+ <!-- 
+ 	0 Attachments are not allowed to be downloaded.
+	1 Attachments are allowed to be downloaded. 
+ -->
+ <AttachmentsEnabled>1</AttachmentsEnabled>
+ <!-- 
+ 	specifies the minimum client password length
+ 	If the element is empty or the value of this element is 1, there is no minimum length
+	for the device password.
+ -->	
+ <MinDevicePasswordLength>4</MinDevicePasswordLength>
+ <!-- 
+ 	specifies the maximum number of seconds of inactivity before the device locks itself
+ 	If this value is greater than or equal to 9999, the client interprets it as unlimited.
+ -->
+ <MaxInactivityTimeDeviceLock>900</MaxInactivityTimeDeviceLock> 
+ <!-- 
+ 	specifies the maximum number of failed password logon attempts that are permitted
+ 	a value in the range from 4 through 16. If the element is empty, the client interprets this as
+	meaning that no maximum number of failed password logon attempts has been set by the security
+	policy.
+ -->
+ <MaxDevicePasswordFailedAttempts>8</MaxDevicePasswordFailedAttempts>
+ <!-- 
+ 	specifies the maximum attachment size in bytes as determined by security policy. 
+ -->
+ <MaxAttachmentSize>20971520</MaxAttachmentSize>
+ <!-- 
+ 	0 Simple passwords are not allowed.
+	1 Simple passwords are allowed. 
+ -->
+ <AllowSimpleDevicePassword>1</AllowSimpleDevicePassword>
+ <!-- 
+ 	0 Passwords do not expire.
+	>0 Passwords expire in the specified maximum number of days. 
+ -->
+ <DevicePasswordExpiration>0</DevicePasswordExpiration>
+ <!-- 
+ 	0 Storage of previously used passwords is not required.
+	>0 The minimum number of previously used passwords to be stored. 
+ -->
+ <DevicePasswordHistory>0</DevicePasswordHistory>
+ <!-- 
+ 	0 SD card use is not allowed.
+	1 SD card use is allowed. 
+ -->
+ <AllowStorageCard>1</AllowStorageCard>
+ <!-- 
+ 	0 Use of the camera is not allowed.
+	1 Use of the camera is allowed 
+ -->
+ <AllowCamera>1</AllowCamera>
+ <!-- 
+ 	0 Encryption is not required.
+	1 Encryption is required.
+ -->
+ <RequireDeviceEncryption>0</RequireDeviceEncryption>
+ <!-- 
+ 	0 Unsigned applications are not allowed to execute.
+	1 Unsigned applications are allowed to execute. 
+ -->
+ <AllowUnsignedApplications>1</AllowUnsignedApplications>
+ <!-- 
+ 	0 Unsigned cabinet (.cab) files are not allowed to be installed.
+	1 Unsigned cabinet (.cab) files are allowed to be installed. 
+ -->
+ <AllowUnsignedInstallationPackages>1</AllowUnsignedInstallationPackages>
+ <!-- 
+ 	specifies the required level of complexity of the client password
+ 	Valid values for MinDevicePasswordComplexCharacters are 1 to 4. The value specifies the number
+	of character groups that are required to be present in the password. The character groups are defined as:
+	- Lower case alphabetical characters
+	- Upper case alphabetical characters
+	- Numbers
+	- Non-alphanumeric characters
+ -->
+ <MinDevicePasswordComplexCharacters>3</MinDevicePasswordComplexCharacters> 
+ <!-- 
+ 	0 The use of Wi-Fi connections is not allowed.
+	1 The use of Wi-Fi connections is allowed. 
+ -->
+ <AllowWiFi>1</AllowWiFi>
+ <!-- 
+ 	0 SMS or text messaging is not allowed.
+	1 SMS or text messaging is allowed. 
+ -->
+ <AllowTextMessaging>1</AllowTextMessaging>
+ <!-- 
+ 	0 POP or IMAP email access is not allowed.
+	1 POP or IMAP email access is allowed. 
+ -->
+ <AllowPOPIMAPEmail>1</AllowPOPIMAPEmail>
+ <!-- 
+ 	0 Disable Bluetooth.
+	1 Disable Bluetooth, but allow the configuration of hands-free profiles.
+	2 Allow Bluetooth. 
+ -->
+ <AllowBluetooth>2</AllowBluetooth>
+ <!-- 
+ 	0 Disable IrDA.
+	1 Allow IrDA. 
+ -->
+ <AllowIrDA>1</AllowIrDA>
+ <!-- 
+ 	0 Do not require manual sync; allow direct push when roaming.
+	1 Require manual sync when roaming.
+ -->
+ <RequireManualSyncWhenRoaming>0</RequireManualSyncWhenRoaming> 
+ <!-- 
+ 	0 Do not allow Desktop ActiveSync.
+	1 Allow Desktop ActiveSync. 
+ -->
+ <AllowDesktopSync>1</AllowDesktopSync>
+ <!-- 
+ 	specifies the maximum number of calendar days that can be synchronized.
+ 	0 All days
+	4 2 weeks
+	5 1 month
+	6 3 months
+	7 6 months 
+ -->
+ <MaxCalendarAgeFilter>0</MaxCalendarAgeFilter> 
+ <!-- 
+ 	0 HTML-formatted email is not allowed.
+	1 HTML-formatted email is allowed. 
+ -->
+ <AllowHTMLEmail>1</AllowHTMLEmail>
+ <!-- 
+ 	specifies the email age limit for synchronization.
+ 	0 Sync all
+	1 1 day
+	2 3 days
+	3 1 week
+	4 2 weeks
+	5 1 month
+ -->
+ <MaxEmailAgeFilter>0</MaxEmailAgeFilter>
+ <!-- 
+ 	specifies the maximum truncation size for plain text–formatted email
+ 	-1 No truncation.
+	0 Truncate only the header.
+	>0 Truncate the email body to the specified size.
+ -->
+ <MaxEmailBodyTruncationSize>-1</MaxEmailBodyTruncationSize> 
+ <!-- 
+ 	specifies the maximum truncation size for HTMLformatted email.
+ 	-1 No truncation.
+	0 Truncate only the header.
+	>0 Truncate the email body to the specified size.
+ -->
+ <MaxEmailHTMLBodyTruncationSize>-1</MaxEmailHTMLBodyTruncationSize> 
+ <!-- 
+ 	specifies whether the client sends signed S/MIME messages.
+ 	0 Signed S/MIME messages are not required.
+	1 Signed S/MIME messages are required.
+ -->
+ <RequireSignedSMIMEMessages>0</RequireSignedSMIMEMessages> 
+ <!-- 
+ 	0 Encrypted email messages are not required.
+	1 Email messages are required to be encrypted.
+ -->
+ <RequireEncryptedSMIMEMessages>0</RequireEncryptedSMIMEMessages> 
+ <!-- 
+ 	specifies the algorithm used when signing S/MIME messages.
+ 	0 Use SHA1.
+	1 Use MD5.
+ -->
+ <RequireSignedSMIMEAlgorithm>0</RequireSignedSMIMEAlgorithm> 
+ <!-- 
+ 	0 TripleDES algorithm
+	1 DES algorithm
+	2 RC2128bit
+	3 RC264bit
+	4 RC240bit
+ -->
+ <RequireEncryptionSMIMEAlgorithm>0</RequireEncryptionSMIMEAlgorithm> 
+ <!-- 
+ 	controls negotiation of the encryption algorithm:
+ 	0 Do not negotiate.
+	1 Negotiate a strong algorithm.
+	2 Negotiate any algorithm. 
+ -->
+ <AllowSMIMEEncryptionAlgorithmNegotiation>2</AllowSMIMEEncryptionAlgorithmNegotiation>
+ <!-- 
+ 	0 Soft certificates are not allowed.
+	1 Soft certificates are allowed. 
+ -->
+ <AllowSMIMESoftCerts>1</AllowSMIMESoftCerts>
+ <!-- 
+ 	0 Do not allow the use of a web browser.
+	1 Allow the use of a web browser. 
+ -->
+ <AllowBrowser>1</AllowBrowser>
+ <!-- 
+ 	0 Do not allow the user to configure a personal email account.
+	1 Allow the user to configure a personal email account. 
+ -->
+ <AllowConsumerEmail>1</AllowConsumerEmail>
+ <!-- 
+ 	0 Do not allow the use of Remote Desktop.
+	1 Allow the use of Remote Desktop. 
+ -->
+ <AllowRemoteDesktop>1</AllowRemoteDesktop>
+ <!-- 
+ 	0 Do not allow the use of Internet Sharing.
+	1 Allow the use of Internet Sharing. 
+ -->
+ <AllowInternetSharing>1</AllowInternetSharing>
+ <!-- 
+ 	specifies a list of in-ROM applications that are not approved for execution.
+ 	
+ 	<UnapprovedInROMApplicationList>
+   		<ApplicationName>Test</ApplicationName>
+ 	</UnapprovedInROMApplicationList> 
+ -->
+ <UnapprovedInROMApplicationList/>
+ <!-- 
+ 	specifies a list of in-memory applications that are approved for execution.
+ 	
+ 	<ApprovedApplicationList>
+ 		<Hash>2iekdj4kks</Hash>
+ 	</ApprovedApplicationList> 
+ -->
+ <ApprovedApplicationList/> 
+ </Policy>

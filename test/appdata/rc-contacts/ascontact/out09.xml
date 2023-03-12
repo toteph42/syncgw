@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">100 Waters Edge</BusinessAddressStreet>
+  <BusinessAddressCity>Baytown</BusinessAddressCity>
+  <BusinessAddressState>LA</BusinessAddressState>
+  <BusinessAddressPostalCode>30314</BusinessAddressPostalCode>
+  <BusinessAddressCountry>United States of America</BusinessAddressCountry>
+  <BusinessPhoneNumber>(111) 555-1212</BusinessPhoneNumber>
+  <Email3Address>forrestgump@example.com</Email3Address>
+  <FileAs>Forrest Gump</FileAs>
+  <FirstName>Forrest</FirstName>
+  <HomeAddressStreet>42 Plantation St.</HomeAddressStreet>
+  <HomeAddressCity>Baytown</HomeAddressCity>
+  <HomeAddressState>LA</HomeAddressState>
+  <HomeAddressPostalCode>30314</HomeAddressPostalCode>
+  <HomeAddressCountry>United States of America</HomeAddressCountry>
+  <HomePhoneNumber>(404) 555-1212</HomePhoneNumber>
+  <LastName>Gump</LastName>
+  <Title>Shrimp Man</Title>
+</ApplicationData>

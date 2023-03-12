@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Birthday xml-ns="activesync:Contacts">2006-09-30T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>6</EstimatedDataSize>
+    <Data>Friend</Data>
+  </Body>
+  <BusinessPhoneNumber xml-ns="activesync:Contacts">7777777</BusinessPhoneNumber>
+  <Email3Address>mail@example.com</Email3Address>
+  <FileAs>Abe Test</FileAs>
+  <FirstName>Abe</FirstName>
+  <HomeAddressStreet>Test 99</HomeAddressStreet>
+  <HomeAddressCity>Aab</HomeAddressCity>
+  <HomeAddressState>Caba</HomeAddressState>
+  <HomeAddressPostalCode>99</HomeAddressPostalCode>
+  <HomeAddressCountry>Caba</HomeAddressCountry>
+  <HomePhoneNumber>8888888</HomePhoneNumber>
+  <LastName>Test</LastName>
+  <MobilePhoneNumber>9999999</MobilePhoneNumber>
+  <Title>none</Title>
+  <WebPage>http://www.example.com</WebPage>
+</ApplicationData>

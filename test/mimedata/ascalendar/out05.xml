@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Attendees xml-ns="activesync:Calendar">
+    <Attendee>
+      <AttendeeStatus>0</AttendeeStatus>
+      <AttendeeType>1</AttendeeType>
+      <Name>Chris Gray</Name>
+      <Email>chris@fourthcoffee.com</Email>
+    </Attendee>
+    <Attendee>
+      <AttendeeStatus>0</AttendeeStatus>
+      <AttendeeType>3</AttendeeType>
+      <Name>Room B213</Name>
+    </Attendee>
+  </Attendees>
+  <BusyStatus>2</BusyStatus>
+  <StartTime>20051103T230000Z</StartTime>
+  <EndTime>20051104T000000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>34/1123</DisplayName>
+  </Location>
+  <MeetingStatus xml-ns="activesync:Calendar">1</MeetingStatus>
+  <OrganizerName>Anat Kerry</OrganizerName>
+  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+  <Recurrence>
+    <CalendarType>1</CalendarType>
+    <DayOfWeek>127</DayOfWeek>
+    <Interval>1</Interval>
+    <Type>3</Type>
+    <WeekOfMonth>2</WeekOfMonth>
+  </Recurrence>
+  <Reminder>15</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>test meeting</Subject>
+  <Timezone>4AEAAEFXU1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnBwEAAAABAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</Timezone>
+  <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C5010000000000000000100000008</UID>
+</ApplicationData>

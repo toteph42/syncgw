@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VNOTE
+VERSION:1.1
+X-PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+X-IRMC-LUID:someuid
+DCREATED:20131230T115856Z
+LAST-MODIFIED:20131230T115900Z
+SUMMARY:This is a summary
+BODY:This is just a test
+CATEGORIES:Birthday,Friends
+CLASS:PUBLIC
+END:VNOTE
+]]></Data>

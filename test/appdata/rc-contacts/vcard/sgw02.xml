@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Last Name, First Name aumlaut: Ã¯Â¿Â½</FullName>
+    <FirstName>First Name aumlaut: Ã¯Â¿Â½</FirstName>
+    <LastName>Last Name</LastName>
+    <Organization>company</Organization>
+    <HomePhone>+4989222</HomePhone>
+    <WorkPhone>+4989111</WorkPhone>
+    <MobilePhone>home mobile</MobilePhone>
+    <MobilePhone>business mobile</MobilePhone>
+    <MobilePhone>home #2 mobile</MobilePhone>
+    <UmCallerID>+4989333</UmCallerID>
+    <UmCallerID>whatagaga</UmCallerID>
+    <Body X-TYP="1">line1
+line2
+</Body>
+    <MailOther>x@x.com</MailOther>
+    <AddressHome>
+      <Street>pstr</Street>
+      <City>port</City>
+      <Region>preg</Region>
+      <PostalCode>pplz</PostalCode>
+      <Country>pland</Country>
+    </AddressHome>
+    <AddressOther>
+      <Street>Marienplatz 1</Street>
+      <City>Munich</City>
+      <Region>By</Region>
+      <PostalCode>D-81777</PostalCode>
+      <Country>Germany</Country>
+    </AddressOther>
+    <Title>title</Title>
+  </Data>
+</syncgw>

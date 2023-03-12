@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Text.doc</FullName>
+    <FirstName>John</FirstName>
+    <LastName>Stevenson</LastName>
+    <MiddleName>Philip,Paul</MiddleName>
+    <NickName>Big boss</NickName>
+    <Suffix>Jr.,M.D.,A.C.P.</Suffix>
+    <HomePhone>HomePhoneNumber</HomePhone>
+    <HomePhone2>Home2PhoneNumber</HomePhone2>
+    <WorkPhone>BusinessPhoneNumber</WorkPhone>
+    <WorkPhone2>Business2PhoneNumber</WorkPhone2>
+    <MobilePhone>MobilePhoneNumber</MobilePhone>
+    <CompanyPhone>CompanyMainPhone</CompanyPhone>
+    <HomeFax>HomeFaxNumber</HomeFax>
+    <BusinessFax>BusinessFaxNumber</BusinessFax>
+    <CarPhone>CarPhoneNumber</CarPhone>
+    <Pager>PagerNumber</Pager>
+    <AssistantPhone>AssistantPhoneNumber</AssistantPhone>
+    <Birthday VALUE="date">797904000</Birthday>
+    <URLOther>http://example.org/restaurant.french/~chezchic.html</URLOther>
+    <Body X-TYP="1">This fax number is operational 0800 to 1715  EST, Mon-Fri. Please note
+the special characters "äÄöÖüÜß"</Body>
+    <MailHome>home@usa.gov</MailHome>
+    <MailWork>work@usa.gov</MailWork>
+    <MailOther>other@usa.gov</MailOther>
+    <AddressHome>
+      <Street>42 Plantation St.</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>123 Main Street</Street>
+      <City>Any Town</City>
+      <Region>CA</Region>
+      <PostalCode>91921-1234</PostalCode>
+      <Country>U.S.A.</Country>
+    </AddressBusiness>
+    <AddressOther>
+      <Street>OtherAddressStreet</Street>
+      <City>OtherAddressCity</City>
+      <Region>OtherAddressState</Region>
+      <PostalCode>OtherAddressPostalCode</PostalCode>
+      <Country>OtherAddressCountry</Country>
+    </AddressOther>
+    <Title>Dr. med.</Title>
+    <Department>Marketing</Department>
+    <Anniversary VALUE="date">324518400</Anniversary>
+    <Assistant>urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6</Assistant>
+    <ManagerName>Julian Manager</ManagerName>
+    <Spouse>http://example.com/directory/jdoe.vcf</Spouse>
+    <IMicq>ima@address2</IMicq>
+    <IMmsn>im@address3</IMmsn>
+    <IMskype>im@address1</IMskype>
+    <Photo>sgw-8111e2f9</Photo>
+    <Category>INTERNET</Category>
+    <Category>IETF</Category>
+    <Category>INDUSTRY</Category>
+    <Category>INFORMATION TECHNOLOGY</Category>
+  </Data>
+</syncgw>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>todoz4115312.-1720281383.1114802217</UID>
+    <Timezone>Europe/Zurich</Timezone>
+    <StartTime>1273449600</StartTime>
+    <Class>PUBLIC</Class>
+    <Body X-TYP="1"/>
+    <Location>
+      <DisplayName>Qua</DisplayName>
+    </Location>
+    <Priority>0</Priority>
+    <Sequence>1</Sequence>
+    <Summary>Prova</Summary>
+    <Transparency>OPAQUE</Transparency>
+    <EndTime>1273464000</EndTime>
+    <Color>#4E2FFF</Color>
+    <Timezone>Europe/Zurich</Timezone>
+  </Data>
+</syncgw>

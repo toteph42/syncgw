@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>webmaster@memotoo.com</UID>
+    <StartTime>885193200</StartTime>
+    <EndTime>1166097600</EndTime>
+    <Summary>Test event</Summary>
+    <Location>
+      <DisplayName>New York</DisplayName>
+    </Location>
+    <Body X-TYP="1">What is it ??</Body>
+    <Recurrence>
+      <Frequency>WEEKLY</Frequency>
+      <Interval>1</Interval>
+      <DayPos>SU</DayPos>
+    </Recurrence>
+    <Exceptions>
+      <Exception>
+        <InstanceId>1167177600</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <InstanceId>1167264000</InstanceId>
+        <Delete/>
+      </Exception>
+    </Exceptions>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PRIVATE</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-432000</Trigger>
+    </Alarm>
+    <Attendee RSVP="true">mailto:\"Luc Donovan\" &lt;luc@yahoo.fr&gt;</Attendee>
+  </Data>
+</syncgw>

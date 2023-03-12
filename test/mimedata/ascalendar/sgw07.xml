@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <BusyStatus>TENTATIV</BusyStatus>
+    <Category>Birthday</Category>
+    <StartTime>1425318900</StartTime>
+    <EndTime>1425322500</EndTime>
+    <Exceptions>
+      <Exception>
+        <BusyStatus>TENTATIV</BusyStatus>
+        <EndTime>1425322500</EndTime>
+        <StartTimeException>1425318900</StartTimeException>
+        <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+        <Class>PUBLIC</Class>
+        <StartTime>1425318900</StartTime>
+        <Summary>Geburtstag NickX</Summary>
+      </Exception>
+    </Exceptions>
+    <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+    <MailOther>jam@192.168.55.1</MailOther>
+    <Recurrence>
+      <MonthDay>2</MonthDay>
+      <Month>3</Month>
+      <Frequency>YEARLY</Frequency>
+    </Recurrence>
+    <Class>PUBLIC</Class>
+    <Summary>Geburtstag Nick</Summary>
+    <UID>4e44f522-015a-84de-bf3c-31e4a3578b17</UID>
+  </Data>
+</syncgw>

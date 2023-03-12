@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:Abe Test
+N:Test;Abe;;;
+BDAY:20060930
+ADR;TYPE=home:;;Test 99;Aab;Caba;99;Caba
+TEL;PREF=1;TYPE=home:8888888
+TEL;PREF=1;TYPE=work:7777777
+TEL;TYPE=cell:9999999
+TEL;PREF=1;TYPE=x-other:6666666
+EMAIL:mail@example.com
+TITLE:none
+ORG:Example
+NOTE:Friend
+REV:20131230T115856Z
+URL:http://www.example.com
+END:VCARD
+]]></Data>

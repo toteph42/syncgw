@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <LastName>Depaartment II</LastName>
+    <FullName> Depaartment II</FullName>
+    <AddressBusiness>
+      <Street>Room 1.2.40</Street>
+      <PostalCode>60305 Postfach 1</PostalCode>
+    </AddressBusiness>
+    <WorkPhone>+496911777826</WorkPhone>
+    <UmCallerID>+49690039377</UmCallerID>
+    <Body X-TYP="1"> Mo Mi 08:00-15:30
+Do 13:30-18:00
+Fr 008:00-12:00
+Konto 51 01 15 04
+
+BLZ 500 000 00</Body>
+  </Data>
+</syncgw>

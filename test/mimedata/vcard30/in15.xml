@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCARD
+KIND:individual
+ORG:ABC\, Inc.;North American Division;Marketing
+MEMBER:urn:uuid:03a0e51f-d1aa-4385-8a53-e29025acd8af
+MEMBER:mailto:subscriber1@example.com
+MEMBER:xmpp:subscriber2@example.com
+MEMBER:sip:subscriber3@example.com
+MEMBER:tel:+1-418-555-5555
+CLIENTPIDMAP:1;urn:uuid:3eef374e-7179-4196-a914-27358c3e6527
+FN;PID=1.1:J. Doe
+N:Doe;J.;;;
+EMAIL;PID=1.1:jdoe@example.com
+LANG;PREF=1:fr
+LANG;PREF=2:en
+TEL;VALUE=uri;TYPE="work,voice";PREF=1:tel:+1-418-656-9254;ext=102
+GEO;TYPE=work:geo:46.772673,-71.282945
+KEY;TYPE=work;VALUE=uri:
+ http://www.willybig.ca/john.doe/simon.asc
+END:VCARD
+</Data>

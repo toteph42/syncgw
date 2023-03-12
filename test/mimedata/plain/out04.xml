@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data>Title
+This is the body of the text with a &amp;XXX &lt;&gt; ; inside
+abc äÄöÖüÜß (!"§$%&amp;/=?*+~|)
+{a}[b]&amp;&amp;&lt;
+c,;.:-_#'d 
+&lt;KK&gt; &lt;!-- comment --&gt;
+END###
+in multiple lines.
+</Data>

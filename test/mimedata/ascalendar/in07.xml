@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Sync CHARSET="UTF-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>C1</SyncKey>
+      <CollectionId>C1</CollectionId>
+      <DeletesAsMoves/>
+      <GetChanges/>
+      <WindowSize>10</WindowSize>
+      <Options>
+        <FilterType>4</FilterType>
+        <BodyPreference xml-ns="activesync:AirSyncBase">
+          <Type>1</Type>
+          <TruncationSize>200000</TruncationSize>
+        </BodyPreference>
+      </Options>
+      <Commands xml-ns="activesync:AirSync">
+        <Change>
+          <ServerId>C3</ServerId>
+          <ApplicationData>
+            <Timezone xml-ns="activesync:Calendar">xP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAFAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAFAAIAAAAAAAAAxP///w==</Timezone>
+            <AllDayEvent>0</AllDayEvent>
+            <StartTime>20150302T175500Z</StartTime>
+            <EndTime>20150302T185500Z</EndTime>
+            <DtStamp>20150202T205140Z</DtStamp>
+            <Subject>Geburtstag Nick</Subject>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <Data/>
+            </Body>
+            <OrganizerEmail xml-ns="activesync:Calendar">jam@192.168.55.1</OrganizerEmail>
+            <Recurrence>
+              <Type>5</Type>
+              <MonthOfYear>3</MonthOfYear>
+              <DayOfMonth>2</DayOfMonth>
+            </Recurrence>
+            <Categories>
+              <Category>Birthday</Category>
+            </Categories>
+            <UID>4e44f522-015a-84de-bf3c-31e4a3578b17</UID>
+            <BusyStatus>1</BusyStatus>
+            <MeetingStatus>0</MeetingStatus>
+            <Sensitivity>0</Sensitivity>
+            <Exceptions>
+              <Exception>
+                <Deleted>0</Deleted>
+                <ExceptionStartTime>20150302T175500Z</ExceptionStartTime>
+                <AllDayEvent>0</AllDayEvent>
+                <StartTime>20150302T175500Z</StartTime>
+                <EndTime>20150302T185500Z</EndTime>
+                <DtStamp>20150202T205140Z</DtStamp>
+                <Subject>Geburtstag NickX</Subject>
+                <Body xml-ns="activesync:AirSyncBase">
+                  <Type>1</Type>
+                  <Data/>
+                </Body>
+                <BusyStatus xml-ns="activesync:Calendar">1</BusyStatus>
+                <MeetingStatus>0</MeetingStatus>
+                <Sensitivity>0</Sensitivity>
+              </Exception>
+            </Exceptions>
+          </ApplicationData>
+        </Change>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

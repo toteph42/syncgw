@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+	<To>"Device User" &lt;someone1@example.com&gt;</To>
+	<From>"Device User2" &lt;someone2@example.com&gt;</From>
+	<Subject>With Attachment</Subject>
+	<DateReceived>2009-03-04T22:48:41.211Z</DateReceived>
+	<DisplayTo>Device User</DisplayTo>
+	<ThreadTopic>With Attachment</ThreadTopic>
+	<Importance>1</Importance>
+	<Read>0</Read>
+	<Attachments>
+		<Attachment>
+		<DisplayName>Test.txt</DisplayName>
+		<FileReference>5%3a3%3a0</FileReference>
+		<Method>1</Method>
+		<EstimatedDataSize>84</EstimatedDataSize>
+	</Attachment>
+	</Attachments>
+	<MessageClass>IPM.Note</MessageClass>
+	<Flag />
+	<ContentClass>urn:content-classes:message</ContentClass>
+	<NativeBodyType>1</NativeBodyType>
+	<ConversationId>60abb9431386e60abb9431387360abb9</ConversationId>
+	<ConversationIndex>…</ConversationIndex>
+	<Categories />
+</ApplicationData>

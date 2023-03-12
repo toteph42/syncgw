@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Abe Test</FullName>
+    <FirstName>Abe</FirstName>
+    <LastName>Test</LastName>
+    <NickName>Jim,Jimmie</NickName>
+    <AddressHome>
+      <Street>123 Main Street</Street>
+      <City>Any Town</City>
+      <Region>CA</Region>
+      <PostalCode>91921-1234</PostalCode>
+    </AddressHome>
+  </Data>
+</syncgw>

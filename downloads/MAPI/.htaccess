@@ -1,0 +1,12 @@
+#
+# 	Allow MAPI over HTTP protocol
+#	
+#	@package	sync*gw
+#	@subpackage	MAPI overf HTTP
+#	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+# 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+#
+<IfModule mod_rewrite.c>
+	RewriteRule ^mapi/.*$									sync.php [NC]
+	RewriteRule ^[r|R]pc/.*$								sync.php [NC]
+</IfModule>

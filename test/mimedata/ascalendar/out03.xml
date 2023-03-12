@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">2</BusyStatus>
+  <StartTime>20081013T190000Z</StartTime>
+  <EndTime>20081013T193000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>My office</DisplayName>
+  </Location>
+  <MeetingStatus xml-ns="activesync:Calendar">0</MeetingStatus>
+  <NativeBodyType xml-ns="activesync:AirSyncBase">3</NativeBodyType>
+  <OrganizerName xml-ns="activesync:Calendar">Anat Kerry</OrganizerName>
+  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+  <Recurrence>
+    <DayOfWeek>2</DayOfWeek>
+    <Interval>1</Interval>
+    <Type>3</Type>
+    <Until>20090713T190000Z</Until>
+    <WeekOfMonth>2</WeekOfMonth>
+  </Recurrence>
+  <Reminder>15</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Team Meeting</Subject>
+  <Timezone>PAAAAElTVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnBwMAAAAFAAIAAAAAAAAAAAAAAEdNVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnBwoAAAAFAAEAAAAAAAAAAAAAAA==</Timezone>
+  <UID>040000008200E00074C5B7101A82E0080000000060043DFCA924C90100000000000000001000000097F14EF755AC454BA30EFA7B1B315E43</UID>
+</ApplicationData>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<!-- Should create 'Subject' and 'Body' --> 
+<Data>Title
+Organizer.OR6This is the body of the text
+in multiple lines with internal Organizer.OR6 
+format as used in Nokia cell phones.
+</Data>

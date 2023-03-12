@@ -1,0 +1,12 @@
+#
+# 	Create HTTP authorization for domains running in Fast-CGI mode
+#	
+#	@package	sync*gw
+#	@subpackage	HTTP
+#	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+# 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+#
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:Forrest Gump
+N:Gump;Forrest;;;
+ADR;TYPE=home:;;42 Plantation St.;Baytown;LA;30314;United States of Ameri
+ ca
+
+ADR;TYPE=work:;;100 Waters Edge;Baytown;LA;30314;United States of America
+TEL;PREF=1;TYPE=home:(404) 555-1212
+TEL;PREF=1;TYPE=work:(111) 555-1212
+EMAIL;TYPE=pref,internet:forrestgump@example.com
+TITLE:Shrimp Man
+ORG:Bubba Gump Shrimp Co.
+REV:20131230T115856Z
+LABEL;TYPE=home;ENCODING=QUOTED-PRINTABLE:42=20Plantation=20St.=0D=0D=0AB=
+aytown=5C=2C=20LA=2030314=0D=0D=0AUnited=20States=20of=20America
+
+LABEL;TYPE=work;ENCODING=QUOTED-PRINTABLE:100=20Waters=20Edge=0D=0D=0ABay=
+town=5C=2C=20LA=2030314=0D=0D=0AUnited=20States=20of=20America
+
+END:VCARD
+]]></Data>

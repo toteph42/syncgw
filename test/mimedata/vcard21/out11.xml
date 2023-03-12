@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:=20Zubeh=C3=B6r-=5C=3BMods
+N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Zubeh=C3=B6r-=5C=3BMods;;;;
+ADR;TYPE=work;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:;;Schlo=C3=9Fstr.=
+=20123-124=20;Jillytown;;;
+
+TEL;PREF=1;TYPE=work:+491117777
+TEL;TYPE=work,fax:+49111277888
+ORG:Motorrad
+REV:20131230T115856Z
+URL:http://www.myshop.de
+END:VCARD
+]]></Data>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>T00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Body X-TYP="2">&lt;strong&gt;Must&lt;/strong&gt; complete äöpoüß03 TPS reports using the new cover sheet.</Body>
+    <Category>Busi, ness</Category>
+    <Category>Reports</Category>
+    <Status X-PC="0">IN-PROCESS</Status>
+    <DueDate>1252008000</DueDate>
+    <Priority>1</Priority>
+    <Recurrence>
+      <CalendarType>15</CalendarType>
+      <MonthDay>8</MonthDay>
+      <DayPos>MO,WE,FR</DayPos>
+      <WeekStart>MO</WeekStart>
+      <Interval>2</Interval>
+      <IsLeap>0</IsLeap>
+      <Month>2</Month>
+      <Regenerate>1</Regenerate>
+      <StartTime>1251968400</StartTime>
+      <Frequency>DAILY</Frequency>
+      <EndTime>1259830800</EndTime>
+      <WeekOfMonth>4</WeekOfMonth>
+    </Recurrence>
+    <Class>CONFIDENTIAL</Class>
+    <StartTime>1251993600</StartTime>
+    <Summary>TPS Reports for August 2009</Summary>
+  </Data>
+</syncgw>

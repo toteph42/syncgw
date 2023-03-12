@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">Test Contact</DisplayName>
+  <Phone>22222222</Phone>
+  <Title>Cto</Title>
+  <FirstName>Test</FirstName>
+  <LastName>Contact</LastName>
+  <HomePhone>33333333</HomePhone>
+  <MobilePhone>11111111</MobilePhone>
+  <EmailAddress>private@example.com</EmailAddress>
+  <Picture/>
+</ApplicationData>

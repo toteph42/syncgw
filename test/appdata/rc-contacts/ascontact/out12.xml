@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>82</EstimatedDataSize>
+    <Data>Mo Mi 08:00-15:30
+Do 13:30-18:00
+Fr 008:00-12:00
+Konto 51 01 15 04
+
+BLZ 500 000 00</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">Room 1.2.40</BusinessAddressStreet>
+  <BusinessAddressPostalCode>60305 Postfach 1</BusinessAddressPostalCode>
+  <BusinessPhoneNumber>+496911777826</BusinessPhoneNumber>
+  <FileAs>Depaartment II</FileAs>
+  <LastName>Depaartment II</LastName>
+</ApplicationData>

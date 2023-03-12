@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>664578668</SyncKey>
+   <CollectionId>1</CollectionId>
+   <Status>1</Status>
+   <Commands>
+	<Add>
+	 <ServerId>1:2</ServerId>
+	 <ApplicationData>
+	  <DtStamp>20051103T013759Z</DtStamp>
+	  <StartTime>20051103T230000Z</StartTime>
+	  <Subject>test meeting</Subject>
+	  <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C501000000000000000010000</UID>
+	  <Categories>
+		<Category>Jungo</Category>
+		<Category>belga</Category>
+	  </Categories>
+	  <OrganizerName>Anat Kerry</OrganizerName>
+	  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+	  <Location>
+	    <DisplayName>34/1123</DisplayName>
+	  </Location>
+	  <EndTime>20051104T000000Z</EndTime>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>2</Type>
+		<Data>Hello &lt;strong&gt;world&lt;/strong&gt;
+second row</Data>
+	  </Body>
+	  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+	  <BusyStatus>2</BusyStatus>
+	  <AllDayEvent>0</AllDayEvent>
+	  <Reminder>15</Reminder>
+	  <MeetingStatus>1</MeetingStatus>
+	  <Recurrence>
+		// The Type element is set to daily recurrence (0).
+		<Type>0</Type>
+		// The Interval element is set to occur every day (1).
+		<Interval>1</Interval>
+		// Because the DayOfWeek element is set, the value of the Interval
+		// element indicates the number of weeks between each occurrence.
+		// The DayOfWeek element is set to Saturday (64).
+		<DayOfWeek>64</DayOfWeek>
+	  </Recurrence>
+	 </ApplicationData>
+	</Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

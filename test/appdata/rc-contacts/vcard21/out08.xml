@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:firstname (all fields) lastname
+N:lastname;firstname (all fields);middle name;title;suffix
+X-NICKNAME:nickname
+BDAY:20081029
+ADR;TYPE=home:;;street home;city home;state/prov. home;postal/zip home;co
+ untry/region home
+
+ADR;TYPE=work:;;street bus;city bus;state/prov. bus;postal/zip bus;countr
+ y/region bus
+
+ADR:;;street;city;state/province;postal/zip code;country/region
+TEL;PREF=1;TYPE=home:telephone home
+TEL;TYPE=home,fax:fax home
+TEL;PREF=1;TYPE=work:telephone business
+TEL;PREF=1;TYPE=work:assistants number
+TEL;TYPE=work,fax:fax business
+TEL;TYPE=pager:pager
+TEL;TYPE=cell:mobile
+TEL;TYPE=cell:mobile home
+TEL;TYPE=cell:mobile business
+TEL;TYPE=car:car phone
+TEL;TYPE=video:video call
+TEL;TYPE=video:cideo call home
+TEL;TYPE=video:video call business
+TEL;PREF=1;TYPE=x-other:telephone
+TEL;PREF=1;TYPE=x-other:fax
+TITLE:job title
+ORG:company
+NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:This=20is=20a=20short=20text=
+.=20=0D=0D=0A=20=23=20comment=20=20=0D=0D=0A=20This=20=3CPitty=3Etag=3C=
+=2FPitty=3Eshould=20survive.=20=0D=0D=0A=20=24=25=C3=A4=C3=B6=C3=BC=29=
+=28=5B=5D=3D=5E=5C=5C=27=221=21=20=0D=0D=0A=20=26nbsp=5C=3B=26auml=5C=3B=
+=23=26tag=20=0D=0D=0A=20tab=20tab=20--END
+
+REV:20131230T115856Z
+URL:http://web address home
+URL:http://web address business
+URL:http://web address
+END:VCARD
+]]></Data>

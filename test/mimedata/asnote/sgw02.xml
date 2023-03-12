@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>N00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Summary>Second Note</Summary>
+    <MessageClass>IPM.StickyNote</MessageClass>
+    <Category>Business</Category>
+    <Category>Funny</Category>
+    <Category>Error, nop</Category>
+    <Body X-TYP="2">&lt;strong&gt;This is my second note.&lt;/strong&gt;</Body>
+  </Data>
+</syncgw>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Timezone xml-ns="activesync:Calendar">xP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAFAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAFAAIAAAAAAAAAxP///w==5P3//0FLU1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmBwsAAAABAAEAAAAAAAAA4AEAAEFLRFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmBwMAAAACAAMAAAAAAAAAIP7//w==</Timezone>
+  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <Data>This data record contains a document which cannot be converted</Data>
+  </Body>
+  <NativeBodyType>1</NativeBodyType>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Cafeteria A</DisplayName>
+  </Location>
+  <Subject xml-ns="activesync:Calendar">Lunch meeting</Subject>
+  <StartTime>20081010T190000Z</StartTime>
+  <EndTime>20081010T203000Z</EndTime>
+  <OrganizerName>Anat Kerry</OrganizerName>
+  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+  <OrganizerEmail>Anat Kerry</OrganizerEmail>
+  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+  <UID>040000008200E00074C5B7101A82E008000000001027EAEDA124C901000000000000000010000000</UID>
+  <BusyStatus>3</BusyStatus>
+  <MeetingStatus>0</MeetingStatus>
+  <Reminder>15</Reminder>
+  <AllDayEvent>0</AllDayEvent>
+  <Recurrence>
+   <Type>0</Type>
+   <Until>20081020T190000</Until>
+   <Interval>1</Interval>
+  </Recurrence>
+  <Exceptions>
+   <Exception>
+    <ExceptionStartTime>20081010T190000Z</ExceptionStartTime>
+    <StartTime>20081012T190000Z</StartTime>
+    <EndTime>20081013T190000Z</EndTime>
+    <AllDayEvent>0</AllDayEvent>
+   </Exception>
+  </Exceptions>
+</ApplicationData>

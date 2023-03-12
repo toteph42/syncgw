@@ -1,0 +1,14 @@
+#
+# 	Redirect Exchange ActiveSync (EAS) access to sync*gw script
+#	and disable special requests
+#	
+#	@package	sync*gw
+#	@subpackage	ActiveSync
+#	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+# 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+#
+<IfModule mod_rewrite.c>
+	RewriteRule ^Microsoft\-Server\-ActiveSync$ 			sync.php [NC]
+	RewriteRule ^Microsoft\-Server\-ActiveSync/$ 			sync.php [NC]
+	RewriteRule ^[a|A]utodiscover/[a|A]utodiscover.xml$ 	sync.php [NC]
+</IfModule>

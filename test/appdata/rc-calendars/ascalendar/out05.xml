@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <StartTime>20061003T180000Z</StartTime>
+  <EndTime>20061003T190000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Test</DisplayName>
+  </Location>
+  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+  <Subject>Test</Subject>
+  <UID>000000010003</UID>
+</ApplicationData>

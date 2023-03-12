@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>All Atalon</FullName>
+    <FirstName>VName</FirstName>
+    <LastName>NName</LastName>
+    <MiddleName>ZVName</MiddleName>
+    <NickName>SitzName</NickName>
+    <Suffix>NamZusatz</Suffix>
+    <HomePhone>001</HomePhone>
+    <HomePhone2>002</HomePhone2>
+    <WorkPhone>003</WorkPhone>
+    <WorkPhone2>004</WorkPhone2>
+    <MobilePhone>005</MobilePhone>
+    <CompanyPhone>006</CompanyPhone>
+    <HomeFax>007</HomeFax>
+    <BusinessFax>008</BusinessFax>
+    <CarPhone>009</CarPhone>
+    <Pager>010</Pager>
+    <AssistantPhone>012</AssistantPhone>
+    <Birthday VALUE="date">1546905600</Birthday>
+    <URLOther>http://andere</URLOther>
+    <Body X-TYP="1">This is a short text.
+# comment 
+This &lt;Pitty&gt;tag&lt;/Pitty&gt; should survive.
+$%äöü)([]=^'"1!
+ ä#&amp;tag 
+tab	2tab --END</Body>
+    <MailHome>pivat@wx.de</MailHome>
+    <MailHome>privat2@wx.de</MailHome>
+    <MailWork>dienstlich@wx.de</MailWork>
+    <MailOther>andere@wx.de</MailOther>
+    <AddressHome>
+      <Street>pstr</Street>
+      <City>port</City>
+      <Region>preg</Region>
+      <PostalCode>pplz</PostalCode>
+      <Country>pland</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>dstr</Street>
+      <City>dort</City>
+      <Region>dreg</Region>
+      <PostalCode>dplz</PostalCode>
+      <Country>dland</Country>
+    </AddressBusiness>
+    <AddressOther>
+      <Street>astr</Street>
+      <City>aort</City>
+      <Region>areg</Region>
+      <PostalCode>aplz</PostalCode>
+      <Country>aland</Country>
+    </AddressOther>
+    <Department>Firma</Department>
+    <Anniversary VALUE="date">1546560000</Anniversary>
+    <Assistant>assitenz</Assistant>
+    <ManagerName>cheffe</ManagerName>
+    <Spouse>partner</Spouse>
+    <IMmsn>jabber</IMmsn>
+    <IMskype>skype</IMskype>
+    <Photo>sgw-643f16cb</Photo>
+    <Category>MyCat</Category>
+  </Data>
+</syncgw>

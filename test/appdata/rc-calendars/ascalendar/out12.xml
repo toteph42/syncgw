@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <Categories>
+    <Category>APPOINTMENT</Category>
+  </Categories>
+  <StartTime>19400201T000000Z</StartTime>
+  <EndTime>19400201T000000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Recurrence>
+    <MonthOfYear>2</MonthOfYear>
+    <Type>5</Type>
+  </Recurrence>
+  <Reminder>-36982710</Reminder>
+  <Reminder>-36982710</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>--- TEST FUER MEHRERE DAYLIGHT SAVING TIMES UND AALARM + DALARM ---</Subject>
+  <UID>dde34c0e-1099-13c4-a128-130ecf29</UID>
+</ApplicationData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1626593608</LastMod>
+  <Created>1626593608</Created>
+  <CRC/>
+  <extID>R257#G04660181</extID>
+  <extGroup>G04660181</extGroup>
+  <Data>
+    <EmailTo>"Device User"&lt;someone1@example.com&gt;</EmailTo>
+    <EmailFrom>"Device User2"&lt;someone2@example.com&gt;</EmailFrom>
+    <Subject>Sample HTML message</Subject>
+    <Created>1614709930</Created>
+    <Importance>3</Importance>
+    <MessageId>&lt;w00eOWd5mmDt9WA2JrlJdmVBLnTnlSXF8NsMcO4JI@syncgw.fd&gt;</MessageId>
+    <ContentClass>urn:content-classes:message</ContentClass>
+    <Flag/>
+    <InternetCPID>28591</InternetCPID>
+    <Body X-TYP="1">HTML-Nachricht</Body>
+    <Body X-TYP="2">&lt;html dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+&lt;style id="owaParaStyle"&gt;
+&lt;!--
+p
+{margin-top:0px;
+margin-bottom:0px}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="font-size:13px; color:#000000; direction:ltr; fontfamily:Tahoma"&gt;
+&lt;div&gt;This is&amp;nbsp;the body of an&amp;nbsp;HTML e-mail
+message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Body>
+    <MessageClass>IPM.Note</MessageClass>
+    <ConversationId>3572476e568e10a6</ConversationId>
+	<ConversationIndex>AdcPklssNXJHblaOEKY=</ConversationIndex>
+  </Data>
+</syncgw>

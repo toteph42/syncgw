@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>M00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <ContentClass>urn:content-classes:message</ContentClass>
+    <ConversationId>60abb9431386e60abb9431387360abb9</ConversationId>
+    <ConversationIndex>…</ConversationIndex>
+    <Created>1236206921</Created>
+    <MailDisplayTo>Device User</MailDisplayTo>
+    <MailFrom>"Device User2" &lt;someone2@example.com&gt;</MailFrom>
+    <Importance>3</Importance>
+    <MessageClass>IPM.Note</MessageClass>
+    <BodyType>1</BodyType>
+    <Read>0</Read>
+    <Summary>With Attachment</Summary>
+    <ThreadTopic>With Attachment</ThreadTopic>
+    <MailTo>"Device User" &lt;someone1@example.com&gt;</MailTo>
+  </Data>
+</syncgw>

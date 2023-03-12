@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Forrest Gump</FullName>
+    <FirstName>Forrest</FirstName>
+    <LastName>Gump</LastName>
+    <Organization>Bubba Gump Shrimp Co.</Organization>
+    <HomePhone>(404) 555-1212</HomePhone>
+    <WorkPhone>(111) 555-1212</WorkPhone>
+    <MailOther>forrestgump@example.com</MailOther>
+    <AddressHome>
+      <Street>42 Plantation St.</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>100 Waters Edge</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressBusiness>
+    <Title>Shrimp Man</Title>
+  </Data>
+</syncgw>

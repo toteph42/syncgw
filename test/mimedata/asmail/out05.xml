@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <ContentClass xml-ns="activesync:Mail">urn:content-classes:message</ContentClass>
+  <ConversationId xml-ns="activesync:Mail2">60abb9431386e60abb9431387360abb9</ConversationId>
+  <ConversationIndex>…</ConversationIndex>
+  <DateReceived xml-ns="activesync:Mail">2009-03-04T22:48:41.000Z</DateReceived>
+  <DisplayTo>Device User</DisplayTo>
+  <From>"Device User2" &lt;someone2@example.com&gt;</From>
+  <Importance>1</Importance>
+  <MessageClass>IPM.Note</MessageClass>
+  <NativeBodyType xml-ns="activesync:AirSyncBase">1</NativeBodyType>
+  <Read xml-ns="activesync:Mail">0</Read>
+  <Subject>With Attachment</Subject>
+  <ThreadTopic>With Attachment</ThreadTopic>
+  <To>"Device User" &lt;someone1@example.com&gt;</To>
+</ApplicationData>

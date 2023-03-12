@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopGetPropertyIdsFromNames">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+	<Flags T="I" S="1" F="GET_PROP_IDS"/>
+	<PropertyNameCount T="I" S="2"/>
+	<PropertyNames N="PropertyNameCount">
+	  <Kind T="I" S="1" D="KIND"/>
+	  <PropSet T="G" D="PROPSET"/>
+	  <Lid T="I" S="4" C="Kind=LID" D="LID"/>
+	  <NameSize T="I" S="1" C="Kind=Name"/>
+	  <Name T="S" C="Kind=Name"/>
+	</PropertyNames>
+  </RopRec>
+   
+  <RopRec Typ="Resp" X="RopGetPropertyIdsFromNames">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<InputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<PropertyIdCount T="I" S="2"/>
+	<PropertyIds N="PropertyIdCount">
+	  <Pid T="I" S="2" D="PID"/>
+	</PropertyIds>
+  </RopRec>
+
+  <RopRec Typ="mkResp" X="RopGetPropertyIdsFromNames">
+	<RopId T="I" S="1" D="ROP_ID">GetPropertyIdsFromNames</RopId>
+	<InputHandleIndex T="I" S="1">0</InputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<PropertyIdCount T="I" S="2">2</PropertyIdCount>
+	<PropertyIds>
+	  <Pid T="I" S="2" D="PID">InternetAccountName</Pid>
+	</PropertyIds>
+	<PropertyIds>
+	  <Pid T="I" S="2" D="PID">InternetAccountStamp</Pid>
+	</PropertyIds>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopGetPropertyIdsFromNames">
+	<RopId T="I" S="1" D="ROP_ID">GetPropertyIdsFromNames</RopId>
+	<InputHandleIndex T="I" S="1">0</InputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+   
+ </syncgw>

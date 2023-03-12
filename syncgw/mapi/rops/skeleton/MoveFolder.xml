@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopMoveFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<SourceHandleIndex T="I" S="1"/>
+	<DestHandleIndex T="I" S="1"/>
+	<WantAsynchronous T="B"/>
+	<UseUnicode T="B"/>
+	<FolderId T="H" S="8"/>
+	<NewFolderName T="S" C="WantAsynchronous=True"/>
+	<NewFolderName T="A" C="WantAsynchronous=False"/>
+  </RopRec>
+  
+  <RopRec Typ="Resp" X="RopMoveFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<SourceHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<PartialCompletion T="B"/>
+  </RopRec>
+ 
+  <RopRec Typ="mkResp" X="RopMoveFolder">
+	<RopId T="I" S="1" D="ROP_ID">MoveFolder</RopId>
+	<SourceHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<PartialCompletion T="B">False</PartialCompletion>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopMoveFolder">
+	<RopId T="I" S="1" D="ROP_ID">OpenFolder</RopId>
+	<SourceHandleIndex T="I" S="1">0</SourceHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+ 	<DestHandleIndex T="I" S="1">0</DestHandleIndex>
+ 	<PartialCompletion T="B">True</PartialCompletion>
+  </RopRec>
+   
+</syncgw>

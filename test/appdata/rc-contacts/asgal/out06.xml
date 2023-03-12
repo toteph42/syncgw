@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">Abe Test</DisplayName>
+  <Phone>7777777</Phone>
+  <Title>none</Title>
+  <FirstName>Abe</FirstName>
+  <LastName>Test</LastName>
+  <HomePhone>8888888</HomePhone>
+  <MobilePhone>9999999</MobilePhone>
+</ApplicationData>

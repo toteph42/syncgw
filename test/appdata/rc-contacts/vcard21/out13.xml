@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:Janko Humo
+N:Humo;Janko;;;
+ADR;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:;;Lindenstr=C3=9Fe=2017;New=
+=20York;;65817;Hessen
+
+TEL;PREF=1;TYPE=work:+49202020202
+TEL;TYPE=cell:+491198171
+TEL;PREF=1;TYPE=x-other:+4912122lll2ll2
+EMAIL:work@x.de
+REV:20131230T115856Z
+END:VCARD
+]]></Data>

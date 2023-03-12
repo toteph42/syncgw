@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <style type="text/css">
+      @font-face {
+        font-family: "FabricMDL2Icons";
+        src: url("data:application/octet-stream;base64,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")
+          format("truetype");
+      }
+
+      .ms-Icon {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-family: "FabricMDL2Icons";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+      }
+
+      .ms-Icon--ChevronDown:before {
+        content: "\E70D";
+      }
+
+      .ms-Icon--ChevronUp:before {
+        content: "\E70E";
+      }
+
+      .ms-Icon--CompletedSolid:before {
+        content: "\EC61";
+        color: green;
+      }
+
+      .ms-Icon--InfoSolid:before {
+        content: "\F167";
+        color: blue;
+      }
+
+      .ms-Icon--NavigateForward:before {
+        content: "\F2DF";
+        color: green;
+      }
+
+      [dir="rtl"] .ms-Icon--NavigateForward::before {
+        content: "\F2E0";
+        color: green;
+      }
+
+      .ms-Icon--StatusErrorFull:before {
+        content: "\EB90";
+        color: red;
+      }
+
+      .ms-Icon--WarningSolid:before {
+        content: "\F736";
+        color: darkorange;
+      }
+
+      /* Begin my styles */
+      .rca-result-node {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: min-content auto;
+        grid-auto-flow: row;
+      }
+
+      .rca-result-icon {
+        padding: 2px;
+      }
+
+      .rca-result-description {
+        grid-column: 2;
+      }
+
+      .rca-collapsible-panel {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: min-content auto;
+        grid-auto-flow: column;
+      }
+
+      .rca-collapse-button {
+        grid-row: 1;
+        border-style: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .rca-collapsible-label {
+        grid-row: 1;
+      }
+
+      .rca-collapsible-content {
+        grid-row: 2;
+      }
+
+      .rca-content-url {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: min-content;
+        grid-auto-flow: column;
+      }
+
+      .rca-content-url-icon {
+        padding: 2px;
+      }
+
+      .rca-additional-details {
+        grid-column: 2;
+      }
+
+      .rca-test-steps {
+        grid-column: 2;
+      }
+    </style>
+    <script type="text/javascript">
+      // @ts-check
+      var bootstrapData = {"Language":"en","IsRightToLeft":false,"Strings":{"TellMeMore":"Tell me more about this issue and how to resolve it","AdditionalDetails":"Additional Details","ElapsedTime":"Elapsed Time: {0} ms.","TestSteps":"Test Steps","Collapse":"Collapse","Expand":"Expand","DocumentTitle":"Microsoft Remote Connectivity Analyzer Test Results"},"Result":{"TestDescription":"The Microsoft Connectivity Analyzer is testing Exchange ActiveSync. ","ResultDescription":"Exchange ActiveSync was tested successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":35204,"Children":[{"TestDescription":"Attempting the Autodiscover and Exchange ActiveSync test (if requested).","ResultDescription":"Autodiscover was successfully tested for Exchange ActiveSync.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":18167,"Children":[{"TestDescription":"Attempting each method of contacting the Autodiscover service.","ResultDescription":"The Autodiscover service was tested successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":18167,"Children":[{"TestDescription":"Attempting to test potential Autodiscover URL https://dyn.wb28.de:443/Autodiscover/Autodiscover.xml","ResultDescription":"Testing of the Autodiscover URL was successful.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":18167,"Children":[{"TestDescription":"Attempting to resolve the host name dyn.wb28.de in DNS.","ResultDescription":"The host name resolved successfully.","AdditionalDetails":"IP addresses returned: 178.254.0.104","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":656,"Children":[]},{"TestDescription":"Testing TCP port 443 on host dyn.wb28.de to ensure it's listening and open.","ResultDescription":"The port was opened successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":306,"Children":[]},{"TestDescription":"Testing the SSL certificate to make sure it's valid.","ResultDescription":"The certificate passed all validation requirements.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"734044ef-11c2-4e30-9ee6-450d49e9d92c","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":5160,"Children":[{"TestDescription":"The Microsoft Connectivity Analyzer is probing the TCP endpoint 178.254.0.104 on port 443 to detect which SSL/TLS protocols and cipher suites are enabled.","ResultDescription":"We were able to detect the enabled protocols and cipher suites.","AdditionalDetails":"TLS Protocol: SSL v3, Not enabled.\r\nTLS Protocol: TLS 1.0, Not enabled.\r\nTLS Protocol: TLS 1.1, Not enabled.\r\nTLS Protocol: TLS 1.2, Enabled cipher suites: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_CCM_8, TLS_DHE_RSA_WITH_AES_256_CCM, TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384, TLS_DHE_RSA_WITH_ARIA_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_CCM_8, TLS_DHE_RSA_WITH_AES_128_CCM, TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256, TLS_DHE_RSA_WITH_ARIA_128_GCM_SHA256","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Checking that your server supports modern TLS protocols and cipher suites.","ResultDescription":"Your server supports modern TLS protocols and cipher suites; it should be compatible with Microsoft 365 services.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"The Microsoft Connectivity Analyzer is attempting to obtain the SSL certificate from remote server dyn.wb28.de on port 443.","ResultDescription":"The Microsoft Connectivity Analyzer successfully obtained the remote SSL certificate.","AdditionalDetails":"Remote certificate information:\r\nSubject: CN=dyn.wb28.de\r\nIssuer: CN=R3, O=Let's Encrypt, C=US\r\nThumbprint: A221E06B179471012527EF45444D461B0BF73072\r\nNot valid before: 2022-12-25 01:45:11Z\r\nExpires: 2023-03-25 01:45:10Z","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Validating the certificate name.","ResultDescription":"The certificate name was validated successfully.","AdditionalDetails":"Host name dyn.wb28.de was found in the Certificate Subject Common name.","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Testing the certificate date to confirm the certificate is valid.","ResultDescription":"Date validation passed. The certificate hasn't expired.","AdditionalDetails":"The certificate is valid. NotBefore = 12/25/2022 1:45:11 AM, NotAfter = 3/25/2023 1:45:10 AM","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]}]},{"TestDescription":"Attempting to send an Autodiscover POST request to potential Autodiscover URLs.","ResultDescription":"The Microsoft Connectivity Analyzer successfully retrieved Autodiscover settings by sending an Autodiscover POST.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":12042,"Children":[{"TestDescription":"The Microsoft Connectivity Analyzer is attempting to retrieve an XML Autodiscover response from URL https://dyn.wb28.de:443/Autodiscover/Autodiscover.xml for user t1@dyn.wb28.de.","ResultDescription":"The Autodiscover XML response was successfully retrieved.","AdditionalDetails":"Autodiscover Account Settings\r\nXML response:\r\n<?xml version=\"1.0\"?>\r\n<Autodiscover xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006\">\r\n  <Response xmlns=\"http://schemas.microsoft.com/exchange/autodiscover/mobilesync/responseschema/2006\">\r\n    <Culture>en:us</Culture>\r\n    <User>\r\n      <DisplayName>t1</DisplayName>\r\n      <EMailAddress>t1@dyn.wb28.de</EMailAddress>\r\n    </User>\r\n    <Action>\r\n      <Settings>\r\n        <Server>\r\n          <Type>MobileSync</Type>\r\n          <Url>https://dyn.wb28.de/Microsoft-Server-ActiveSync</Url>\r\n          <Name>https://dyn.wb28.de/Microsoft-Server-ActiveSync</Name>\r\n        </Server>\r\n      </Settings>\r\n    </Action>\r\n  </Response>\r\n</Autodiscover>\r\nHTTP Response Headers:\r\nPragma: no-cache\r\nConnection: Keep-Alive\r\nVary: Accept-Encoding\r\nMS-Server-ActiveSync: 9.19.81\r\nStrict-Transport-Security: max-age=31536000\r\nContent-Length: 820\r\nCache-Control: private\r\nContent-Type: text/xml;charset=UTF-8\r\nDate: Thu, 16 Feb 2023 10:41:12 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=9q2l5vslqfcm5tbl3uj7pg8i2e; secure; HttpOnly\r\nServer: Apache\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":12042,"Children":[]}]}]}]}]},{"TestDescription":"Validating Exchange ActiveSync settings.","ResultDescription":"Exchange ActiveSync URL https://dyn.wb28.de/Microsoft-Server-ActiveSync was validated successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":0,"Children":[]},{"TestDescription":"Attempting to resolve the host name dyn.wb28.de in DNS.","ResultDescription":"The host name resolved successfully.","AdditionalDetails":"IP addresses returned: 178.254.0.104","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":473,"Children":[]},{"TestDescription":"Testing TCP port 443 on host dyn.wb28.de to ensure it's listening and open.","ResultDescription":"The port was opened successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":119,"Children":[]},{"TestDescription":"Testing the SSL certificate to make sure it's valid.","ResultDescription":"The certificate passed all validation requirements.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"734044ef-11c2-4e30-9ee6-450d49e9d92c","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":4149,"Children":[{"TestDescription":"The Microsoft Connectivity Analyzer is probing the TCP endpoint 178.254.0.104 on port 443 to detect which SSL/TLS protocols and cipher suites are enabled.","ResultDescription":"We were able to detect the enabled protocols and cipher suites.","AdditionalDetails":"TLS Protocol: SSL v3, Not enabled.\r\nTLS Protocol: TLS 1.0, Not enabled.\r\nTLS Protocol: TLS 1.1, Not enabled.\r\nTLS Protocol: TLS 1.2, Enabled cipher suites: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_CCM_8, TLS_DHE_RSA_WITH_AES_256_CCM, TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384, TLS_DHE_RSA_WITH_ARIA_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_CCM_8, TLS_DHE_RSA_WITH_AES_128_CCM, TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256, TLS_DHE_RSA_WITH_ARIA_128_GCM_SHA256","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Checking that your server supports modern TLS protocols and cipher suites.","ResultDescription":"Your server supports modern TLS protocols and cipher suites; it should be compatible with Microsoft 365 services.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"The Microsoft Connectivity Analyzer is attempting to obtain the SSL certificate from remote server dyn.wb28.de on port 443.","ResultDescription":"The Microsoft Connectivity Analyzer successfully obtained the remote SSL certificate.","AdditionalDetails":"Remote certificate information:\r\nSubject: CN=dyn.wb28.de\r\nIssuer: CN=R3, O=Let's Encrypt, C=US\r\nThumbprint: A221E06B179471012527EF45444D461B0BF73072\r\nNot valid before: 2022-12-25 01:45:11Z\r\nExpires: 2023-03-25 01:45:10Z","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Validating the certificate name.","ResultDescription":"The certificate name was validated successfully.","AdditionalDetails":"Host name dyn.wb28.de was found in the Certificate Subject Common name.","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]},{"TestDescription":"Testing the certificate date to confirm the certificate is valid.","ResultDescription":"Date validation passed. The certificate hasn't expired.","AdditionalDetails":"The certificate is valid. NotBefore = 12/25/2022 1:45:11 AM, NotAfter = 3/25/2023 1:45:10 AM","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":null,"Children":[]}]},{"TestDescription":"Testing HTTP Authentication Methods for URL https://dyn.wb28.de/Microsoft-Server-ActiveSync.","ResultDescription":"The HTTP authentication methods are correct.","AdditionalDetails":"The Microsoft Connectivity Analyzer found all expected authentication methods and no disallowed methods. Methods found: Basic\r\nHTTP Response Headers:\r\nPragma: no-cache\r\nConnection: Keep-Alive\r\nConnection: Upgrade\r\nStrict-Transport-Security: max-age=31536000\r\nUpgrade: h2\r\nUpgrade: h2c\r\nContent-Length: 0\r\nCache-Control: no-store\r\nCache-Control: no-cache\r\nCache-Control: must-revalidate\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Thu, 16 Feb 2023 10:41:28 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=rpbcn3bn3aua64pvtt4648306p; secure; HttpOnly\r\nServer: Apache\r\nWWW-Authenticate: Basic realm=masHANDLER\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":1351,"Children":[]},{"TestDescription":"An ActiveSync session is being attempted with the server.","ResultDescription":"Testing of an Exchange ActiveSync session completed successfully.","AdditionalDetails":null,"ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":10942,"Children":[{"TestDescription":"Attempting to send the OPTIONS command to the server.","ResultDescription":"The OPTIONS response was successfully received and is valid.","AdditionalDetails":"HTTP Response Headers:\r\nPragma: no-cache\r\nAllow: OPTIONS\r\nAllow: POST\r\nPublic: OPTIONS, POST\r\nMS-ASProtocolVersions: 2.5,12.0,12.1,14.0,14.1,16.0,16.1\r\nMS-Server-ActiveSync: 9.19.81\r\nMS-ASProtocolCommands: Autodiscover,Sync,SendMail,SmartForward,SmartReply,GetAttachment,FolderSync,FolderCreate,FolderDelete,FolderUpdate,MoveItems,GetItemEstimate,MeetingResponse,Search,Settings,Ping,ItemOperations,Provision,ResolveRecipients,Find,GetHierarchy\r\nConnection: Keep-Alive\r\nStrict-Transport-Security: max-age=31536000\r\nContent-Length: 0\r\nCache-Control: no-store\r\nCache-Control: no-cache\r\nCache-Control: must-revalidate\r\nContent-Type: application/vnd.ms-sync.wbxml\r\nDate: Thu, 16 Feb 2023 10:41:29 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=a5r8sn0srna5jhusiinjljeftt; secure; HttpOnly\r\nServer: Apache\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":1616,"Children":[]},{"TestDescription":"Attempting the FolderSync command on the Exchange ActiveSync session.","ResultDescription":"The FolderSync command completed successfully.","AdditionalDetails":"Number of folders: 13 \r\n\r\n Response: \r\n <FolderSync xmlns=\"FolderHierarchy:\">\r\n  <Status>1</Status>\r\n  <SyncKey>3</SyncKey>\r\n  <Changes>\r\n    <Count>13</Count>\r\n    <Add>\r\n      <ServerId>A1</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Persönliches Adressbuch</DisplayName>\r\n      <Type>9</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>C1</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Calendar #1</DisplayName>\r\n      <Type>8</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>C2</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Calendar #2</DisplayName>\r\n      <Type>13</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>T2</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Task list #1</DisplayName>\r\n      <Type>7</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>T3</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Task list #1</DisplayName>\r\n      <Type>15</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>N28</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Notes default group</DisplayName>\r\n      <Type>10</Type>\r\n    </Add>\r\n    <Update>\r\n      <ServerId>M1</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Entwurf</DisplayName>\r\n      <Type>3</Type>\r\n    </Update>\r\n    <Delete>\r\n      <ServerId>M2</ServerId>\r\n    </Delete>\r\n    <Delete>\r\n      <ServerId>M3</ServerId>\r\n    </Delete>\r\n    <Update>\r\n      <ServerId>M4</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Junk-E-Mail</DisplayName>\r\n      <Type>1</Type>\r\n    </Update>\r\n    <Add>\r\n      <ServerId>M5</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Sent</DisplayName>\r\n      <Type>5</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>M6</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>Trash</DisplayName>\r\n      <Type>4</Type>\r\n    </Add>\r\n    <Add>\r\n      <ServerId>M7</ServerId>\r\n      <ParentId>0</ParentId>\r\n      <DisplayName>INBOX</DisplayName>\r\n      <Type>2</Type>\r\n    </Add>\r\n  </Changes>\r\n</FolderSync>\r\nHTTP Response Headers:\r\nPragma: no-cache\r\nConnection: Keep-Alive\r\nVary: Accept-Encoding\r\nMS-Server-ActiveSync: 9.19.81\r\nStrict-Transport-Security: max-age=31536000\r\nContent-Length: 409\r\nCache-Control: private\r\nContent-Type: application/vnd.ms-sync.wbxml\r\nDate: Thu, 16 Feb 2023 10:41:31 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=7fdgu5s29r4padfvmm8ii92jnt; secure; HttpOnly\r\nServer: Apache\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":1489,"Children":[]},{"TestDescription":"Attempting the initial sync to the Inbox folder. This initial sync won't return any data.","ResultDescription":"The Sync command completed successfully.","AdditionalDetails":"Status: 1\r\nHTTP Response Headers:\r\nPragma: no-cache\r\nConnection: Keep-Alive\r\nVary: Accept-Encoding\r\nMS-Server-ActiveSync: 9.19.81\r\nStrict-Transport-Security: max-age=31536000\r\nContent-Length: 325\r\nCache-Control: private\r\nContent-Type: application/vnd.ms-sync.wbxml\r\nDate: Thu, 16 Feb 2023 10:41:32 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=jin7cvoi23hsjspmp7qislfkok; secure; HttpOnly\r\nServer: Apache\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":5985,"Children":[]},{"TestDescription":"Attempting to test the GetItemEstimate command for the Inbox folder.","ResultDescription":"The Microsoft Connectivity Analyzer successfully received the  GetItemEstimate response from the server.","AdditionalDetails":"Estimate: 0 messages\r\nHTTP Response Headers:\r\nPragma: no-cache\r\nConnection: Keep-Alive\r\nVary: Accept-Encoding\r\nMS-Server-ActiveSync: 9.19.81\r\nStrict-Transport-Security: max-age=31536000\r\nContent-Length: 33\r\nCache-Control: private\r\nContent-Type: application/vnd.ms-sync.wbxml\r\nDate: Thu, 16 Feb 2023 10:41:39 GMT\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nSet-Cookie: roundcube_sessid=u6vkbp8rs5vvhtjhk7bmripesq; secure; HttpOnly\r\nServer: Apache\r\nX-Powered-By: PHP/8.1.6\r\n","ContentUrl":null,"ErrorId":"00000000-0000-0000-0000-000000000000","Status":"Success","DisplayFormType":"Default","AdditionalResultData":null,"ElapsedMilliseconds":1850,"Children":[]}]}]}};
+
+      var Strings = bootstrapData.Strings;
+
+      /**
+       * Formats a string like string.Format in C#
+       *
+       * @param {string} s the format string.
+       * @param {array} values the format parameters the text.
+       */
+      function format(s, ...values) {
+        // Regex that finds { and } so they can be removed on a lookup for string format
+        const FORMAT_ARGS_REGEX = /[\{\}]/g;
+
+        // Regex that finds {#} so it can be replaced by the arguments in string format
+        const FORMAT_REGEX = /\{\d+\}/g;
+
+        let args = values;
+        // Callback match function
+        function replaceFunc(match) {
+          // looks up in the args
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          let replacement = args[match.replace(FORMAT_ARGS_REGEX, "")];
+
+          // catches undefined in nondebug and null in debug and nondebug
+          if (replacement === null || replacement === undefined) {
+            replacement = "";
+          }
+
+          return replacement;
+        }
+        return s.replace(FORMAT_REGEX, replaceFunc);
+      }
+
+      /**
+       * Appends a text element with the inner text
+       *
+       * @param {HTMLElement} parent the parent HTML node.
+       * @param {string} text the text.
+       * @param {string[]} [classNames] the CSS class names.
+       * @param {string} [elementType] the element type.
+       */
+      function appendTextElement(parent, text, classNames, elementType) {
+        const div = document.createElement(elementType ?? "div");
+        div.innerText = text;
+        if (classNames) {
+          for (const name of classNames) {
+            div.classList.add(name);
+          }
+        }
+        parent.appendChild(div);
+      }
+
+      /**
+       * Appends the help link
+       *
+       * @param {HTMLElement} parent the parent HTML node.
+       * @param {string} link the link.
+       */
+      function appendHelpLink(parent, link) {
+        const div = document.createElement("div");
+        div.className = "rca-content-url";
+        const icon = document.createElement("i");
+        icon.className = "rca-content-url-icon ms-Icon ms-Icon--NavigateForward";
+        icon.ariaHidden = "true";
+        div.appendChild(icon);
+        const anchor = document.createElement("a");
+        anchor.className = "rca-content-url-anchor";
+        anchor.href = link;
+        anchor.target = "_blank";
+        anchor.innerText = Strings.TellMeMore;
+        div.appendChild(anchor);
+
+        parent.appendChild(div);
+      }
+
+      /**
+       * Gets the result icond class based on the test status.
+       *
+       * @param {string} status the result status.
+       */
+      function getResultIconClass(status) {
+        switch (status) {
+          default:
+          case "FatalError":
+          case "Error":
+            return "ms-Icon--StatusErrorFull";
+          case "Warning":
+            return "ms-Icon--WarningSolid";
+          case "SuccessWithWarnings":
+            return "ms-Icon--CompletedSolid";
+          case "Success":
+            return "ms-Icon--CompletedSolid";
+          case "Informational":
+            return "ms-Icon--InfoSolid";
+        }
+      }
+
+      /**
+       * Appends a collapsable panel with content.
+       *
+       * @param {HTMLElement} parent the parent HTML node.
+       * @param {string} label the header label.
+       * @param {HTMLElement} content the content HTML node.
+       * @param {string[]} [classNames] any additional class names.
+       */
+      function appendCollapseablePanel(parent, label, content, classNames) {
+        // By default whether additional details are expanded
+        let expanded = false;
+
+        const div = document.createElement("div");
+        div.className = "rca-collapsible-panel";
+        if (classNames) {
+          for (const name of classNames) {
+            div.classList.add(name);
+          }
+        }
+
+        const icon = document.createElement("i");
+        icon.className = "ms-Icon";
+        const toggleButton = document.createElement("button");
+        toggleButton.type = "button";
+        toggleButton.className = "rca-collapse-button";
+
+        function updateCollapseState() {
+          if (expanded) {
+            toggleButton.ariaLabel = Strings.Collapse;
+            icon.classList.remove("ms-Icon--ChevronDown");
+            icon.classList.add("ms-Icon--ChevronUp");
+            content.style.display = "";
+          } else {
+            toggleButton.ariaLabel = Strings.Expand;
+            icon.classList.remove("ms-Icon--ChevronUp");
+            icon.classList.add("ms-Icon--ChevronDown");
+            content.style.display = "none";
+          }
+        }
+
+        // update the initial state
+        updateCollapseState();
+
+        toggleButton.onclick = () => {
+          expanded = !expanded;
+          updateCollapseState();
+        };
+
+        toggleButton.appendChild(icon);
+        div.appendChild(toggleButton);
+
+        appendTextElement(div, label, ["rca-collapsible-label"], "span");
+
+        content.classList.add("rca-collapsible-content");
+        div.appendChild(content);
+
+        parent.appendChild(div);
+      }
+
+      /**
+       * Appends an RCA result node.
+       *
+       * @typedef {{
+       *    TestDescription: string,
+       *    ResultDescription: string,
+       *    AdditionalDetails: string,
+       *    ContentUrl: string,
+       *    ErrorId: string
+       *    Status: string,
+       *    ElapsedMilliseconds: number,
+       *    Children: ResultNode[]
+       * }} ResultNode
+       *
+       * @param {HTMLElement} parent the parent HTML node.
+       * @param {ResultNode} result The result node.
+       */
+      function appendResultNode(parent, result) {
+        const nodeElement = document.createElement("div");
+        nodeElement.className = "rca-result-node";
+
+        const icon = document.createElement("i");
+        const iconClass = getResultIconClass(result.Status);
+        icon.className = `rca-result-icon ms-Icon ${iconClass}`;
+        icon.ariaHidden = "true";
+        nodeElement.appendChild(icon);
+
+        appendTextElement(nodeElement, result.TestDescription, ["rca-test-description"]);
+        appendTextElement(nodeElement, result.ResultDescription, ["rca-result-description"]);
+        if (result.ContentUrl) {
+          appendHelpLink(nodeElement, result.ContentUrl);
+        }
+
+        if (result.AdditionalDetails || result.ElapsedMilliseconds) {
+          const detailsDiv = document.createElement("div");
+          // Add the details div
+          const details = [];
+          if (result.AdditionalDetails) {
+            details.push(result.AdditionalDetails);
+          }
+          if (result.ElapsedMilliseconds) {
+            details.push(format(Strings.ElapsedTime, result.ElapsedMilliseconds));
+          }
+
+          detailsDiv.innerText = details.join("\r\n");
+
+          appendCollapseablePanel(nodeElement, Strings.AdditionalDetails, detailsDiv, ["rca-additional-details"]);
+        }
+
+        if (result.Children && result.Children.length > 0) {
+          const testStepsElement = document.createElement("div");
+          for (const child of result.Children) {
+            appendResultNode(testStepsElement, child);
+          }
+
+          appendCollapseablePanel(nodeElement, Strings.TestSteps, testStepsElement, ["rca-test-steps"]);
+        }
+
+        parent.appendChild(nodeElement);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.title = Strings.DocumentTitle;
+        document.body.lang = bootstrapData.Language;
+        document.body.dir = bootstrapData.IsRightToLeft ? "rtl" : "ltr";
+        const resultContainer = document.getElementById("resultContainer");
+        appendResultNode(resultContainer, bootstrapData.Result);
+      });
+    </script>
+  </head>
+
+  <body class="ms-Fabric">
+    <div id="resultContainer"></div>
+  </body>
+</html>

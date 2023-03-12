@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>040000008200E00074C5B7101A82E00800000000B0CD1F52EBBDC901000000000000000010000000B05E442FCB2CA443BF3D99B51A729FE6</UID>
+    <StartTime>1239987600</StartTime>
+    <EndTime>1239991200</EndTime>
+    <Summary>Recurring appointment test</Summary>
+    <Location>
+      <DisplayName>My office</DisplayName>
+    </Location>
+    <Recurrence>
+      <Frequency>WEEKLY</Frequency>
+      <Count>3</Count>
+      <Interval>1</Interval>
+      <DayPos>FR</DayPos>
+    </Recurrence>
+    <Exceptions>
+      <Exception>
+        <InstanceId>0</InstanceId>
+        <Delete/>
+      </Exception>
+    </Exceptions>
+    <BusyStatus>BUSY</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

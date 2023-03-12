@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+	<To>"Device User" &lt;someone1@example.com&gt;</To>
+	<From>"Device User2" &lt;someone2@example.com&gt;</From>
+	<Subject>Sample HTML message</Subject>
+	<DateReceived>2009-02-19T01:43:25.266Z</DateReceived>
+	<DisplayTo>Device User</DisplayTo>
+	<ThreadTopic>Sample HTML message</ThreadTopic>
+	<Importance>1</Importance>
+	<Read>0</Read>
+	<Body>
+		<Type>2</Type>
+		<EstimatedDataSize>375</EstimatedDataSize>
+		<Data>&lt;html dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+&lt;style id="owaParaStyle"&gt;
+&lt;!--
+p
+{margin-top:0px;
+margin-bottom:0px}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="font-size:13px; color:#000000; direction:ltr; fontfamily:Tahoma"&gt;
+&lt;div&gt;This is&amp;nbsp;the body of an&amp;nbsp;HTML e-mail
+message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+		</Data>
+	</Body>
+	<MessageClass>IPM.Note</MessageClass>
+	<InternetCPID>28591</InternetCPID>
+	<Flag />
+	<ContentClass>urn:content-classes:message</ContentClass>
+	<NativeBodyType>2</NativeBodyType>
+	<ConversationId>60abb9431386e60abb9431387360abb9</ConversationId>
+	<ConversationIndex>CA2CFA8A23</ConversationIndex>
+	<Categories />
+</ApplicationData>

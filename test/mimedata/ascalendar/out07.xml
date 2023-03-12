@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">1</BusyStatus>
+  <Categories>
+    <Category>Birthday</Category>
+  </Categories>
+  <StartTime>20150302T175500Z</StartTime>
+  <EndTime>20150302T185500Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Exceptions>
+    <Exception>
+      <BusyStatus>1</BusyStatus>
+      <EndTime>20150302T185500Z</EndTime>
+      <AllDayEvent>0</AllDayEvent>
+      <InstanceId xml-ns="activesync:AirSyncBase">19700101T000000Z</InstanceId>
+      <MeetingStatus xml-ns="activesync:Calendar">0</MeetingStatus>
+      <Sensitivity>0</Sensitivity>
+      <StartTime>20150302T175500Z</StartTime>
+      <Subject>Geburtstag NickX</Subject>
+    </Exception>
+  </Exceptions>
+  <MeetingStatus>0</MeetingStatus>
+  <OrganizerEmail>jam@192.168.55.1</OrganizerEmail>
+  <Recurrence>
+    <DayOfMonth>2</DayOfMonth>
+    <MonthOfYear>3</MonthOfYear>
+    <Type>5</Type>
+  </Recurrence>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Geburtstag Nick</Subject>
+  <UID>4e44f522-015a-84de-bf3c-31e4a3578b17</UID>
+</ApplicationData>

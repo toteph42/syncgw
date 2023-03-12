@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">01 given name 01 family name</DisplayName>
+  <Phone>+0002</Phone>
+  <Title>titel</Title>
+  <FirstName>01 given name</FirstName>
+  <LastName>01 family name</LastName>
+  <HomePhone>+0001</HomePhone>
+  <MobilePhone>+0003</MobilePhone>
+  <EmailAddress>email@x.com</EmailAddress>
+  <Picture/>
+</ApplicationData>

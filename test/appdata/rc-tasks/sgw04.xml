@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>7374C7DCE1D36DB90D701F1DF78D986A</UID>
+    <Summary>TÜV für Mopped</Summary>
+    <DueDate>1280534400</DueDate>
+    <StartTime>1277942400</StartTime>
+    <Flag>0</Flag>
+    <Status X-PC="0">NEEDS-ACTION</Status>
+  </Data>
+</syncgw>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Calendar code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8196</PID>
+  <Name>-//ActiveSync//DTD Calendar//EN</Name>
+  <Tag>[MS-CAL]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascal</Link>
+  <Title>Calendar Request and Response Schema</Title>
+  <Ver>21.0</Ver>
+  <URI>activesync:Calendar</URI>
+  <CodePage>4</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Timezone>0x05</Timezone>
+   <AllDayEvent>0x06</AllDayEvent>
+   <Attendees>0x07</Attendees>
+   <Attendee>0x08</Attendee>
+   <Email>0x09</Email>
+   <Name>0x0a</Name>
+   <!-- 2.5 -->
+   <Body>0x0b</Body>
+   <BodyTruncated>0x0c</BodyTruncated>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <BusyStatus>0x0d</BusyStatus>
+   <Categories>0x0e</Categories>
+   <Category>0x0f</Category>
+   <DtStamp>0x11</DtStamp>
+   <EndTime>0x12</EndTime>
+   <Exception>0x13</Exception>
+   <Exceptions>0x14</Exceptions>
+   <Deleted>0x15</Deleted>
+   <!--2.5,12.0,12.1,14.0,14.1 -->
+   <ExceptionStartTime>0x16</ExceptionStartTime>
+   <Location>0x17</Location>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <MeetingStatus>0x18</MeetingStatus>
+   <OrganizerEmail>0x19</OrganizerEmail>
+   <OrganizerName>0x1a</OrganizerName>
+   <Recurrence>0x1b</Recurrence>
+   <Type>0x1c</Type>
+   <Until>0x1d</Until>
+   <Occurrences>0x1e</Occurrences>
+   <Interval>0x1f</Interval>
+   <DayOfWeek>0x20</DayOfWeek>
+   <DayOfMonth>0x21</DayOfMonth>
+   <WeekOfMonth>0x22</WeekOfMonth>
+   <MonthOfYear>0x23</MonthOfYear>
+   <Reminder>0x24</Reminder>
+   <Sensitivity>0x25</Sensitivity>
+   <Subject>0x26</Subject>
+   <StartTime>0x27</StartTime>
+   <UID>0x28</UID>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <AttendeeStatus>0x29</AttendeeStatus>
+   <AttendeeType>0x2a</AttendeeType>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <DisallowNewTimeProposal>0x33</DisallowNewTimeProposal>
+   <ResponseRequested>0x34</ResponseRequested>
+   <AppointmentReplyTime>0x35</AppointmentReplyTime>
+   <ResponseType>0x36</ResponseType>
+   <CalendarType>0x37</CalendarType>
+   <IsLeapMonth>0x38</IsLeapMonth>
+   <!-- 14.1,16.0,16.1 -->
+   <FirstDayOfWeek>0x39</FirstDayOfWeek>
+   <OnlineMeetingConfLink>0x3a</OnlineMeetingConfLink>
+   <OnlineMeetingExternalLink>0x3b</OnlineMeetingExternalLink>
+   <!-- 16.0,16.1 -->
+   <ClientUid>0x3c</ClientUid>
+ </Defs>
+
+</CodePage>

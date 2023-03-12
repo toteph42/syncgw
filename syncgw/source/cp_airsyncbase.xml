@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync AirSyncBase code page definition
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+  
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8209</PID>
+  <Name>-//ActiveSync//DTD AirSyncBase//EN</Name>
+  <Tag>[MS-ASAIRS]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs</Link>
+  <Title>AirSyncBase Request and Response Schema</Title>
+  <Ver>21.0</Ver>
+  <URI>activesync:AirSyncBase</URI>
+  <CodePage>17</CodePage>
+ </Header>
+
+ <Defs>
+  <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+  <BodyPreference>0x05</BodyPreference>
+  <Type>0x06</Type>
+  <TruncationSize>0x07</TruncationSize>
+  <AllOrNone>0x08</AllOrNone>
+  <Body>0x0a</Body>
+  <Data>0x0b</Data>
+  <EstimatedDataSize>0x0c</EstimatedDataSize>
+  <Truncated>0x0d</Truncated>
+  <Attachments>0x0e</Attachments>
+  <Attachment>0x0f</Attachment>
+  <DisplayName>0x10</DisplayName>
+  <FileReference>0x11</FileReference>
+  <Method>0x12</Method>
+  <ContentId>0x13</ContentId>
+  <ContentLocation>0x14</ContentLocation>
+  <IsInline>0x15</IsInline>
+  <NativeBodyType>0x16</NativeBodyType>
+  <ContentType>0x17</ContentType>
+  <!-- 14.0,14.1,16.0,16.1 -->
+  <Preview>0x18</Preview>
+  <!-- 14.1,16.0,16.1 -->
+  <BodyPartPreference>0x19</BodyPartPreference>
+  <BodyPart>0x1a</BodyPart>
+  <Status>0x1b</Status>
+  <!-- 16.0,16.1 -->
+  <Add>0x1c</Add>
+  <Delete>0x1d</Delete>
+  <ClientId>0x1e</ClientId>
+  <Content>0x1f</Content>
+  <Location>0x20</Location>
+  <Annotation>0x21</Annotation>
+  <Street>0x22</Street>
+  <City>0x23</City>
+  <State>0x24</State>
+  <Country>0x25</Country>
+  <PostalCode>0x26</PostalCode>
+  <Latitude>0x27</Latitude>
+  <Longitude>0x28</Longitude>
+  <Accuracy>0x29</Accuracy>
+  <Altitude>0x2a</Altitude>
+  <AltitudeAccuracy>0x2b</AltitudeAccuracy>
+  <LocationUri>0x2c</LocationUri>
+  <InstanceId>0x2d</InstanceId>
+ </Defs>
+
+</CodePage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Sync CHARSET="utf-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>1621589778</SyncKey>
+      <CollectionId>M1</CollectionId>
+      <DeletesAsMoves>1</DeletesAsMoves>
+      <GetChanges>1</GetChanges>
+      <WindowSize>30</WindowSize>
+      <Options>
+        <FilterType>3</FilterType>
+        <BodyPreference xml-ns="activesync:AirSyncBase">
+          <Type>2</Type>
+          <TruncationSize>51200</TruncationSize>
+        </BodyPreference>
+        <Class xml-ns="activesync:AirSync">SMS</Class>
+      </Options>
+      <Options>
+        <FilterType>3</FilterType>
+        <Conflict>1</Conflict>
+        <BodyPreference xml-ns="activesync:AirSyncBase">
+          <Type>3</Type>
+          <TruncationSize>51201</TruncationSize>
+          <AllOrNone>1</AllOrNone>
+        </BodyPreference>
+         <RightsManagementSupport xml-ns="activesync:RightsManagement">1</RightsManagementSupport>
+      </Options>
+ 	  <!-- Fake -->
+      <Options>
+        <MIMETruncation>6</MIMETruncation>
+		<MIMESupport>2</MIMESupport>
+		<MaxItems>4711</MaxItems>
+        <BodyPreference xml-ns="activesync:AirSyncBase">
+          <Type>2</Type>
+          <TruncationSize>51211</TruncationSize>
+        </BodyPreference>
+      </Options>
+    </Collection>
+  </Collections>
+</Sync>

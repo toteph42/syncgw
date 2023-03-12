@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syncml:SyncML1.2 PUBLIC "-//SyncML//DTD SyncML 1.2//EN" "http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-RepPro-DTD-V1_1_2-20030505-D.dtd">
+<SyncML CHARSET="utf-8" xml-ns="syncml:SyncML1.2">
+  <SyncHdr>
+    <VerDTD>1.2</VerDTD>
+    <VerProto>SyncML/1.2</VerProto>
+    <SessionID>35</SessionID>
+    <MsgID>2</MsgID>
+    <Target>
+      <LocURI>http://localhost/SGW/sync.php?sessid=SERIALNUMBER-35</LocURI>
+    </Target>
+    <Source>
+      <LocURI>SERIALNUMBER</LocURI>
+      <LocName>web338p1</LocName>
+    </Source>
+    <Meta>
+      <MaxMsgSize xml-ns="syncml:MetInf">20000</MaxMsgSize>
+      <MaxObjSize>64000</MaxObjSize>
+    </Meta>
+  </SyncHdr>
+  <SyncBody xml-ns="syncml:SyncML">
+    <Status>
+      <CmdID>1</CmdID>
+      <MsgRef>1</MsgRef>
+      <CmdRef>0</CmdRef>
+      <Cmd>SyncHdr</Cmd>
+      <TargetRef>SERIALNUMBER</TargetRef>
+      <SourceRef>http://localhost/SGW/sync.php</SourceRef>
+      <Data>200</Data>
+    </Status>
+    <Status>
+      <CmdID>2</CmdID>
+      <MsgRef>1</MsgRef>
+      <CmdRef>4</CmdRef>
+      <Cmd>Results</Cmd>
+      <SourceRef>./devinf12</SourceRef>
+      <Data>200</Data>
+    </Status>
+    <Status>
+      <CmdID>3</CmdID>
+      <MsgRef>1</MsgRef>
+      <CmdRef>6</CmdRef>
+      <Cmd>Alert</Cmd>
+      <TargetRef>./contacts</TargetRef>
+      <SourceRef>contacts</SourceRef>
+      <Data>200</Data>
+      <Item>
+        <Data>
+          <Anchor xml-ns="syncml:MetInf">
+            <Next>20110901T092323Z</Next>
+          </Anchor>
+        </Data>
+      </Item>
+    </Status>
+    <Sync xml-ns="syncml:SyncML">
+      <CmdID>4</CmdID>
+      <Target>
+        <LocURI>contacts</LocURI>
+      </Target>
+      <Source>
+        <LocURI>./contacts</LocURI>
+      </Source>
+      <Replace>
+        <CmdID>5</CmdID>
+        <Meta>
+          <Type xml-ns="syncml:MetInf">text/x-vcard</Type>
+        </Meta>
+        <Item xml-ns="syncml:SyncML">
+          <Source>
+            <LocURI>15220737</LocURI>
+          </Source>
+          <Data>BEGIN:VCARD
+VERSION:2.1
+N:L01;first;;;
+FN:L01, first
+TITLE:title
+ORG:comp;
+CLASS:PUBLIC
+TEL;WORK:123
+TEL;HOME:234
+TEL;FAX:345
+TEL:456
+EMAIL:
+ADR:;;;;;;
+NOTE;ENCODING=QUOTED-PRINTABLE:this=0D=0A=
+is a=0D=0A=
+note!&lt;&gt;;-:_%&amp;XXX
+END:VCARD
+</Data>
+        </Item>
+      </Replace>
+    </Sync>
+    <Final/>
+  </SyncBody>
+</SyncML>

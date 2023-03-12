@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <FullName>Firstname Lastname</FullName>
+    <FirstName>Firstname</FirstName>
+    <LastName>Lastname</LastName>
+    <MiddleName>Middlename</MiddleName>
+    <Organization>Company</Organization>
+    <Prefix>Title</Prefix>
+    <Suffix>Suffix</Suffix>
+    <WorkPhone>0000000000000</WorkPhone>
+    <MobilePhone>0000000000</MobilePhone>
+    <UmCallerID>0000000000</UmCallerID>
+    <UmCallerID>0000000000000</UmCallerID>
+    <Birthday VALUE="date">1141084800</Birthday>
+    <MailOther>test@example.com</MailOther>
+    <MailOther>test2@example.com</MailOther>
+    <AddressHome>
+      <Street>Street</Street>
+      <City>City</City>
+      <Region>State</Region>
+      <PostalCode>Postcode</PostalCode>
+      <Country>RegionCountry</Country>
+    </AddressHome>
+    <AddressBusiness>
+      <Street>Street</Street>
+      <City>City</City>
+      <Region>State</Region>
+      <PostalCode>Postcode</PostalCode>
+      <Country>RegionCountry</Country>
+    </AddressBusiness>
+    <Title>Job</Title>
+  </Data>
+</syncgw>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Provision code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8206</PID>
+  <Name>-//ActiveSync//DTD Provision//EN</Name>
+  <Tag>[MS-ASPROV]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asprov</Link>
+  <Title>Provision Request and Response Schema</Title>
+  <Ver>22.0</Ver>
+  <URI>activesync:Provision</URI>
+  <CodePage>14</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Provision>0x05</Provision>
+   <Policies>0x06</Policies>
+   <Policy>0x07</Policy>
+   <PolicyType>0x08</PolicyType>
+   <PolicyKey>0x09</PolicyKey>
+   <Data>0x0a</Data>
+   <Status>0x0b</Status>
+   <RemoteWipe>0x0c</RemoteWipe>
+   <!-- 12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <EASProvisionDoc>0x0d</EASProvisionDoc>
+   <DevicePasswordEnabled>0x0e</DevicePasswordEnabled>
+   <AlphanumericDevicePasswordRequired>0x0f</AlphanumericDevicePasswordRequired>
+   <DeviceEncryptionEnabled>0x10</DeviceEncryptionEnabled>
+   <RequireStorageCardEncryption>0x10</RequireStorageCardEncryption>
+   <PasswordRecoveryEnabled>0x11</PasswordRecoveryEnabled>
+   <AttachmentsEnabled>0x13</AttachmentsEnabled>
+   <MinDevicePasswordLength>0x14</MinDevicePasswordLength>
+   <MaxInactivityTimeDeviceLock>0x15</MaxInactivityTimeDeviceLock>
+   <MaxDevicePasswordFailedAttempts>0x16</MaxDevicePasswordFailedAttempts>
+   <MaxAttachmentSize>0x17</MaxAttachmentSize>
+   <AllowSimpleDevicePassword>0x18</AllowSimpleDevicePassword>
+   <DevicePasswordExpiration>0x19</DevicePasswordExpiration>
+   <DevicePasswordHistory>0x1a</DevicePasswordHistory>
+   <!-- 12.1,14.0,14.1,16.0,16.1 -->
+   <AllowStorageCard>0x1b</AllowStorageCard>
+   <AllowCamera>0x1c</AllowCamera>
+   <RequireDeviceEncryption>0x1d</RequireDeviceEncryption>
+   <AllowUnsignedApplications>0x1e</AllowUnsignedApplications>
+   <AllowUnsignedInstallationPackages>0x1f</AllowUnsignedInstallationPackages>
+   <MinDevicePasswordComplexCharacters>0x20</MinDevicePasswordComplexCharacters>
+   <AllowWiFi>0x21</AllowWiFi>
+   <AllowTextMessaging>0x22</AllowTextMessaging>
+   <AllowPOPIMAPEmail>0x23</AllowPOPIMAPEmail>
+   <AllowBluetooth>0x24</AllowBluetooth>
+   <AllowIrDA>0x25</AllowIrDA>
+   <RequireManualSyncWhenRoaming>0x26</RequireManualSyncWhenRoaming>
+   <AllowDesktopSync>0x27</AllowDesktopSync>
+   <MaxCalendarAgeFilter>0x28</MaxCalendarAgeFilter>
+   <AllowHTMLEmail>0x29</AllowHTMLEmail>
+   <MaxEmailAgeFilter>0x2a</MaxEmailAgeFilter>
+   <MaxEmailBodyTruncationSize>0x2b</MaxEmailBodyTruncationSize>
+   <MaxEmailHTMLBodyTruncationSize>0x2c</MaxEmailHTMLBodyTruncationSize>
+   <RequireSignedSMIMEMessages>0x2d</RequireSignedSMIMEMessages>
+   <RequireEncryptedSMIMEMessages>0x2e</RequireEncryptedSMIMEMessages>
+   <RequireSignedSMIMEAlgorithm>0x2f</RequireSignedSMIMEAlgorithm>
+   <RequireEncryptionSMIMEAlgorithm>0x30</RequireEncryptionSMIMEAlgorithm>
+   <AllowSMIMEEncryptionAlgorithmNegotiation>0x31</AllowSMIMEEncryptionAlgorithmNegotiation>
+   <AllowSMIMESoftCerts>0x32</AllowSMIMESoftCerts>
+   <AllowBrowser>0x33</AllowBrowser>
+   <AllowConsumerEmail>0x34</AllowConsumerEmail>
+   <AllowRemoteDesktop>0x35</AllowRemoteDesktop>
+   <AllowInternetSharing>0x36</AllowInternetSharing>
+   <UnapprovedInROMApplicationList>0x37</UnapprovedInROMApplicationList>
+   <ApplicationName>0x38</ApplicationName>
+   <ApprovedApplicationList>0x39</ApprovedApplicationList>
+   <Hash>0x3a</Hash>
+   <!-- 16.1 -->
+   <AccountOnlyRemoteWipe>0x3b</AccountOnlyRemoteWipe>
+ </Defs>
+
+</CodePage>

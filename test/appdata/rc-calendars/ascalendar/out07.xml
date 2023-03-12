@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <StartTime>19970714T170000Z</StartTime>
+  <EndTime>19970715T035959Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Bastille Day Party</Subject>
+  <UID>3A76B5FF8723730674860B782005FE9B-83F1535F99AB0BF4</UID>
+</ApplicationData>

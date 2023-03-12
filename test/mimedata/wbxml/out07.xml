@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activesync:AirSync PUBLIC "-//ActiveSync//DTD AirSync//EN" "https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs">
+<Ping CHARSET="utf-8" xml-ns="activesync:Ping">
+  <Status>1</Status>
+</Ping>

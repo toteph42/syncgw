@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Attachments xml-ns="activesync:AirSyncBase">
+    <Attachment>
+      <DisplayName>Frog_on_river_4000x3000_26-09-2010_11-01am_2mb.jpg</DisplayName>
+      <EstimatedDataSize>2697496</EstimatedDataSize>
+      <FileReference>sgw-c63c5df1</FileReference>
+      <Method>1</Method>
+    </Attachment>
+  </Attachments>
+  <BusyStatus xml-ns="activesync:Calendar">2</BusyStatus>
+  <StartTime>20220901T110000Z</StartTime>
+  <EndTime>20220901T120000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Cal #4 - Big attachment</Subject>
+  <UID>4A0E9C9779E97C4192F5DF32ACBAA203-126173DDA6F62D88</UID>
+</ApplicationData>

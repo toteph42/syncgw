@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <Categories>
+    <Category>APPOINTMENT</Category>
+  </Categories>
+  <StartTime>20060309T213000Z</StartTime>
+  <EndTime>20060310T010000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Deck</DisplayName>
+  </Location>
+  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+  <Subject>Happy &amp;XXX &lt;&gt; ;._Hour</Subject>
+  <UID>171</UID>
+</ApplicationData>

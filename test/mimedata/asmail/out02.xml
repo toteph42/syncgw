@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>2</Type>
+    <EstimatedDataSize>357</EstimatedDataSize>
+    <Data>&lt;html dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+&lt;style id="owaParaStyle"&gt;
+&lt;!--
+p
+{margin-top:0px;
+margin-bottom:0px}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="font-size:13px; color:#000000; direction:ltr; fontfamily:Tahoma"&gt;
+&lt;div&gt;This is&amp;nbsp;the body of an&amp;nbsp;HTML e-mail
+message.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+		</Data>
+  </Body>
+  <ContentClass xml-ns="activesync:Mail">urn:content-classes:message</ContentClass>
+  <ConversationId xml-ns="activesync:Mail2">60abb9431386e60abb9431387360abb9</ConversationId>
+  <ConversationIndex>CA2CFA8A23</ConversationIndex>
+  <DateReceived xml-ns="activesync:Mail">2009-02-19T01:43:25.000Z</DateReceived>
+  <DisplayTo>Device User</DisplayTo>
+  <From>"Device User2" &lt;someone2@example.com&gt;</From>
+  <Importance>1</Importance>
+  <InternetCPID>28591</InternetCPID>
+  <MessageClass>IPM.Note</MessageClass>
+  <NativeBodyType xml-ns="activesync:AirSyncBase">2</NativeBodyType>
+  <Read xml-ns="activesync:Mail">0</Read>
+  <Subject>Sample HTML message</Subject>
+  <ThreadTopic>Sample HTML message</ThreadTopic>
+  <To>"Device User" &lt;someone1@example.com&gt;</To>
+</ApplicationData>

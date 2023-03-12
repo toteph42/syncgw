@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE xml>
+<GetItemEstimate> 
+ <Collections> 
+  <Collection> 
+   <SyncKey>785971245</SyncKey> 
+   <CollectionId>5</CollectionId> 
+   <Options>
+    <FilterType>0</FilterType>
+    <Class>Email</Class> 
+    <MaxItems>83</MaxItems>
+   </Options> 
+  </Collection> 
+ </Collections> 
+</GetItemEstimate>

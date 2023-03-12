@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <StartTime>20080806T111500Z</StartTime>
+  <EndTime>20080806T114500Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Sensitivity>0</Sensitivity>
+  <Subject>---- LOKALE DATE-TIME IN UTC UMWANDELN ----</Subject>
+  <UID>2D8C4305-B54C-43A4-B5F5-836BEB41D9DC</UID>
+</ApplicationData>

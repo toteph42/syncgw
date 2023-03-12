@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>T00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>C9461E74EDE2A1C97634C03E9B710C61</UID>
+    <Summary>Submit Income Taxes</Summary>
+    <DueDate>892684740</DueDate>
+    <Flag>0</Flag>
+    <Status X-PC="0">NEEDS-ACTION</Status>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">891604800</Trigger>
+    </Alarm>
+  </Data>
+</syncgw>

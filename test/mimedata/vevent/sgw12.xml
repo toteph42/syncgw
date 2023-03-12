@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>dde34c0e-1099-13c4-a128-130ecf29</UID>
+    <StartTime>-944092800</StartTime>
+    <Class>PUBLIC</Class>
+    <Priority>0</Priority>
+    <Sequence>0</Sequence>
+    <Status X-PC="0">CONFIRMED</Status>
+    <Summary>--- TEST FUER MEHRERE DAYLIGHT SAVING TIMES UND AALARM + DALARM ---</Summary>
+    <Recurrence>
+      <Frequency>YEARLY</Frequency>
+      <Month>2</Month>
+    </Recurrence>
+    <EndTime>-944092800</EndTime>
+    <Category>APPOINTMENT</Category>
+    <Category>X-BIRTHDAY</Category>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1274869800</Trigger>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">1274869800</Trigger>
+    </Alarm>
+    <Timezone>Africa/Addis_Ababa</Timezone>
+  </Data>
+</syncgw>

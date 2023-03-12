@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopDeleteFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+	<DeleteFolderFlags T="I" S="1" F="FOLDER_DEL"/>
+	<FolderId T="H" S="8"/>
+  </RopRec>
+  
+  <RopRec Typ="Resp" X="RopDeleteFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<PartialCompletion T="B"/>
+  </RopRec>
+ 
+  <RopRec Typ="mkResp" X="RopDeleteFolder">
+	<RopId T="I" S="1" D="ROP_ID">DeleteFolde</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<PartialCompletion T="B">False</PartialCompletion>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopDeleteFolder">
+	<RopId T="I" S="1" D="ROP_ID">OpenFolder</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+   
+</syncgw>

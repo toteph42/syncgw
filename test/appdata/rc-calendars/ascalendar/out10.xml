@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <StartTime>20100510T080000Z</StartTime>
+  <EndTime>20100510T120000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>La</DisplayName>
+  </Location>
+  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+  <Subject>Prova 2</Subject>
+  <UID>todoz79893056.-1539577512.1114802217</UID>
+</ApplicationData>

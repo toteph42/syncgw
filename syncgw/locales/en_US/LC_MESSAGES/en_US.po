@@ -1,0 +1,2572 @@
+#
+# 	Language file
+#
+# 	@package	sync*gw
+# 	@subpackage	Core
+# 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+# 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: syngcw\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-12 09:32+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Florian Daeumling\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: D:\\www\\syncgw\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: syncgw\n"
+
+#: syncgw/activesync/masAutodiscover.php:66
+msgid "Client does not support \"MAPI Extensions for HTTP\" - please upgrade to Outlook 2013 SP1 or higher"
+msgstr ""
+
+#: syncgw/activesync/masAutodiscover.php:85
+#: syncgw/activesync/masFind.php:79
+#: syncgw/activesync/masFolderCreate.php:79
+#: syncgw/activesync/masFolderDelete.php:72
+#: syncgw/activesync/masFolderSync.php:101
+#: syncgw/activesync/masFolderUpdate.php:80
+#: syncgw/activesync/masGetAttachment.php:52
+#: syncgw/activesync/masGetHierarchy.php:65
+#: syncgw/activesync/masGetItemEstimate.php:69
+#: syncgw/activesync/masItemOperations.php:98
+#: syncgw/activesync/masMeetingResponse.php:51
+#: syncgw/activesync/masMoveItems.php:72
+#, php-format
+msgid "Exchange ActiveSync &lt;%s&gt; handler"
+msgstr ""
+
+#: syncgw/activesync/masAutodiscover.php:176
+msgid "The user's account is disabled"
+msgstr ""
+
+#: syncgw/activesync/masAutodiscover.php:178
+msgid "User may be <Banned>"
+msgstr ""
+
+#: syncgw/activesync/masAutodiscover.php:354
+#, php-format
+msgid "The user \"%s\" was not found in the directory service"
+msgstr ""
+
+#: syncgw/activesync/masAutodiscover.php:355
+msgid "User may be banned - please contact your administrator"
+msgstr ""
+
+#: syncgw/activesync/masFolderSync.php:206
+msgid "Default"
+msgstr ""
+
+#: syncgw/activesync/masHandler.php:134
+#, php-format
+msgid "Error loading [%s]"
+msgstr ""
+
+#: syncgw/activesync/masHandler.php:135
+#, php-format
+msgid "ActiveSync class '%s' not found"
+msgstr ""
+
+#: syncgw/activesync/masHandler.php:169
+msgid "ActiveSync handler"
+msgstr ""
+
+#: syncgw/activesync/masHTTP.php:48
+msgid "Error loading XML data from device - aborting connection"
+msgstr ""
+
+#: syncgw/activesync/masHTTP.php:49
+msgid "Invalid data received from device - aborting connection"
+msgstr ""
+
+#: syncgw/activesync/masProvision.php:59
+#, php-format
+msgid "Provision status %d received from device"
+msgstr ""
+
+#: syncgw/activesync/masProvision.php:82
+msgid "Exchange ActiveSync server policy version"
+msgstr ""
+
+#: syncgw/activesync/masProvision.php:85
+#: syncgw/activesync/masSettings.php:102
+msgid "N/A"
+msgstr ""
+
+#: syncgw/activesync/masSettings.php:99
+msgid "Exchange ActiveSync right management settings"
+msgstr ""
+
+#: syncgw/dav/davCalendar.php:61
+msgid "Calendar CalDAV handler"
+msgstr ""
+
+#: syncgw/dav/davCalendar.php:104
+msgid "calendars"
+msgstr ""
+
+#: syncgw/dav/davContact.php:58
+msgid "Contact CardDAV handler"
+msgstr ""
+
+#: syncgw/dav/davContact.php:95
+msgid "contacts"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:60
+msgid "Calendar and task list synchronization in parallel is not supported by DAV protocoll - task synchronization disabled"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:61
+#, php-format
+msgid "Cannot load %s for user (%s) - please check synchronization status"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:76
+msgid "WebDAV handler"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:79
+msgid "Maximum object size"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:81
+#, php-format
+msgid "%d bytes"
+msgstr ""
+
+#: syncgw/dav/davHandler.php:83
+msgid "framework for PHP"
+msgstr ""
+
+#: syncgw/dav/davHTTP.php:53
+msgid "WebDAV HTTP handler"
+msgstr ""
+
+#: syncgw/dav/davPrincipal.php:59
+msgid "WebDAV principal handler"
+msgstr ""
+
+#: syncgw/dav/davTask.php:61
+msgid "Task CalDAV handler"
+msgstr ""
+
+#: syncgw/dav/davTask.php:104
+msgid "task list"
+msgstr ""
+
+#: syncgw/dav/davUser.php:61
+msgid "WebDAV user handler"
+msgstr ""
+
+#: syncgw/dav/davUser.php:64
+msgid "Basic access authentication handler"
+msgstr ""
+
+#: syncgw/dav/davUser.php:65
+#: syncgw/document/docMail.php:81
+msgid "Implemented"
+msgstr ""
+
+#: syncgw/document/docHandler.php:56
+#, php-format
+msgid "Unsupported MIME type '%s' version '%s'"
+msgstr ""
+
+#: syncgw/document/docHandler.php:57
+#, php-format
+msgid "Error exporting record in MIME format '%s' version '%s'"
+msgstr ""
+
+#: syncgw/document/docHandler.php:69
+#, php-format
+msgid "%s document handler"
+msgstr ""
+
+#: syncgw/document/docHandler.php:73
+msgid "Document base handler"
+msgstr ""
+
+#: syncgw/document/docHandler.php:76
+msgid "Internal data store name"
+msgstr ""
+
+#: syncgw/document/docHandler.php:79
+msgid "Status"
+msgstr ""
+
+#: syncgw/document/docHandler.php:81
+msgid "Enabled"
+msgstr ""
+
+#: syncgw/document/docHandler.php:81
+msgid "Disabled"
+msgstr ""
+
+#: syncgw/document/field/fldAccountId.php:56
+#: syncgw/document/field/fldAccountName.php:55
+#: syncgw/document/field/fldAddressBusiness.php:62
+#: syncgw/document/field/fldAddresses.php:97
+#: syncgw/document/field/fldAddresses.php:102
+#: syncgw/document/field/fldAlarm.php:105
+#, php-format
+msgid "&lt;%s&gt; field handler"
+msgstr ""
+
+#: syncgw/document/field/fldHandler.php:36
+msgid "fld handler"
+msgstr ""
+
+#: syncgw/document/field/fldLogo.php:187
+#, php-format
+msgid "Error converting logo [%s] to 'JPEG'"
+msgstr ""
+
+#: syncgw/document/field/fldPhoto.php:283
+#: syncgw/document/field/fldPhoto.php:343
+#: syncgw/document/field/fldPhoto.php:364
+#, php-format
+msgid "Error converting picture [%s] to 'JPEG'"
+msgstr ""
+
+#: syncgw/document/mime/mimHandler.php:56
+msgid "MIME type base handler"
+msgstr ""
+
+#: syncgw/document/mime/mimHandler.php:60
+#, php-format
+msgid "MIME type handler \"%s %s\""
+msgstr ""
+
+#: syncgw/document/mime/mimPlain.php:79
+msgid "Plain text handler"
+msgstr ""
+
+#: syncgw/document/mime/mimvCal.php:190
+#: syncgw/document/mime/mimvCal.php:194
+#: syncgw/document/mime/mimvCal.php:198
+#: syncgw/document/mime/mimvTask.php:188
+#: syncgw/document/mime/mimvTask.php:192
+#: syncgw/document/mime/mimvTask.php:196
+msgid "Not implemented"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:52
+msgid "Environment and server check plugin"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:70
+msgid "Environment and server check"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:78
+msgid "Checking PHP version ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:85
+msgid "Checking disk space ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:88
+msgid "Checking 'Document Object Model' (DOM) PHP extension"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:90
+msgid "PHP extension must be enabled in PHP.INI (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/dom.setup.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:97
+msgid "Checking 'DOM_XML' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:99
+msgid "PHP extension must be disabled in PHP.INI (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/domxml.installation.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:106
+msgid "Checking 'GD' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:108
+msgid "PHP extension must be enabled in PHP.INI (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/image.setup.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:115
+msgid "Checking 'ZIP' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:117
+msgid "You need to enable this PHP extension in if you want to download or upload data in administrator panel (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/zip.setup.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:124
+msgid "Checking 'MySQL improved' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:126
+msgid "You need to enable this PHP extension in PHP.INI if you want to use a MySQL based data base handler(<a class=\"sgwA\" href=\"http://www.php.net/manual/en/mysqli.installation.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:134
+msgid "Checking 'Gettext' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:136
+msgid "You need to enable this PHP extension in PHP.INI if you want to use native language support (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/book.gettext.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:142
+msgid "Checking 'Multibyte string' PHP extension ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:144
+msgid "You need to enable this PHP extension in PHP.INI if you want to synchronize multi-byte data (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/mbstring.installation.php\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:151
+msgid "Checking directory path used for temporary files ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:158
+msgid "Please enable access to directory in PHP.INI (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/ini.core.php#ini.open-basedir\" target=\"_blank\">more information</a>)"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:168
+msgid "Environment status"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:171
+#, php-format
+msgid "%d errors found - please fix errors and run script again"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:174
+msgid "Warning - no data base connected"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:178
+#: syncgw/gui/guiExplorer.php:91
+msgid "Ok"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:182
+msgid "<strong>sync&bull;gw</strong> status"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:182
+msgid "Server not configured"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:187
+msgid "Ready for synchronizing!"
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:217
+msgid "Configuration error. Please see above ..."
+msgstr ""
+
+#: syncgw/gui/guiCheck.php:229
+msgid "Overall status"
+msgstr ""
+
+#: syncgw/gui/guiCleanUp.php:53
+msgid "Data store cleanup plugin"
+msgstr ""
+
+#: syncgw/gui/guiCleanUp.php:81
+msgid "Error executing SQL command"
+msgstr ""
+
+#: syncgw/gui/guiCleanUp.php:103
+msgid "CleanUp"
+msgstr ""
+
+#: syncgw/gui/guiCleanUp.php:103
+msgid "Delete ALL record in selected data store"
+msgstr ""
+
+#: syncgw/gui/guiCleanUp.php:105
+msgid "Do you really want to delete >ALL< records in selected group?"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:57
+msgid "Configure <strong>sync&bull;gw</strong> server plugin"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:80
+msgid "Configure <strong>sync&bull;gw</strong> server"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:98
+#: syncgw/gui/guiEdit.php:77
+msgid "Save"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:98
+msgid "Save configuration"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:133
+msgid "Configuration saved to 'config.ini.php'"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:135
+msgid "Error in configuration - please check"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:142
+msgid "You must enable at least one data store"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:166
+msgid "Data base connection handler"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:167
+msgid "Select from list which data base handler <strong>sync&bull;gw</strong> should use. If you can't select a handler name, a connection is already established. To drop the connection, use the \"Drop\" button."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:185
+#: syncgw/gui/guiConfig.php:382
+#, php-format
+msgid "Can't open [%s]"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:207
+msgid "No data base handler found - please install software package"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:271
+msgid "Drop"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:271
+msgid "Drop <strong>sync&bull;gw</strong> data base connection"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:273
+#, php-format
+msgid "Do you really want to drop connection to data base handler >%s<?"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:334
+msgid "Enabled data store"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:335
+msgid "Specify which data stores you want to be enabled and available for synchronization with devices. If a handler is not selectable, you have either not purchased the handler modules or your data base connection handler do not support this type of data store."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:340
+msgid "Please enable at least one data store"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:359
+#: syncgw/gui/guiHandler.php:644
+msgid "Administrator password"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:361
+msgid "Please enter new <strong>sync&bull;gw</strong> administrator password."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:419
+msgid "Language"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:420
+msgid "<strong>sync&bull;gw</strong> server supports <a class=\"sgwA\" href=\"http://www.gnu.org/software/gettext\" target=\"_blank\">gettext</a> based native language support - all message can be translated to any required language.<br /><br />If your required language is not in selection list, you may create your own translation file. For this purpose, we recommend using one of translation tools available (e.g. <a class=\"sgwA\" href=\"http://kbabel.kde.org/\" target=\"_blank\">KBabel</a>, <a class=\"sgwA\" href=\"http://www.gtranslator.org/\" target=\"_blank\">GTranslator</a> or <a class=\"sgwA\" href=\"http://www.poedit.net/\" target=_blank\">POEdit</a>).<br /><br />We would greatly appreciate if you share the translation file within our community. Please drop me a note and I will make it available for all users on GitHub."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:446
+#: syncgw/gui/guiConfig.php:484
+msgid "Yes"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:447
+#: syncgw/gui/guiConfig.php:485
+msgid "No"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:463
+msgid "Capture PHP error"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:464
+msgid "By default <strong>sync&bull;gw</strong> is able to catch all PHP warning and notices. Setting this option to <strong>Yes</strong> enables <strong>sync&bull;gw</strong> additionally to capture all PHP fatal errors in the log file specified above. Please note <strong>sync&bull;gw</strong> will override locally some PHP.ini settings."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:501
+msgid "Use CRON job"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:502
+msgid "By default <strong>sync&bull;gw</strong> is handling record expiration internally. This solution may have impact on synchronization performance. We recommend setup your own <a href=\"https://en.wikipedia.org/wiki/Cron\" target=\"_blank\">CRON</a> job. For this purpose please call <strong>sync.php?cleanup</strong> at least every hour. If you're using PLESK, you may call <strong>sync.php</strong> as script with parameter <strong>cleanup</strong>."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:530
+#, php-format
+msgid "Error accessing log file directory [%s]"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:539
+#, php-format
+msgid "Error accessing log file directory [%s] for log file"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:548
+msgid "Log file name"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:550
+msgid "Specify where to store error, warning and informational messages.<br/><br/><strong>Off</strong><br/>Turn off any logging.<br/><br/><strong>SysLog</strong><br/>Msg messages to system log file.<br/><br/><strong>&lt;name&gt;</strong><br/>create log messages to file. You may specify either a relative file name prefix (e.g. \"../logs/syncgw-log\") or an absolute path (e.g. \"/var/logs/syncgw\")"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:579
+msgid "Logging level"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:580
+msgid "<strong>sync&bull;gw</strong> server may write errors, warnings and other messages to log file. Depending on your setting, your log file will use more or less <a class=\"sgwA\" href=\"http://www.logwatch.org/\" target=\"_blank\">disk space</a>.<br/><br/><strong>Error</strong><br/>Show errors which <strong>sync&bull;gw</strong> either cannot handle or were unexpected (will always be logged).<br/><br/><strong>Warn</strong><br/>Show additional warnings which <strong>sync&bull;gw</strong> can cover.<br/><br/><strong>Info</strong><br/>Show additional informational messages.<br/><br/><strong>Application</strong><br/>Additional application processing messages.<br /><br /><strong>Debug</strong><br />More detailed processing messages."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:596
+#, php-format
+msgid "Invalid value '%s' for log file expiration"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:602
+msgid "Log file expiration"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:604
+msgid "Specify how many log files should be kept before the eldest file will be deleted."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:623
+msgid "Debug user"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:625
+msgid "This user is used to access the internal and external data bases (e.g. during debugging traces). Debug user must be authorized to access internal and external data base. To disable debugging, please leave this field empty. Please note, a couple of additional functions in \"Explore data\" panel will only be available, if you have specified a debug user."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:633
+msgid "Debug user password"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:635
+msgid "Password for debug user."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:645
+msgid "Password for debug user not set"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:652
+msgid "Unable to authorize debug user"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:686
+msgid "Trace"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:688
+msgid "Trace data is used to enable debugging of any misbehavior of <strong>sync&bull;gw</strong> server. If you encounter any problems, we need such a trace to analyze the situation. Available options:<br /><br /><strong>On</strong><br />Activate tracing for all users.<br /><br /><strong>IP</strong><br />Enable tracing for specific IP address.<br /><br /><strong>User name</strong><br />Enable tracing only for specific user name.<br /><br /><strong>Off</strong><br />Disable tracing for all users."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:706
+#, php-format
+msgid "Error accessing trace directory [%s]"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:716
+msgid "Trace directory"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:718
+msgid "Specify where to store trace files. You may specify either a relative directory name prefix (e.g. \"../traces\") or an absolute path (e.g. \"/var/traces\")<br />"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:726
+#, php-format
+msgid "Invalid value '%s' for trace file expiration"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:732
+msgid "Trace file expiration (in hours)"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:734
+msgid "After the given number of hours <strong>sync&bull;gw</strong> automatically removes expired trace files from trace directory. If you want to disable automatic file deletion, please enter a value of <strong>0</strong>."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:757
+#, php-format
+msgid "Invalid value '%s' for session timeout - minimum of 1 seconds required"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:763
+msgid "Session timeout (in seconds)"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:765
+msgid "Session between devices and <strong>sync&bull;gw</strong> server requires exchange of multiple packages send over connection. Each package depends on the previous package. During this operation data has to be temporary saved ensuring synchronization integrity across the session. Depending on the performance of the connection and processing power of server or device, delay between packages exchanged may vary. This parameter specifies how many seconds between different session <strong>sync&bull;gw</strong> server should keep session data active."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:777
+#, php-format
+msgid "Invalid value '%s' for record expiration"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:783
+msgid "Session record expiration (in hours)"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:785
+msgid "<strong>sync&bull;gw</strong> stores record for managing synchronization sessions records in internal data stores. After the given number of hours <strong>sync&bull;gw</strong> automatically removes records expired from internal data stores. If you want to disable automatic record deletion, please enter a value of <strong>0</strong>."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:811
+#, php-format
+msgid "Maximum object size - %d bytes is too small"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:822
+msgid "Maximum object size in bytes for DAV synchronization"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:824
+msgid "This is the maximum size object <strong>sync&bull;gw</strong> server accepts (in bytes, \"KB\", \"MB\" or \"GB\") for DAV synchronization.<br /><br />Please note the size is limited by two factors:<br /><ul><li>The PHP <a class=\"sgwA\" href=\"http://php.net/manual/en/ini.core.php\" target=\"_blank\">maximum excution time</a>.</li><li>The PHP <a class=\"sgwA\" href=\"http://php.net/manual/en/ini.core.php\" target=\"_blank\">memory_limit</a> size.</li></ul>We highly recommend if you want to use a bigger value, you should make some testing before taking over value over to production system.<br /><br />Default: 1000 KB"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:856
+#, php-format
+msgid "Invalid value '%s' for heartbeat - minimum of 10 seconds required"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:861
+#, php-format
+msgid "Invalid value '%s' for sleep time - it cannot be larger than heartbeat windows"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:867
+msgid "ActiveSync Heartbeat window (in seconds)"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:869
+msgid "Using ActiveSync protocol, devices send a request to <strong>sync&bull;gw</strong> server asking server to check for changes on server. If a change is recognized in this time window, device is notified immediately. If no changes could be notified, <strong>sync&bull;gw</strong> server will send a notification after the heartbeat has expired. You can override the heartbeat client suggests to lower traffic between server and device. This parameter specifies how many seconds <strong>sync&bull;gw</strong> server will check for changes before client is notified nothing has changed."
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:877
+msgid "ActiveSync Sleep time (in seconds)"
+msgstr ""
+
+#: syncgw/gui/guiConfig.php:879
+msgid "Within the heartbeat window, <strong>sync&bull;gw</strong> will not constantly check for changes. This parameter specifies how many seconds <strong>sync&bull;gw</strong> will sleep before checking for changes."
+msgstr ""
+
+#: syncgw/gui/guiDelete.php:53
+msgid "Delete record plugin"
+msgstr ""
+
+#: syncgw/gui/guiDelete.php:98
+#: syncgw/gui/guiExplorer.php:93
+msgid "Delete"
+msgstr ""
+
+#: syncgw/gui/guiDelete.php:98
+msgid "Delete selected internal record. In case you selected a user, all related internal user records will be deleted (no external record will be deleted)"
+msgstr ""
+
+#: syncgw/gui/guiDelete.php:102
+msgid "Do you really want to delete record >' + v.value + '< in this group?"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:63
+msgid "Download record plugin"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:97
+#, php-format
+msgid "Error opening file [%s] (%s)"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:103
+#, php-format
+msgid "Error opening file [%s]"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:110
+#: syncgw/gui/guiDownload.php:151
+#, php-format
+msgid "Error writing file [%s]"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:188
+msgid "Download"
+msgstr ""
+
+#: syncgw/gui/guiDownload.php:188
+msgid "Download selected record"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:58
+msgid "Edit record plugin"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:77
+msgid "Save updates"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:82
+#, php-format
+msgid "Error reading record [%s]"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:103
+#, php-format
+msgid "Error writing record [%s]"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:113
+msgid "Edit"
+msgstr ""
+
+#: syncgw/gui/guiEdit.php:113
+msgid "Edit selected record"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:92
+msgid "Add"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:94
+msgid "Replace"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:99
+msgid "Group"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:100
+msgid "Record"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:101
+msgid "Parent Group"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:102
+msgid "Current Group"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:117
+#: syncgw/gui/guiExplorer.php:136
+msgid "Explore data"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:204
+msgid "Name"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:204
+msgid "Type"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:205
+msgid "Size"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:205
+msgid "Last modified"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:238
+msgid "You need to select a user if you want to browse data stores"
+msgstr ""
+
+#: syncgw/gui/guiExplorer.php:353
+msgid "Unknown"
+msgstr ""
+
+#: syncgw/gui/guiFeatures.php:51
+msgid "Create list of features plugin"
+msgstr ""
+
+#: syncgw/gui/guiFeatures.php:69
+msgid "Create list of features"
+msgstr ""
+
+#: syncgw/gui/guiFeatures.php:116
+#, php-format
+msgid "List of features written to [%s]"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:159
+msgid "You need to turn on Javascript to access these pages!"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:179
+msgid "Logout"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:180
+msgid "Logout from <strong>sync&bull;gw</strong>"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:248
+msgid "<strong>sync&bull;gw</strong> user interface"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:329
+msgid "Run"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:329
+msgid "Execute selected command from list above"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:444
+msgid "Return"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:446
+msgid "Return to explorer"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:448
+msgid "Return to command selection menu"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:587
+msgid "Password does not match - please retry"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:592
+msgid "Please enter administrator password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:599
+msgid "Invalid administrator password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:613
+msgid "Invalid password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:621
+msgid "Please enter password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:623
+msgid "Please enter user name"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:631
+msgid "External"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:632
+msgid "Login to <strong>sync&bull;gw</strong> in a new browser window"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:640
+msgid "Login"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:640
+msgid "Login to <strong>sync&bull;gw</strong>"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:645
+msgid "Reenter password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:649
+msgid "User name"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:651
+msgid "Password"
+msgstr ""
+
+#: syncgw/gui/guiHandler.php:652
+msgid "Login as administrator"
+msgstr ""
+
+#: syncgw/gui/guiHelp.php:49
+msgid "Help plugin"
+msgstr ""
+
+#: syncgw/gui/guiHelp.php:63
+msgid "Help"
+msgstr ""
+
+#: syncgw/gui/guiHelp.php:63
+msgid "FAQ"
+msgstr ""
+
+#: syncgw/gui/guiHTTP.php:53
+msgid "User interface HTTP handler"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:50
+msgid "<strong>sync&bull;gw</strong> log file plugin"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:82
+msgid "Show <strong>sync&bull;gw</strong> log file"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:102
+msgid "Clear"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:102
+msgid "Delete log file content"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:117
+#, php-format
+msgid "Logfile from %s"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:128
+msgid "Stop"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:129
+msgid "Start"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:130
+msgid "Start log catching"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:130
+msgid "Suspend log catching"
+msgstr ""
+
+#: syncgw/gui/guiLogFile.php:133
+msgid "Log catching has been suspended..."
+msgstr ""
+
+#: syncgw/gui/guiReload.php:49
+msgid "Reload data store plugin"
+msgstr ""
+
+#: syncgw/gui/guiReload.php:64
+msgid "Reload"
+msgstr ""
+
+#: syncgw/gui/guiReload.php:64
+msgid "Reload table"
+msgstr ""
+
+#: syncgw/gui/guiRename.php:54
+msgid "Rename record plugin"
+msgstr ""
+
+#: syncgw/gui/guiRename.php:83
+msgid "Destination file already exist"
+msgstr ""
+
+#: syncgw/gui/guiRename.php:88
+msgid "Error renaming trace file"
+msgstr ""
+
+#: syncgw/gui/guiRename.php:105
+msgid "Record IDs are not allowed to contain '-' character..."
+msgstr ""
+
+#: syncgw/gui/guiRename.php:110
+#, php-format
+msgid "Record [%s] not found..."
+msgstr ""
+
+#: syncgw/gui/guiRename.php:115
+#, php-format
+msgid "Record [%s] already exist..."
+msgstr ""
+
+#: syncgw/gui/guiRename.php:134
+msgid "Rename"
+msgstr ""
+
+#: syncgw/gui/guiRename.php:136
+msgid "Please enter new name"
+msgstr ""
+
+#: syncgw/gui/guiSetUsr.php:52
+msgid "Set user plugin"
+msgstr ""
+
+#: syncgw/gui/guiSetUsr.php:95
+msgid "Select user name to use"
+msgstr ""
+
+#: syncgw/gui/guiSetUsr.php:101
+#, php-format
+msgid "User id '%s' activated"
+msgstr ""
+
+#: syncgw/gui/guiShow.php:51
+msgid "View record plugin"
+msgstr ""
+
+#: syncgw/gui/guiShow.php:75
+msgid "XML document"
+msgstr ""
+
+#: syncgw/gui/guiShow.php:83
+#: syncgw/gui/guiTrace.php:290
+msgid "View"
+msgstr ""
+
+#: syncgw/gui/guiShow.php:83
+#: syncgw/gui/guiTrace.php:290
+msgid "View internal record"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:54
+msgid "Create software packages plugin"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:76
+msgid "Create software packages"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:92
+#, php-format
+msgid "Base directory is [%s]"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:93
+#, php-format
+msgid "Using package file [%s]"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:94
+#, php-format
+msgid "Using output directory [%s]"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:117
+msgid "Create"
+msgstr ""
+
+#: syncgw/gui/guiSoftware.php:117
+msgid "Create software package"
+msgstr ""
+
+#: syncgw/gui/guiStats.php:49
+msgid "Memory statistics plugin"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:51
+msgid "Switch data base plugin"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:71
+#, php-format
+msgid "Can't open '%s'"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:91
+msgid "Application interface data base"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:92
+msgid "Warning: Switching data base may end up with unexpected results, if data base is not properly initialized."
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:94
+msgid "Please select \"new\" data base from list and hit button \"Switch\" again or hit \"Cancel\" to cancel change"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:95
+msgid "Cancel"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:96
+#: syncgw/gui/guiSwitch.php:142
+msgid "Switch data base installation without initialization."
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:122
+#, php-format
+msgid "Unknown data base handler '%s'"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:130
+#, php-format
+msgid "Active data base switched to '%s'"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:131
+msgid "Please check enabled data store handlers"
+msgstr ""
+
+#: syncgw/gui/guiSwitch.php:142
+msgid "Switch"
+msgstr ""
+
+#: syncgw/gui/guiSync.php:52
+msgid "Synchronize external data store plugin"
+msgstr ""
+
+#: syncgw/gui/guiSync.php:96
+msgid "Sync"
+msgstr ""
+
+#: syncgw/gui/guiSync.php:97
+msgid "Synchronize external data store records with internal data store"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:126
+msgid "View or debug trace plugin"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:155
+#, php-format
+msgid "Starting processing of trace [%s]"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:276
+msgid "End of trace"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:292
+msgid "Debug"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:293
+msgid "Debug selected trace. All user references are redirected to debug user"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:315
+#, php-format
+msgid "Trace directory [%s] not found"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:388
+#, php-format
+msgid "Ingnoring unknown parameter \"%s\" with value \"%s\""
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:390
+#, php-format
+msgid "Configuration parameter \"%s\" = \"%s\""
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:395
+#, php-format
+msgid "Updating to value \"%s\""
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:398
+#, php-format
+msgid "Updating from value \"%s\""
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:403
+#, php-format
+msgid "Data base \"%s\" not active - cannot proceed"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:411
+msgid "<strong>sync&bull;gw</strong> trace file environment data"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:440
+#, php-format
+msgid "This version of <strong>sync&bull;gw</strong> does not support trace version '%s'"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:444
+#, php-format
+msgid "Trace created with <strong>sync&bull;gw</strong> trace version %s"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:448
+#, php-format
+msgid "<strong>sync&bull;gw</strong> running on PHP version %s"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:463
+#: syncgw/gui/guiTrace.php:542
+#: syncgw/gui/guiTrace.php:749
+#: syncgw/gui/guiTrace.php:774
+#: syncgw/gui/guiTrace.php:909
+msgid "Del"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:463
+#: syncgw/gui/guiTrace.php:542
+#: syncgw/gui/guiTrace.php:749
+#: syncgw/gui/guiTrace.php:774
+#: syncgw/gui/guiTrace.php:909
+msgid "Delete trace record"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:466
+msgid "Processing trace record "
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:483
+msgid "SERVER data (including received header)"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:555
+#, php-format
+msgid "Unknown trace record [R%s] type '%s'"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:616
+msgid "Deleting internal and external data records in all data stores for debug user"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:623
+#: syncgw/gui/guiTrace.php:700
+msgid "Unable to authorize debug user - debugging terminated"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:659
+msgid "Restoring attachment records"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:897
+#, php-format
+msgid "Error adding record [%s] in internal data store %s"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:942
+msgid "Header "
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:942
+msgid "received"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:942
+msgid "send"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:946
+#: syncgw/gui/guiTrace.php:986
+msgid "Body is empty"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:969
+msgid "Body"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:980
+#, php-format
+msgid "Header send (%d changes  \"-\" - stored in trace; \"+\" - newly created)"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:983
+msgid "Header send (0 changes)"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:1021
+#, php-format
+msgid "Body send (%d changes  \"-\" - stored in trace; \"+\" - newly created)"
+msgstr ""
+
+#: syncgw/gui/guiTrace.php:1024
+msgid "Body send (0 changes)"
+msgstr ""
+
+#: syncgw/gui/guiTraceExport.php:52
+msgid "Export trace record plugin"
+msgstr ""
+
+#: syncgw/gui/guiTraceExport.php:78
+msgid "No trace data found"
+msgstr ""
+
+#: syncgw/gui/guiTraceExport.php:130
+msgid "Export"
+msgstr ""
+
+#: syncgw/gui/guiTraceExport.php:130
+msgid "Export trace in message window"
+msgstr ""
+
+#: syncgw/gui/guiTrunc.php:53
+msgid "Truncate all data base tables plugin"
+msgstr ""
+
+#: syncgw/gui/guiTrunc.php:76
+msgid "Do you really want to truncate all tables?"
+msgstr ""
+
+#: syncgw/gui/guiTrunc.php:80
+msgid "Truncate ALL <strong>sync&bull;gw</strong> tables"
+msgstr ""
+
+#: syncgw/gui/guiTrunc.php:87
+#, php-format
+msgid "Deleting all files and sub directories in [%s]"
+msgstr ""
+
+#: syncgw/gui/guiTrunc.php:121
+msgid "All <strong>sync&bull;gw</strong> tables truncated in database"
+msgstr ""
+
+#: syncgw/gui/guiUpgrade.php:51
+msgid "Automatic upgrade plugin"
+msgstr ""
+
+#: syncgw/gui/guiUpgrade.php:78
+#, php-format
+msgid "Starting automatic upgrade from <strong>sync&bull;gw</strong> version %s to version %s"
+msgstr ""
+
+#: syncgw/gui/guiUpgrade.php:81
+#, php-format
+msgid "Automatic upgrade from version %s to version %s finished"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:55
+msgid "Upload record plugin"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:110
+#, php-format
+msgid "The file format '*.%s' is not support in this data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:210
+msgid "Error loading data object"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:238
+#, php-format
+msgid "Trace [%s] already exists"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:268
+msgid "Upload *.zip file into trace data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:270
+msgid "Upload *.jpg file as photo for selected user"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:272
+msgid "Upload *.ics or *.xml file into calendar data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:274
+msgid "Upload *.tsk or *.xml file into task data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:276
+msgid "Upload *.vcf or *.xml file into contact data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:278
+msgid "Upload *.vnt or *.xml file into notes data store"
+msgstr ""
+
+#: syncgw/gui/guiUpload.php:280
+msgid "Upload"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:52
+msgid "User statistics plugin"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:69
+msgid "User statistics"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:76
+msgid "User ID"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:78
+msgid "Last login"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:80
+msgid "Number of logins"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:82
+msgid "Active device name"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:93
+msgid "Stats"
+msgstr ""
+
+#: syncgw/gui/guiUsrStats.php:93
+msgid "Show user statistics"
+msgstr ""
+
+#: syncgw/gui/html/Ajax.php:127
+#, php-format
+msgid "Max. record length %s near %s in '%s' ajax file"
+msgstr ""
+
+#: syncgw/interfaces/file/Admin.php:55
+msgid "File administration handler"
+msgstr ""
+
+#: syncgw/interfaces/file/Admin.php:70
+msgid "Data base root directory"
+msgstr ""
+
+#: syncgw/interfaces/file/Admin.php:72
+msgid "Please specify where files should be stored. Please be aware you need to enable access to this directory for your web server user id (<a class=\"sgwA\" href=\"http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.open-basedir\" target=\"_blank\">more information</a>)."
+msgstr ""
+
+#: syncgw/interfaces/file/Admin.php:95
+msgid "Directory does not exist"
+msgstr ""
+
+#: syncgw/interfaces/file/Admin.php:106
+msgid "Error accessing directory - please check file permission on directory 'syncgw'"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:76
+#, php-format
+msgid "Error creating [%s]"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:77
+msgid "Document validation failed - cannot save empty XML objects"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:78
+#, php-format
+msgid "Invalid XML data in record '%s' in data store %s for user (%s)"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:79
+msgid "User not set"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:117
+msgid "File interface handler"
+msgstr ""
+
+#: syncgw/interfaces/file/Handler.php:135
+msgid "Directory path"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:70
+msgid "Mail administration handler"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:84
+msgid "IMAP server name"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:86
+msgid "IMAP server name where your mails resides (default: \"localhost\")."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:89
+msgid "IMAP port address"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:91
+msgid "IMAP server port (default: 143)."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:93
+#: syncgw/interfaces/mail/Admin.php:151
+msgid "None"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:94
+#: syncgw/interfaces/mail/Admin.php:152
+msgid "SSL"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:95
+#: syncgw/interfaces/mail/Admin.php:153
+msgid "TLS"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:105
+msgid "IMAP encryption"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:106
+#: syncgw/interfaces/mail/Admin.php:164
+msgid "Specify encryption to use for connection (default: \"None\")."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:119
+msgid "IMAP server certificate validation"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:120
+msgid "Speficfy if <strong>sync&bull;gw</strong> should request validation of server certificate for IMAP connection."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:124
+msgid "SMTP server name"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:126
+msgid "SMTP server name to use for sending mails (default: \"localhost\")."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:129
+msgid "SMTP port address"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:131
+msgid "SMTP server port (default: 25)."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:147
+msgid "SMTP authentication"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:148
+msgid "By default <strong>sync&bull;gw</strong> use SMTP authentication. Setting this option to <strong>No</strong> disables SMTP authentication."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:163
+msgid "SMTP encryption"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:168
+msgid "Connection timeout"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:170
+msgid "Connection test timeout in seconds (defaults to 5 seconds)"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:171
+msgid "Login credentials for connection test"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:173
+msgid "Login credeentials (e-mail address) used for testing the IMAP and SMTP connection (will not be stored)."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:174
+msgid "Login password for connection test"
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:176
+msgid "Password for connection test (will not be stored)."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:199
+msgid "Missing IMAP server name."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:205
+msgid "Missing IMAP server port number."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:214
+msgid "Missing SMTP server name."
+msgstr ""
+
+#: syncgw/interfaces/mail/Admin.php:220
+msgid "Missing SMTP server port number."
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:402
+#, php-format
+msgid "No %s enabled for synchronization (%s)"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:405
+#, php-format
+msgid "IMAP message: %s"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:406
+#, php-format
+msgid "SMTP message: %s"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:407
+#, php-format
+msgid "Error sending mail: %s"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:408
+#, php-format
+msgid "Error creating attachment [%s]"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:409
+#, php-format
+msgid "Trying to login to %s with username (%s) and password (%s)"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:411
+#: syncgw/interfaces/roundcube/Handler.php:139
+#, php-format
+msgid "Error reading external %s [%s]"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:412
+#: syncgw/interfaces/roundcube/Handler.php:141
+#, php-format
+msgid "Error adding external %s"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:413
+#: syncgw/interfaces/roundcube/Handler.php:143
+#, php-format
+msgid "Error updating external %s [%s]"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:414
+#: syncgw/interfaces/roundcube/Handler.php:145
+#, php-format
+msgid "Error deleting external %s [%s]"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:415
+#, php-format
+msgid "Mail box '%s' not found"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:416
+#, php-format
+msgid "Mail box '%s' is read only"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:487
+msgid "Mail data base handler"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:590
+#: syncgw/interfaces/mail/Handler.php:647
+msgid "Testing connecting to: "
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:607
+msgid "+++ IMAP connection test failed"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:612
+msgid "IMAP connection test successfully"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:666
+msgid "+++ SMTP connection test failed"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:671
+msgid "SMTP connection test successfully"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:776
+#: syncgw/interfaces/mail/Handler.php:807
+#: syncgw/interfaces/mail/Handler.php:818
+#: syncgw/interfaces/mail/Handler.php:837
+#: syncgw/interfaces/mail/Handler.php:846
+#: syncgw/interfaces/mail/Handler.php:862
+msgid "mail"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:776
+#: syncgw/interfaces/mail/Handler.php:807
+#: syncgw/interfaces/mail/Handler.php:818
+#: syncgw/interfaces/mail/Handler.php:837
+#: syncgw/interfaces/mail/Handler.php:846
+#: syncgw/interfaces/mail/Handler.php:862
+msgid "mail box"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:1869
+msgid "Sent"
+msgstr ""
+
+#: syncgw/interfaces/mail/Handler.php:1869
+msgid "Trash"
+msgstr ""
+
+#: syncgw/interfaces/myapp/Admin.php:50
+msgid "MyApp administration handler"
+msgstr ""
+
+#: syncgw/interfaces/myapp/Handler.php:127
+msgid "MyApp data base handler"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:55
+msgid "MySQL administration handler"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:69
+msgid "MySQL server name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:71
+msgid "MySQL server name (default: \"localhost\")."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:74
+msgid "MySQL port address"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:76
+msgid "MySQL server port (default: 3306)."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:79
+msgid "MySQL data base name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:81
+msgid "Name of MySQL data base to store tables. The tables will be created automatically."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:84
+msgid "MySQL data base user name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:86
+msgid "User name to access MySQL data base."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:89
+msgid "MySQL data base user password"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:91
+msgid "Password for MySQL data base user."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:94
+#: syncgw/interfaces/roundcube/Admin.php:70
+msgid "MySQL <strong>sync&bull;gw</strong> data base table name prefix"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:96
+#: syncgw/interfaces/roundcube/Admin.php:72
+msgid "Table name prefix for <strong>sync&bull;gw</strong> data base tables (to avaoid duplicate table names in data base)."
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:118
+msgid "Missing MySQL data base name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:124
+msgid "Missing MySQL host name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:130
+msgid "Missing MySQL port name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:136
+msgid "Missing MySQL data base user name"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:142
+msgid "Missing MySQL data base user password"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:195
+#: syncgw/interfaces/mysql/Admin.php:230
+#, php-format
+msgid "Error executing SQL command: \"%s\""
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:199
+msgid "<strong>sync&bull;gw</strong> MySQL tables created"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:234
+msgid "<strong>sync&bull;gw</strong> MySQL tables deleted"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Admin.php:251
+#, php-format
+msgid "Error loading MySQL tables from '%s'"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Handler.php:65
+#, php-format
+msgid "SQL Error: %s"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Handler.php:67
+#, php-format
+msgid "User ID for user (%s) not set"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Handler.php:68
+#, php-format
+msgid "Invalid XML data in record '%s' in %s data store for user (%s)"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Handler.php:119
+msgid "Improved MySQL data base handler"
+msgstr ""
+
+#: syncgw/interfaces/mysql/Handler.php:136
+#: syncgw/interfaces/roundcube/Handler.php:292
+msgid "Sustentative"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Admin.php:100
+#, php-format
+msgid "Error loading required RoundCube configuration file '%s'"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Admin.php:123
+#, php-format
+msgid "We do not support '%s' connection"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:219
+#: syncgw/interfaces/roundcube/Contact.php:228
+#: syncgw/interfaces/roundcube/Note.php:126
+#: syncgw/interfaces/roundcube/Task.php:172
+#, php-format
+msgid "RoundCube %s handler"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:231
+#: syncgw/interfaces/roundcube/Handler.php:324
+#: syncgw/interfaces/roundcube/Note.php:137
+#: syncgw/interfaces/roundcube/Task.php:183
+#, php-format
+msgid "+++ ERROR: \"%s\" not active!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:234
+#: syncgw/interfaces/roundcube/Handler.php:327
+#: syncgw/interfaces/roundcube/Note.php:140
+#: syncgw/interfaces/roundcube/Task.php:186
+#, php-format
+msgid "+++ ERROR: Require plugin version \"%s\" - \"%s\" found!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:296
+#: syncgw/interfaces/roundcube/Calendar.php:318
+#: syncgw/interfaces/roundcube/Calendar.php:359
+#: syncgw/interfaces/roundcube/Calendar.php:366
+#: syncgw/interfaces/roundcube/Calendar.php:378
+#: syncgw/interfaces/roundcube/Calendar.php:394
+#: syncgw/interfaces/roundcube/Calendar.php:401
+#: syncgw/interfaces/roundcube/Calendar.php:411
+#: syncgw/interfaces/roundcube/Calendar.php:421
+#: syncgw/interfaces/roundcube/Calendar.php:428
+#: syncgw/interfaces/roundcube/Calendar.php:575
+msgid "calendar"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:318
+#: syncgw/interfaces/roundcube/Calendar.php:366
+#: syncgw/interfaces/roundcube/Calendar.php:378
+#: syncgw/interfaces/roundcube/Calendar.php:401
+#: syncgw/interfaces/roundcube/Calendar.php:411
+#: syncgw/interfaces/roundcube/Calendar.php:428
+msgid "calendar record"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Calendar.php:688
+#, php-format
+msgid "Birthday of %s"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Contact.php:294
+#: syncgw/interfaces/roundcube/Contact.php:626
+#: syncgw/interfaces/roundcube/Contact.php:1201
+#: syncgw/interfaces/roundcube/Contact.php:1258
+msgid "adress book"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Contact.php:328
+#: syncgw/interfaces/roundcube/Contact.php:377
+#: syncgw/interfaces/roundcube/Contact.php:390
+#: syncgw/interfaces/roundcube/Contact.php:403
+#: syncgw/interfaces/roundcube/Contact.php:431
+#: syncgw/interfaces/roundcube/Contact.php:439
+#: syncgw/interfaces/roundcube/Contact.php:449
+#: syncgw/interfaces/roundcube/Contact.php:466
+msgid "contact record"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Contact.php:329
+#: syncgw/interfaces/roundcube/Contact.php:370
+#: syncgw/interfaces/roundcube/Contact.php:377
+#: syncgw/interfaces/roundcube/Contact.php:390
+#: syncgw/interfaces/roundcube/Contact.php:403
+#: syncgw/interfaces/roundcube/Contact.php:419
+#: syncgw/interfaces/roundcube/Contact.php:431
+#: syncgw/interfaces/roundcube/Contact.php:439
+#: syncgw/interfaces/roundcube/Contact.php:449
+#: syncgw/interfaces/roundcube/Contact.php:466
+#: syncgw/interfaces/roundcube/Contact.php:693
+msgid "address book"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Contact.php:459
+msgid "adresss book"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Contact.php:547
+msgid "list of adress books"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:135
+#, php-format
+msgid "Cannot locate RoundCube file [%s]"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:136
+#, php-format
+msgid "Plugin '%s' not available - handler disabled"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:147
+#, php-format
+msgid "Record [%s] in %s is read-only"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:148
+#, php-format
+msgid "RoundCube authorization failed for user (%s) (Error code: %d)"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:149
+#, php-format
+msgid "Record [%s] in %s not found"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:150
+msgid " - if you're debugging please check synchonization status in RoundCube"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:154
+#, php-format
+msgid "No %s enabled for synchronization [%s]"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:155
+#, php-format
+msgid "MySQL error: %s in %s driver in line %d"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:156
+msgid " set_include_path() failed"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:285
+msgid "Impelemented"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:298
+msgid "Application root directory"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:301
+msgid "+++ ERROR: Base directory not found!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:306
+msgid "Connected to RoundCube"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:307
+msgid "v"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:307
+msgid "Off"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:309
+msgid "Data base handler"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:311
+msgid "+++ ERROR: Initialization failed!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Handler.php:314
+msgid "Initialized"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Note.php:204
+#: syncgw/interfaces/roundcube/Note.php:233
+#: syncgw/interfaces/roundcube/Note.php:245
+#: syncgw/interfaces/roundcube/Note.php:266
+#: syncgw/interfaces/roundcube/Note.php:276
+#: syncgw/interfaces/roundcube/Note.php:294
+msgid "note record"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Note.php:204
+#: syncgw/interfaces/roundcube/Note.php:226
+#: syncgw/interfaces/roundcube/Note.php:233
+#: syncgw/interfaces/roundcube/Note.php:245
+#: syncgw/interfaces/roundcube/Note.php:259
+#: syncgw/interfaces/roundcube/Note.php:266
+#: syncgw/interfaces/roundcube/Note.php:276
+#: syncgw/interfaces/roundcube/Note.php:287
+#: syncgw/interfaces/roundcube/Note.php:294
+#: syncgw/interfaces/roundcube/Note.php:372
+msgid "notes group"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Note.php:364
+msgid "Notes default group"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Task.php:193
+msgid "Checking 'tasklist' data base layout"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Task.php:199
+#, php-format
+msgid "+++ ERROR: Cannot find '%s'!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Task.php:209
+#, php-format
+msgid "+++ ERROR: Should be '%s' - is '%s'!"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Task.php:211
+msgid "Passed"
+msgstr ""
+
+#: syncgw/interfaces/roundcube/Task.php:293
+#: syncgw/interfaces/roundcube/Task.php:341
+#: syncgw/interfaces/roundcube/Task.php:348
+#: syncgw/interfaces/roundcube/Task.php:360
+#: syncgw/interfaces/roundcube/Task.php:382
+#: syncgw/interfaces/roundcube/Task.php:392
+#: syncgw/interfaces/roundcube/Task.php:409
+msgid "task record"
+msgstr ""
+
+#: syncgw/lib/Attachment.php:76
+#, php-format
+msgid "Error creating attachment record [%s]"
+msgstr ""
+
+#: syncgw/lib/Attachment.php:79
+#, php-format
+msgid "Error reading attachment record [%s]"
+msgstr ""
+
+#: syncgw/lib/Attachment.php:94
+msgid "Attachment handler"
+msgstr ""
+
+#: syncgw/lib/Attachment.php:99
+msgid "SabreDAV max. attachment size"
+msgstr ""
+
+#: syncgw/lib/Config.php:254
+#, php-format
+msgid "Error writing to directory [%s]. Please change user permission settings"
+msgstr ""
+
+#: syncgw/lib/Config.php:256
+#, php-format
+msgid "Invalid configuration parameter '%s'"
+msgstr ""
+
+#: syncgw/lib/Config.php:261
+#, php-format
+msgid "Invalid value '%s' for configuration parameter '%s'"
+msgstr ""
+
+#: syncgw/lib/Config.php:262
+#, php-format
+msgid "Error setting PHP.INI setting '%s' from '%s' to '%s'"
+msgstr ""
+
+#: syncgw/lib/Config.php:286
+msgid "Configuration handler"
+msgstr ""
+
+#: syncgw/lib/Config.php:292
+msgid "INI file support"
+msgstr ""
+
+#: syncgw/lib/DB.php:84
+#, php-format
+msgid "External handler '%s' not available"
+msgstr ""
+
+#: syncgw/lib/DB.php:85
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: syncgw/lib/DB.php:88
+#, php-format
+msgid "Add %s %s [%s] for user (%s)"
+msgstr ""
+
+#: syncgw/lib/DB.php:89
+#, php-format
+msgid "Upd %s %s [%s] for user (%s)"
+msgstr ""
+
+#: syncgw/lib/DB.php:90
+#, php-format
+msgid "Del %s %s [%s] for user (%s)"
+msgstr ""
+
+#: syncgw/lib/DB.php:130
+msgid "Data base interface handler"
+msgstr ""
+
+#: syncgw/lib/DB.php:285
+msgid "user record"
+msgstr ""
+
+#: syncgw/lib/DB.php:286
+msgid "trace record"
+msgstr ""
+
+#: syncgw/lib/DB.php:287
+msgid "session record"
+msgstr ""
+
+#: syncgw/lib/DB.php:288
+msgid "device record"
+msgstr ""
+
+#: syncgw/lib/DB.php:289
+msgid "attachment record"
+msgstr ""
+
+#: syncgw/lib/DB.php:295
+msgid "sms record"
+msgstr ""
+
+#: syncgw/lib/DB.php:296
+msgid "docLib record"
+msgstr ""
+
+#: syncgw/lib/DB.php:299
+msgid "user"
+msgstr ""
+
+#: syncgw/lib/DB.php:300
+msgid "trace"
+msgstr ""
+
+#: syncgw/lib/DB.php:301
+msgid "session"
+msgstr ""
+
+#: syncgw/lib/DB.php:302
+msgid "attachment"
+msgstr ""
+
+#: syncgw/lib/DB.php:303
+msgid "device"
+msgstr ""
+
+#: syncgw/lib/DB.php:306
+msgid "notes"
+msgstr ""
+
+#: syncgw/lib/DB.php:309
+msgid "sms"
+msgstr ""
+
+#: syncgw/lib/DB.php:310
+msgid "docLib"
+msgstr ""
+
+#: syncgw/lib/DB.php:316
+msgid "system"
+msgstr ""
+
+#: syncgw/lib/DB.php:317
+msgid "external"
+msgstr ""
+
+#: syncgw/lib/DB.php:317
+msgid "internal"
+msgstr ""
+
+#: syncgw/lib/Device.php:163
+#, php-format
+msgid "%s handler"
+msgstr ""
+
+#: syncgw/lib/DTD.php:51
+#, php-format
+msgid "Corrupted DTD \"%s\" - entry '%s' not found"
+msgstr ""
+
+#: syncgw/lib/DTD.php:52
+msgid "No DTD activated"
+msgstr ""
+
+#: syncgw/lib/DTD.php:53
+msgid "No DTD found"
+msgstr ""
+
+#: syncgw/lib/DTD.php:54
+#, php-format
+msgid "DTD '%s' not found"
+msgstr ""
+
+#: syncgw/lib/DTD.php:101
+msgid "DTD handler"
+msgstr ""
+
+#: syncgw/lib/Encoding.php:52
+#, php-format
+msgid "Unknown character set '%s'"
+msgstr ""
+
+#: syncgw/lib/Encoding.php:78
+msgid "Encoding handler"
+msgstr ""
+
+#: syncgw/lib/Encoding.php:84
+msgid "Language used"
+msgstr ""
+
+#: syncgw/lib/Encoding.php:88
+msgid "Internal encoding"
+msgstr ""
+
+#: syncgw/lib/Encoding.php:95
+#, php-format
+msgid "Character set \"%s\""
+msgstr ""
+
+#: syncgw/lib/Encoding.php:100
+#, php-format
+msgid "Alias \"%s\" of character set \"%s\""
+msgstr ""
+
+#: syncgw/lib/ErrorHandler.php:65
+#, php-format
+msgid "Unknown message code [%s]"
+msgstr ""
+
+#: syncgw/lib/ErrorHandler.php:89
+msgid "PHP Error handler"
+msgstr ""
+
+#: syncgw/lib/HTTP.php:98
+#, php-format
+msgid "Fatal PHP error: %s"
+msgstr ""
+
+#: syncgw/lib/HTTP.php:141
+msgid "HTTP handler"
+msgstr ""
+
+#: syncgw/lib/HTTP.php:148
+msgid "Hypertext Trasfer Protocol -- HTTP/1.1 handler"
+msgstr ""
+
+#: syncgw/lib/HTTP.php:151
+msgid "HTTP over TLS handler"
+msgstr ""
+
+#: syncgw/lib/Lock.php:44
+#, php-format
+msgid "Lock error on [%s] - \"%s(%s): %s\""
+msgstr ""
+
+#: syncgw/lib/Lock.php:79
+msgid "Locking handler"
+msgstr ""
+
+#: syncgw/lib/Log.php:114
+#, php-format
+msgid "Cleanup %d log files"
+msgstr ""
+
+#: syncgw/lib/Log.php:161
+msgid "Log handler"
+msgstr ""
+
+#: syncgw/lib/Log.php:168
+msgid "Log file base name"
+msgstr ""
+
+#: syncgw/lib/Log.php:171
+msgid "Log level"
+msgstr ""
+
+#: syncgw/lib/Log.php:333
+#, php-format
+msgid "[CUT@%d]"
+msgstr ""
+
+#: syncgw/lib/Server.php:81
+msgid "sync*gw not available for devices until upgrade of server has been performed"
+msgstr ""
+
+#: syncgw/lib/Server.php:107
+msgid "<strong>sync&bull;gw</strong> server"
+msgstr ""
+
+#: syncgw/lib/Session.php:66
+#, php-format
+msgid "Session [%s] started"
+msgstr ""
+
+#: syncgw/lib/Session.php:67
+#, php-format
+msgid "Session [%s] restarted"
+msgstr ""
+
+#: syncgw/lib/Session.php:69
+#, php-format
+msgid "Session [%s] prolongated from [%s]"
+msgstr ""
+
+#: syncgw/lib/Session.php:70
+#, php-format
+msgid "Cleanup %d session records"
+msgstr ""
+
+#: syncgw/lib/Session.php:121
+msgid "Session handler"
+msgstr ""
+
+#: syncgw/lib/Session.php:129
+msgid "Data base \"Cookie\" handler"
+msgstr ""
+
+#: syncgw/lib/Trace.php:130
+#, php-format
+msgid "Trace [%s] started"
+msgstr ""
+
+#: syncgw/lib/Trace.php:133
+#: syncgw/lib/Trace.php:134
+#, php-format
+msgid "Error creating trace [%s] - disabling trace"
+msgstr ""
+
+#: syncgw/lib/Trace.php:135
+#, php-format
+msgid "Cleanup %d trace files"
+msgstr ""
+
+#: syncgw/lib/Trace.php:171
+msgid "Trace handler"
+msgstr ""
+
+#: syncgw/lib/Trace.php:177
+msgid "Trace recording"
+msgstr ""
+
+#: syncgw/lib/Trace.php:181
+msgid "Enabled for all user"
+msgstr ""
+
+#: syncgw/lib/Trace.php:185
+#, php-format
+msgid "Enabled for user (%s)"
+msgstr ""
+
+#: syncgw/lib/User.php:132
+#, php-format
+msgid "User '%s' connected from '%s' invalid password"
+msgstr ""
+
+#: syncgw/lib/User.php:133
+#, php-format
+msgid "User '%s' connected from '%s' authorized"
+msgstr ""
+
+#: syncgw/lib/User.php:134
+#, php-format
+msgid "User '%s' is banned"
+msgstr ""
+
+#: syncgw/lib/User.php:171
+msgid "User handler"
+msgstr ""
+
+#: syncgw/lib/Util.php:279
+msgid "Session"
+msgstr ""
+
+#: syncgw/lib/Util.php:281
+msgid "Device"
+msgstr ""
+
+#: syncgw/lib/Util.php:282
+msgid "User"
+msgstr ""
+
+#: syncgw/lib/Util.php:283
+msgid "Attachments"
+msgstr ""
+
+#: syncgw/lib/Util.php:285
+msgid "Contact"
+msgstr ""
+
+#: syncgw/lib/Util.php:286
+msgid "Calendar"
+msgstr ""
+
+#: syncgw/lib/Util.php:287
+msgid "Task"
+msgstr ""
+
+#: syncgw/lib/Util.php:288
+msgid "Note"
+msgstr ""
+
+#: syncgw/lib/Util.php:289
+msgid "Mail"
+msgstr ""
+
+#: syncgw/lib/Util.php:290
+msgid "SMS"
+msgstr ""
+
+#: syncgw/lib/Util.php:292
+msgid "Global Address Book"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:143
+#, php-format
+msgid "Invalid position %d in string table"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:144
+msgid "Unsupported function 'PI'"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:145
+#, php-format
+msgid "Unknown 'Public Identifier' %s"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:146
+#, php-format
+msgid "Character set '%s' not supported"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:147
+#, php-format
+msgid "Unsupported WBXML data version '%s' received"
+msgstr ""
+
+#: syncgw/lib/WBXML.php:165
+msgid "WBXML handler"
+msgstr ""
+
+#: syncgw/lib/XML.php:176
+msgid "XML handler"
+msgstr ""
+
+#: syncgw/mapi/mapiBind.php:49
+#: syncgw/mapi/mapiConnect.php:51
+#: syncgw/mapi/mapiDisconnect.php:49
+#: syncgw/mapi/mapiDNToMId.php:50
+#: syncgw/mapi/mapiExecute.php:51
+#: syncgw/mapi/mapiGetMatches.php:51
+#: syncgw/mapi/mapiGetProps.php:53
+#: syncgw/mapi/mapiGetSpecialTable.php:50
+#: syncgw/mapi/mapiNotificationWait.php:49
+#, php-format
+msgid "&lt;%s&gt; request/response handler"
+msgstr ""
+
+#: syncgw/mapi/mapiExecute.php:54
+msgid "LZ77 compression and decompression"
+msgstr ""
+
+#: syncgw/mapi/mapiExecute.php:57
+msgid "DIRECT2 Encoding Algorithm"
+msgstr ""
+
+#: syncgw/mapi/mapiHandler.php:55
+msgid "MAPI over HTTP handler"
+msgstr ""
+
+#: syncgw/mapi/ics/icsHandler.php:87
+msgid "Bulk Data Transfer Protocol handler class"
+msgstr ""
+
+#: syncgw/mapi/rops/ropCreateFolder.php:50
+#: syncgw/mapi/rops/ropDeleteFolder.php:50
+#: syncgw/mapi/rops/ropFastTransferSourceGetBuffer.php:51
+#: syncgw/mapi/rops/ropGetAddressTypes.php:49
+#: syncgw/mapi/rops/ropGetLocalReplicaIds.php:49
+#: syncgw/mapi/rops/ropGetPropertiesSpecific.php:74
+#: syncgw/mapi/rops/ropGetPropertyIdsFromNames.php:49
+#: syncgw/mapi/rops/ropGetReceiveFolder.php:50
+#, php-format
+msgid "&lt;%s&gt; response handler"
+msgstr ""
+
+#: syncgw/mapi/rops/ropHandler.php:47
+#, php-format
+msgid "Unknown Rop [0x%02X]"
+msgstr ""
+
+#: syncgw/mapi/rops/ropHandler.php:62
+msgid "Rop handler"
+msgstr ""
+
+#: syncgw/mapi/rpc/rpcHandler.php:52
+msgid "Wire Format Protocol handler class"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:48
+#, php-format
+msgid "Upgrading document [%s] in %s data store from version %s"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:49
+#, php-format
+msgid "Upgrading %s data store  from version %s"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:50
+#, php-format
+msgid "Upgrading configuration file from version %s"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:51
+#, php-format
+msgid "Error reading [%s]"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:69
+msgid "Upgrade handler"
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:256
+msgid "Upgrading <strong>sync&bull;gw</strong> data stores to this version is not supported! "
+msgstr ""
+
+#: syncgw/upgrade/updHandler.php:257
+msgid "For more information please check version announcement in our forum"
+msgstr ""
+

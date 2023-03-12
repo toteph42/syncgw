@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <Categories>
+    <Category>APPOINTMENT</Category>
+  </Categories>
+  <StartTime>20100521T060000Z</StartTime>
+  <EndTime>20100521T103000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Uno</DisplayName>
+  </Location>
+  <Reminder xml-ns="activesync:Calendar">90</Reminder>
+  <Sensitivity>2</Sensitivity>
+  <Subject>Uno</Subject>
+  <UID>L9BOe63g4EGSW508DC2Tx0</UID>
+</ApplicationData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Body X-TYP="2">Hello &lt;strong&gt;world&lt;/strong&gt;
+second row</Body>
+    <BusyStatus>BUSY</BusyStatus>
+    <Category>Jungo</Category>
+    <Category>belga</Category>
+    <StartTime>1131058800</StartTime>
+    <EndTime>1131062400</EndTime>
+    <Location>
+      <DisplayName>34/1123</DisplayName>
+    </Location>
+    <MeetingStatus>ORGANIZER-MEETING</MeetingStatus>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anat@contoso.com</MailOther>
+    <Recurrence>
+      <DayPos>SA</DayPos>
+      <Interval>1</Interval>
+      <Frequency>DAILY</Frequency>
+    </Recurrence>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>test meeting</Summary>
+    <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C501000000000000000010000</UID>
+  </Data>
+</syncgw>

@@ -1,0 +1,13 @@
+#
+# 	Redirect automatic WebDAV configuration request
+#	
+#	@package	sync*gw
+#	@subpackage	WebDAV
+#	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+# 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+#
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^.well-known/caldav(/?)(.*)  sync.php/calendars/$2 [NC,L,R=307]
+	RewriteRule ^.well-known/carddav(/?)(.*) sync.php/contacts/$2  [NC,L,R=307]
+</IfModule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Ping code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8205</PID>
+  <Name>-//ActiveSync//DTD Ping//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>Ping Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:Ping</URI>
+  <CodePage>13</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <Ping>0x05</Ping>
+   <AutdState>0x06</AutdState>
+   <Status>0x07</Status>
+   <HeartbeatInterval>0x08</HeartbeatInterval>
+   <Folders>0x09</Folders>
+   <Folder>0x0a</Folder>
+   <Id>0x0b</Id>
+   <Class>0x0c</Class>
+   <MaxFolders>0x0d</MaxFolders>
+ </Defs>
+
+</CodePage>

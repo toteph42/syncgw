@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>3A76B5FF8723730674860B782005FE9B-83F1535F99AB0BF4</UID>
+    <StartTime>868899600</StartTime>
+    <EndTime>868939199</EndTime>
+    <Summary>Bastille Day Party</Summary>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Organizer RSVP="true" ROLE="ORGANIZER">mailto:Hugo@bin.com</Organizer>
+  </Data>
+</syncgw>

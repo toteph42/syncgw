@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>L9BOe63g4EGSW508DC2Tx0</UID>
+    <StartTime>1274421600</StartTime>
+    <EndTime>1274437800</EndTime>
+    <Summary>Uno</Summary>
+    <Location>
+      <DisplayName>Uno</DisplayName>
+    </Location>
+    <Category>APPOINTMENT</Category>
+    <BusyStatus>FREE</BusyStatus>
+    <Priority>2</Priority>
+    <Class>PRIVATE</Class>
+  </Data>
+</syncgw>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <BusyStatus>BUSY</BusyStatus>
+    <StartTime>1223924400</StartTime>
+    <EndTime>1223926200</EndTime>
+    <Location>
+      <DisplayName>My office</DisplayName>
+    </Location>
+    <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+    <BodyType>3</BodyType>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anat@contoso.com</MailOther>
+    <Recurrence>
+      <DayPos>MO</DayPos>
+      <Interval>1</Interval>
+      <Frequency>MONTHLY</Frequency>
+      <EndTime>1247511600</EndTime>
+      <WeekOfMonth>2</WeekOfMonth>
+    </Recurrence>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>Team Meeting</Summary>
+    <Timezone>Europe/Dublin</Timezone>
+    <UID>040000008200E00074C5B7101A82E0080000000060043DFCA924C90100000000000000001000000097F14EF755AC454BA30EFA7B1B315E43</UID>
+  </Data>
+</syncgw>

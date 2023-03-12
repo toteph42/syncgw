@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">Forrest Gump</DisplayName>
+  <Phone>(111) 555-1212</Phone>
+  <Title>Shrimp Man</Title>
+  <FirstName>Forrest</FirstName>
+  <LastName>Gump</LastName>
+  <HomePhone>(404) 555-1212</HomePhone>
+</ApplicationData>

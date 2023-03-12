@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopCreateFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<InputHandleIndex T="I" S="1"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<FolderType T="I" S="1" D="FOLDER_TYP"/>
+	<UseUnicodeStrings T="B"/>
+	<OpenExisting T="B"/>
+	<Reserved T="I" S="1"/>
+	<DisplayName T="S" C="UseUnicodeStrings=True"/>
+	<DisplayName T="A" C="UseUnicodeStrings=False"/>
+	<Comment T="S" C="UseUnicodeStrings=True"/>
+	<Comment T="A" C="UseUnicodeStrings=False"/>
+  </RopRec>
+  
+  <RopRec Typ="Resp" X="RopCreateFolder">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<FolderId T="H" S="8"/>
+	<IsExistingFolder T="B"/>
+	<HasRules T="B" C="IsExistingFolder=True"/>
+	<IsGhosted T="B" C="IsExistingFolder=True"/>
+	<ServerCount T="I" S="2" C="IsExistingFolder=True$IsGhosted=True"/>
+	<CheapServerCount T="I" S="2" C="IsExistingFolder=True$IsGhosted=True"/>
+	<Servers T="A" C="IsExistingFolder=True$IsGhosted=True"/>
+  </RopRec>
+ 
+  <RopRec Typ="mkResp" X="RopCreateFolder">
+	<RopId T="I" S="1" D="ROP_ID">CreateFolder</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<FolderId T="H" S="8"/>
+	<IsExistingFolder T="B">False</IsExistingFolder>
+	<HasRules T="B" C="IsExistingFolder=True">False</HasRules>
+	<IsGhosted T="B" C="IsExistingFolder=True">False</IsGhosted>
+	<ServerCount T="I" S="2" C="IsExistingFolder=True$IsGhosted=True">0</ServerCount>
+	<CheapServerCount T="I" S="2" C="IsExistingFolder=True$IsGhosted=True">0</CheapServerCount>
+	<Servers T="A" C="IsExistingFolder=True$IsGhosted=True"/>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopCreateFolder">
+	<RopId T="I" S="1" D="ROP_ID">OpenFolder</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+   
+</syncgw>

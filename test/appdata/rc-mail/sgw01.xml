@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Type>R</Type>
+  <Group/>
+  <LastMod>1626593608</LastMod>
+  <Created>1626593608</Created>
+  <CRC/>
+  <extID>R82#G04660181</extID>
+  <extGroup>G04660181</extGroup>
+  <Data>
+    <EmailTo>t1@wb28.de</EmailTo>
+    <Subject>Sie wurden zu »Meeting« eingeladen</Subject>
+    <Created>1577215559</Created>
+    <EmailSender>janko@test.de</EmailSender>
+    <MessageId>&lt;6969ca9db82b8c8abca91f4c5a4dd1a8@test.de&gt;</MessageId>
+    <ContentClass>urn:content-classes:message</ContentClass>
+    <Flag/>
+    <Status>Seen</Status>
+    <IsDraft>0</IsDraft>
+    <Read>1</Read>
+    <Body X-TYP="1">**
+Wann:
+Teilnehmer:
+
+Im Anhang finden Sie eine iCalendar-Datei mit allen Details des Termins. 
+Diese können Sie in Ihre Kalenderanwendung importieren.</Body>
+ 	<Attachment>
+	  <DisplayName>event.ics</DisplayName>
+	  <FileReference>sgw-64d0b9c7</FileReference>
+	  <Method>1</Method>
+      <EstimatedDataSize>698</EstimatedDataSize>
+    </Attachment>
+    <InternetCPID>65001</InternetCPID>
+    <MessageClass>IPM.Note</MessageClass>
+    <Importance>1</Importance>
+    <ConversationId>8c2f0b48321bff6f</ConversationId>
+    <ConversationIndex>AdW6j/iHjC8LSDIb/28=</ConversationIndex>
+  </Data>
+</syncgw>

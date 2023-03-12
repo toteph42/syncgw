@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <FileAs xml-ns="activesync:Contacts">Abe Test</FileAs>
+  <FirstName>Abe</FirstName>
+  <HomeAddressStreet>123 Main Street</HomeAddressStreet>
+  <HomeAddressCity>Any Town</HomeAddressCity>
+  <HomeAddressState>CA</HomeAddressState>
+  <HomeAddressPostalCode>91921-1234</HomeAddressPostalCode>
+  <LastName>Test</LastName>
+  <NickName xml-ns="activesync:Contacts2">Jim,Jimmie</NickName>
+</ApplicationData>

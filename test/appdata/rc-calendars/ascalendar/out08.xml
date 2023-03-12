@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Attendees xml-ns="activesync:Calendar">
+    <Attendee>
+      <AttendeeStatus>0</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>\"Luc Donovan\" &lt;luc@yahoo.fr&gt;</Email>
+    </Attendee>
+  </Attendees>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>13</EstimatedDataSize>
+    <Data>What is it ??</Data>
+  </Body>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <StartTime>19980119T070000Z</StartTime>
+  <EndTime>20061214T120000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Exceptions>
+    <Exception>
+      <Deleted>1</Deleted>
+      <InstanceId xml-ns="activesync:AirSyncBase">20061227T000000Z</InstanceId>
+    </Exception>
+    <Exception xml-ns="activesync:Calendar">
+      <Deleted>1</Deleted>
+      <InstanceId xml-ns="activesync:AirSyncBase">20061228T000000Z</InstanceId>
+    </Exception>
+  </Exceptions>
+  <Location>
+    <DisplayName>New York</DisplayName>
+  </Location>
+  <Recurrence xml-ns="activesync:Calendar">
+    <DayOfWeek>1</DayOfWeek>
+    <Interval>1</Interval>
+    <Type>1</Type>
+  </Recurrence>
+  <Reminder>7200</Reminder>
+  <Sensitivity>2</Sensitivity>
+  <Subject>Test event</Subject>
+  <UID>webmaster@memotoo.com</UID>
+</ApplicationData>

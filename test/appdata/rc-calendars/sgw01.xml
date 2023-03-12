@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>B946046CFD814E24D93D292D9C4351B7-83F1535F99AB0BF4</UID>
+    <StartTime>1262304000</StartTime>
+    <EndTime>1262304000</EndTime>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">841730400</Trigger>
+      <Attachment>
+        <FileReference>sgw-be160ba7</FileReference>
+      </Attachment>
+      <Alarm>
+        <Action>DISPLAY</Action>
+        <Trigger VALUE="date-time">829612200</Trigger>
+        <Body X-TYP="1">Your Taxes Are Due !!!</Body>
+      </Alarm>
+      <Alarm>
+        <Action>EMAIL</Action>
+        <Trigger VALUE="date-time">829612800</Trigger>
+        <MailOther>IRS@us.gov</MailOther>
+        <Body X-TYP="1">The Check Is In The Mail!</Body>
+      </Alarm>
+    </Alarm>
+  </Data>
+</syncgw>

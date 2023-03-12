@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>20061004T174515Z-619750-H2_Board</UID>
+    <StartTime>1160035200</StartTime>
+    <EndTime>1160038800</EndTime>
+    <Summary>Test appointment</Summary>
+    <Location>
+      <DisplayName>Ortopedisk poliklinikk</DisplayName>
+    </Location>
+    <Body X-TYP="1">Notes for test</Body>
+    <Recurrence>
+      <Frequency>MONTHLY</Frequency>
+      <EndTime>1293753600</EndTime>
+      <DayPos>+1TH</DayPos>
+    </Recurrence>
+    <Category>APPOINTMENT</Category>
+    <BusyStatus>FREE</BusyStatus>
+    <Status>CONFIRMED</Status>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1160034600</Trigger>
+      <Attachment>
+        <FileReference>sgw-348e04c9</FileReference>
+      </Attachment>
+    </Alarm>
+    <Attendee PARTSTAT="needs-action" RSVP="true">mailto:joecool@example.com</Attendee>
+  </Data>
+</syncgw>

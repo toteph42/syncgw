@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:J. Doe
+N:Doe;J.;;;
+TEL;PREF=1;TYPE=work::+1-418-656-9254;ext=102
+EMAIL:jdoe@example.com
+ORG:ABC\, Inc.
+REV:20131230T115856Z
+END:VCARD
+]]></Data>

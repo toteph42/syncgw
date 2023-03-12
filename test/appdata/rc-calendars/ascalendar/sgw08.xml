@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>4A5C39288F72B32F1BF354D288124E8C-83F1535F99AB0BF4</UID>
+    <StartTime>1608037200</StartTime>
+    <EndTime>1608040800</EndTime>
+    <Summary>Titel #4YX - Grosser Anhang</Summary>
+    <BusyStatus>BUSY</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

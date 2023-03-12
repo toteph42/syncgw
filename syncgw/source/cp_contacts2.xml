@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Contacts2 code page definition
+
+ 	@package	sync*gw
+  	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8204</PID>
+  <Name>-//ActiveSync//DTD Contacts2//EN</Name>
+  <Tag>[MS-ASCON]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascon</Link>
+  <Title>Contacts2 Request and Response Schema</Title>
+  <Ver>18.0</Ver>
+  <URI>activesync:Contacts2</URI>
+  <CodePage>12</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <CustomerId>0x05</CustomerId>
+   <GovernmentId>0x06</GovernmentId>
+   <IMAddress>0x07</IMAddress>
+   <IMAddress2>0x08</IMAddress2>
+   <IMAddress3>0x09</IMAddress3>
+   <ManagerName>0x0a</ManagerName>
+   <CompanyMainPhone>0x0b</CompanyMainPhone>
+   <AccountName>0x0c</AccountName>
+   <NickName>0x0d</NickName>
+   <MMS>0x0e</MMS>
+ </Defs>
+
+</CodePage>

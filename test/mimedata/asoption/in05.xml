@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE xml>
+<ResolveRecipients> 
+ <To>Testers</To> 
+ <Options> 
+  <CertificateRetrieval>3</CertificateRetrieval> 
+  <MaxCertificates>99</MaxCertificates> 
+  <MaxAmbiguousRecipients>99</MaxAmbiguousRecipients> 
+  <Picture> 
+   <MaxSize>1024</MaxSize> 
+   <MaxPictures>10</MaxPictures> 
+  </Picture> 
+  <Availability>
+   <StartTime>2008-12-01T08:00:00.000Z</StartTime>
+   <EndTime>2008-12-03T08:00:00.000Z</EndTime>
+  </Availability>
+ </Options> 
+</ResolveRecipients>

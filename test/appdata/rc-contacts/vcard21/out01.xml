@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN:Anrede VNameX \\ ZVName \; NName\, NamZusatz
+N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:thomas;b=C3=B6ttcher=5C=2C;;;
+BDAY:19950416
+ADR;TYPE=home:;;123 Main Street;Any Town;CA;91921-1234;
+ADR;TYPE=home:;;123 Main Street;Any Town;CA;91921-1234;
+ADR:;;122 street;Any Town;CA;91921-1234;
+TEL;TYPE=home,fax:+1-800-555-1234
+TEL;PREF=1;TYPE=work:03333333333
+TEL;PREF=1;TYPE=work:09999999999
+TEL;TYPE=cell:number
+EMAIL:john.public@abc.com
+TITLE:V.P.\, Research and Development
+ORG:ABC\, Inc.
+CATEGORIES:cat1,cat2,cat3
+NOTE:This facsimile machine if operational0830 to 1715 hours\nMonday thro
+ ugh Friday. Call +1-213-555-1234 if you have problems\nwith access to th
+ e machine.
+
+REV:20131230T115856Z
+URL:http://abc.com/pub/directory/northam/jpublic.ecd
+END:VCARD
+]]></Data>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Attendee RSVP="FALSE" CN="Chris Gray" CUTYPE="INDIVIDUAL" ROLE="REQ-PARTICIPANT">mailto:chris@fourthcoffee.com</Attendee>
+    <Resource RSVP="FALSE">Room B213</Resource>
+    <BusyStatus>BUSY</BusyStatus>
+    <StartTime>1131058800</StartTime>
+    <EndTime>1131062400</EndTime>
+    <Location>
+      <DisplayName>34/1123</DisplayName>
+    </Location>
+    <MeetingStatus>ORGANIZER-MEETING</MeetingStatus>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anat@contoso.com</MailOther>
+    <Recurrence>
+      <CalendarType>1</CalendarType>
+      <DayPos>SU,MO,TU,WE,TH,FR,SA</DayPos>
+      <Interval>1</Interval>
+      <Frequency>MONTHLY</Frequency>
+      <WeekOfMonth>2</WeekOfMonth>
+    </Recurrence>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>test meeting</Summary>
+    <Timezone>Australia/Perth</Timezone>
+    <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C5010000000000000000100000008</UID>
+  </Data>
+</syncgw>

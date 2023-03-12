@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	[MS-OXROPS] Remote Operations (ROP) List and Encoding Protocol
+
+ 	@package	sync*gw
+   	@subpackage	Remote Operations (ROP) List and Encoding Protocol
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<syncgw>
+  
+  <RopRec Typ="Req" X="RopLogon">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<LogonId T="I" S="1"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<LogonFlags T="I" S="1" F="LOGON"/>
+	<OpenFlags T="I" S="4" F="OPEN"/>
+	<StoreState T="I" S="4"/>
+	<EssdnSize T="I" S="2"/>
+	<Essdn T="A" S="EssdnSize"/>
+  </RopRec>
+  
+  <RopRec Typ="Resp" X="RopLogon">
+	<RopId T="I" S="1" D="ROP_ID"/>
+	<OutputHandleIndex T="I" S="1"/>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+	<LogonFlags T="I" S="1" F="LOGON"/>
+	<FolderIds>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+	  	<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+	  	<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+	  	<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2"/>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER"/>
+	  </FolderId>
+	</FolderIds>
+	<ResponseFlags T="I" S="1" F="RESPONSE"/>
+	<MailboxGuid T="G" D="GUID"/>
+	<ReplId T="I" S="2"/>
+	<ReplGuid T="G" D="GUID"/>
+	<LogonTime>
+	  <Seconds T="I" S="1"/>
+	  <Minutes T="I" S="1"/>
+	  <Hour T="I" S="1"/>
+	  <DayOfWeek T="I" S="1"/>
+	  <Day T="I" S="1"/>
+	  <Month T="I" S="1"/>
+	  <Year T="I" S="2"/>
+	</LogonTime>
+	<GwartTime T="I" S="8"/>
+	<StoreState T="I" S="4"/>
+  </RopRec>
+  
+  <RopRec Typ="mkResp" X="RopLogon">
+	<RopId T="I" S="1" D="ROP_ID">Logon</RopId>
+	<OutputHandleIndex T="I" S="1">0</OutputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE">Success</ReturnValue>
+	<LogonFlags T="I" S="1" F="LOGON">Private|SpoolerProcess</LogonFlags>
+	<FolderIds>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Root</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Action</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Spooler</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">InterPersonal</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Inbox</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Outbox</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Sent</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Deleted</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Common</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Schedule</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Search</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Views</GlobalCounter>
+	  </FolderId>
+	  <FolderId>
+		<ReplicaId T="I" S="2">1</ReplicaId>
+		<GlobalCounter T="H" S="6" D="GLOBAL_COUNTER">Shortcuts</GlobalCounter>
+	  </FolderId>
+	</FolderIds>
+	<ResponseFlags T="I" S="1" F="RESPONSE">Fixed|OwnerRight|SendAsRigth</ResponseFlags>
+	<MailboxGuid T="G" D="GUID">MailBox</MailboxGuid>
+	<ReplId T="I" S="2">65535</ReplId>
+	<ReplGuid T="G" D="GUID">Replica</ReplGuid>
+	<LogonTime>
+	  <Seconds T="I" S="1"/>
+	  <Minutes T="I" S="1"/>
+	  <Hour T="I" S="1"/>
+	  <DayOfWeek T="I" S="1"/>
+	  <Day T="I" S="1"/>
+	  <Month T="I" S="1"/>
+	  <Year T="I" S="2"/>
+	</LogonTime>
+	<GwartTime T="I" S="8">133141398210000000</GwartTime>
+	<StoreState T="I" S="4">0</StoreState>
+  </RopRec>
+   
+  <RopRec Typ="mkRespErr" X="RopLogon">
+	<RopId T="I" S="1" D="ROP_ID">Logon</RopId>
+	<InputHandleIndex T="I" S="1">0</InputHandleIndex>
+	<ReturnValue T="I" S="4" D="ERR_CODE"/>
+  </RopRec>
+   
+</syncgw>

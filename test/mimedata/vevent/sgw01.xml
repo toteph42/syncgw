@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <StartTime>1262304000</StartTime>
+    <GeoPosition>
+      <Longitude>37.24</Longitude>
+      <Latitude>-17.87</Latitude>
+    </GeoPosition>
+    <RecurrenceDate>828406800</RecurrenceDate>
+    <RecurrenceDate>828493200</RecurrenceDate>
+    <RecurrenceDate>828579600</RecurrenceDate>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">841730400</Trigger>
+      <Duration>900</Duration>
+      <Repeat>4</Repeat>
+      <Attachment>
+        <FileReference>sgw-be160ba7</FileReference>
+      </Attachment>
+    </Alarm>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="date-time">829612200</Trigger>
+      <Duration>300</Duration>
+      <Repeat>2</Repeat>
+      <Body X-TYP="1">Your Taxes Are Due !!!</Body>
+    </Alarm>
+    <Alarm>
+      <Action>EMAIL</Action>
+      <Trigger VALUE="date-time">829612800</Trigger>
+      <Duration>3600</Duration>
+      <Repeat>24</Repeat>
+      <MailOther>IRS@us.gov</MailOther>
+      <Body X-TYP="1">The Check Is In The Mail!</Body>
+    </Alarm>
+    <Timezone>America/Chicago</Timezone>
+  </Data>
+</syncgw>

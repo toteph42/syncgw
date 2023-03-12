@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>todoz79893056.-1539577512.1114802217</UID>
+    <Timezone>Europe/Zurich</Timezone>
+    <StartTime>1273478400</StartTime>
+    <Class>PUBLIC</Class>
+    <Body X-TYP="1"/>
+    <Location>
+      <DisplayName>La</DisplayName>
+    </Location>
+    <Priority>0</Priority>
+    <Sequence>1</Sequence>
+    <Summary>Prova 2</Summary>
+    <Transparency>OPAQUE</Transparency>
+    <EndTime>1273492800</EndTime>
+    <Timezone>Europe/Zurich</Timezone>
+  </Data>
+</syncgw>

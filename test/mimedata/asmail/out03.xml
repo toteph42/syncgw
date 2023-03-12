@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <ContentClass xml-ns="activesync:Mail">urn:content-classes:message</ContentClass>
+  <ConversationId xml-ns="activesync:Mail2">60abb9431386e60abb9431387360abb9</ConversationId>
+  <ConversationIndex>CA2CFA8A23</ConversationIndex>
+  <DateReceived xml-ns="activesync:Mail">2007-11-06T23:42:16.000Z</DateReceived>
+  <DisplayTo>Device User</DisplayTo>
+  <From>"7125550123" &lt;7125550123&gt;</From>
+  <Importance>1</Importance>
+  <InternetCPID>20127</InternetCPID>
+  <MessageClass>IPM.Note.Microsoft.Voicemail.UM.CA</MessageClass>
+  <NativeBodyType xml-ns="activesync:AirSyncBase">3</NativeBodyType>
+  <Read xml-ns="activesync:Mail">1</Read>
+  <Subject>Voice Mail from 7125550123 (3 seconds)</Subject>
+  <ThreadTopic>Voice Mail from 7125550123 (3 seconds)</ThreadTopic>
+  <To>"Device User" &lt;someone@example.com&gt;</To>
+  <UmCallerID xml-ns="activesync:Mail2">7125550123</UmCallerID>
+  <UmUserNotes>7125550123</UmUserNotes>
+</ApplicationData>

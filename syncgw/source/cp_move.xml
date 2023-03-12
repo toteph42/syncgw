@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync Move code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8197</PID>
+  <Name>-//ActiveSync//DTD Move//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>Move Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:Move</URI>
+  <CodePage>5</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <MoveItems>0x05</MoveItems>
+   <Move>0x06</Move>
+   <SrcMsgId>0x07</SrcMsgId>
+   <SrcFldId>0x08</SrcFldId>
+   <DstFldId>0x09</DstFldId>
+   <Response>0x0a</Response>
+   <Status>0x0b</Status>
+   <DstMsgId>0x0c</DstMsgId>
+ </Defs>
+
+</CodePage>

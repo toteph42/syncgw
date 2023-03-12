@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+  <Status>1</Status>
+  <Collections>
+    <Collection>
+      <SyncKey>1609840247</SyncKey>
+      <CollectionId>A1</CollectionId>
+      <Status>1</Status>
+      <Commands>
+         <Add xml-ns="activesync:AirSync">
+          <ServerId>A4</ServerId>
+          <Class>Contacts</Class>
+          <ApplicationData>
+            <Anniversary xml-ns="activesync:Contacts">2019-01-04T00:00:00.000Z</Anniversary>
+            <AssistantName>assitenz</AssistantName>
+            <AssistantPhoneNumber>012</AssistantPhoneNumber>
+            <Birthday>2019-01-08T00:00:00.000Z</Birthday>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <NativeBodyType>1</NativeBodyType>
+              <Data>This is a short text.
+# comment 
+This &lt;Pitty&gt;tag&lt;/Pitty&gt; should survive.
+$%äöü)([]=^'"1!
+ ä#&amp;tag 
+tab	2tab --END</Data>
+              <EstimatedDataSize>117</EstimatedDataSize>
+            </Body>
+            <Business2PhoneNumber xml-ns="activesync:Contacts">004</Business2PhoneNumber>
+            <BusinessAddressStreet>dstr</BusinessAddressStreet>
+            <BusinessAddressCity>dort</BusinessAddressCity>
+            <BusinessAddressState>dreg</BusinessAddressState>
+            <BusinessAddressPostalCode>dplz</BusinessAddressPostalCode>
+            <BusinessAddressCountry>dland</BusinessAddressCountry>
+            <BusinessFaxNumber>008</BusinessFaxNumber>
+            <BusinessPhoneNumber>003</BusinessPhoneNumber>
+            <WebPage>andere</WebPage>
+            <Department>Firma</Department>
+            <Email1Address>pivat@wx.de</Email1Address>
+            <Email1Address>privat2@wx.de</Email1Address>
+            <Email2Address>dienstlich@wx.de</Email2Address>
+            <Email3Address>andere@wx.de</Email3Address>
+            <FileAs>All Atalon</FileAs>
+            <FirstName>VName</FirstName>
+            <MiddleName>ZVName</MiddleName>
+            <LastName>NName</LastName>
+            <Suffix>NamZusatz</Suffix>
+            <HomeAddressStreet>pstr</HomeAddressStreet>
+            <HomeAddressCity>port</HomeAddressCity>
+            <HomeAddressState>preg</HomeAddressState>
+            <HomeAddressPostalCode>pplz</HomeAddressPostalCode>
+            <HomeAddressCountry>pland</HomeAddressCountry>
+            <HomeAddressStreet>2str</HomeAddressStreet>
+            <HomeAddressCity>2ort</HomeAddressCity>
+            <HomeAddressState>2reg</HomeAddressState>
+            <HomeAddressPostalCode>splz</HomeAddressPostalCode>
+            <HomeAddressCountry>2land</HomeAddressCountry>
+            <HomeFaxNumber>007</HomeFaxNumber>
+            <HomePhoneNumber>001</HomePhoneNumber>
+            <Home2PhoneNumber>002</Home2PhoneNumber>
+            <MobilePhoneNumber>005</MobilePhoneNumber>
+            <OtherAddressStreet>astr</OtherAddressStreet>
+            <OtherAddressCity>aort</OtherAddressCity>
+            <OtherAddressState>areg</OtherAddressState>
+            <OtherAddressPostalCode>aplz</OtherAddressPostalCode>
+            <OtherAddressCountry>aland</OtherAddressCountry>
+            <CarPhoneNumber>009</CarPhoneNumber>
+            <PagerNumber>010</PagerNumber>
+            <Spouse>partner</Spouse>
+            <JobTitle>Beruf</JobTitle>
+            <Picture>/9j/4AAQSkZJRgABAgEBLAEsAAD/7Q4iUGhvdG9zaG9wIDMuMAA4QklNA+0KUmVzb2x1dGlvbgAAAAAQASwgAAABAAIBLCAAAAEAAjhCSU0[9155-CUT@128]</Picture>
+            <Categories>
+              <Category>MyCat</Category>
+            </Categories>
+            <IMAddress xml-ns="activesync:Contacts2">skype</IMAddress>
+            <IMAddress3>jabber</IMAddress3>
+            <ManagerName>cheffe</ManagerName>
+            <CompanyMainPhone>006</CompanyMainPhone>
+            <NickName>SitzName</NickName>
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

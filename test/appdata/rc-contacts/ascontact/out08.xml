@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Birthday xml-ns="activesync:Contacts">2008-10-29T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>133</EstimatedDataSize>
+    <Data>This is a short text. 
+ # comment  
+ This &lt;Pitty&gt;tag&lt;/Pitty&gt;should survive. 
+ $%äöü)([]=^\'"1! 
+ &amp;nbsp;&amp;auml;#&amp;tag 
+ tab tab --END</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">street bus</BusinessAddressStreet>
+  <BusinessAddressCity>city bus</BusinessAddressCity>
+  <BusinessAddressState>state/prov. bus</BusinessAddressState>
+  <BusinessAddressPostalCode>postal/zip bus</BusinessAddressPostalCode>
+  <BusinessAddressCountry>country/region bus</BusinessAddressCountry>
+  <BusinessFaxNumber>fax business</BusinessFaxNumber>
+  <BusinessPhoneNumber>telephone business</BusinessPhoneNumber>
+  <BusinessPhoneNumber>assistants number</BusinessPhoneNumber>
+  <CarPhoneNumber>car phone</CarPhoneNumber>
+  <FileAs>firstname (all fields) lastname</FileAs>
+  <FirstName>firstname (all fields)</FirstName>
+  <HomeAddressStreet>street home</HomeAddressStreet>
+  <HomeAddressCity>city home</HomeAddressCity>
+  <HomeAddressState>state/prov. home</HomeAddressState>
+  <HomeAddressPostalCode>postal/zip home</HomeAddressPostalCode>
+  <HomeAddressCountry>country/region home</HomeAddressCountry>
+  <HomeFaxNumber>fax home</HomeFaxNumber>
+  <HomePhoneNumber>telephone home</HomePhoneNumber>
+  <LastName>lastname</LastName>
+  <MiddleName>middle name</MiddleName>
+  <MobilePhoneNumber>mobile</MobilePhoneNumber>
+  <MobilePhoneNumber>mobile home</MobilePhoneNumber>
+  <MobilePhoneNumber>mobile business</MobilePhoneNumber>
+  <OtherAddressStreet>street</OtherAddressStreet>
+  <OtherAddressCity>city</OtherAddressCity>
+  <OtherAddressState>state/province</OtherAddressState>
+  <OtherAddressPostalCode>postal/zip code</OtherAddressPostalCode>
+  <OtherAddressCountry>country/region</OtherAddressCountry>
+  <PagerNumber>pager</PagerNumber>
+  <Suffix>suffix</Suffix>
+  <Title>job title</Title>
+  <WebPage>http://web address</WebPage>
+  <NickName xml-ns="activesync:Contacts2">nickname</NickName>
+</ApplicationData>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>77F8FA473CFBAC5253913374CBFF6FC6</UID>
+    <Summary>Send an &amp;XXX &lt;&gt; ;._-e-card</Summary>
+    <DueDate>1167001200</DueDate>
+    <StartTime>1165964400</StartTime>
+    <Flag>0</Flag>
+    <Status X-PC="0">NEEDS-ACTION</Status>
+  </Data>
+</syncgw>

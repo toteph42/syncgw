@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Attendees xml-ns="activesync:Calendar">
+    <Attendee>
+      <AttendeeStatus>0</AttendeeStatus>
+      <AttendeeType>2</AttendeeType>
+      <Email>joecool@example.com</Email>
+    </Attendee>
+  </Attendees>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>14</EstimatedDataSize>
+    <Data>Notes for test</Data>
+  </Body>
+  <BusyStatus xml-ns="activesync:Calendar">0</BusyStatus>
+  <Categories>
+    <Category>APPOINTMENT</Category>
+  </Categories>
+  <StartTime>20061005T080000Z</StartTime>
+  <EndTime>20061005T090000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>Ortopedisk poliklinikk</DisplayName>
+  </Location>
+  <Recurrence xml-ns="activesync:Calendar">
+    <DayOfWeek>0</DayOfWeek>
+    <Type>3</Type>
+    <Until>20101231T000000Z</Until>
+  </Recurrence>
+  <Reminder>10</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>Test appointment</Subject>
+  <UID>20061004T174515Z-619750-H2_Board</UID>
+</ApplicationData>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>20061004T174515Z-619750-H2_Board</UID>
+    <StartTime>1160035200</StartTime>
+    <Class>PUBLIC</Class>
+    <Body X-TYP="1">Notes for test</Body>
+    <Location>
+      <DisplayName>Ortopedisk poliklinikk</DisplayName>
+    </Location>
+    <Priority>0</Priority>
+    <Sequence>-1</Sequence>
+    <Status X-PC="0">CONFIRMED</Status>
+    <Summary>Test appointment</Summary>
+    <Recurrence>
+      <Frequency>MONTHLY</Frequency>
+      <DayPos>+1TH</DayPos>
+      <EndTime>1293753600</EndTime>
+    </Recurrence>
+    <EndTime>1160038800</EndTime>
+    <Attendee RSVP="true" X-ROLE="REQ-PARTICIPANT" PARTSTAT="needs-action">mailto:joecool@example.com</Attendee>
+    <Category>APPOINTMENT</Category>
+    <Category>X-Test</Category>
+    <Alarm>
+      <Action>AUDIO</Action>
+      <Trigger VALUE="date-time">1160034600</Trigger>
+      <Attachment>
+        <FileReference>sgw-348e04c9</FileReference>
+      </Attachment>
+    </Alarm>
+    <Timezone>Europe/Vilnius</Timezone>
+  </Data>
+</syncgw>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+	Microsoft ActiveSync ResolveRecipients code page definition
+
+ 	@package	sync*gw
+ 	@subpackage	ActiveSync
+   	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+
+-->
+<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+
+ <Header>
+  <PID>8202</PID>
+  <Name>-//ActiveSync//DTD ResolveRecipients//EN</Name>
+  <Tag>[MS-ASCMD]</Tag>
+  <Link>https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd</Link>
+  <Title>ResolveRecipients Request and Response Schema</Title>
+  <Ver>27.0</Ver>
+  <URI>activesync:ResolveRecipients</URI>
+  <CodePage>10</CodePage>
+ </Header>
+
+ <Defs>
+   <!-- 2.5,12.0,12.1,14.0,14.1,16.0,16.1 -->
+   <ResolveRecipients>0x05</ResolveRecipients>
+   <Response>0x06</Response>
+   <Status>0x07</Status>
+   <Type>0x08</Type>
+   <Recipient>0x09</Recipient>
+   <DisplayName>0x0a</DisplayName>
+   <EmailAddress>0x0b</EmailAddress>
+   <Certificates>0x0c</Certificates>
+   <Certificate>0x0d</Certificate>
+   <MiniCertificate>0x0e</MiniCertificate>
+   <Options>0x0f</Options>
+   <To>0x10</To>
+   <CertificateRetrieval>0x11</CertificateRetrieval>
+   <RecipientCount>0x12</RecipientCount>
+   <MaxCertificates>0x13</MaxCertificates>
+   <MaxAmbiguousRecipients>0x14</MaxAmbiguousRecipients>
+   <CertificateCount>0x15</CertificateCount>
+   <!-- 14.0,14.1,16.0,16.1 -->
+   <Availability>0x16</Availability>
+   <StartTime>0x17</StartTime>
+   <EndTime>0x18</EndTime>
+   <MergedFreeBusy>0x19</MergedFreeBusy>
+   <!-- 14.1,16.0,16.1 -->
+   <Picture>0x1a</Picture>
+   <MaxSize>0x1b</MaxSize>
+   <Data>0x1c</Data>
+   <MaxPictures>0x1d</MaxPictures>
+ </Defs>
+
+</CodePage>

@@ -1,0 +1,47 @@
++-------------------------+
+| Message code assignment |
++-------------------------+
+
+10001-10100 lib/Log.php
+10101-10200 lib/Server.php
+10201-10300 lib/HTTP.php
+10301-10400 lib/Encoding.php
+10501-10600 lib/WBXML.php
+10601-10700 lib/DTD.php
+10701-10800 lib/Config.php
+10801-10900 lib/DB.php
+10901-11000 lib/Session.php
+11001-11100 lib/User.php
+11101-11200 lib/Device.php
+11201-11300 lib/Trace.php
+11301-11400 lib/Util.php - unused
+11401-11400 lib/Attachment.php
+11501-11600 lib/Lock.php
+11601-11700 lib/ErrorHandler.php
+
+13001-13100 document/Handler.php
+13101-13110 document/field/fldLogo.php
+13111-13120 document/field/fldPhoto.php
+
+16001-16100 activesync/masHandler.php
+16101-16200 activesync/masProvision.php
+16201-16300 activesync/masSettings.php
+16301-16400 activesync/masAutodiscover.php
+
+17001-17100 mapi/ropHandler.php
+
+18001-18100 upgrade/updHandler.php
+
+19001-19010 dav/davHandler.php
+
+20001-20100 db/file/Handler.php
+
+20101-20200 db/mysqli/Handler.php
+
+20301-20400 db/roundcube/*
+
+20401-20500 db/mail/Handler.php
+
+---------------------------------------- User defined messages:
+
+90001-91000 myapp/Handler.php

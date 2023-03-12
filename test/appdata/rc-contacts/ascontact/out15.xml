@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <BusinessPhoneNumber xml-ns="activesync:Contacts">:+1-418-656-9254;ext=102</BusinessPhoneNumber>
+  <Department>Marketing</Department>
+  <Email3Address>jdoe@example.com</Email3Address>
+  <FileAs>J. Doe</FileAs>
+  <FirstName>J.</FirstName>
+  <LastName>Doe</LastName>
+</ApplicationData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>T00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Class>PUBLIC</Class>
+    <Body X-TYP="1">Note line1
+=line2
+</Body>
+    <Priority>1</Priority>
+    <Status X-PC="0">NEEDS-ACTION</Status>
+    <Summary>Synthesis todo entry on pal,</Summary>
+    <DueDate>1127952000</DueDate>
+    <Category>Tests</Category>
+  </Data>
+</syncgw>

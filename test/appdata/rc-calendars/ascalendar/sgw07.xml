@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>4e44f522-015a-84de-bf3c-31e4a3578b17</UID>
+    <StartTime>1425318900</StartTime>
+    <EndTime>1425322500</EndTime>
+    <Summary>Geburtstag Nick</Summary>
+    <Recurrence>
+      <Frequency>YEARLY</Frequency>
+      <Month>3</Month>
+      <MonthDay>2</MonthDay>
+    </Recurrence>
+    <Category>Birthday</Category>
+    <BusyStatus>TENTATIV</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <DisplayName xml-ns="activesync:GAL">Last Name, First Name aumlaut: Ã¯Â¿Â½</DisplayName>
+  <Phone>+4989111</Phone>
+  <Title>title</Title>
+  <FirstName>First Name aumlaut: Ã¯Â¿Â½</FirstName>
+  <LastName>Last Name</LastName>
+  <HomePhone>+4989222</HomePhone>
+  <MobilePhone>home mobile</MobilePhone>
+  <MobilePhone>business mobile</MobilePhone>
+  <MobilePhone>home #2 mobile</MobilePhone>
+</ApplicationData>

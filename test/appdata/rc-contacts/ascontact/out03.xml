@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Birthday xml-ns="activesync:Contacts">2006-05-08T00:00:00.000Z</Birthday>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>1</Type>
+    <EstimatedDataSize>4</EstimatedDataSize>
+    <Data>memo</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">workstreet</BusinessAddressStreet>
+  <BusinessAddressCity>workcity</BusinessAddressCity>
+  <BusinessAddressState>workstate</BusinessAddressState>
+  <BusinessAddressPostalCode>workpostcode</BusinessAddressPostalCode>
+  <BusinessAddressCountry>workcountry</BusinessAddressCountry>
+  <BusinessFaxNumber>+4904</BusinessFaxNumber>
+  <BusinessPhoneNumber>+4900</BusinessPhoneNumber>
+  <Email3Address>MailHome@example.org</Email3Address>
+  <Email3Address>MailWork@example.org</Email3Address>
+  <FileAs>first&lt;&gt;name last&amp;name</FileAs>
+  <FirstName>first&lt;&gt;name</FirstName>
+  <HomeAddressStreet>homestreet</HomeAddressStreet>
+  <HomeAddressCity>homecity</HomeAddressCity>
+  <HomeAddressState>homestate</HomeAddressState>
+  <HomeAddressPostalCode>homepostcode</HomeAddressPostalCode>
+  <HomeAddressCountry>homecountry</HomeAddressCountry>
+  <HomePhoneNumber>+4901</HomePhoneNumber>
+  <LastName>last&amp;name</LastName>
+  <MiddleName>second firstname</MiddleName>
+  <MobilePhoneNumber>+4902</MobilePhoneNumber>
+  <OtherAddressStreet>otherstreet</OtherAddressStreet>
+  <OtherAddressCity>othercity</OtherAddressCity>
+  <OtherAddressState>otherstate</OtherAddressState>
+  <OtherAddressPostalCode>otherpostcode</OtherAddressPostalCode>
+  <OtherAddressCountry>othercountry</OtherAddressCountry>
+  <PagerNumber>+4903</PagerNumber>
+  <Suffix>addon name</Suffix>
+  <Title>position</Title>
+  <WebPage>http://www1.example.org</WebPage>
+  <WebPage>http://www2.example.org</WebPage>
+</ApplicationData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C5010000000000000000100000008</UID>
+    <StartTime>1131058800</StartTime>
+    <EndTime>1131062400</EndTime>
+    <Summary>test meeting</Summary>
+    <Location>
+      <DisplayName>34/1123</DisplayName>
+    </Location>
+    <Recurrence>
+      <Frequency>MONTHLY</Frequency>
+      <Interval>1</Interval>
+      <DayPos>SU,MO,TU,WE,TH,FR,SA</DayPos>
+    </Recurrence>
+    <BusyStatus>BUSY</BusyStatus>
+    <Class>PUBLIC</Class>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Attendee CUTYPE="INDIVIDUAL" RSVP="true" CN="Chris Gray" ROLE="REQ-PARTICIPANT">mailto:chris@fourthcoffee.com</Attendee>
+  </Data>
+</syncgw>

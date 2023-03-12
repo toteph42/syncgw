@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Data><![CDATA[BEGIN:VCARD
+VERSION:4.0
+PRODID:-//Florian Daeumling//NONSGML syncgw Professional Edition x.xx.xx
+FN;VALUE:Anrede VNameX \\ ZVName \; NName\, NamZusatz
+N:thomas;böttcher\,;;;
+PHOTO;VALUE=uri:file://jqpublic.gif
+BDAY:19950416
+ADR;TYPE=x-dom,home:P.O. Box 101;Suite \;101;123 Main Street;Any Town;CA;
+ 91921-1234;
+
+ADR;TYPE=x-dom,x-postal,x-parcel,home:;;123 Main Street;Any Town;CA;91921
+ -1234;
+
+ADR;TYPE=x-dom,x-postal:;;122 street;Any Town;CA;91921-1234;
+TEL;TYPE=home,fax:+1-800-555-1234
+TEL;PREF=1;TYPE=work:03333333333
+TEL;PREF=1;TYPE=work:09999999999
+TEL;TYPE=cell:number
+EMAIL:john.public@abc.com
+TZ:-0800
+GEO:geo:37.24,-17.87
+TITLE:V.P.\, Research and Development
+ROLE:Executive
+ORG:ABC\, Inc.;North American Division;Marketing
+RELATED;TYPE=co-worker:Please contact my assistant Jane   Doe for any inq
+ uiries.
+
+CATEGORIES:cat1,cat2,cat3
+NOTE:This facsimile machine if operational0830 to 1715 hours\nMonday thro
+ ugh Friday. Call +1-213-555-1234 if you have problems\nwith access to th
+ e machine.
+
+REV:20131230T115856Z
+SOUND;VALUE=uri:file://multimed/audio/jqpublic.wav
+URL;TYPE=x-other:http://abc.com/pub/directory/northam/jpublic.ecd
+LABEL;TYPE=x-dom,x-postal;ENCODING=QUOTED-PRINTABLE:P.=20O.=20Box=20456=
+=0D=0D=0A=3D=20=20=20=20=20123=20Main=20Street=0D=0D=0A=3DAny=20Town=5C=
+=2C=20CA=2091921-1234
+
+END:VCARD
+]]></Data>

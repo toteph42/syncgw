@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>A00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <Alias>Jubba</Alias>
+    <Anniversary VALUE="date">324518400</Anniversary>
+    <Assistant>urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6</Assistant>
+    <AssistantPhone>AssistantPhoneNumber</AssistantPhone>
+    <Birthday VALUE="date">797904000</Birthday>
+    <Body X-TYP="1">This fax number is operational 0800 to 1715  EST, Mon-Fri. Please note
+the special characters "äÄöÖüÜß"</Body>
+    <AddressBusiness>
+      <Street>123 Main Street</Street>
+      <City>Any Town</City>
+      <Region>CA</Region>
+      <PostalCode>91921-1234</PostalCode>
+      <Country>U.S.A.</Country>
+    </AddressBusiness>
+    <BusinessFax>BusinessFaxNumber</BusinessFax>
+    <WorkPhone>BusinessPhoneNumber</WorkPhone>
+    <WorkPhone2>Business2PhoneNumber</WorkPhone2>
+    <CarPhone>CarPhoneNumber</CarPhone>
+    <Category>INTERNET</Category>
+    <Category>IETF</Category>
+    <Category>INDUSTRY</Category>
+    <Category>INFORMATION TECHNOLOGY</Category>
+    <Child>Julia</Child>
+    <Child>Ben</Child>
+    <Child>James</Child>
+    <Company>ABC, Inc.</Company>
+    <Department>Marketing</Department>
+    <MailHome>home@usa.gov</MailHome>
+    <MailWork>work@usa.gov</MailWork>
+    <MailOther>other@usa.gov</MailOther>
+    <FullName>Text.doc</FullName>
+    <FirstName>John</FirstName>
+    <AddressHome>
+      <Street>42 Plantation St.</Street>
+      <City>Baytown</City>
+      <Region>LA</Region>
+      <PostalCode>30314</PostalCode>
+      <Country>United States of America</Country>
+    </AddressHome>
+    <HomeFax>HomeFaxNumber</HomeFax>
+    <HomePhone>HomePhoneNumber</HomePhone>
+    <HomePhone2>Home2PhoneNumber</HomePhone2>
+    <JobTitle>Research Scientist</JobTitle>
+    <LastName>Stevenson</LastName>
+    <MiddleName>Philip,Paul</MiddleName>
+    <MobilePhone>MobilePhoneNumber</MobilePhone>
+    <Office>North American Division</Office>
+    <AddressOther>
+      <Street>OtherAddressStreet</Street>
+      <City>OtherAddressCity</City>
+      <Region>OtherAddressState</Region>
+      <PostalCode>OtherAddressPostalCode</PostalCode>
+      <Country>OtherAddressCountry</Country>
+    </AddressOther>
+    <Pager>PagerNumber</Pager>
+    <Photo>sgw-8111e2f9</Photo>
+    <RadioPhone>RadioPhoneNumber</RadioPhone>
+    <Spouse>http://example.com/directory/jdoe.vcf</Spouse>
+    <Suffix>Jr.,M.D.,A.C.P.</Suffix>
+    <Title>Dr. med.</Title>
+    <URLOther>http://example.org/restaurant.french/~chezchic.html</URLOther>
+    <YomiCompany>CompanyPhoneticName</YomiCompany>
+    <YomiFirstName>PhoneticGivenName</YomiFirstName>
+    <YomiLastName>PhoneticFamilyName</YomiLastName>
+    <AccountName>MyAccountName</AccountName>
+    <CompanyPhone>CompanyMainPhone</CompanyPhone>
+    <CustomerId>CU8276399</CustomerId>
+    <GovernmentId>GOV93KNLI</GovernmentId>
+    <IMskype>im@address1</IMskype>
+    <IMicq>ima@address2</IMicq>
+    <IMmsn>im@address3</IMmsn>
+    <ManagerName>Julian Manager</ManagerName>
+    <MMSPhone>MMS</MMSPhone>
+    <NickName>Big boss</NickName>
+  </Data>
+</syncgw>

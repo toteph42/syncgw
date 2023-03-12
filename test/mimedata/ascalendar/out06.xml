@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>2</Type>
+    <EstimatedDataSize>39</EstimatedDataSize>
+    <Data>Hello &lt;strong&gt;world&lt;/strong&gt;
+second row</Data>
+  </Body>
+  <BusyStatus xml-ns="activesync:Calendar">2</BusyStatus>
+  <Categories>
+    <Category>Jungo</Category>
+    <Category>belga</Category>
+  </Categories>
+  <StartTime>20051103T230000Z</StartTime>
+  <EndTime>20051104T000000Z</EndTime>
+  <AllDayEvent>0</AllDayEvent>
+  <Location xml-ns="activesync:AirSyncBase">
+    <DisplayName>34/1123</DisplayName>
+  </Location>
+  <MeetingStatus xml-ns="activesync:Calendar">1</MeetingStatus>
+  <OrganizerName>Anat Kerry</OrganizerName>
+  <OrganizerEmail>anat@contoso.com</OrganizerEmail>
+  <Recurrence>
+    <DayOfWeek>64</DayOfWeek>
+    <Interval>1</Interval>
+    <Type>0</Type>
+  </Recurrence>
+  <Reminder>15</Reminder>
+  <Sensitivity>0</Sensitivity>
+  <Subject>test meeting</Subject>
+  <UID>040000008200E00074C5B7101A82E00800000000B0FD68A212E0C501000000000000000010000</UID>
+</ApplicationData>

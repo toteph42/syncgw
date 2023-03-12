@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <BusyStatus>BUSY</BusyStatus>
+    <StartTime>1223917200</StartTime>
+    <EndTime>1223920800</EndTime>
+    <Location>
+      <DisplayName>Conf Room 33-A/1298</DisplayName>
+    </Location>
+    <MeetingStatus>NO-ATTENDEES</MeetingStatus>
+    <BodyType>3</BodyType>
+    <FullName>Anat Kerry</FullName>
+    <MailOther>anatcontoso.com</MailOther>
+    <Alarm>
+      <Action>DISPLAY</Action>
+      <Trigger VALUE="duration" RELATED="start">-900</Trigger>
+    </Alarm>
+    <Class>PUBLIC</Class>
+    <Summary>Dry Run of TechEd Presentation</Summary>
+    <Timezone>America/Anchorage</Timezone>
+    <UID>040000008200E00074C5B7101A82E008000000009003C9E1A924C901000000000000000010000000B3635D1E1A2FF54FA575AB96797F532F</UID>
+  </Data>
+</syncgw>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<!-- Should create a 'Body' -->
+<Data>BEGIN:VNOTE
+VERSION:1.1
+BODY:This is just a test
+END:VNOTE</Data>

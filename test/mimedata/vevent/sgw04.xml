@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>171</UID>
+    <StartTime>1141939800</StartTime>
+    <Class>PUBLIC</Class>
+    <Location>
+      <DisplayName>Deck</DisplayName>
+    </Location>
+    <Priority>0</Priority>
+    <Summary>Happy &amp;XXX &lt;&gt; ;._Hour</Summary>
+    <EndTime>1141952400</EndTime>
+    <Category>APPOINTMENT</Category>
+  </Data>
+</syncgw>

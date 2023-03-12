@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID>1</GUID>
+  <LUID>2</LUID>
+  <SyncStat>OK</SyncStat>
+  <Group>C00</Group>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>3E5A70ABBE893D3741E3563A53698CC1-83F1535F99AB0BF4</UID>
+    <StartTime>1130691600</StartTime>
+    <EndTime>1130695200</EndTime>
+    <Summary>calendar entry</Summary>
+    <Location>
+      <DisplayName>B</DisplayName>
+    </Location>
+    <Body X-TYP="1">description
+line=2
+umlaut: ä
+last line</Body>
+    <Category>MEETING</Category>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

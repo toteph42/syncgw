@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml>
+<Data>BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+DTSTART:19970714T170000Z
+DTEND:19970715T035959Z
+SUMMARY:Bastille Day Party
+ORGANIZER:mailto:Hugo@bin.com
+SOURCE:http://ical.com/jsjs
+END:VEVENT
+END:VCALENDAR
+</Data>

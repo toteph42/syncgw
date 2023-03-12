@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ApplicationData>
+  <Body xml-ns="activesync:AirSyncBase">
+    <Type>3</Type>
+    <EstimatedDataSize>8</EstimatedDataSize>
+    <Data>Bad Body</Data>
+  </Body>
+  <BusinessAddressStreet xml-ns="activesync:Contacts">234 Main St.</BusinessAddressStreet>
+  <BusinessAddressCity>Redmond</BusinessAddressCity>
+  <BusinessAddressState>WA</BusinessAddressState>
+  <BusinessAddressPostalCode>10021</BusinessAddressPostalCode>
+  <BusinessAddressCountry>United States of America</BusinessAddressCountry>
+  <BusinessFaxNumber>(206) 555-0100</BusinessFaxNumber>
+  <BusinessPhoneNumber>(206) 555-0103</BusinessPhoneNumber>
+  <CompanyName>Contoso, Ltd.</CompanyName>
+  <Email1Address>"Anat Kerry (anat@contoso.com)" &lt;anat@contoso.com&gt;</Email1Address>
+  <FileAs>Kerry, Anat</FileAs>
+  <FirstName>Anat</FirstName>
+  <HomePhoneNumber>(206) 555-0101</HomePhoneNumber>
+  <JobTitle>Development Manager</JobTitle>
+  <LastName>Kerry</LastName>
+  <MiddleName>M.</MiddleName>
+  <MobilePhoneNumber>(206) 555-0102</MobilePhoneNumber>
+  <Picture>/9j/4AAQSkZJRgABAQEAYABgAAD/</Picture>
+  <WebPage>http://www.contoso.com/</WebPage>
+</ApplicationData>

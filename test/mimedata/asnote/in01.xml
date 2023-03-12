@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>398434774</SyncKey>
+   <CollectionId>8</CollectionId>
+   <DeletesAsMoves>1</DeletesAsMoves>
+   <GetChanges>1</GetChanges>
+   <WindowSize>512</WindowSize>
+   <Options>
+    <BodyPreference xml-ns="activesync:AirSyncBase">
+	 <Type>2</Type>
+	 <TruncationSize>5120</TruncationSize>
+	 <AllOrNone>1</AllOrNone>
+	</BodyPreference>
+   </Options>
+   <Commands>
+    <Add>
+     <ClientId>c212ac10-0465-4983-a898-076e152552ef</ClientId>
+	 <ApplicationData>
+	  <Body>
+		<Type>2</Type>
+		<Data>A new note I just created,
+and a second line.</Data>
+	  </Body>
+ 	  <Categories xml-ns="activeSync:Note">
+		<Category>Business</Category>
+	  </Categories>
+	  <Subject>New note summary.</Subject>
+	  <MessageClass>IPM.StickyNote</MessageClass>
+     </ApplicationData>
+    </Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

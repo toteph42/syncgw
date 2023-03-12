@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activesync:AirSync PUBLIC "-//ActiveSync//DTD AirSync//EN" "https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asairs">
+<Sync CHARSET="utf-8" xml-ns="activesync:AirSync">
+  <Collections>
+    <Collection>
+      <SyncKey>980042504</SyncKey>
+      <CollectionId>8</CollectionId>
+      <Status>1</Status>
+      <Commands>
+        <Add>
+          <ServerId>AANek1nJhEaNzBu3gti02AAAAAABDQADXpNZyYRGjcwbt4LYtNgAACiOe3U1</ServerId>
+          <ApplicationData>
+            <AllDayEvent xml-ns="activesync:Calendar">1</AllDayEvent>
+            <DtStamp>20190128T144026Z</DtStamp>
+            <StartTime>20190108T000000Z</StartTime>
+            <Subject>Geburtstag von VName ZVName NName NamZusatz</Subject>
+            <UID>040000008200E00074C5B7101A82E0080000000010DC41CA1FB7D401000000000000000010000000157E7E0B6BA5CA48BE916EBFDCDA75FC</UID>
+            <OrganizerName>F D</OrganizerName>
+            <OrganizerEmail>syncgw@outlook.com</OrganizerEmail>
+            <Attendees/>
+            <Location xml-ns="activesync:AirSyncBase"/>
+            <EndTime xml-ns="activesync:Calendar">20190109T000000Z</EndTime>
+            <Recurrence>
+              <Type>5</Type>
+              <Interval>1</Interval>
+              <DayOfMonth>8</DayOfMonth>
+              <MonthOfYear>1</MonthOfYear>
+              <CalendarType>0</CalendarType>
+              <IsLeapMonth>0</IsLeapMonth>
+            </Recurrence>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <EstimatedDataSize>0</EstimatedDataSize>
+            </Body>
+            <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+            <BusyStatus>0</BusyStatus>
+            <Reminder>15</Reminder>
+            <MeetingStatus>0</MeetingStatus>
+            <NativeBodyType xml-ns="activesync:AirSyncBase">1</NativeBodyType>
+            <DisallowNewTimeProposal xml-ns="activesync:Calendar">0</DisallowNewTimeProposal>
+            <ResponseRequested>1</ResponseRequested>
+            <ResponseType>0</ResponseType>
+          </ApplicationData>
+        </Add>
+        <Add xml-ns="activesync:AirSync">
+          <ServerId>AANek1nJhEaNzBu3gti02AAAAAABDQADXpNZyYRGjcwbt4LYtNgAAV3EIBU1</ServerId>
+          <ApplicationData>
+            <AllDayEvent xml-ns="activesync:Calendar">0</AllDayEvent>
+            <Timezone>xP///1cALgAgAEUAdQByAG8AcABlACAAUwB0AGEAbgBkAGEAcgBkACAAVABpAG0AZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAFAAMAAAAAAAAAAAAAACgAVQBUAEMAKwAwADEAOgAwADAAKQAgAEEAbQBzAHQAZQByAGQAYQBtACwAIABCAGUAcgBsAGkAbgAsACAAQgAAAAMAAAAFAAIAAAAAAAAAxP///w==</Timezone>
+            <DtStamp>20200513T080109Z</DtStamp>
+            <StartTime>20200520T040000Z</StartTime>
+            <Subject>rep</Subject>
+            <UID>040000008200E00074C5B7101A82E00800000000C0C0229AFC28D601000000000000000010000000AE3E94F78BBD8246808111BF1A1DE620</UID>
+            <ClientUid>4976ad43-4107-1dc4-08e2-d8ec7744a648</ClientUid>
+            <OrganizerName>F D</OrganizerName>
+            <OrganizerEmail>syncgw@outlook.com</OrganizerEmail>
+            <Attendees/>
+            <Location xml-ns="activesync:AirSyncBase"/>
+            <EndTime xml-ns="activesync:Calendar">20200520T043000Z</EndTime>
+            <Recurrence>
+              <Type>0</Type>
+              <Interval>1</Interval>
+              <Until>20200827T040000Z</Until>
+            </Recurrence>
+            <Body xml-ns="activesync:AirSyncBase">
+              <Type>1</Type>
+              <EstimatedDataSize>2</EstimatedDataSize>
+              <Data/>
+            </Body>
+            <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+            <BusyStatus>2</BusyStatus>
+            <Reminder>15</Reminder>
+            <Exceptions>
+              <Exception>
+                <Deleted>1</Deleted>
+                <InstanceId xml-ns="activesync:AirSyncBase">20200521T040000Z</InstanceId>
+              </Exception>
+              <Exception xml-ns="activesync:Calendar">
+                <InstanceId xml-ns="activesync:AirSyncBase">20200522T040000Z</InstanceId>
+                <StartTime xml-ns="activesync:Calendar">20200522T050000Z</StartTime>
+                <Location xml-ns="activesync:AirSyncBase"/>
+                <EndTime xml-ns="activesync:Calendar">20200522T053000Z</EndTime>
+                <MeetingStatus>0</MeetingStatus>
+              </Exception>
+            </Exceptions>
+            <MeetingStatus>0</MeetingStatus>
+            <NativeBodyType xml-ns="activesync:AirSyncBase">2</NativeBodyType>
+            <ResponseRequested xml-ns="activesync:Calendar">1</ResponseRequested>
+            <ResponseType>1</ResponseType>
+          </ApplicationData>
+        </Add>
+      </Commands>
+    </Collection>
+  </Collections>
+</Sync>

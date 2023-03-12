@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<syncgw>
+  <GUID/>
+  <LUID/>
+  <SyncStat>OK</SyncStat>
+  <Group/>
+  <Type>R</Type>
+  <Created>1388404736</Created>
+  <LastMod>1388404740</LastMod>
+  <CRC/>
+  <extID/>
+  <extGroup/>
+  <Data>
+    <UID>04FFA3B3A869AB543F77798B87A32481-126173DDA6F62D88</UID>
+    <StartTime>1589968800</StartTime>
+    <EndTime>1589972400</EndTime>
+    <Summary>Repeating event</Summary>
+    <Location>
+      <DisplayName>Location</DisplayName>
+    </Location>
+    <Body X-TYP="1">Description test</Body>
+    <Recurrence>
+      <Frequency>DAILY</Frequency>
+      <Count>10</Count>
+      <Interval>1</Interval>
+    </Recurrence>
+    <Exceptions>
+      <Exception>
+        <InstanceId>1590055200</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <InstanceId>1590228000</InstanceId>
+        <Delete/>
+      </Exception>
+      <Exception>
+        <UID>04FFA3B3A869AB543F77798B87A32481-126173DDA6F62D88</UID>
+        <StartTime>1590130800</StartTime>
+        <EndTime>1590134400</EndTime>
+        <Summary>Repeating event</Summary>
+        <Location>
+          <DisplayName>Location</DisplayName>
+        </Location>
+        <Body X-TYP="1">Description test</Body>
+        <Recurrence/>
+        <InstanceId>1590141600</InstanceId>
+        <BusyStatus>FREE</BusyStatus>
+        <Class>PUBLIC</Class>
+        <Attendee CUTYPE="individual" PARTSTAT="needs-action" RSVP="true" ROLE="req-participant">mailto:t1@x.com</Attendee>
+        <Attendee CUTYPE="individual" PARTSTAT="needs-action" RSVP="true" ROLE="opt-participant">mailto:t2@x.com</Attendee>
+        <Attendee CUTYPE="individual" PARTSTAT="needs-action" RSVP="true" ROLE="non-participant">mailto:t3@x.com</Attendee>
+        <Attendee CUTYPE="individual" PARTSTAT="needs-action" RSVP="true" ROLE="chair">mailto:t4@x.com</Attendee>
+        <Organizer RSVP="true" ROLE="ORGANIZER">mailto:t0@x.com</Organizer>
+      </Exception>
+    </Exceptions>
+    <BusyStatus>FREE</BusyStatus>
+    <Class>PUBLIC</Class>
+  </Data>
+</syncgw>

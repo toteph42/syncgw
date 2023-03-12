@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+   <SyncKey>664578668</SyncKey>
+   <CollectionId>1</CollectionId>
+   <Status>1</Status>
+   <Commands>
+	<Add>
+	 <ServerId>1:1</ServerId>
+	 <ApplicationData>
+	  <DtStamp xml-ns="activesync:Calendar">20090415T165811Z</DtStamp>
+	  <StartTime>20090417T170000Z</StartTime>
+	  <Subject>Recurring appointment test</Subject>
+	  <UID>040000008200E00074C5B7101A82E00800000000B0CD1F52EBBDC901000000000000000010000000B05E442FCB2CA443BF3D99B51A729FE6</UID>
+	  <OrganizerName>Anat Kerry</OrganizerName>
+	  <OrganizerEmail>anat@contoso.com </OrganizerEmail>
+	  <Location>
+	    <DisplayName>My office</DisplayName>
+	  </Location>
+	  <EndTime>20090417T180000Z</EndTime>
+	  <Recurrence>
+		<Type>1</Type>
+		<Interval>1</Interval>
+		<Occurrences>3</Occurrences>
+		<DayOfWeek>32</DayOfWeek>
+	  </Recurrence>
+	  <Body xml-ns="activesync:AirSyncBase">
+		<Type>3</Type>
+		<EstimatedDataSize>238</EstimatedDataSize>
+		<Truncated>1</Truncated>
+	  </Body>
+	  <Sensitivity xml-ns="activesync:Calendar">0</Sensitivity>
+	  <BusyStatus>2</BusyStatus>
+	  <AllDayEvent>0</AllDayEvent>
+	  <Reminder>15</Reminder>
+	  <Exceptions>
+		<Exception>
+		  <Deleted>1</Deleted>
+		  <ExceptionStartTime>20090424T170000Z</ExceptionStartTime>
+		</Exception>
+	  </Exceptions>
+	  <MeetingStatus>0</MeetingStatus>
+	  <NativeBodyType xml-ns="activesync:AirSync">3</NativeBodyType>
+	 </ApplicationData>
+	</Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>

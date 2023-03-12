@@ -1,0 +1,54 @@
+470c470,473
+<                 $vObject->destroy();
+---
+>                 ##syncGW >
+>                 if (method_exists($vObject,'destroy'))
+>                     $vObject->destroy();
+>                 ##syncGW <
+518c521,524
+<                 $vtimezoneObj->destroy();
+---
+>                 ##syncGW >
+>                 if (method_exists($vtimezoneObj,'destroy'))
+>                     $vtimezoneObj->destroy();
+>                 ##syncGW <
+576,577c582,588
+<                 $vObject->destroy();
+<             }
+---
+>                 ##syncGW >
+>                 if (method_exists($vObject,'destroy'))
+>                     $vObject->destroy();
+>                 ##syncGW <
+> 
+>            }
+> 
+619c630,633
+<                     $vObject->destroy();
+---
+>                     ##syncGW >
+>                     if (method_exists($vObject,'destroy'))
+>                         $vObject->destroy();
+>                     ##syncGW <
+661c675,678
+<             $vtimezoneObj->destroy();
+---
+>             ##syncGW >
+>             if (method_exists($vtimezoneObj,'destroy'))
+>                 $vtimezoneObj->destroy();
+>             ##syncGW <
+912c929,933
+<         $vobj->destroy();
+---
+>         ##syncGW >
+>         if (method_exists($vobj,'destroy'))
+>             $vobj->destroy();
+>         ##syncGW <
+> 
+986c1007,1010
+<         $vobj->destroy();
+---
+>         ##syncGW >
+>         if (method_exists($vobj,'destroy'))
+>             $vobj->destroy();
+>         ##syncGW <

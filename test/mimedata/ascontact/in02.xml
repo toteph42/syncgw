@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<Sync CHARSET="UTF-8" xml-ns="activesync:AirSync">
+ <Collections>
+  <Collection>
+	<SyncKey>243360144</SyncKey>
+	<CollectionId>2</CollectionId>
+	<Status>1</Status>
+	<Commands>
+	 <Add>
+	  <ServerId>2:1</ServerId>
+	  <ApplicationData>
+		<Body>
+		 <Type>3</Type>
+		 <EstimatedDataSize>5500</EstimatedDataSize>
+		 <Truncated>1</Truncated>
+		 <Data>Bad Body</Data>
+		</Body>
+		<WebPage>http://www.contoso.com/</WebPage>
+		<BusinessAddressCountry>United States of America</BusinessAddressCountry>
+		<Email1Address>"Anat Kerry (anat@contoso.com)" &lt;anat@contoso.com&gt;</Email1Address>
+		<BusinessFaxNumber>(206) 555-0100</BusinessFaxNumber>
+		<FileAs>Kerry, Anat</FileAs>
+		<FirstName>Anat</FirstName>
+		<HomePhoneNumber>(206) 555-0101</HomePhoneNumber>
+		<BusinessAddressCity>Redmond</BusinessAddressCity>
+		<MiddleName>M.</MiddleName>
+		<MobilePhoneNumber>(206) 555-0102</MobilePhoneNumber>
+		<CompanyName>Contoso, Ltd.</CompanyName>
+		<BusinessAddressPostalCode>10021</BusinessAddressPostalCode>
+		<LastName>Kerry</LastName>
+		<BusinessAddressState>WA</BusinessAddressState>
+		<BusinessAddressStreet>234 Main St.</BusinessAddressStreet>
+		<BusinessPhoneNumber>(206) 555-0103</BusinessPhoneNumber>
+		<JobTitle>Development Manager</JobTitle>
+		<Picture>/9j/4AAQSkZJRgABAQEAYABgAAD/...</Picture>
+		<NativeBodyType>3</NativeBodyType>
+	  </ApplicationData>
+	 </Add>
+   </Commands>
+  </Collection>
+ </Collections>
+</Sync>
