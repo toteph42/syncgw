@@ -40,6 +40,6 @@ If you want to support my work, feel free to send me a donation.
 </a>
 
    
-[[System requirements](https://github.com/toteph42/syncgw/blob/master/downloads/PreReqs.md)] [[Installtion instructions](https://github.com/toteph42/syncgw/blob/master/Installation.md)] [[List of all changes](https://github.com/toteph42/syncgw/blob/master/downloads/Changes.md)] [[List of packes](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md)] [[Available releases](https://github.com/toteph42/syncgw/releases)] [[Additional Downloads](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md)] [[Frequently asked questions](https://github.com/toteph42/syncgw/blob/master/downloads/FAQ.md)] [[Supported feature](https://github.com/toteph42/syncgw/blob/master/downloads/Features.md)]
+[[System requirements](https://github.com/toteph42/syncgw/blob/master/downloads/PreReqs.md)] [[Installtion instructions](https://github.com/toteph42/syncgw/blob/master/syncgw/Installation.md)] [[List of all changes](https://github.com/toteph42/syncgw/blob/master/downloads/Changes.md)] [[List of packes](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md)] [[Available releases](https://github.com/toteph42/syncgw/releases)] [[Additional Downloads](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md)] [[Frequently asked questions](https://github.com/toteph42/syncgw/blob/master/downloads/FAQ.md)] [[Supported feature](https://github.com/toteph42/syncgw/blob/master/downloads/Features.md)]
 
 

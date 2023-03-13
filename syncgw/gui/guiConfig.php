@@ -25,7 +25,7 @@ use syncgw\lib\XML;
 class guiConfig {
 
 	// module version
-	const VER 			 = 21;
+	const VER 			 = 22;
 
     /**
      * 	Singleton instance of object
@@ -705,11 +705,12 @@ class guiConfig {
 				if (!$c || !@is_dir($c) || !@is_writeable($c)) {
 					$gui->putMsg(sprintf(_('Error accessing trace directory [%s]'), $c), Util::CSS_ERR);
 					$rc = FALSE;
+				} else {
+					$c = str_replace([  '\\', '/' ], [ DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR ], $c);
+					if (substr($c, -1) != DIRECTORY_SEPARATOR)
+						$c .= DIRECTORY_SEPARATOR;
+					$cnf->updVar(Config::TRACE_DIR, $c);
 				}
-				$c = str_replace([  '\\', '/' ], [ DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR ], $c);
-				if (substr($c, -1) != DIRECTORY_SEPARATOR)
-					$c .= DIRECTORY_SEPARATOR;
-				$cnf->updVar(Config::TRACE_DIR, $c);
 			}
 		}
 

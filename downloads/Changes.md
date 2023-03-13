@@ -1,4 +1,6 @@
-## Version 9.19.50, published on 2023-03-12 ##
+## Version 9.19.52, published on 2023-03-13 ##
+* Changed: Connected to plugin syncgw_rc
+* Fixed: Catching error when TRACE_DIR is set wrong
 * Changed: Creating now raw rlease files to support direct downloading
 * Changed: PHPMailer upgraded to version 6.8.0
 

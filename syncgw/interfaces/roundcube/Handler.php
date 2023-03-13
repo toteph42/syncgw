@@ -29,7 +29,7 @@ use rcube_user;
 class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 
 	// module version number
-	const VER = 24;
+	const VER = 25;
 
 	/**
 	 * 	Group record
@@ -200,8 +200,8 @@ class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 			self::$_obj->RCube = rcmail::get_instance();
 
 			// check main plugin
-			$a = self::$_obj->RCube->plugins->get_info(self::PLUGIN[0]);
-			if ($a['version'] != 'dev-master' && version_compare(self::PLUGIN[1], $a['version']) > 0) {
+			if ((!$a = self::$_obj->RCube->plugins->get_info(self::PLUGIN[0])) ||
+				($a['version'] != 'dev-master' && version_compare(self::PLUGIN[1], $a['version']) > 0)) {
 	        	$log->Msg(Log::WARN, 20302, self::PLUGIN[0]);
 		        ErrorHandler::resetReporting();
  	        	return self::$_obj;
