@@ -7,7 +7,7 @@ declare(strict_types=1);
  *	@package	sync*gw
  *	@subpackage	GUI
  *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  */
 
 namespace syncgw\gui;
@@ -419,7 +419,7 @@ class guiSoftware {
 			'# 	@package	sync*gw'."\n".
 			'# 	@subpackage	Core'."\n".
 			'#	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved'."\n".
-		 	'* 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE'."\n".
+		 	'* 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE'."\n".
 			'#'."\n".
 			"\n".implode("\n", $wrk);
 		}

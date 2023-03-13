@@ -8,7 +8,7 @@ declare(strict_types=1);
  *	@package	sync*gw
  *	@subpackage	Tools
  *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  *
  */
 
@@ -34,11 +34,11 @@ $out = '<?xml version="1.0" encoding="UTF-8"?>'."\n".
 ' 	@package	sync*gw'."\n".
 ' 	@subpackage	Core'."\n".
 '	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved'."\n".
-' 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE'."\n".
+' 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE'."\n".
 '-->'."\n".
-'<MIME xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"'."\n".
+'<MIME xmlns="https://github.com/toteph42/syncgw/downloads/schema/syncgw.xsd"'."\n".
 '		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"'."\n".
-'		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">'."\n";
+'		xsi:schemaLocation="https://github.com/toteph42/syncgw/downloads/schema/ https://github.com/toteph42/syncgw/downloads/schema/syncgw.xsd">'."\n";
 
 foreach ($arr as $k => $v) {
     $out .= '  <Application>'."\n".

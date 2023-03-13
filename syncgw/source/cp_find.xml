@@ -7,12 +7,12 @@
  	@package	sync*gw
  	@subpackage	ActiveSync
    	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
-  	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+  	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
 
 -->
-<CodePage xmlns="https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd"
+<CodePage xmlns="https://github.com/toteph42/syncgw/downloads/schema/syncgw.xsd"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		xsi:schemaLocation="https://github.com/Toteph42/syncgw/downloads/schema/ https://github.com/Toteph42/syncgw/downloads/schema/syncgw.xsd">
+		xsi:schemaLocation="https://github.com/toteph42/syncgw/downloads/schema/ https://github.com/toteph42/syncgw/downloads/schema/syncgw.xsd">
 
  <Header>
   <PID>8217</PID>

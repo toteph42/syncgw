@@ -4,7 +4,7 @@
 --	@package	sync*gw
 --	@subpackage	myApp handler
 --	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
--- 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+-- 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
 --
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 

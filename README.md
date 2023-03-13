@@ -1,4 +1,4 @@
-# ![picture alt](https://github.com/Toteph42/syncgw/blob/master/downloads/syncgw.png "sync•gw") #
+# ![picture alt](https://github.com/toteph42/syncgw/blob/master/downloads/syncgw.png "sync•gw") #
  
 **sync•gw** is the one and only fully portable server software available providing synchronization service between nearly any mobile device and your private server.
 
@@ -30,7 +30,7 @@ protocol support enables you to use OS implemented synchronization on nearly all
 phones, smart phones and PDAs, laptop, desktop PC).
 
 ## License ##
-This plugin is released under the [GNU General Public License v3.0](https://github.com/Toteph42/syncgw/blob/master/LICENSE).
+This plugin is released under the [GNU General Public License v3.0](https://github.com/toteph42/syncgw/blob/master/LICENSE).
 
 ## Donation ##
 If you want to support my work, feel free to send me a donation.
@@ -40,6 +40,6 @@ If you want to support my work, feel free to send me a donation.
 </a>
 
    
-[[System requirements](https://github.com/Toteph42/syncgw/blob/master/downloads/PreReqs.md)] [[Installtion instructions](https://github.com/Toteph42/syncgw/blob/master/Installation.md)] [[List of all changes](https://github.com/Toteph42/syncgw/blob/master/downloads/Changes.md)] [[List of packes](https://github.com/Toteph42/syncgw/blob/master/downloads/Packages.md)] [[Available releases](https://github.com/Toteph42/syncgw/releases)] [[Additional Downloads](https://github.com/Toteph42/syncgw/blob/master/downloads/Downloads.md)] [[Frequently asked questions](https://github.com/Toteph42/syncgw/blob/master/downloads/FAQ.md)] [[Supported feature](https://github.com/Toteph42/syncgw/blob/master/downloads/Features.md)]
+[[System requirements](https://github.com/toteph42/syncgw/blob/master/downloads/PreReqs.md)] [[Installtion instructions](https://github.com/toteph42/syncgw/blob/master/Installation.md)] [[List of all changes](https://github.com/toteph42/syncgw/blob/master/downloads/Changes.md)] [[List of packes](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md)] [[Available releases](https://github.com/toteph42/syncgw/releases)] [[Additional Downloads](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md)] [[Frequently asked questions](https://github.com/toteph42/syncgw/blob/master/downloads/FAQ.md)] [[Supported feature](https://github.com/toteph42/syncgw/blob/master/downloads/Features.md)]
 
 

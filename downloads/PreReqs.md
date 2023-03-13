@@ -11,6 +11,6 @@
 * If you want to use native language support, you need to enable PHP extension **[Gettext](http://www.php.net/manual/en/book.gettext.php)**.
 * If you want to use a MySQL server database, you need to enable **[MySQLi](http://www.php.net/manual/en/mysqli.installation.php)** extension.
 
-You may download a small PHP script to check the system requirements from our [download section](https://github.com/Toteph42/syncgw/blob/master/downloads/Downloads.md).
+You may download a small PHP script to check the system requirements from our [download section](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md).
 
-[Go back](https://github.com/Toteph42/syncgw/)
+[Go back](https://github.com/toteph42/syncgw/)

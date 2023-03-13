@@ -1,7 +1,7 @@
 # Installation guide for sync•gw #
 
-1. Select [packages](https://github.com/Toteph42/syncgw/blob/master/downloads/Packages.md) you want to install.
-2. Go to [release page](https://github.com/Toteph42/syncgw/releases) and download your **sync•gw** packages. 
+1. Select [packages](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md) you want to install.
+2. Go to [release page](https://github.com/toteph42/syncgw/releases) and download your **sync•gw** packages. 
 3. Unpack files in a temporary directory. Depending on the software packages you downloaded, warning messages 
 may pop up you are attempting to override some files during unpacking. You can safely ignore this 
 message - the message appears because some software packages may contain same source files.
@@ -14,8 +14,8 @@ to application root directory and enter `chmod -R 0755 ./syncgw`. Please ensure,
 
 # Upgrade sync•gw installtion #
 
-1. Go to [download page](https://github.com/Toteph42/syncgw/releases) and download your 
-**sync•gw** installation packages. If you known which files you want to download (see [List of packages](https://github.com/Toteph42/syncgw/blob/master/downloads/Packages.md), then you can use the link `https://github.com/Toteph42/syncgw/releases/latest/download/[package name].zip` (replace `[package name]` with the name of the package (e.g. `ED01`).
+1. Go to [download page](https://github.com/toteph42/syncgw/releases) and download your 
+**sync•gw** installation packages. If you known which files you want to download (see [List of packages](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md), then you can use the link `https://github.com/toteph42/syncgw/releases/latest/download/[package name].zip` (replace `[package name]` with the name of the package (e.g. `ED01`).
 2. Unpack files in a temporary directory. Depending on the software you downloaded, a warning 
 message may appear you are attempting to override some files. You can safely ignore this message -
 the message appears because some software packages may contain same source files.
@@ -59,7 +59,7 @@ use the second command.
 1. Download and unpack all **sync•gw** files and upload all files to your web server directory.
 2. Start **sync•gw** by typing into your browser's URL bar `http://[your-domain.tld]/[path to RoundCube root directory]/sync.php`.
 3. Select "Configure **sync•gw**", check settings and click on "Save".
-4. Download and install **[Select for sync](https://plugins.roundcube.net/#/packages/syncgw/roundcube-select_for_sync)**
+4. Download and install **[syncgw_rc plugin](https://plugins.roundcube.net/#/packages/toteph42/syncgw-rc)**
 RoundCube plugin and enable all datastores you want to synchronize in "Settings" menu.
 
 ## MyApp data base connection handler
@@ -67,4 +67,4 @@ RoundCube plugin and enable all datastores you want to synchronize in "Settings"
 2. Start **sync•gw** by typing into your browser's URL bar `http://[your-domain.tld]/[path to RoundCube root directory]/sync.php`.
 3. Select "Configure **sync•gw**", check settings and click on "Save".
 
-[Go back](https://github.com/Toteph42/syncgw/)
+[Go back](https://github.com/toteph42/syncgw/)

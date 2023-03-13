@@ -5,7 +5,7 @@
 ::	https://github.com/PHPMailer/PHPMailer/releases
 ::
 ::	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
-:: 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+:: 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
 ::
 setlocal 
 call :msg Installing latest PHPMailer release...

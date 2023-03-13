@@ -7,7 +7,7 @@ declare(strict_types=1);
  *	@package	sync*gw
  *	@subpackage	GUI
  *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  */
 
 namespace syncgw\gui;
@@ -61,7 +61,7 @@ class guiHelp {
 		if ($action == 'Init') {
 			$gui = guiHandler::getInstance();
 			$gui->setVal($gui->getVar('Button').$gui->mkButton(_('Help'), _('FAQ'),
-						 'var w = window.open(\'https://github.com/Toteph42/syncgw/\');w.focus();'));
+						 'var w = window.open(\'https://github.com/toteph42/syncgw/\');w.focus();'));
 		}
 		return guiHandler::CONT;
 	}

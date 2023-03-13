@@ -720,4 +720,4 @@
 * Added: Support for Outlook Funambol 10.0.1
 * Added: Support for Symbian "Anna" new calendars
 
-{Go back](https://github.com/Toteph42/syncgw/README.md)
+{Go back](https://github.com/toteph42/syncgw/README.md)

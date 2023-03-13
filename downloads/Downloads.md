@@ -1,17 +1,17 @@
 # Downloads #
-## [System check](https://github.com/Toteph42/syncgw/blob/master/downloads/Check/check.php) ##
-You may use this small PHP program to perform a check of the system requirements for **sync•gw**. Please download file to your web server root directory and call script by opening `http://[your domain]/check.php` in your favorite browser. Alternatively you may check system requirements [manually](https://github.com/Toteph42/syncgw/blob/master/downloads/PreReqs.md).
+## [System check](https://github.com/toteph42/syncgw/blob/master/downloads/Check/check.php) ##
+You may use this small PHP program to perform a check of the system requirements for **sync•gw**. Please download file to your web server root directory and call script by opening `http://[your domain]/check.php` in your favorite browser. Alternatively you may check system requirements [manually](https://github.com/toteph42/syncgw/blob/master/downloads/PreReqs.md).
 
-## [Installation instructions](https://github.com/Toteph42/syncgw/blob/master/dInstallation.md) ##
+## [Installation instructions](https://github.com/toteph42/syncgw/blob/master/dInstallation.md) ##
 **sync•gw** installation instructions.
 
-## [Fast-CGI configuration](https://github.com/Toteph42/syncgw/blob/master/downloads/Fast-CGI/.htaccess) ##
+## [Fast-CGI configuration](https://github.com/toteph42/syncgw/blob/master/downloads/Fast-CGI/.htaccess) ##
 If you recognize during synchronization your web server is always asking for credentials even if
 you have specified during configuration of synchronization, is may be the reason your domain is
 running in FastCGI mode. To fix this problem, please copy `.htaccess` to the root 
 directory of your web server.  
 
-## [WebDAV configuration](https://github.com/Toteph42/syncgw/blob/master/downloads/WebDAV/.htaccess) ##
+## [WebDAV configuration](https://github.com/toteph42/syncgw/blob/master/downloads/WebDAV/.htaccess) ##
 If you want to use the **WebDAV** protocoll for synchronization between your client device and **sync•gw** server 
 and you don't want to force your user to add to the server name `/sync.php` during configuration of 
 synchronization (they need to specify `[your-domain]/sync.php` instead of only `[your-domain]`), then you have 
@@ -46,21 +46,21 @@ to `ForceDav = "FORCE"`.
    Finnaly you should advise your users to specify the host name `[your-domain]/task` during configuration 
 of the `Task list` synchronization.
 	  
-## [Exchange ActiveSync (EAS) configuration](https://github.com/Toteph42/syncgw/blob/master/downloads/ActiveSync/.htaccess) ##
+## [Exchange ActiveSync (EAS) configuration](https://github.com/toteph42/syncgw/blob/master/downloads/ActiveSync/.htaccess) ##
 If you want to use the **Exchange ActiveSync (EAS)** synchronization between your client device and 
 **sync•gw** server and you don't want to force your user to add to the server name `/sync.php` during 
 configuration of synchronization (they need to specify `[your-domain]/sync.php` instead of only
 `[your-domain]`), then you should copy `.htaccess file` to the root directory of your domain.
 
-## [EXPERIMENTAL: MAPI over HTTP](https://github.com/Toteph42/syncgw/blob/master/downloads/MAPI/.htaccess) ##
+## [EXPERIMENTAL: MAPI over HTTP](https://github.com/toteph42/syncgw/blob/master/downloads/MAPI/.htaccess) ##
 If you want to use MAPI over HTTP then you should copy `.htaccess` file to the root directory of your domain. 
 
-## [Browser Interface (GUI)](https://github.com/Toteph42/syncgw/blob/master/downloads/GUI/BrowserInterface.pdf) ##
-Description of **sync•gw** browser interface also available as [.docx file](https://github.com/Toteph42/syncgw/blob/master/downloads/GUI/BrowserInterface.docx).
+## [Browser Interface (GUI)](https://github.com/toteph42/syncgw/blob/master/downloads/GUI/BrowserInterface.pdf) ##
+Description of **sync•gw** browser interface also available as [.docx file](https://github.com/toteph42/syncgw/blob/master/downloads/GUI/BrowserInterface.docx).
 
-## [Developer Guide](https://github.com/Toteph42/syncgw/blob/master/downloads/DeveloperGuide/DeveloperGuide.pdf) ##
-Application back end developers guide (also available as [.docx file](https://github.com/Toteph42/syncgw/blob/master/downloads/DeveloperGuide/DeveloperGuide.docx)). This gives you information
-about the [myApp](https://github.com/Toteph42/syncgw/blob/master/downloads/Downloads.md) skeleton interface handler.
+## [Developer Guide](https://github.com/toteph42/syncgw/blob/master/downloads/DeveloperGuide/DeveloperGuide.pdf) ##
+Application back end developers guide (also available as [.docx file](https://github.com/toteph42/syncgw/blob/master/downloads/DeveloperGuide/DeveloperGuide.docx)). This gives you information
+about the [myApp](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md) skeleton interface handler.
 
-[Go back](https://github.com/Toteph42/syncgw/)
+[Go back](https://github.com/toteph42/syncgw/)
 

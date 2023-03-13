@@ -1,4 +1,4 @@
-# [Available sync•gw software](https://github.com/Toteph42/syncgw/releases) #
+# [Available sync•gw software](https://github.com/toteph42/syncgw/releases) #
 
 ## Standard Edition (ED01) ##
 Download this edition if you want to simply use **sync•gw**.
@@ -14,7 +14,7 @@ Download this edition if you want to simply use **sync•gw**.
 * Support for time zones..
 * Multiple level of logging supported
 * Intelligent field assignment - calculated based on mix of configuration file and probability calculation.
-* Programming documentation available (see **Developers Guide** in the [Downloads](https://github.com/Toteph42/syncgw/downloads/blob/master/Downloads.md).
+* Programming documentation available (see **Developers Guide** in the [Downloads](https://github.com/toteph42/syncgw/downloads/blob/master/Downloads.md).
 * Support for encrypted message exchange using SSL web server setting.
 * Administrator browser interface with password protection.
 
@@ -32,7 +32,7 @@ The browser based administrator interface provides access to all internal data r
 
 **sync•gw** setup is very easy. Download and unzip **sync•gw** software packages, define a administrator password, connect a data base handler and **sync•gw** is ready for your first synchronization.
 
-A detailed description of available configuration option is available in our browser interface documentation available in our [download section](https://github.com/Toteph42/syncgw/blob/master/downloads/Downloads.md)).
+A detailed description of available configuration option is available in our browser interface documentation available in our [download section](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md)).
 
 ## Professional Edition (ED02) ##
 If you want to provide end user support or deploy your interface handler the Professional Edition offers additional plugins for **sync•gw** browser interface.
@@ -73,7 +73,7 @@ This data base handler is useful when you want to synchronize data between devic
 This data base handler includes the MySQL data base handler mentioned above. Additionally this interface handler synchronizes data (e.g. **contact** records) from RoundCube with **sync•gw** internal records. Your application users can always access most current data.
 
 ### MyApp interface handler (BE04) ###
-If you require any another interface handler for which you're need a handler not listed here, you may either develop your own (for more information, please read our **Developer Guide** in our [download section](https://github.com/Toteph42/syncgw/blob/master/downloads/Downloads.md).
+If you require any another interface handler for which you're need a handler not listed here, you may either develop your own (for more information, please read our **Developer Guide** in our [download section](https://github.com/toteph42/syncgw/blob/master/downloads/Downloads.md).
 
 ### EXPERIMENTAL: Mail interface handler ###
 The purpose of this interface handler is to communicate to an **IMAP** and a **SMTP** handler. It is an "on top" interface to all other data base handler. Currently this interface handler is in development and I hope to offer it as soon as possible. Please aware, this interface handler does not turn **sync•gw** into a full blown **Exchange server**. It does not support only **MicroSoft Exchange** protocol. But it is able to synchronize mails from your mail server to client devices. It is included in **Developer Edition** only.
@@ -106,4 +106,4 @@ Data store handlers are used to access data records in server application. **syn
 ### Experimental: Mail ###
 It is included in **Developer Edition** only.
 
-[Go back](https://github.com/Toteph42/syncgw/)
+[Go back](https://github.com/toteph42/syncgw/)

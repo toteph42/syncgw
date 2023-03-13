@@ -7,8 +7,8 @@ declare(strict_types=1);
  *	@package	sync*gw
  *	@subpackage	SabreDAV support
  *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  */
 
 namespace syncgw\dav;

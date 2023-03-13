@@ -1,4 +1,4 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https:///github.com/Toteph42/syncgw/blob/master/downloads/schema/syncgw.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https:///github.com/toteph42/syncgw/blob/master/downloads/schema/syncgw.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="syncgw">
     <xs:annotation>
     <xs:documentation>
@@ -8,7 +8,7 @@
   	@package	sync*gw
  	@subpackage	Core
 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
 
 	</xs:documentation>
     <xs:documentation>

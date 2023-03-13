@@ -7,7 +7,7 @@ declare(strict_types=1);
  *	@package	sync*gw
  *	@subpackage	RoundCube data base
  *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
- * 	@license 	https://github.com/Toteph42/syncgw/blob/master/LICENSE
+ * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  */
 
 namespace syncgw\interfaces\roundcube;
@@ -60,7 +60,7 @@ class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 	const REFS        	 = 'References';					// file reference
 	const CID         	 = 'Category';						// record category
 
-	const PLUGIN      	 = [ 'roundcube_select_for_sync', '1.0.20' ];
+	const PLUGIN      	 = [ 'syncgw_rc', '1.0.1' ];
 
 	// constants from roundcube_select_for_sync.php
 	const MAIL_FULL   	 = 'M';								// full mail box
