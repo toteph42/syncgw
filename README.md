@@ -30,12 +30,11 @@ protocol support enables you to use OS implemented synchronization on nearly all
 phones, smart phones and PDAs, laptop, desktop PC).
 
 ## License ##
-This plugin is released under the [GNU General Public License v3.0](https://github.com/toteph42/syncgw/blob/master/LICENSE).
+This plugin is released under the [GNU General Public License v3.0](https://github.com/toteph42/syncgw/blob/master/syncgw/LICENSE).
 
-## Donation ##
-If you want to support my work, feel free to send me a donation.
+If you like my software, I would be happy to get a donation.
 
-<a href="https://www.paypal.com/donate/?hosted_button_id=DS6VK49NAFHEQ" target="_blank">
+<a href="https://www.paypal.com/donate/?hosted_button_id=DS6VK49NAFHEQ" target="_blank" rel="noopener">
   <img src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal"/>
 </a>
 
