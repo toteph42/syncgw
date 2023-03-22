@@ -107,7 +107,7 @@ class fldFullName extends fldHandler {
 
 		case 'application/activesync.gal+xml':
 		case 'application/activesync.contact+xml':
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 		case 'application/activesync.calendar+xml':
 			if ($ext->xpath($xpath, FALSE))
 				parent::delTag($int, $ipath, '2.5');
@@ -159,11 +159,11 @@ class fldFullName extends fldHandler {
 				$rc = $recs;
 			break;
 
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			$mas = masHandler::getInstance();
 			if ($mas->callParm('BinVer') < 12.0)
 				break;
-			$cp = XML::AS_docLib;
+			$cp = XML::AS_DocLib;
 
 		case 'application/activesync.gal+xml':
 			if (!$cp)

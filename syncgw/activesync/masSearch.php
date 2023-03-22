@@ -156,7 +156,7 @@ class masSearch {
 				}
 			}
 		} elseif ($name == 'DocumentLibrary"')
-			$hids[] = DataStore::docLib;
+			$hids[] = DataStore::DOCLIB;
 		else {
 			// @todo <Search> Document Library
         	$out->addVar('Status', self::FOUND);

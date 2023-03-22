@@ -46,7 +46,7 @@ class fldIsFolder extends \syncgw\document\field\fldIsFolder {
 		$ext = NULL;
 		$obj = new fldHandler;
 
-	   	if ($typ == 'application/activesync.docLib+xml') {
+	   	if ($typ == 'application/activesync.doclib+xml') {
 	   		$ext = new XML();
 	   		$ext->loadXML('<syncgw><ApplicationData><Type>3</Type><EstimatedDataSize>5500</EstimatedDataSize>'.
 	   				'<'.$xpath.'>1</'.$xpath.'></ApplicationData></syncgw>');

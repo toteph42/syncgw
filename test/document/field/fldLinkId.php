@@ -46,7 +46,7 @@ class fldLinkId extends \syncgw\document\field\fldLinkId {
 		$ext = NULL;
 		$obj = new fldHandler;
 
-		if ($typ == 'application/activesync.docLib+xml') {
+		if ($typ == 'application/activesync.doclib+xml') {
 			$ext = new XML();
 			$ext->loadXML('<syncgw><ApplicationData>'.
 					'<'.$xpath.'>1</'.$xpath.'></ApplicationData></syncgw>');

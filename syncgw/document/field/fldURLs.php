@@ -18,7 +18,7 @@ use syncgw\lib\XML;
 class fldURLs extends fldHandler {
 
 	// module version number
-	const VER = 6;
+	const VER = 7;
 
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	const TAG		  		= [
@@ -92,7 +92,7 @@ class fldURLs extends fldHandler {
      *	@param 	- TRUE = Provide status information only (if available)
 	 */
 	public function getInfo(XML &$xml, bool $status): void {
-		$xml->addVar('Opt', sprintf(_('&lt;%s&gt; field handler'), 'fldURLs'));
+		$xml->addVar('Opt', sprintf(_('&lt;%s&gt; field handler'), 'FieldsURLs'));
 		$xml->addVar('Ver', strval(self::VER));
 
 		foreach ([ fldURLHome::TAG    => fldURLHome::VER,

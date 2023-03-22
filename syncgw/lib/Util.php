@@ -288,7 +288,7 @@ class Util {
 				DataStore::NOTE     	   => [ 'Note',		    _('Note'),		     	  	'syncgw\document\docNote',		'N', ],
 				DataStore::MAIL		  	   => [ 'Mail',			_('Mail'),	       	 	  	'syncgw\document\docMail',		'M', ],
 				DataStore::SMS		  	   => [ 'SMS',			_('SMS'),	       	 	  	'syncgw\document\DocSMS',		'F', ],
-				DataStore::docLib	  	   => [ 'docLib',		_('docLib'),	     	  	'syncgw\document\DocDoc',		'L', ],
+				DataStore::DOCLIB	  	   => [ 'DocLib',		_('DocLib'),	     	  	'syncgw\document\DocDoc',		'L', ],
 				DataStore::GAL		  	   => [ 'GAL',			_('Global Address Book'),	'syncgw\document\docGAL',		'A', ],
             ];
 
@@ -606,6 +606,27 @@ class Util {
 	        Debug::Warn('Time zone "'.$name.'" not found!'); //3
 
        	return $tzid;
+	}
+
+	/**
+	 * 	Adjust time offset relativ to UTC for a given time stamp
+	 *
+	 * 	@param 	- Unix time stamp
+	 * 	@param	- TRUE = Use negative offset; FALSE = Don't convert
+	 * 	@return	- Converted time
+	 */
+	static function mkTZOffset(string $tme, bool $neg = FALSE): string {
+
+        // compile time zone offset relativ to UTC (internal time zone format)
+        $cnf = Config::getInstance();
+		$def = new \DateTimeZone($cnf->getVar(Config::TIME_ZONE));
+		$tz  = new \DateTimeZone('UTC');
+		$s	 = gmdate(self::UTC_TIME, intval($tme));
+    	$udt = new \DateTime($s,  $def);
+    	$dt  = new \DateTime($s, $tz);
+    	$t   = $tz->getOffset($dt) - $def->getOffset($udt);
+
+	    return strval($neg ? $tme + $t * -1 : $tme + $t);
 	}
 
 	/**

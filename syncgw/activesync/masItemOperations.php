@@ -188,7 +188,7 @@ class masItemOperations {
 		//  retrieves an item from the server
 		if ($in->xpath('//Fetch/.')) {
 
-			$opts = $mas->getOption(strval(strcasecmp($in->getVar('Store'), 'mailbox') !== NULL ? DataStore::MAIL : DataStore::docLib));
+			$opts = $mas->getOption(strval(strcasecmp($in->getVar('Store'), 'mailbox') !== NULL ? DataStore::MAIL : DataStore::DOCLIB));
 
 			// get allowed range to send
 			list($start, $end) = explode('-', $opts['Range']);

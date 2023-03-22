@@ -100,12 +100,12 @@ $package = [
 
  	            # document handler
   				# [ '/syncgw/document/'						    				, 0 ],
-  				[ '/syncgw/document/docLib.php'									, 1 ],
+  				[ '/syncgw/document/DocLib.php'									, 1 ],
 
   				# MIME support
   				[ '/syncgw/document/mime'	    			    				, 0 ],
   				[ '/syncgw/document/mime/mimAs.php'		   						, 1 ],
-                [ '/syncgw/document/mime/mimAsdocLib.php'	   					, 1 ],
+                [ '/syncgw/document/mime/mimAsDocLib.php'	   					, 1 ],
     			[ '/syncgw/document/mime/mimAsContact.php'		    			, 1 ],
 				[ '/syncgw/document/mime/mimAsGAL.php'						   	, 1 ],
   				[ '/syncgw/document/mime/mimAsCalendar.php'				   	    , 1 ],
@@ -248,12 +248,12 @@ $package = [
 
  	            # document handler
   				# [ '/syncgw/document/'						    				, 0 ],
-  				[ '/syncgw/document/docLib.php'									, 1 ],
+  				[ '/syncgw/document/DocLib.php'									, 1 ],
 
   				# MIME support
   				[ '/syncgw/document/mime'	    			    				, 0 ],
   				[ '/syncgw/document/mime/mimAs.php'		   						, 1 ],
-                [ '/syncgw/document/mime/mimAsdocLib.php'	   					, 1 ],
+                [ '/syncgw/document/mime/mimAsDocLib.php'	   					, 1 ],
     			[ '/syncgw/document/mime/mimAsContact.php'		    			, 1 ],
 				[ '/syncgw/document/mime/mimAsGAL.php'						   	, 1 ],
   				[ '/syncgw/document/mime/mimAsCalendar.php'				   	    , 1 ],

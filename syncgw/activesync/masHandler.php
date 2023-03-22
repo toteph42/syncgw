@@ -638,7 +638,7 @@ class masHandler extends XML {
 							$gid = $in->getVar('CollectionId', FALSE);
 						else
 							// 'Fetch'
-							$gid = strcasecmp($in->getVar('Store'), 'mailbox') !== NULL ? DataStore::MAIL : DataStore::docLib;
+							$gid = strcasecmp($in->getVar('Store'), 'mailbox') !== NULL ? DataStore::MAIL : DataStore::DOCLIB;
 
 						self::_loadOpts($tag, $gid);
 						$opts = &$this->_opts[$gid];
@@ -789,7 +789,7 @@ class masHandler extends XML {
 				elseif (stripos($n, 'mailbox') !== FALSE)
 					$gid = DataStore::MAIL;
 				else
-					$gid = DataStore::docLib;
+					$gid = DataStore::DOCLIB;
 
 				self::_loadOpts($tag, $gid);
 				$opts = &$this->_opts[$gid];

@@ -32,9 +32,9 @@ class DataStore {
 	const TASK		 = 0x00800;
 	const MAIL		 = 0x01000;
 	const SMS		 = 0x02000;
-	const docLib	 = 0x04000;
+	const DOCLIB	 = 0x04000;
 	const GAL		 = 0x08000;
-	const DATASTORES = 0x0ff00;		   	// CONTACT|CALENDAR|NOTE|TASK|MAIL|SMS|docLib|GAL
+	const DATASTORES = 0x0ff00;		   	// CONTACT|CALENDAR|NOTE|TASK|MAIL|SMS|DOCLIB|GAL
 
 	// external data store call
 	const EXT		 = 0x10000;

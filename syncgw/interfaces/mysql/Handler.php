@@ -12,6 +12,8 @@ declare(strict_types=1);
 
 namespace syncgw\interfaces\mysql;
 
+use Exception;
+use PDOException;
 use syncgw\lib\Debug;//3
 use syncgw\interfaces\DBintHandler;
 use syncgw\lib\Config;
@@ -392,17 +394,30 @@ class Handler implements DBintHandler {
 		$cnt = $cnf->getVar(Config::DB_RETRY);
 
 		do {
-			if (($obj = self::$_db->query($qry)) === FALSE) {
-				$msg = self::$_db->connect_error ?
-					   '['.self::$_db->connect_errno.'] '.self::$_db->connect_error :
-					   '['.self::$_db->errno.'] ('.self::$_db->error.'), SQLSTATE: '.self::$_db->sqlstate;
+			$msg = '';
+			try {
+				$obj = self::$_db->query($qry);
+			}
+			catch (Exception  $e) {
+				// Uncaught mysqli_sql_exception: Duplicate entry
+				if ($e->getCode() == 1062) {
+					$t = explode('\'', $e->getMessage());
+					$obj = $t[1];
+				} else
+					$msg = '['.$e->getCode().'] '.$e->getMessage();
+			}
+			if (!isset($obj) || $obj === FALSE || $msg) {
+				if (!$msg)
+					$msg = self::$_db->connect_error ?
+						   '['.self::$_db->connect_errno.'] '.self::$_db->connect_error :
+						   '['.self::$_db->errno.'] ('.self::$_db->error.'), SQLSTATE: '.self::$_db->sqlstate;
 
 				// [1146] (42S02): Table 'xxx' doesn't exist -> table is not locked
-				if (self::$_db->errno == '1146' && !$cmd)
+				if (self::$_db->errno == 1146 && !$cmd)
 					return NULL;
 
 				// [2006] MySQL server has gone away
-				if (self::$_db->errno == '2006') {
+				if (self::$_db->errno == 2006) {
 					if ($cnt--) {
 						Util::Sleep(300);
 						$log = Log::getInstance();
@@ -447,7 +462,7 @@ class Handler implements DBintHandler {
 								$out[] = $rec;
 						}
 					} else
-					$out = $obj;
+						$out = $obj;
 				}
 			}
 		} while ($cnt);

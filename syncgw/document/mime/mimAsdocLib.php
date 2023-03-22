@@ -14,7 +14,7 @@ namespace syncgw\document\mime;
 
 use syncgw\lib\DataStore;
 
-class mimAsdocLib extends mimAs {
+class mimAsDocLib extends mimAs {
 
 	// module version number
 	const VER = 2;
@@ -22,7 +22,7 @@ class mimAsdocLib extends mimAs {
 	const MIME = [
 
 		// note: this is a virtual non-existing MIME type
-		[ 'application/activesync.docLib+xml', 1.0 ],
+		[ 'application/activesync.doclib+xml', 1.0 ],
 	];
 	const MAP = [
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ class mimAsdocLib extends mimAs {
 
    	/**
      * 	Singleton instance of object
-     * 	@var mimAsdocLib
+     * 	@var mimAsDocLib
      */
     static private $_obj = NULL;
 
@@ -50,14 +50,14 @@ class mimAsdocLib extends mimAs {
 	 *
 	 *  @return - Class object
 	 */
-	public static function getInstance(): mimAsdocLib {
+	public static function getInstance(): mimAsDocLib {
 
 		if (!self::$_obj) {
             self::$_obj = new self();
 
 			self::$_obj->_ver  = self::VER;
 			self::$_obj->_mime = self::MIME;
-			self::$_obj->_hid  = DataStore::docLib;
+			self::$_obj->_hid  = DataStore::DOCLIB;
 			foreach (self::MAP as $tag => $class) {
 			    $class = 'syncgw\\document\\field\\'.$class;
 			    $class = $class::getInstance();

@@ -120,10 +120,10 @@ class guiUpload {
 			if ($hid & DataStore::DATASTORES) {
 				// supported input mime types
 				$mime = [
-                    DataStore::CALENDAR => [ 'text/calendar',  					    '2.0' ],
 					DataStore::CONTACT 	=> [ 'text/vcard',							'4.0' ],
-					DataStore::NOTE		=> [ 'text/x-vnote',						'1.1' ],
+					DataStore::CALENDAR => [ 'text/calendar',  					    '2.0' ],
 					DataStore::TASK		=> [ 'text/calendar',  				    	'2.0' ],
+					DataStore::NOTE		=> [ 'text/x-vnote',						'1.1' ],
 				];
 
 				$recs = [];

@@ -65,7 +65,7 @@ $tests		 	  = [
 		6 => [
 				'Search',
 				'in06.xml',
-				DataStore::docLib,
+				DataStore::DOCLIB,
 		],
 ];
 

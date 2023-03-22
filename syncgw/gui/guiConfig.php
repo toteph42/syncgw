@@ -25,7 +25,7 @@ use syncgw\lib\XML;
 class guiConfig {
 
 	// module version
-	const VER 			 = 22;
+	const VER = 24;
 
     /**
      * 	Singleton instance of object
@@ -318,7 +318,8 @@ class guiConfig {
 		// enabled data stores
 		$f = '';
 		$n = 1;
-		foreach (Util::HID(Util::HID_ENAME, DataStore::DATASTORES, TRUE) as $k => $v) {
+		$e = Util::HID(Util::HID_ENAME, DataStore::CALENDAR|DataStore::CONTACT|DataStore::TASK|DataStore::MAIL|DataStore::NOTE, TRUE);
+		foreach ($e as $k => $v) {
 			if (!($k & $ava))
 				$s = 'disabled="disabled"';
 			elseif ($k & $ena)
@@ -681,7 +682,8 @@ class guiConfig {
 			$c = $cnf->getVar(Config::TRACE_MOD, TRUE);
 
 		if ($action == 'ConfSave')
-			$cnf->updVar(Config::TRACE_MOD, strtolower($c) == 'on' ? 'On' : 'Off');
+			$cnf->updVar(Config::TRACE_MOD, strtolower($c) == 'on' ? 'On' :
+						(strtolower($c) == 'off' ? 'Off' : $c));
 
 		$gui->putQBox(_('Trace'),
 						'<input name="ConfTraceMode" type="text" size="20" maxlength="255" value="'.$c.'" />',

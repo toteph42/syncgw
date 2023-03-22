@@ -88,12 +88,12 @@ class fldFullName extends \syncgw\document\field\fldFullName {
 				   		  '><'.$xpath.'>full funny name</'.$xpath.'></Data>');
 		}
 
-		if ($typ == 'application/activesync.docLib+xml') {
+		if ($typ == 'application/activesync.doclib+xml') {
 			$ext = new XML();
 			$ext->loadXML('<syncgw><ApplicationData><DisplayName>Kukka</DisplayName></ApplicationData></syncgw>');
 		 	$cmp1 = '<Data><'.self::TAG.'>Kukka</'.self::TAG.'></Data>';
 	   		$cmp2 = new XML();
-	   		$cmp2->loadXML('<Data><'.$xpath.' xml-ns="'.XML::CP[XML::AS_docLib].'">Kukka</'.$xpath.'></Data>');
+	   		$cmp2->loadXML('<Data><'.$xpath.' xml-ns="'.XML::CP[XML::AS_DocLib].'">Kukka</'.$xpath.'></Data>');
 		}
 
 		if ($ext && ($int = $obj->testImport($this, TRUE, $typ, $ver, $xpath, $ext, $cmp1)))

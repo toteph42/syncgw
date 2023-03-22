@@ -46,7 +46,7 @@ class fldLastMod extends \syncgw\document\field\fldLastMod {
 		$int = new XML();
 		$int->loadXML('<syncgw><LastMod>1162083600</LastMod></syncgw>');
 
-		if ($typ == 'application/activesync.note+xml' || $typ == 'application/activesync.docLib+xml' ||
+		if ($typ == 'application/activesync.note+xml' || $typ == 'application/activesync.doclib+xml' ||
 			$typ == 'text/x-vnote' || $typ == 'text/calendar' || $typ == 'text/x-vcalendar') {
 			$obj = new fldHandler;
 		 	$obj->testExport($this, $typ, $ver, $xpath, $int, NULL);

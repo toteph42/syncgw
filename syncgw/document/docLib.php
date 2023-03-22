@@ -13,16 +13,16 @@ declare(strict_types=1);
 namespace syncgw\document;
 
 use syncgw\lib\DataStore;
-use syncgw\document\mime\mimAsdocLib;
+use syncgw\document\mime\mimAsDocLib;
 
-class docLib extends docHandler {
+class DocLib extends docHandler {
 
 	// module version number
 	const VER = 1;
 
     /**
      * 	Singleton instance of object
-     * 	@var docLib
+     * 	@var DocLib
      */
     static private $_obj = NULL;
 
@@ -31,15 +31,15 @@ class docLib extends docHandler {
 	 *
 	 *  @return - Class object
 	 */
-	public static function getInstance(): docLib {
+	public static function getInstance(): DocLib {
 
 	   	if (!self::$_obj) {
 
             self::$_obj = new self();
 			self::$_obj->_mimeClass = [
-	    				mimAsdocLib::getInstance(),
+	    				mimAsDocLib::getInstance(),
 			];
-			self::$_obj->_hid 		= DataStore::docLib;
+			self::$_obj->_hid 		= DataStore::DOCLIB;
 			self::$_obj->_docVer 	= self::VER;
 			self::$_obj->_init();
 	   	}

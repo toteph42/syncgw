@@ -63,7 +63,7 @@ class WBXML {
 		XML::CP[XML::AS_GAL]		=> 16,
 		XML::CP[XML::AS_BASE]		=> 17,
 		XML::CP[XML::AS_SETTING]	=> 18,
-		XML::CP[XML::AS_docLib]		=> 19,
+		XML::CP[XML::AS_DocLib]		=> 19,
 		XML::CP[XML::AS_ITEM]		=> 20,
 		XML::CP[XML::AS_COMPOSE]	=> 21,
 		XML::CP[XML::AS_MAIL2]		=> 22,

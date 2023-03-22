@@ -121,11 +121,11 @@ class fldLastMod extends fldHandler {
   		  	$rc = TRUE;
 			break;
 
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			$mas = masHandler::getInstance();
 			if ($mas->callParm('BinVer') < 12.0)
 				break;
-			$ext->addVar($tag, $val, FALSE, $ext->setCP(XML::AS_docLib));
+			$ext->addVar($tag, $val, FALSE, $ext->setCP(XML::AS_DocLib));
   		  	$rc = TRUE;
 			break;
 

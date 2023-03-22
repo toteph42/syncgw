@@ -85,8 +85,8 @@ class Debug {
 
  		if (self::$Conf['UseMercury'])
 			self::$Conf += [
+#				'ScriptUID'		=> 'debug@dev.fd',		// debug user id
 				'ScriptUID'		=> 't1@dev.fd',			// user id for testing scripts
-##				'ScriptUID'		=> 'debug@dev.fd',		// user id for testing scripts
 				'ScriptUPW'		=> 'mamma',				// password for testing script user id
 
 				'DebugUID'		=> 'debug@dev.fd',		// debug user id
@@ -104,12 +104,10 @@ class Debug {
 		else
 			self::$Conf += [
 				'ScriptUID'		=> 'i329108_0-t1',		// user id for testing scripts
-				'ScriptUPW'		=> 'ku@hhdK@8h&nfKg',	// password for testing script user id
-##				'ScriptUID'		=> 'i329108_0-jam',		// user id for testing scripts
-##				'ScriptUPW'		=> '8(b4H&4(Uw!%U2v',	// password for testing script user id
+				'ScriptUPW'		=> '##',				// password for testing script user id
 
 				'DebugUID'		=> 'i329108_0-debug',	// debug user id
-				'DebugUPW'		=> 'wo@HzM4@hS7G?nZ',	// password fpr debug user id
+				'DebugUPW'		=> '###',				// password fpr debug user id
 
 				'Imap-Host'		=> 'imap.1blu.de',
 				'Imap-Port'		=> '993',

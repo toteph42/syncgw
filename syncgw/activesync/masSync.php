@@ -14,6 +14,7 @@ namespace syncgw\activesync;
 
 use syncgw\lib\Debug; //3
 use syncgw\document\field\fldAttribute;
+use syncgw\document\field\fldEndTime;
 use syncgw\document\field\fldExceptions;
 use syncgw\document\field\fldStartTime;
 use syncgw\document\field\fldStatus;
@@ -25,11 +26,12 @@ use syncgw\lib\User;
 use syncgw\lib\Util;
 use syncgw\lib\XML;
 use syncgw\document\field\fldConversationId;
+use syncgw\document\field\fldRecurrence;
 
 class masSync {
 
 	// module version number
-	const VER 		= 23;
+	const VER 		= 24;
 
 	// status codes
 	const SYNCKEY  	= '3';
@@ -601,6 +603,13 @@ class masSync {
   					$rc = self::EXIST;
   					break;
 				}
+
+				// do a special check on task records
+				if ($hid & DataStore::TASK) {
+					$req = fldRecurrence::getInstance();
+					if ($req->regenerate($doc))
+						$db->Query(DataStore::EXT|$hid, DataStore::ADD, $doc);
+				}
 			}
 
 			// <Send> optional element that specifies whether an email is to be saved as a draft or sent
@@ -696,19 +705,9 @@ class masSync {
 			if ($in->getName() != 'Commands')
 			    $lid = '';
 
-			// special check added for clients which send add request for same record mutiple times
-			// e.g. Nine
-			if ($lid && ($xml = $db->Query($hid, DataStore::RLID, $lid))) {
-				$out->addVar('ClientId', $lid);
-				$out->addVar('ServerId', $gid = $xml->getVar('GUID'));
-
-				// lock record for <Command> processing
-				$this->_lock[$hid.'#'.$gid] = 1;
-				break;
-			}
-
-			if (!$ds->import($in, DataStore::ADD, $grp, $lid)) {
-   				$rc = self::PROTOCOL;
+		    $in->restorePos($ip);
+		    if (!$ds->import($in, DataStore::ADD, $grp, $lid)) {
+  				$rc = self::PROTOCOL;
    				break;
 			}
 
@@ -901,19 +900,32 @@ class masSync {
 						continue;
 					}
 				} elseif ($hid & DataStore::CALENDAR) {
-					$t = $doc->getVar(fldStartTime::TAG);
+					$t  = $doc->getVar(fldStartTime::TAG);
+					$ok = TRUE;
                     if ($cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) { //2
-                    	Debug::Msg('Disabling filter for calendar debugging purpose'); //3
-                        $t = $opts['FilterType']; //2
+                    	Debug::Warn('Disabling filter for calendar debugging purpose'); //3
+                       	$t = $opts['FilterType']; //2
 					} //2
 					if ($t < $opts['FilterType']) {
+						// double check for recurring event
+						if ($doc->getVar(fldRecurrence::TAG) !== NULL) {
+							// end time specified?
+							if ($e = $doc->getVar(fldEndTime::TAG, FALSE)) {
+								if ($t < $e)
+									$ok = FALSE;
+							}
+						} else
+							$ok = FALSE;
+
 						// deletes an object from the client when it falls outside the <FilterType>
-						$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
-						$out->addVar('ServerId', $rid);
-						$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
-   						$out->restorePos($p);
-      					// jump to next folder
-   						continue;
+						if (!$ok) {
+							$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
+							$out->addVar('ServerId', $rid);
+							$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
+   							$out->restorePos($p);
+      						// jump to next folder
+   							continue;
+						}
 					}
 				}
 			}

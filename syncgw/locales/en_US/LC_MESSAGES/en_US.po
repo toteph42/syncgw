@@ -2162,7 +2162,7 @@ msgid "sms record"
 msgstr ""
 
 #: syncgw/lib/DB.php:296
-msgid "docLib record"
+msgid "DocLib record"
 msgstr ""
 
 #: syncgw/lib/DB.php:299
@@ -2194,7 +2194,7 @@ msgid "sms"
 msgstr ""
 
 #: syncgw/lib/DB.php:310
-msgid "docLib"
+msgid "DocLib"
 msgstr ""
 
 #: syncgw/lib/DB.php:316

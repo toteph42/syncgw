@@ -62,8 +62,8 @@
  </tr>
  <tr><td colspan="2" style="line-height:5px;">&nbsp;</td></tr>
  <tr>
-  <td><input type="checkbox" id="MIME01-43"> <a target="_blank" href="MIME01.php?T=43">mime/MIME_AsdocLib.php</a></td>
-  <td>MIME "application/activesync.docLib+xml" 1.0</td>
+  <td><input type="checkbox" id="MIME01-43"> <a target="_blank" href="MIME01.php?T=43">mime/MIME_AsDocLib.php</a></td>
+  <td>MIME "application/activesync.doclib+xml" 1.0</td>
  </tr>
 
  <tr><td colspan="2"><h3>MIME decoding and encoding</h3></td></tr>
@@ -133,8 +133,8 @@
  </tr>
  <tr><td colspan="2" style="line-height:5px;">&nbsp;</td></tr>
  <tr>
-  <td><input type="checkbox" id="MIME02-61"> <a target="_blank" href="MIME02.php?T=61">mime/MIME_AsdocLib.php</a></td>
-  <td>MIME "application/activesync.docLib+xml" 1.0</td>
+  <td><input type="checkbox" id="MIME02-61"> <a target="_blank" href="MIME02.php?T=61">mime/MIME_AsDocLib.php</a></td>
+  <td>MIME "application/activesync.doclib+xml" 1.0</td>
  </tr>
 
  </table>

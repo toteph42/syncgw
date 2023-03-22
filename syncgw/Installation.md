@@ -1,16 +1,16 @@
 # Installation guide for sync•gw #
 
-1. Select [packages](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md) you want to install.
+1. Select [sync•gwpackages](https://github.com/toteph42/syncgw/blob/master/downloads/Packages.md) you want to install.
 2. Go to [release page](https://github.com/toteph42/syncgw/releases) and download your **sync•gw** packages. 
-3. Unpack files in a temporary directory. Depending on the software packages you downloaded, warning messages 
+3. Unpack files in a temporary directory. Depending on the **sync•gw** packages you downloaded, warning messages 
 may pop up you are attempting to override some files during unpacking. You can safely ignore this 
 message - the message appears because some software packages may contain same source files.
-4. Copy all files to your application root directory.
+4. Copy all files to your (RoundCube) application root directory.
 5. On Linux systems you need to set the appropriate file permissions. Please change 
 to application root directory and enter `chmod -R 0755 ./syncgw`. Please ensure, the owner of the files and directories are properly set. 
 6. If your web server user is e.g. `www-data`, then you may execute `chown -R www-data ./syncgw` in application root directory to ensure user access is granted.
 7. Perform steps described in chapter "Data base connection Installation".
-8. Finally open **sync•gw** and selecting "Check Status" from menu selection.
+8. Finally open **sync•gw** browser interface (`https://[your Roundcube installation directory]/sync.php`and select "Check Status" from menu.
 
 # Upgrade sync•gw installtion #
 
@@ -23,9 +23,9 @@ the message appears because some software packages may contain same source files
 4. Delete sub directory `syncgw` in your installation directory.
 5. Copy all files from temporary directory to your application root directory.
 6. Set file permissions (see above).
-7. Finally open **sync•gw** in your browser. Please note, loading may take longer time, due to 
+7. Finally open **sync•gw** browser interface. Please note, loading may take longer time, due to 
 automatic upgrade performed. 
-8. Please note, until you performed step 7) synchronization is disabled.
+8. **Please note, until you performed step 7) synchronization is disabled.**
 
 # Data base connection installation #
 
@@ -61,6 +61,10 @@ use the second command.
 3. Select "Configure **sync•gw**", check settings and click on "Save".
 4. Download and install **[syncgw_rc plugin](https://plugins.roundcube.net/#/packages/toteph42/syncgw-rc)**
 RoundCube plugin and enable all datastores you want to synchronize in "Settings" menu.
+5. If you want to use **calendars**, please install this **[calendar plugin](https://plugins.roundcube.net/#/packages/toteph42/calendar)**. This package is a fork of the original **kolab/calendar** plugin. Unfortunately I found no way to report bugs to the maintainer. Therefore I created 
+this fork and fixed the bugs myself.
+6. If you want to use **todos** then you need to install **[tasklist plugin](https://plugins.roundcube.net/#/packages/kolab/tasklist)**.
+7. If you want to use **notes**, then please install **[ddnotes plugin](https://plugins.roundcube.net/#/packages/dondominio/ddnotes)**.
 
 ## MyApp data base connection handler
 1. Download and unpack all **sync•gw** files and upload all files to your web server directory.

@@ -36,6 +36,7 @@ use syncgw\document\field\fldTrigger;
 use syncgw\document\field\fldGroupName;
 use syncgw\document\field\fldAttribute;
 use syncgw\document\field\fldUid;
+use syncgw\document\field\fldCompleted;
 
 class Task {
 
@@ -61,17 +62,17 @@ class Task {
 	//	'list'																// Task list identifier to add the task to or where the task is stored
     //	'changed'															// Last modification date/time of the record
     	'title'						=> [ 0, fldSummary::TAG, 			],	// Event title/summary
-    	'description'               => [ 0, fldBody::TAG, 			],	// Event description
+    	'description'               => [ 0, fldBody::TAG, 				],	// Event description
 	//  'tags'		                										// List of tags for this task
     	'date'						=> [ 2, fldDueDate::TAG, 			],	// Due date
 	//	'time'																// Due time
-    	'startdate'					=> [ 2, fldStartTime::TAG,		],	// Start date
+    	'startdate'					=> [ 2, fldStartTime::TAG,			],	// Start date
 	//	'starttime'															// Start time
 	//	'categories'														// Task category
 		'flagged'					=> [ 0, fldFlag::TAG,				],	// Boolean value whether this record is flagged - not used by MAS
-		'complete'                  => [ 6, fldStatus::TAG,			],	// Float value representing the completeness state
-	    'status'                    => [ 0, fldStatus::TAG,			],	// Task status string - not use by MAS
-		'valarms'                   => [ 5, fldAlarm::TAG, 			],	// List of reminders
+		'complete'                  => [ 6, fldCompleted::TAG,			],	// Float value representing the completeness state
+	    'status'                    => [ 0, fldStatus::TAG,				],	// Task status string - not use by MAS
+		'valarms'                   => [ 5, fldAlarm::TAG, 				],	// List of reminders
 	    'recurrence'                => [ 3, fldRecurrence::TAG, 		],	// Recurrence definition according to iCalendar (RFC 2445)
     //	'_fromlist'															// List identifier where the task was stored before
 
@@ -83,8 +84,8 @@ class Task {
     // some fields only included for syncDS() - not part of data record
 
     	'#trigger'					=> [ 8, fldTrigger::TAG,			],
-		'#grp_name'					=> [ 8, fldGroupName::TAG,	 	],
-		'#grp_attr'					=> [ 8, fldAttribute::TAG,		],
+		'#grp_name'					=> [ 8, fldGroupName::TAG,	 		],
+		'#grp_attr'					=> [ 8, fldAttribute::TAG,			],
 
     // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	];
@@ -93,7 +94,7 @@ class Task {
 	const LISTS 		= 0;
 	const TASKS 		= 1;
 
-    const PLUGIN 		= [ 'tasklist' => '3.5.2', 'libcalendaring' => '3.5.6' ];
+    const PLUGIN 		= [ 'tasklist' => '3.5.10', 'libcalendaring' => '3.5.11' ];
 
 	/**
 	 *  RoundCube database table names
@@ -522,6 +523,8 @@ class Task {
 					$recs[] = $rec;
 			} while ($this->_hd->chkRetry(DataStore::TASK, __LINE__));
 
+ 			// data structure: plugins/tasklist/drivers/taslöist_driver.php
+
 			foreach ($recs as $rec) {
 
 				// included in synchronization?
@@ -680,6 +683,8 @@ class Task {
 					'extID'		=> $rid,
 					'extGroup'	=> $this->_ids[$rid][Handler::GROUP],
 		]);
+
+		// percent completed
         $pc = 0;
 
         // swap data
@@ -697,8 +702,12 @@ class Task {
 		    case 0:
 		    	if ($tag[1] == fldBody::TAG)
 					$int->addVar($tag[1], $val, FALSE, [ 'X-TYP' => fldBody::TYP_TXT ]);
-		    	else
-		    	    $int->addVar($tag[1], $val, FALSE, $key == 'status' ? [ 'X-PC' => $pc ] : []);
+				else {
+					if ($key == 'status')
+			    	    $int->addVar($tag[1], $val, FALSE, [ 'X-PC' => $pc ]);
+					else
+			    	    $int->addVar($tag[1], $val);
+				}
 				break;
 
 			// 	1 - Category array
@@ -734,7 +743,17 @@ class Task {
 							Debug::Warn('+++ Undefined sub field ['.$k.']'); //3
 			    		continue;
    		    		}
-   		    		if ($k == 'UNTIL')
+   		    		// check for regeneration
+   		    		if ($k == 'FREQ') {
+   		    			$reg = '0';
+   		    			foreach (fldRecurrence::AS_FREQ as $unused => $chk)
+   		    				if ($chk == $v) {
+   		    					$reg = '1';
+   		    					break;
+   		    				}
+   		    			$unused; // disable Eclipse warning
+	   		    		$int->addVar(fldRecurrence::AST_SUB['Regenerate'][2], $reg);
+   		    		} elseif ($k == 'UNTIL')
    		    			$v = Util::unxTime($v);
    		    		elseif ($k == 'X-START')
    		    			$v = Util::unxTime($rec['date'].'T'.$rec['time'], 'UTC');
@@ -781,7 +800,11 @@ class Task {
 		    //  6 - Percent completed
     		case 6:
                 $pc = floatval($val) * 100.;
-		    	break;
+			    if ($pc == 100) {
+			       	$val = $rec['date'].'T'.$rec['time'];
+			       	$int->addVar(fldCompleted::TAG, strval(Util::unxTime($val, 'UTC')));
+			    }
+                break;
 
 		    //  7 - Related to
     		case 7:
@@ -794,7 +817,7 @@ class Task {
 		}
 
 		if (Debug::$Conf['Script'] && Debug::$Conf['Script'] != 'Document') { //3
-			$int->getVar('syncgw'); //3
+			$int->setTop(); //3
             Debug::Msg($int, 'Internal record'); //3
 		} //3
 
@@ -850,7 +873,10 @@ class Task {
 					if ($val = $int->getVar($tag[1], FALSE))
 						$rec[$key] = Encoding::cnvStr($val, FALSE);
 					if ($key == 'status') {
-	    		    	if ($val = $int->getAttr('X-PC'))
+	    		    	// if task is completed set to 100%
+	    		    	if ($val == 'COMPLETED')
+	    		    		$pc = 1;
+						elseif ($val = $int->getAttr('X-PC'))
 	    	       		    $pc = number_format($val / 100, 2, '.', '');
 					    $rec['complete'] = $pc;
 					}
@@ -1032,11 +1058,6 @@ class Task {
 	 */
 	private function _get(string $rid): ?array {
 
-		// get handler
-		$tzoff = new \DateInterval(sprintf('PT%dS', abs($this->_hd->tzOffset)));
-		if ($this->_hd->tzOffset > 0)
-			$tzoff->invert = 1;
-
 	    // tasklist_database_driver.php:get_task()
 		$sql = 'SELECT * FROM '.$this->_tab[self::TASKS].
                ' WHERE tasklist_id = ?'.
@@ -1078,8 +1099,9 @@ class Task {
                     $rec['valarms'] = json_decode($rec['alarms'], TRUE);
                     foreach ($rec['valarms'] as $i => $a) {
                     	if (!is_array($a['trigger']) && $a['trigger'][0] == '@') {
-                            $rec['valarms'][$i]['trigger'] = new \DateTime(substr($a['trigger'], 1, 19), new \DateTimeZone('UTC'));
-                            $rec['valarms'][$i]['trigger']->add($tzoff);
+                    		$t = substr($a['trigger'], 1, 19);
+                    		$t = Util::mkTZOffset(Util::unxTime($t));
+                            $rec['valarms'][$i]['trigger'] = new \DateTime(Util::utcTime($t), new \DateTimeZone('UTC'));
                     	} elseif (isset($a['trigger']['date']))
                             $rec['valarms'][$i]['trigger'] = new \DateTime($a['trigger']['date'], new \DateTimeZone('UTC'));
                         else
@@ -1126,11 +1148,6 @@ class Task {
 
 	   	// create external record
 		$rec = self::_swap2ext($int);
-
-		// get data base handler (for root group id)
-		$tzoff = new \DateInterval(sprintf('PT%dS', abs($this->_hd->tzOffset)));
-		if ($this->_hd->tzOffset < 0)
-			$tzoff->invert = 1;
 
 		// create a new task list?
 		if ($int->getVar('Type') == DataStore::TYP_GROUP) {
@@ -1196,7 +1213,8 @@ class Task {
 	            // tasklist_database_driver.php:serialize_alarms()
 	            foreach ($rec['valarms'] as $k => $v) {
 	            	if ($v['trigger'] instanceof \DateTime) {
-                        $rec['valarms'][$k]['trigger']->add($tzoff);
+	            		$rec['valarms'][$k]['trigger']->setTimestamp(intval(Util::mkTZOffset(
+	            								$rec['valarms'][$k]['trigger']->format('U'))));
 	            		$rec['valarms'][$k]['trigger'] = '@'.$v['trigger']->format('c');
 	            	}
 	            }
@@ -1207,7 +1225,7 @@ class Task {
 	        if (is_array($rec['recurrence'])) {
 	            foreach ($rec['recurrence'] as $k => $v) {
 	            	if ($v instanceof \DateTime) {
-                        $v->add($tzoff);
+	            		$v->setTimestamp(intval(Util::mkTZOffset($v->format('U'))));
 	            		$rec['recurrence'][$k] = '@'.$v->format('c');
 	            	}
 	            }
@@ -1289,11 +1307,6 @@ class Task {
        	// get record id
 		$rid = $int->getVar('extID');
 
-		// get data base handler
-		$tzoff = new \DateInterval(sprintf('PT%dS', abs($this->_hd->tzOffset)));
-		if ($this->_hd->tzOffset < 0)
-			$tzoff->invert = 1;
-
 		// create external record
 		$rec = self::_swap2ext($int);
 
@@ -1335,7 +1348,8 @@ class Task {
             // tasklist_database_driver.php:serialize_alarms()
             foreach ($rec['valarms'] as $k => $v) {
             	if ($v['trigger'] instanceof \DateTime) {
-                    $rec['valarms'][$k]['trigger']->add($tzoff);
+	            	$rec['valarms'][$k]['trigger']->setTimestamp(intval(
+	            				Util::mkTZOffset($rec['valarms'][$k]['trigger']->format('U'))));
                     $rec['valarms'][$k]['trigger'] = '@'.$v['trigger']->format('c');
             	}
             }
@@ -1346,8 +1360,8 @@ class Task {
             // tasklist_database_driver.php:serialize_recurrence()
             foreach ($rec['recurrence'] as $k => $v) {
             	if ($v instanceof \DateTime) {
-            		$v->add($tzoff);
-                    $rec['recurrence'][$k] = '@'.$v->format('c');
+	            	$v->setTimestamp(intval(Util::mkTZOffset($v->format('U'))));
+            		$rec['recurrence'][$k] = '@'.$v->format('c');
             	}
             }
             $rec['recurrence'] = json_encode($rec['recurrence']);

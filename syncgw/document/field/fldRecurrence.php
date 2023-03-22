@@ -20,7 +20,7 @@ use syncgw\lib\XML;
 class fldRecurrence extends fldHandler {
 
 	// module version number
-	const VER = 9;
+	const VER = 10;
 
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	const TAG 				= 'Recurrence';
@@ -28,7 +28,7 @@ class fldRecurrence extends fldHandler {
 	const RFC_SUB		  	= [
 		'FREQ'				=> 'Frequency',					// SECONDLY, MINUTELY, HOURLY, DAILY, WEEKLY, MONTHLY, YEARLY
 		'X-START'			=> fldStartTime::TAG,	  	  	// recurrence start date
-		'UNTIL'			  	=> fldEndTime::TAG,	    	// recurrence end date
+		'UNTIL'			  	=> fldEndTime::TAG,	    		// recurrence end date
 		'COUNT'				=> 'Count',						// 1-n; 1=default
 		'INTERVAL'		 	=> 'Interval',					// 1-n; 1=default
 
@@ -80,7 +80,7 @@ class fldRecurrence extends fldHandler {
 
 	// ActiveSync sub tags
 	const ASC_SUB		  	= [
-		'CalendarType'	 	=> [ 14.0, 	XML::AS_CALENDAR,	'fldCalendarType',],	// specifies the calendar system used by the recurrence
+		'CalendarType'	 	=> [ 14.0, 	XML::AS_CALENDAR,	'fldCalendarType',	],	// specifies the calendar system used by the recurrence
 		'DayOfMonth'		=> [ 2.5,	XML::AS_CALENDAR,	'MonthDay',			],	// [[+/-]1-31; -1=last day of month[,]] (relative)
 		'DayOfWeek'		   	=> [ 2.5, 	XML::AS_CALENDAR,	'DayPos',			],	// [[+/-][1-53]SU-SA[,]] (relative)
 		'FirstDayOfWeek'	=> [ 14.1,	XML::AS_CALENDAR,	'WeekStart',		],	// SU-SA
@@ -198,6 +198,7 @@ class fldRecurrence extends fldHandler {
 	 *  @return - TRUE = Ok; FALSE = Skipped
 	 */
 	public function import(string $typ, float $ver, string $xpath, $ext, string $ipath, XML &$int): bool {
+
 		$rc    = FALSE;
 		$ipath .= self::TAG;
 		$map   = NULL;
@@ -344,7 +345,7 @@ class fldRecurrence extends fldHandler {
 			while ($ext->getItem() !== NULL) {
 				$xp = $ext->savePos();
 	    	    foreach ($map as $key => $parm) {
-	        		if (substr($parm[2], 0, 5) == 'fld') {
+	        		if (substr($parm[2], 0, 3) == 'fld') {
 	        	       	$class = 'syncgw\\document\\field\\'.$parm[2];
 	               		$field = $class::getInstance();
 						if ($field->import($typ, $ver, $key, $ext, $ipath.'/', $int))
@@ -421,6 +422,7 @@ class fldRecurrence extends fldHandler {
 	 *  @return - [[ 'T' => Tag; 'P' => [ Parm => Val ]; 'D' => Data ]] or FALSE=Not found
 	 */
 	public function export(string $typ, float $ver, string $ipath, XML &$int, string $xpath, ?XML $ext = NULL) {
+
 		$rc   = FALSE;
 		$tags = explode('/', $xpath);
 		$tag  = array_pop($tags);
@@ -594,7 +596,7 @@ class fldRecurrence extends fldHandler {
 	            	if ($ver < $parm[0])
 	            		continue;
 	            	// check for class
-					if (substr($parm[2], 0, 5) == 'fld') {
+					if (substr($parm[2], 0, 3) == 'fld') {
 						$class = 'syncgw\\document\\field\\'.$parm[2];
 	               		$field = $class::getInstance();
                     	$field->export($typ, $ver, '', $int, $key ? $key : $xpath, $ext);
@@ -664,6 +666,88 @@ class fldRecurrence extends fldHandler {
 		}
 
 		return $rc;
+	}
+
+	/**
+	 * 	Regenerate task
+	 *
+	 * 	@parm 	- XML document
+	 * 	@return - TRUE = Ok; FALSE = Skipped
+	 */
+	public function regenerate(XML &$doc): bool {
+
+		// is it completed?
+		if ($doc->getVar(fldCompleted::TAG) ||
+			// recurrence given?
+			$doc->getVar(self::TAG) === NULL &&
+			// regeneration allowed?
+			!$doc->getVar(self::AST_SUB['Regenerate'][2]))
+			return FALSE;
+
+		// check for counter
+		if ($cnt = $doc->getVar(self::AST_SUB['Occurrences'][2])) {
+			$doc->setVal(--$cnt);
+			return TRUE;
+		}
+
+		// regeneration only allowed for special frequencies
+		$reg = 0;
+		$freq = $doc->getVar(self::AST_SUB['Type'][2]);
+		foreach (self::AS_FREQ as $unused => $day)
+			if ($freq == $day) {
+				$reg = 1;
+				break;
+			}
+		$unused; // disable Eclipse warning
+
+		if (!$reg)
+			return FALSE;
+
+		// get due date
+		$due = $doc->getVar(fldDueDate::TAG);
+		// limited by "UTIL"?
+		$until = $doc->getVar(fldEndTime::TAG);
+		if ($until && $due >= $until)
+			return FALSE;
+
+		// remove completed flags
+		$doc->delVar(fldCompleted::TAG);
+		$doc->delVar(fldStatus::TAG);
+
+		$now = new \DateTime('now');
+		$ofs = new \DateTime();
+		$ofs->setTimestamp(intval($due));
+
+		switch ($freq) {
+		case 'DAILY':
+			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+				$ofs->modify('+1 day');
+			break;
+
+		case 'WEEKLY':
+			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+				$ofs->modify('+1 week');
+			break;
+
+		case 'MONTHLY':
+			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+				$ofs->modify('+1 month');
+			break;
+
+		case 'YEARLY':
+			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+				$ofs->modify('+1 year');
+			break;
+		}
+
+		// set new start time
+		$doc->updVar(fldDueDate::TAG, strval($ofs->getTimestamp()));
+
+		$gid = $doc->getVar('GUID'); //3
+		$doc->setTop(); //3
+		Debug::Msg($doc, 'Record regenerated from '.$due.' ['.$gid.']'); //3
+
+		return TRUE;
 	}
 
 }

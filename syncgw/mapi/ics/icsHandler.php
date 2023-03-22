@@ -37,7 +37,7 @@ class icsHandler extends mapiWBXML {
 		DataStore::NOTE				=> 'Notes',
 		DataStore::TASK				=> 'Task',
 		// DataStore::SMS			=> 'SMS',
-		// DataStore::docLib		=> 'docLib',
+		// DataStore::DOCLIB		=> 'DocLib',
 		// 							=> 'Journal',
 		// 							=> 'Config',
 		DataStore::MAIL 			=> [

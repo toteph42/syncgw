@@ -75,7 +75,7 @@ class fldContentLength extends fldHandler {
 		$ipath .= self::TAG;
 
 		switch ($typ) {
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			if ($ext->xpath($xpath, FALSE))
 				parent::delTag($int, $ipath);
 			while (($val = $ext->getItem()) !== NULL) {
@@ -112,12 +112,12 @@ class fldContentLength extends fldHandler {
 			return $rc;
 
 		switch ($typ) {
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			$mas = masHandler::getInstance();
 			if ($mas->callParm('BinVer') < 12.0)
 				break;
 			while (($val = $int->getItem()) !== NULL) {
-				$ext->addVar($tag, $val, FALSE, $ext->setCP(XML::AS_docLib));
+				$ext->addVar($tag, $val, FALSE, $ext->setCP(XML::AS_DocLib));
 				$rc	= TRUE;
 			}
 			break;

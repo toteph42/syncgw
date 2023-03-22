@@ -54,7 +54,7 @@ use syncgw\document\field\fldAttribute;
 class Calendar {
 
 	// module version number
-	const VER 			= 30;
+	const VER 			= 31;
 
     const MAP 		  	= [
     // ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -137,7 +137,7 @@ class Calendar {
     const EVENTS      	= 1;
     const ATTACHMENTS 	= 2;
 
-    const PLUGIN 		= [ 'calendar' => '3.5.7', 'libcalendaring' => '3.5.6' ];
+    const PLUGIN 		= [ 'calendar' => '3.5.11', 'libcalendaring' => '3.5.11' ];
 
     /**
 	 *  RoundCube database table names
@@ -663,9 +663,6 @@ class Calendar {
 		$hack = $cnf->getVar(Config::HACK);
 		$cnf->updVar(Config::HACK, $hack | Config::HACK_SIZE);
 
-		// get time zone offset
-		$tzoff = $this->_hd->tzOffset;
-
 	    // swap data
 		$int->getVar('Data');
 		foreach (self::MAP as $key => $tag) {
@@ -696,11 +693,12 @@ class Calendar {
 
 	        // Date
 			case 2:
+				// ensure UTC is set
 		        $rec[$key]->setTimezone(new \DateTimeZone('UTC'));
 	            if ($rec['allday'])
 					$int->addVar($tag[1], $val->format('U'), FALSE, [ 'VALUE' => 'date' ]);
 	            else
-					$int->addVar($tag[1], strval($val->format('U') + $tzoff));
+					$int->addVar($tag[1], Util::mkTZOffset($val->format('U')));
 				break;
 
 			// Recurrence array
@@ -730,7 +728,7 @@ class Calendar {
 		    				if ($k == 'EXDATE') {
 
 			   					// <InstanceId> original start time of recurrence event
-								$int->addVar(fldExceptions::SUB_TAG[2], strval($v->format('U') + $tzoff));
+								$int->addVar(fldExceptions::SUB_TAG[2], Util::mkTZOffset($v->format('U')));
 								// <Delete>
 		    					$int->addVar(fldExceptions::SUB_TAG[1]);
 
@@ -762,7 +760,7 @@ class Calendar {
 		    			}
 	   		   		} else {
 		   	    		if ($k == 'UNTIL')
-		   	    			$v = Util::unxTime($v) + $tzoff;
+		   	    			$v = Util::mkTZOffset(Util::unxTime($v));
 			   			$int->addVar(fldRecurrence::RFC_SUB[$k], strval($v));
 	   		   		}
 	    	    }
@@ -803,7 +801,7 @@ class Calendar {
 					$int->addVar($tag[1]);
 		           	$int->addVar(fldAlarm::SUB_TAG['VCALENDAR/%s/VALARM/ACTION'], $r['action']);
 		           	if ($r['trigger'] instanceof \DateTime)
-			           	$int->addVar(fldTrigger::TAG, strval($r['trigger']->format('U') + $tzoff), FALSE, [ 'VALUE' => 'date-time' ]);
+			           	$int->addVar(fldTrigger::TAG, Util::mkTZOffset($r['trigger']->format('U')), FALSE, [ 'VALUE' => 'date-time' ]);
 		           	else
 			           	$int->addVar(fldTrigger::TAG, Util::cnvDuration(TRUE, $r['trigger']), FALSE,
 			           				 [ 'VALUE' => 'duration', 'RELATED' => isset($r['related']) ? $r['related'] : 'start' ]);
@@ -862,7 +860,7 @@ class Calendar {
 		    // Instance id
 	   		case 10:
 	   			// <InstanceId>
-				$int->addVar(fldExceptions::SUB_TAG[2], strval(Util::unxTime($val) + $tzoff));
+				$int->addVar(fldExceptions::SUB_TAG[2], Util::mkTZOffset(Util::unxTime($val)));
 
 	   		default:
 				break;
@@ -902,9 +900,6 @@ class Calendar {
 					'editable'	 => $attr & fldAttribute::EDIT,
 			];
 	    } else {
-
-			// get time zone offset
-			$tzoff = $this->_hd->tzOffset * -1;
 
 	       	// disable attachment size check for WebDAV
 	        $cnf  = Config::getInstance();
@@ -954,7 +949,7 @@ class Calendar {
 			    	if (!$int->xpath($tag[1], FALSE))
 			    		break;
 			    	if ($val = $int->getItem()) {
-			    		$rec[$key] = new \DateTime(gmdate(Util::STD_TIME, intval($val) + $tzoff), new \DateTimeZone('UTC'));
+			    		$rec[$key] = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)), new \DateTimeZone('UTC'));
 			    		if ($int->getAttr('VALUE') == 'date')
 			       	        $rec['allday'] = 1;
 			    	}
@@ -974,7 +969,7 @@ class Calendar {
 							$int->xpath($v, FALSE);
 							while (($val = $int->getItem()) !== NULL) {
 								if ($k == 'UNTIL')
-			    					$val = new \DateTime(gmdate(Util::STD_TIME, intval($val) + $tzoff), new \DateTimeZone('UTC'));
+			    					$val = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)), new \DateTimeZone('UTC'));
 								$rec[$key][$k] = $val;
 							}
 							$int->restorePos($p);
@@ -991,8 +986,8 @@ class Calendar {
 						if ($int->xpath('./'.fldExceptions::SUB_TAG[1], FALSE)) {
 							$int->restorePos($p);
 							// <InstanceId>
-							$rec[$key]['EXDATE'][] = new \DateTime(gmdate(Util::STD_TIME,
-											intval($int->getVar(fldExceptions::SUB_TAG[2], FALSE) + $tzoff)), new \DateTimeZone('UTC'));
+							$rec[$key]['EXDATE'][] = new \DateTime(Util::utcTime(Util::mkTZOffset($int->getVar(fldExceptions::SUB_TAG[2], FALSE), TRUE)),
+										new \DateTimeZone('UTC'));
 						} else {
 							$doc = new XML();
 							$doc->loadXML('<syncgw><extID/><extGroup>'.$int->getVar('extGroup').'</extGroup></syncgw>');
@@ -1084,8 +1079,8 @@ class Calendar {
 		                	if ($int->getAttr('VALUE') == 'duration')
 	                        	$rec[$key][$n]['trigger'] = Util::cnvDuration(FALSE, $val);
 		                    else
-		                        $rec[$key][$n]['trigger'] = new \DateTime(gmdate(Util::UTC_TIME, intval($val) + $tzoff),
-		                        										  new \DateTimeZone('UTC'));
+		                        $rec[$key][$n]['trigger'] = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)),
+		                        		new \DateTimeZone('UTC'));
 			                if ($v = $int->getAttr('RELATED'))
 			                    $rec[$key][$n]['related'] = strtolower($v);
 	                    }
@@ -1165,7 +1160,7 @@ class Calendar {
 			    // Instance id
 	    		case 10:
 			    	if ($int->xpath(fldExceptions::SUB_TAG[2], FALSE))
-		    			$rec[$key] = gmdate(Util::STD_TIME, intval($int->getItem() + $tzoff));
+		    			$rec[$key] = Util::utcTime(Util::mkTZOffset($int->getItem(), TRUE));
 
 			    default:
 	               	break;

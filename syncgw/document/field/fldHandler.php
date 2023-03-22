@@ -21,7 +21,7 @@ use syncgw\activesync\masHandler;
 class fldHandler {
 
 	// module version number
-	const VER = 6;
+	const VER = 7;
 
 	static protected $Deleted = [];
 
@@ -33,7 +33,7 @@ class fldHandler {
 	 */
 	public function getInfo(XML &$xml, bool $status): void {
 
-		$xml->addVar('Name', _('fld handler'));
+		$xml->addVar('Name', _('Field handler'));
 		$xml->addVar('Ver', strval(self::VER));
 
 		$srv = Server::getInstance();

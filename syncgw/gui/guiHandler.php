@@ -61,11 +61,14 @@ class guiHandler extends XML {
     const MODS    = [
         'guiHelp',
         'guiUpgrade',
-        'guiCheck',
-        'guiConfig',
+        'guiStats',			//3
+   		'guiCheck',
+    	'guiSwitch',		//3
+    	'guiConfig',
         'guiLogFile',
-        'guiExplorer',
-        'guiDelete',
+        'guiTrunc',			//3
+    	'guiExplorer',
+    	'guiDelete',
         'guiCleanUp',
     	'guiReload',
         'guiUsrStats',		//2
@@ -73,14 +76,11 @@ class guiHandler extends XML {
         'guiRename',		//2
         'guiShow',
         'guiTrace',
+        'guiTraceExport',	//3
     	'guiEdit',			//2
         'guiDownload',
         'guiUpload',		//2
-        'guiSetUsr',
-        'guiStats',			//3
-        'guiTraceExport',	//3
-    	'guiSwitch',		//3
-        'guiTrunc',			//3
+    	'guiSetUsr',
     	'guiSoftware',		//3
         'guiForceTrace',	//3
         'guiFeatures',		//3

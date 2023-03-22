@@ -40,7 +40,7 @@ class Server {
 		[ 'docTask',		'document\\docTask.php' ],
 		[ 'docNote',		'document\\docNote.php' ],
 		[ 'docGAL',			'document\\docGAL.php' ],
-		[ 'docLib',			'document\\docLib.php' ],
+		[ 'DocLib',			'document\\DocLib.php' ],
 		[ 'docMail',		'document\\docMail.php' ],
 		[ 'fldHandler',	'document\\field' ],
 		[ 'mapiHandler',	'mapi' ],

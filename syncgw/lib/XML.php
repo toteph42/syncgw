@@ -56,7 +56,7 @@ class XML {
 	const AS_SEARCH 	= 19;
 	const AS_CERT 		= 20;
 	const AS_MRESPONSE	= 21;
-	const AS_docLib 	= 22;
+	const AS_DocLib 	= 22;
 	const AS_COMPOSE	= 23;
 	const AS_FIND 		= 24;
 
@@ -85,7 +85,7 @@ class XML {
 		self::AS_SEARCH		=> 'activesync:Search',
 		self::AS_CERT		=> 'activesync:ValidateCert',
 		self::AS_MRESPONSE	=> 'activesync:MeetingResponse',
-		self::AS_docLib		=> 'activesync:DocumentLibrary',
+		self::AS_DocLib		=> 'activesync:DocumentLibrary',
 		self::AS_COMPOSE	=> 'activesync:ComposeMail',
 		self::AS_FIND		=> 'activesybc:Find',
 

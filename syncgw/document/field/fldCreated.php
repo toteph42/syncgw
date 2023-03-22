@@ -81,7 +81,7 @@ class fldCreated extends fldHandler {
 
 		switch ($typ) {
 		case 'application/activesync.mail+xml':
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			foreach (explode(',', $xpath) as $t) {
 				if ($ext->xpath($t, FALSE))
 					parent::delTag($int, $ipath);
@@ -138,11 +138,11 @@ class fldCreated extends fldHandler {
 					 'P' => [], 'D' => $val ]];
 			break;
 
-		case 'application/activesync.docLib+xml':
+		case 'application/activesync.doclib+xml':
 			$mas = masHandler::getInstance();
 			if ($mas->callParm('BinVer') < 12.0)
 				break;
-			$cp = XML::AS_docLib;
+			$cp = XML::AS_DocLib;
 
 		case 'application/activesync.mail+xml':
 			if (!$cp)

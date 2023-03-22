@@ -46,7 +46,7 @@ class fldContentLength extends \syncgw\document\field\fldContentLength {
 		$ext = NULL;
 		$obj = new fldHandler;
 
-	   	if ($typ == 'application/activesync.docLib+xml') {
+	   	if ($typ == 'application/activesync.doclib+xml') {
 	   		$ext = new XML();
 	   		$ext->loadXML('<syncgw><ApplicationData>'.
 	   				'<'.$xpath.'>882928</'.$xpath.'></ApplicationData></syncgw>');

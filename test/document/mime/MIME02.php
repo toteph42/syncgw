@@ -187,10 +187,10 @@ foreach (explode('&', $_SERVER['QUERY_STRING']) as $cmd) {
             break;
 
         case '61':
-            $hid   = DataStore::docLib;
-            $class = 'mimAsdocLib';
-            $idir  = 'asdocLib';
-            $mtyp  = 'application/activesync.docLib+xml';
+            $hid   = DataStore::DOCLIB;
+            $class = 'mimAsDocLib';
+            $idir  = 'asDocLib';
+            $mtyp  = 'application/activesync.doclib+xml';
             $mver  = 1.0;
             $opt   = 'Mail';
             break;

@@ -46,7 +46,7 @@ class fldContentType extends \syncgw\document\field\fldContentType {
 		$ext = NULL;
 		$obj = new fldHandler;
 
-	   	if ($typ == 'application/activesync.docLib+xml') {
+	   	if ($typ == 'application/activesync.doclib+xml') {
 	   		$ext = new XML();
 	   		$ext->loadXML('<syncgw><ApplicationData>'.
 	   				'<'.$xpath.'>text/plain</'.$xpath.'></ApplicationData></syncgw>');

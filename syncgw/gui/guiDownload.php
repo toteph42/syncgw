@@ -29,8 +29,8 @@ class guiDownload {
 	const FORMAT = [
 			DataStore::CALENDAR  => [ 'ics', [ 'text/calendar',  	'2.0' ], ],
 			DataStore::CONTACT   => [ 'vcf', [ 'text/vcard',		'4.0' ], ],
-			DataStore::NOTE 	 => [ 'vnt', [ 'text/x-vnote',		'1.1' ], ],
 			DataStore::TASK 	 => [ 'tsk', [ 'text/calendar',  	'2.0' ], ],
+			DataStore::NOTE 	 => [ 'vnt', [ 'text/x-vnote',		'1.1' ], ],
 	];
 
     /**

@@ -46,7 +46,7 @@ class fldIsHidden extends \syncgw\document\field\fldIsHidden {
 		$ext = NULL;
 		$obj = new fldHandler;
 
-	   	if ($typ == 'application/activesync.docLib+xml') {
+	   	if ($typ == 'application/activesync.doclib+xml') {
 	   		$ext = new XML();
 	   		$ext->loadXML('<syncgw><ApplicationData>'.
 	   				'<'.$xpath.'>0</'.$xpath.'></ApplicationData></syncgw>');

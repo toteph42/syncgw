@@ -137,9 +137,9 @@ CREATE TABLE `{prefix}_SMS` (
   PRIMARY KEY (`Uid`, `GUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
 
--- docLib
-DROP TABLE IF EXISTS `{prefix}_docLib`;
-CREATE TABLE `{prefix}_docLib` (
+-- DocLib
+DROP TABLE IF EXISTS `{prefix}_DocLib`;
+CREATE TABLE `{prefix}_DocLib` (
   `Uid`		 	INT,
   `GUID`     	VARCHAR(64)		COLLATE utf8_general_ci,
   `LUID`     	VARCHAR(64) 	COLLATE utf8_general_ci,

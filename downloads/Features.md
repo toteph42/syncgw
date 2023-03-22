@@ -346,9 +346,9 @@
 <tr><td>&raquo; Internal data store name</td><td>"Global Address Book"</td></tr>
 <tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
 <tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
-<tr><td><font style="font-size: larger;"><strong>docLib document handler<strong></font></td><td>v9.001</td></tr>
+<tr><td><font style="font-size: larger;"><strong>DocLib document handler<strong></font></td><td>v9.001</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
-<tr><td>&raquo; Internal data store name</td><td>"docLib"</td></tr>
+<tr><td>&raquo; Internal data store name</td><td>"DocLib"</td></tr>
 <tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
 <tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Mail document handler<strong></font></td><td>v9.006</td></tr>

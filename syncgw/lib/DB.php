@@ -293,7 +293,7 @@ class DB implements DBintHandler, DBextHandler {
 						DataStore::TASK			=> _('task record'),
 						DataStore::MAIL 		=> _('mail'),
 						DataStore::SMS 			=> _('sms record'),
-						DataStore::docLib 		=> _('docLib record'),
+						DataStore::DOCLIB 		=> _('DocLib record'),
 					],
 						DataStore::TYP_GROUP => [
 						DataStore::USER			=> _('user'),
@@ -307,7 +307,7 @@ class DB implements DBintHandler, DBextHandler {
 						DataStore::TASK			=> _('task list'),
 						DataStore::MAIL 		=> _('mail box'),
 						DataStore::SMS 			=> _('sms'),
-						DataStore::docLib 		=> _('docLib'),
+						DataStore::DOCLIB 		=> _('DocLib'),
 					],
 			];
 			$log = Log::getInstance();

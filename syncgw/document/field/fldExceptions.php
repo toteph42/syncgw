@@ -20,7 +20,7 @@ use syncgw\lib\XML;
 class fldExceptions extends fldHandler {
 
 	// module version number
-	const VER = 12;
+	const VER = 13;
 
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	const TAG 				= 'Exceptions';
@@ -221,7 +221,7 @@ class fldExceptions extends fldHandler {
 		        	$xp1 = $ext->savePos();
 		        	$val = $ext->getVar($key, FALSE);
 		        	$ext->restorePos($xp1);
-		        	if (substr($parm[2], 0, 5) == 'fld') {
+		        	if (substr($parm[2], 0, 3) == 'fld') {
         		       	$class = 'syncgw\\document\\field\\'.$parm[2];
 	               		$field = $class::getInstance();
 	               		if ($field->import($typ, $ver, $key, $ext, $ipath.'/Exception/', $int))
@@ -332,7 +332,7 @@ class fldExceptions extends fldHandler {
 	        		if ($ver < $parm[0] || $ver > $parm[1])
 	        			continue;
 	        		// check class
-					if (substr($parm[2], 0, 5) == 'fld') {
+					if (substr($parm[2], 0, 3) == 'fld') {
 	                	$class = 'syncgw\\document\\field\\'.$parm[2];
 	               		$field = $class::getInstance();
                  	  	$field->export($typ, $ver, '', $int, self::TAG.'/'.$key, $ext);

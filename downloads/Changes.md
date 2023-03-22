@@ -1,4 +1,14 @@
-## Version 9.19.52, published on 2023-03-13 ##
+## Version 9.19.62, published on 2023-03-22 ##
+* Fixed: Minor bug in dayligth saving conversion
+* Added: Util::mkTZOffset()
+* Changed: Required Calendar plugin version now 3.5.11
+* Changed: Required Tasklist plugin version now 3.5.10
+* Changed: Repeating completed task are now regenerated (fix issue #1)
+* Changed: A COMPLETED task is set to 100% work is done
+* Changed: Rearraged list of GUI extension
+* Changed: Added some MIME types to devMAS device skeleton to enable down- and upload of data records
+* Fixed: Enable input of IP and user name in configuration for tracing purposes
+* Fixed: Some typos in field handler
 * Changed: Connected to plugin syncgw_rc
 * Fixed: Catching error when TRACE_DIR is set wrong
 * Changed: Creating now raw rlease files to support direct downloading
@@ -126,7 +136,7 @@
 ## Version 9.17.44, Published on 2021-09-25 ##
 * Added: Possibility to run record expiration using a cron job
 * Added: MIME support for ActiveSync GAL (global address list) data store
-* Added: MIME Support for ActiveSync docLib (document library) data store
+* Added: MIME Support for ActiveSync DocLib (document library) data store
 * Fixed: Handling missing name during renaming of trace
 * Changed: ActiveSync <Options><BodyPreference> were not longer transient
 * Added: Support for ActiveSync synchronization of E-Mail meta data

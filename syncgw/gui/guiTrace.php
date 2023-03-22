@@ -230,7 +230,6 @@ class guiTrace {
 				Debug::$Conf['Exclude']['syncgw\\lib\\XML'] = 1; //3
 				Debug::$Conf['Exclude']['syncgw\\lib\\WBXML'] = 1; //3
 				Debug::$Conf['Exclude']['syncgw\\lib\\Encoding'] = 1; //3
-#				Debug::$Conf['Exclude']['syncgw\\lib\\HTTP'] = 1; //3
 				Debug::$Conf['Exclude']['syncgw\\lib\\Config'] = 1; //3
 				Debug::$Conf['Exclude']['syncgw\\interfaces\\mysql\\Handler'] = 1; //3
 				Debug::$Conf['Exclude']['syncgw\\lib\\Config:getVar'] = 1; //3

@@ -113,10 +113,10 @@ case 'T=42':
 	break;
 
 case 'T=43':
-    $mod = DataStore::docLib;
+    $mod = DataStore::DOCLIB;
     $dev = 'MAS';
     $tst = [
-    	'mimAsdocLib',
+    	'mimAsDocLib',
     ];
 	break;
 

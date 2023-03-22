@@ -29,7 +29,7 @@ use rcube_user;
 class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 
 	// module version number
-	const VER = 25;
+	const VER = 26;
 
 	/**
 	 * 	Group record
@@ -76,12 +76,6 @@ class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 	 * 	@var rcmail
 	 */
 	public $RCube		 = NULL;
-
-	/**
-	 *  Time zone offset in seconds
-	 *  @var int
-	 */
-	public $tzOffset 	 = 0;
 
 	/**
 	 * 	Retry counter
@@ -384,16 +378,6 @@ class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 
         // set external user id
         $this->RCube->set_user(new rcube_user($this->RCube->get_user_id()));
-
-        // compile time zone offset relativ to UTC (internal time zone format)
-        $cnf = Config::getInstance();
-		$def = new \DateTimeZone($cnf->getVar(Config::TIME_ZONE));
-		$tz  = new \DateTimeZone('UTC');
-    	$udt = new \DateTime("now", $def);
-    	$dt  = new \DateTime("now", $tz);
-
-	    $this->tzOffset = $tz->getOffset($dt) - $def->getOffset($udt);
-    	Debug::Msg('Local time zone offset to UTC is '.$this->tzOffset); //3
 
 		// reset error reporting
 		ErrorHandler::resetReporting();
