@@ -1,3 +1,8 @@
+## Version 9.19.63, published on 2023-03-22 ##
+* Changed: guiFeature.php integrated into guiSoftware.php
+* Changed: mysql schema in Task roundcube interface handler
+* Changed: Sabre class loader
+
 ## Version 9.19.62, published on 2023-03-22 ##
 * Fixed: Minor bug in dayligth saving conversion
 * Added: Util::mkTZOffset()

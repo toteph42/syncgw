@@ -73,7 +73,7 @@ class davHandler {
 	 */
 	public function getInfo(XML &$xml, bool $status): void {
 
-    	$xml->addVar('Name', _('WebDAV handler'));
+		$xml->addVar('Name', _('WebDAV handler'));
 		$xml->addVar('Ver', strval(self::VER));
 		if ($status) {
 			$xml->addVar('Opt', _('Maximum object size'));

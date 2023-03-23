@@ -19,7 +19,7 @@ use syncgw\lib\XML;
 class guiSoftware {
 
 	// module version
-	const VER = 11;
+	const VER = 15;
 
 	// package file
 	const PKG_FILE = 'pkg.php';
@@ -251,7 +251,8 @@ class guiSoftware {
 					$gui->putMsg('Including '.$dest, Util::CSS_INFO);
 					$fcnt++;
 				} else {
-					$gui->putMsg('Excluding '.$dest, Util::CSS_CODE);
+					if (strpos($dest, '\\test') === FALSE && strpos($dest, '\\.') === FALSE)
+						$gui->putMsg('Excluding '.$dest, Util::CSS_CODE);
 					continue;
 				}
 				if ($err = $this->_copyFile($gui, $zip, $file, $dest, $wsf, $cnt)) {
@@ -276,6 +277,52 @@ class guiSoftware {
 				$gui->putMsg('');
 			}
 		}
+
+		// create feature list
+
+		// collect information
+		$srv  = Server::getInstance();
+		$xml  = $srv->getInfo(FALSE);
+		$out  = '<table><tbody>';
+		$parm = '';
+
+		$xml->getChild('syncgw');
+		while (($val = $xml->getItem()) !== NULL) {
+			switch ($xml->getName()) {
+			case 'Ver':
+				$parm = 'v'.Server::MVER.sprintf('%03d', $val);
+				break;
+
+			case 'Opt':
+				$cmd = '&raquo; '.$val;
+				break;
+
+			case 'Stat':
+				$parm = $val;
+				break;
+
+			default:
+			// case 'Name':
+				$cmd  = '<font style="font-size: larger;"><strong>'.$val.'<strong></font>';
+				break;
+			}
+
+			if ($parm) {
+				if (($p = strpos($parm, '<a')) !== FALSE)
+					$parm = substr($parm, 0, $p).'<a style="text-decoration:underline;color:blue" '.substr($parm, $p + 3);
+				if (($p = strpos($cmd, '<a')) !== FALSE)
+					$cmd = substr($cmd, 0, $p).'<a style="text-decoration:underline;color:blue" '.substr($cmd, $p + 3);
+				$out .= '<tr><td>'.$cmd.'</td><td>'.$parm.'</td></tr>'."\n";
+				$parm = '';
+			}
+		}
+
+		$out .= '</tbody></table>';
+
+		$file = Util::mkPath('../downloads/').'Features.md';
+		file_put_contents($file, $out);
+		$gui->tabMsg(sprintf(_('List of features written to [%s]'), $file), Util::CSS_TITLE);
+		$gui->putMsg('');
 
 		return $action == 'Software_Create' ? guiHandler::STOP : guiHandler::CONT;
 	}

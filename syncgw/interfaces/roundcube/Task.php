@@ -206,7 +206,7 @@ class Task {
 			}
 			closedir($h);
 
-			if ($ver != ($v = '2014051900.sql'))
+			if ($ver != ($v = '2021102600.sql'))
 	    		$xml->addVar('Stat', sprintf(_('+++ ERROR: Should be \'%s\' - is \'%s\'!'), $v, $ver));
     		else
     			$xml->addVar('Stat', _('Passed'));

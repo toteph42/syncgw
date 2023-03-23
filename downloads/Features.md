@@ -217,9 +217,12 @@
 <tr><td><font style="font-size: larger;"><strong><strong>sync&bull;gw</strong> user interface<strong></font></td><td>v9.016</td></tr>
 <tr><td>&raquo; Help plugin</td><td>v9.006</td></tr>
 <tr><td>&raquo; Automatic upgrade plugin</td><td>v9.003</td></tr>
+<tr><td>&raquo; Memory statistics plugin</td><td>v9.004</td></tr>
 <tr><td>&raquo; Environment and server check plugin</td><td>v9.005</td></tr>
-<tr><td>&raquo; Configure <strong>sync&bull;gw</strong> server plugin</td><td>v9.021</td></tr>
+<tr><td>&raquo; Switch data base plugin</td><td>v9.011</td></tr>
+<tr><td>&raquo; Configure <strong>sync&bull;gw</strong> server plugin</td><td>v9.024</td></tr>
 <tr><td>&raquo; <strong>sync&bull;gw</strong> log file plugin</td><td>v9.006</td></tr>
+<tr><td>&raquo; Truncate all data base tables plugin</td><td>v9.014</td></tr>
 <tr><td>&raquo; Explore data</td><td>v9.015</td></tr>
 <tr><td>&raquo; Delete record plugin</td><td>v9.013</td></tr>
 <tr><td>&raquo; Data store cleanup plugin</td><td>v9.009</td></tr>
@@ -229,39 +232,35 @@
 <tr><td>&raquo; Rename record plugin</td><td>v9.013</td></tr>
 <tr><td>&raquo; View record plugin</td><td>v9.015</td></tr>
 <tr><td>&raquo; View or debug trace plugin</td><td>v9.007</td></tr>
+<tr><td>&raquo; Export trace record plugin</td><td>v9.001</td></tr>
 <tr><td>&raquo; Edit record plugin</td><td>v9.010</td></tr>
 <tr><td>&raquo; Download record plugin</td><td>v9.011</td></tr>
 <tr><td>&raquo; Upload record plugin</td><td>v9.011</td></tr>
 <tr><td>&raquo; Set user plugin</td><td>v9.009</td></tr>
-<tr><td>&raquo; Memory statistics plugin</td><td>v9.004</td></tr>
-<tr><td>&raquo; Export trace record plugin</td><td>v9.001</td></tr>
-<tr><td>&raquo; Switch data base plugin</td><td>v9.011</td></tr>
-<tr><td>&raquo; Truncate all data base tables plugin</td><td>v9.014</td></tr>
-<tr><td>&raquo; Create software packages plugin</td><td>v9.010</td></tr>
+<tr><td>&raquo; Create software packages plugin</td><td>v9.015</td></tr>
 <tr><td>&raquo; Enable forced trace plugin</td><td>v9.002</td></tr>
-<tr><td>&raquo; Create list of features plugin</td><td>v9.003</td></tr>
 <tr><td><font style="font-size: larger;"><strong>File interface handler<strong></font></td><td>v9.014</td></tr>
 <tr><td>&raquo; File administration handler</td><td>v9.008</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Improved MySQL data base handler<strong></font></td><td>v9.010</td></tr>
 <tr><td>&raquo; MySQL administration handler</td><td>v9.008</td></tr>
 <tr><td><font style="font-size: larger;"><strong>MyApp data base handler<strong></font></td><td>v9.001</td></tr>
 <tr><td>&raquo; MyApp administration handler</td><td>v1.0</td></tr>
-<tr><td><font style="font-size: larger;"><strong>RoundCube data base handler <strong></font></td><td>v9.024</td></tr>
+<tr><td><font style="font-size: larger;"><strong>RoundCube data base handler <strong></font></td><td>v9.026</td></tr>
 <tr><td>&raquo; RoundCube administration handler</td><td>v9.009</td></tr>
-<tr><td>&raquo; RoundCube v1.6.0</td><td>Impelemented</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/syncgw/roundcube-select_for_sync" target="_blank">roundcube_select_for_sync</a>  plugin v1.0.20</td><td>Implemented</td></tr>
-<tr><td>&raquo; RoundCube Calendar handler</td><td>v9.030</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/calendar" target="_blank">calendar</a>  plugin v3.5.7</td><td>Implemented</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.6</td><td>Implemented</td></tr>
-<tr><td>&raquo; RoundCube  handler</td><td>v9.028</td></tr>
-<tr><td>&raquo; RoundCube  handler</td><td>v9.019</td></tr>
+<tr><td>&raquo; RoundCube v1.6.1</td><td>Impelemented</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/syncgw/roundcube-select_for_sync" target="_blank">syncgw_rc</a>  plugin v1.0.1</td><td>Implemented</td></tr>
+<tr><td>&raquo; RoundCube Calendar handler</td><td>v9.031</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/calendar" target="_blank">calendar</a>  plugin v3.5.11</td><td>Implemented</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.11</td><td>Implemented</td></tr>
+<tr><td>&raquo; RoundCube Contact handler</td><td>v9.028</td></tr>
+<tr><td>&raquo; RoundCube Note handler</td><td>v9.019</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/dondominio/ddnotes" target="_blank">ddnotes</a>  plugin v1.0.2</td><td>Implemented</td></tr>
-<tr><td>&raquo; RoundCube  handler</td><td>v9.029</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/tasklist" target="_blank">tasklist</a>  plugin v3.5.2</td><td>Implemented</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.6</td><td>Implemented</td></tr>
+<tr><td>&raquo; RoundCube Task handler</td><td>v9.029</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/tasklist" target="_blank">tasklist</a>  plugin v3.5.10</td><td>Implemented</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.11</td><td>Implemented</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Mail data base handler<strong></font></td><td>v9.017</td></tr>
 <tr><td>&raquo; Mail administration handler</td><td>v9.001</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a> framework for PHP</td><td>v6.7.1</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a> framework for PHP</td><td>v6.8.0</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://tools.ietf.org/html/rfc2076" target="_blank">RFC2076</a> Common Internet Message Headers</td><td>Implemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://tools.ietf.org/html/rfc4021" target="_blank">RFC4021</a> Registration of Mail and MIME Header flds</td><td>Implemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://tools.ietf.org/html/rfc5321" target="_blank">RFC5321</a> Simple Mail Transfer Protocol</td><td>Implemented</td></tr>
@@ -292,7 +291,7 @@
 <tr><td>&raquo; Exchange ActiveSync right management settings</td><td>v1.0</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SmartForward&gt; handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SmartReply&gt; handler</td><td>v9.006</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Sync&gt; handler</td><td>v9.023</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Sync&gt; handler</td><td>v9.024</td></tr>
 <tr><td><font style="font-size: larger;"><strong>WebDAV handler<strong></font></td><td>v9.012</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://github.com/sabre-io/dav" target="_blank">SabreDAV</a> framework for PHP</td><td>v4.4.0</td></tr>
 <tr><td>&raquo; Calendar CalDAV handler</td><td>v9.015</td></tr>
@@ -356,7 +355,7 @@
 <tr><td>&raquo; Internal data store name</td><td>"Mail"</td></tr>
 <tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
 <tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
-<tr><td><font style="font-size: larger;"><strong>fld handler<strong></font></td><td>v9.006</td></tr>
+<tr><td><font style="font-size: larger;"><strong>Field handler<strong></font></td><td>v9.007</td></tr>
 <tr><td>&raquo; &lt;AccountId&gt; field handler</td><td>v9.003</td></tr>
 <tr><td>&raquo; &lt;AccountName&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;AddressBusiness&gt; field handler</td><td>v9.006</td></tr>
@@ -404,7 +403,7 @@
 <tr><td>&raquo; &lt;End&gt; field handler</td><td>v9.004</td></tr>
 <tr><td>&raquo; &lt;EndTime&gt; field handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; &lt;EndTimeProposal&gt; field handler</td><td>v9.004</td></tr>
-<tr><td>&raquo; &lt;Exceptions&gt; field handler</td><td>v9.012</td></tr>
+<tr><td>&raquo; &lt;Exceptions&gt; field handler</td><td>v9.013</td></tr>
 <tr><td>&raquo; &lt;Flag&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;FreeBusy&gt; field handler</td><td>v9.003</td></tr>
 <tr><td>&raquo; &lt;FullName&gt; field handler</td><td>v9.008</td></tr>
@@ -495,7 +494,7 @@
 <tr><td>&raquo; &lt;Prefix&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;Priority&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;Read&gt; field handler</td><td>v9.002</td></tr>
-<tr><td>&raquo; &lt;Recurrence&gt; field handler</td><td>v9.009</td></tr>
+<tr><td>&raquo; &lt;Recurrence&gt; field handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; &lt;RecurrenceDate&gt; field handler</td><td>v9.009</td></tr>
 <tr><td>&raquo; &lt;RecurrenceId&gt; field handler</td><td>v9.007</td></tr>
 <tr><td>&raquo; &lt;RefreshInterval&gt; field handler</td><td>v9.003</td></tr>
@@ -515,7 +514,7 @@
 <tr><td>&raquo; &lt;StartTime&gt; field handler</td><td>v9.012</td></tr>
 <tr><td>&raquo; &lt;StartTimeException&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;StartTimeProposal&gt; field handler</td><td>v9.004</td></tr>
-<tr><td>&raquo; &lt;Status&gt; field handler</td><td>v9.009</td></tr>
+<tr><td>&raquo; &lt;Status&gt; field handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; &lt;Summary&gt; field handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; &lt;ThreadTopic&gt; field handler</td><td>v9.002</td></tr>
 <tr><td>&raquo; &lt;Timezone&gt; field handler</td><td>v9.009</td></tr>
@@ -529,7 +528,7 @@
 <tr><td>&raquo; &lt;URLBlog&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;URLHome&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;URLProfile&gt; field handler</td><td>v9.001</td></tr>
-<tr><td>&raquo; &lt;fldURLs&gt; field handler</td><td>v9.006</td></tr>
+<tr><td>&raquo; &lt;FieldsURLs&gt; field handler</td><td>v9.007</td></tr>
 <tr><td>&raquo; &lt;URLHome&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;URLWork&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;URLOther&gt; field handler</td><td>v9.005</td></tr>

@@ -30,10 +30,6 @@ spl_autoload_register(function ($class): bool {
     // load sabreDAV files
     elseif (substr($class, 0, 5) == 'Sabre') {
         $base = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'ext'.DIRECTORY_SEPARATOR.'Sabre'.DIRECTORY_SEPARATOR;
-    	require_once($base.'HTTP'.DIRECTORY_SEPARATOR.'functions.php');
-	    require_once($base.'Uri'.DIRECTORY_SEPARATOR.'functions.php');
-	    require_once($base.'Xml'.DIRECTORY_SEPARATOR.'Serializer'.DIRECTORY_SEPARATOR.'functions.php');
-	    require_once($base.'Xml'.DIRECTORY_SEPARATOR.'Deserializer'.DIRECTORY_SEPARATOR.'functions.php');
 	    $file = $base.str_replace([ '_', '\\' ], [ DIRECTORY_SEPARATOR , DIRECTORY_SEPARATOR ], substr($class, 6)).'.php';
 	} elseif (substr($class, 0, 3) == 'Psr') {
 		$file = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'ext'.DIRECTORY_SEPARATOR.'Sabre'.DIRECTORY_SEPARATOR.
