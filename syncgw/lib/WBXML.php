@@ -15,7 +15,7 @@ namespace syncgw\lib;
 class WBXML {
 
 	// module version number
-	const VER 			= 11;
+	const VER 			= 12;
 
 	// constant definition
 	const SWITCH_PAGE 	= 0x00;
@@ -145,6 +145,7 @@ class WBXML {
 					10503 => _('Unknown \'Public Identifier\' %s'),
 					10504 => _('Character set \'%s\' not supported'),
 					10505 => _('Unsupported WBXML data version \'%s\' received'),
+					10506 => _('Unsupported ActiveSync code page \'%s\''),
 			]);
 
 			self::$_obj->_enc = Encoding::getInstance();
@@ -484,7 +485,11 @@ class WBXML {
 				// 25 Find                  8217
 				case 8192:
 					$dn = 8192 + $cp;
-					$this->_dtd->actDTD($dn);
+					if (!$this->_dtd->actDTD($dn)) {
+						$log = Log::getInstance();
+						$log->Msg(Log::ERR, 10506, $dn);
+						return NULL;
+					}
 					break;
 
 				default:
@@ -511,7 +516,7 @@ class WBXML {
 				$cont = $token & 0x40;
 				// get token
 				$name = $this->_dtd->getTag(strval($token & 0x3f));
-				if ($name === FALSE) {
+				if ($name === FALSE || $name === NULL) {
 					$http = HTTP::getInstance();
 					$http->send(400);
 					return NULL;

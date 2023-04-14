@@ -77,6 +77,7 @@ class guiTrace {
 			'<emailaddress>', //2
 			'<deploymentid>', //2
 			'<legacydn>', //2
+			'<to>', //2
 
 			// MAPI
 			'<dn', //2

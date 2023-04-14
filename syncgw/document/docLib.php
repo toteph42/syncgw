@@ -15,14 +15,14 @@ namespace syncgw\document;
 use syncgw\lib\DataStore;
 use syncgw\document\mime\mimAsDocLib;
 
-class DocLib extends docHandler {
+class docLib extends docHandler {
 
 	// module version number
 	const VER = 1;
 
     /**
      * 	Singleton instance of object
-     * 	@var DocLib
+     * 	@var docLib
      */
     static private $_obj = NULL;
 
@@ -31,7 +31,7 @@ class DocLib extends docHandler {
 	 *
 	 *  @return - Class object
 	 */
-	public static function getInstance(): DocLib {
+	public static function getInstance(): docLib {
 
 	   	if (!self::$_obj) {
 

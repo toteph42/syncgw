@@ -1,7 +1,17 @@
-## Version 9.19.63, published on 2023-03-22 ##
+## Version 9.19.67, published on 2023-04-14 ##
+* Fixed: Bug in recurring event handling
+* Fixed: TRACE_MOD now survives upgrade handling
+* Fixed: Typo in docLib.php
+* Changed: fldRecurrence::regenerate() made static
+* Changed: ActiveSync <ResolveReciepients> now supports debug user during trace replay execution
+* Changed: ActiveSync <ResolveReciepients> now searches all primary and secondary e-mail addresses
+* Changed: Creating work around for calendar plugin bug due to missing support offerings
+* Changed: Catching invalid code page selection in ActiveSync WBXML
+* Added: Added "noindex" tag to GUI to prevent search engines to crawl
 * Changed: guiFeature.php integrated into guiSoftware.php
 * Changed: mysql schema in Task roundcube interface handler
 * Changed: Sabre class loader
+* Changed: All day events calendar plugin bug fixed (reports wrong end time)
 
 ## Version 9.19.62, published on 2023-03-22 ##
 * Fixed: Minor bug in dayligth saving conversion

@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace syncgw\activesync;
 
+use syncgw\lib\Config; //2
 use syncgw\lib\Debug; //3
 use syncgw\lib\DB;
 use syncgw\lib\DataStore;
@@ -27,7 +28,7 @@ use syncgw\document\field\fldFullName;
 class masResolveRecipients {
 
 	// module version number
-	const VER 		= 14;
+	const VER 		= 15;
 
 	// status codes
 	const SUGGEST 	= '2';
@@ -104,6 +105,7 @@ class masResolveRecipients {
 		$mas = masHandler::getInstance();
 		$ver = $mas->callParm('BinVer');
 		$db  = DB::getInstance();
+		$cnf = Config::getInstance(); //2
 
 		// load options
 		$mas->loadOptions('ResolveRecipients', $in);
@@ -121,6 +123,10 @@ class masResolveRecipients {
 		$op = $out->savePos();
 		$in->xpath('//To');
 		while (($usr = $in->getItem()) !== NULL) {
+
+			// change user name?
+			if ($cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) //2
+				$usr = $cnf->getVar(Config::DBG_USR); //2
 
 			// perform search on user
 			$rc = self::_search(DataStore::USER, $usr, intval($start), intval($end));
@@ -278,12 +284,6 @@ class masResolveRecipients {
 
 		// @todo https://www.rfc-editor.org/rfc/rfc4515.txt
 
-		// extract user id
-		if (strpos($usr, '@') !== FALSE)
-			list ($uid, ) = explode('@', $usr);
-		else
-			$uid = '';
-
 		// Each digit in the <MergedFreeBusy> element value string indicates the free/busy status for the user or
 		// distribution list for every 30 minute interval
 		// - 0 Free
@@ -319,14 +319,33 @@ class masResolveRecipients {
 
 		if ($hid & DataStore::USER) {
 
-			if (!$uid)
-				$uid = $usr;
+			$found = FALSE;
+			foreach ($db->getRIDS($hid) as $gid => $typ) {
+
+				// load document
+				if (!($doc = $db->Query($hid, DataStore::RGID, $gid))) {
+					Debug::Err('Error reading record "'.$gid.'"'); //3
+					return $rc;
+				}
+
+				$found = FALSE;
+				if (($email = $doc->getVar('EMailPrime')) !== $usr) {
+					$doc->xpath('//EMailSec');
+					while($email = $doc->getItem())
+						if ($email == $usr) {
+							$found = TRUE;
+							break;
+						}
+				} else
+					$found = TRUE;
+
+				if ($found)
+					break;
+			}
 
 			// load document
-			if (!($doc = $db->Query($hid, DataStore::RGID, $uid ? $uid : $usr))) {
-				Debug::Err('Error reading record "'.($uid ? $uid : $usr).'"'); //3
+			if (!$found)
 				return $rc;
-			}
 
 			// create free/busy array with free time (default)
 			for($fb=[], $s=$start; $s < $end; $s+=1800)

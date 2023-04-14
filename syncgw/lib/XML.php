@@ -1065,8 +1065,10 @@ class XML {
 	    if ($cnv) {
 	    	// https://www.php.net/manual/en/parle.regex.unicodecharclass.php
 	    	if (($wrk = preg_replace('/(?!\n|\t)[\p{Cc}]/u', '', $str)) === NULL) {
-	    		if (!Debug::$Conf['Script']) //3
-	    			Debug::Err(ErrorHandler::Stack(), 'cnvStr() - error converting string'); //3
+	    		if (!Debug::$Conf['Script']) { //3
+	    			Debug::Err('cnvStr() - error converting string'); //3
+	    			Debug::$Conf['Script'] = 'Exit'; //3
+	    		} //3
 	    		return bin2hex($str);
 	    	}
 			return str_replace(self::ENTITY[0], self::ENTITY[1], $wrk);

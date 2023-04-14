@@ -83,6 +83,7 @@ class guiUpgrade {
 		// save new version
 		if ($rc) {
 			$cnf->updVar(Config::UPGRADE, $ver);
+			$cnf->updVar(Config::TRACE_MOD, $cnf->getVar(Config::TRACE_MOD, TRUE));
 			$cnf->saveINI();
 		}
 

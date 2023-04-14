@@ -516,8 +516,8 @@ class masSync {
 
 			// <Response>
 		 	// When protocol version 16.0 or 16.1 is used and the changed object is a calendar item, the object is
-	 		// identified by both the ServerId element of the master item as well as the airsyncbase:InstanceId element
-			// of the specific occurrence.
+	 		// identified by both the ServerId element of the master item as well as the airsyncbase:InstanceId
+	 		// element of the specific occurrence.
 
 			// for instance id we need to extract exception
 			if ($ver >= 16.0 && ($iid = $in->getVar('InstanceId', FALSE))) {
@@ -606,8 +606,6 @@ class masSync {
 
 				// do a special check on task records
 				if ($hid & DataStore::TASK) {
-					$req = fldRecurrence::getInstance();
-					if ($req->regenerate($doc))
 						$db->Query(DataStore::EXT|$hid, DataStore::ADD, $doc);
 				}
 			}
@@ -810,7 +808,6 @@ class masSync {
 
 		$mas = masHandler::getInstance();
 		$db  = DB::getInstance();
-		$cnf = Config::getInstance(); //2
 
 		// get options for group
 		$opts = $mas->getOption($grp);
@@ -890,6 +887,7 @@ class masSync {
 			if ($opts['FilterType']) {
 			    $p = $out->savePos();
 				if ($hid & DataStore::TASK) {
+
 				    if ($opts['FilterType'] == -1 && $doc->getVar(fldStatus::TAG) == 'COMPLETED') {
 				        // deletes an object from the client when it falls outside the <FilterType>
 						$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
@@ -900,32 +898,16 @@ class masSync {
 						continue;
 					}
 				} elseif ($hid & DataStore::CALENDAR) {
-					$t  = $doc->getVar(fldStartTime::TAG);
-					$ok = TRUE;
-                    if ($cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) { //2
-                    	Debug::Warn('Disabling filter for calendar debugging purpose'); //3
-                       	$t = $opts['FilterType']; //2
-					} //2
-					if ($t < $opts['FilterType']) {
-						// double check for recurring event
-						if ($doc->getVar(fldRecurrence::TAG) !== NULL) {
-							// end time specified?
-							if ($e = $doc->getVar(fldEndTime::TAG, FALSE)) {
-								if ($t < $e)
-									$ok = FALSE;
-							}
-						} else
-							$ok = FALSE;
+
+					if (!fldRecurrence::regenerate($hid, $doc, $opts['FilterType'])) {
 
 						// deletes an object from the client when it falls outside the <FilterType>
-						if (!$ok) {
-							$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
-							$out->addVar('ServerId', $rid);
-							$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
-   							$out->restorePos($p);
-      						// jump to next folder
-   							continue;
-						}
+						$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
+						$out->addVar('ServerId', $rid);
+						$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
+						$out->restorePos($p);
+   						// jump to next document
+						continue;
 					}
 				}
 			}

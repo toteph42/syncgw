@@ -209,7 +209,7 @@
 <tr><td>&raquo; Data base "Cookie" handler</td><td>Implemented</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Trace handler<strong></font></td><td>v9.021</td></tr>
 <tr><td><font style="font-size: larger;"><strong>User handler<strong></font></td><td>v9.018</td></tr>
-<tr><td><font style="font-size: larger;"><strong>WBXML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td><font style="font-size: larger;"><strong>WBXML handler<strong></font></td><td>v9.012</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-aswbxml" target="_blank">[MS-ASWBXML]</a> Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm v23.0</td><td>Implemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="http://www.openmobilealliance.org/tech/affiliates/wap/wap-192-wbxml-20010725-a.pdf" target="_blank">[WBXML]</a> Binary XML Content Format Specification v1.3</td><td>Implemented</td></tr>
 <tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
@@ -249,7 +249,7 @@
 <tr><td>&raquo; RoundCube administration handler</td><td>v9.009</td></tr>
 <tr><td>&raquo; RoundCube v1.6.1</td><td>Impelemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/syncgw/roundcube-select_for_sync" target="_blank">syncgw_rc</a>  plugin v1.0.1</td><td>Implemented</td></tr>
-<tr><td>&raquo; RoundCube Calendar handler</td><td>v9.031</td></tr>
+<tr><td>&raquo; RoundCube Calendar handler</td><td>v9.032</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/calendar" target="_blank">calendar</a>  plugin v3.5.11</td><td>Implemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.11</td><td>Implemented</td></tr>
 <tr><td>&raquo; RoundCube Contact handler</td><td>v9.028</td></tr>
@@ -284,7 +284,7 @@
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Ping&gt; handler</td><td>v9.016</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asprov" target="_blank">[MS-ASPROV]</a> Exchange ActiveSync: Provisioning handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; Exchange ActiveSync server policy version</td><td>v1.0</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;ResolveRecipients&gt; handler</td><td>v9.014</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;ResolveRecipients&gt; handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Search&gt; handler</td><td>v9.012</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SendMail&gt; handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Settings&gt; handler</td><td>v9.012</td></tr>
@@ -494,7 +494,7 @@
 <tr><td>&raquo; &lt;Prefix&gt; field handler</td><td>v9.001</td></tr>
 <tr><td>&raquo; &lt;Priority&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;Read&gt; field handler</td><td>v9.002</td></tr>
-<tr><td>&raquo; &lt;Recurrence&gt; field handler</td><td>v9.010</td></tr>
+<tr><td>&raquo; &lt;Recurrence&gt; field handler</td><td>v9.011</td></tr>
 <tr><td>&raquo; &lt;RecurrenceDate&gt; field handler</td><td>v9.009</td></tr>
 <tr><td>&raquo; &lt;RecurrenceId&gt; field handler</td><td>v9.007</td></tr>
 <tr><td>&raquo; &lt;RefreshInterval&gt; field handler</td><td>v9.003</td></tr>

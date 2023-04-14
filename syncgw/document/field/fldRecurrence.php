@@ -16,11 +16,12 @@ use syncgw\lib\Debug; //3
 use syncgw\activesync\masHandler;
 use syncgw\lib\Util;
 use syncgw\lib\XML;
+use syncgw\lib\DataStore;
 
 class fldRecurrence extends fldHandler {
 
 	// module version number
-	const VER = 10;
+	const VER = 11;
 
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	const TAG 				= 'Recurrence';
@@ -669,83 +670,102 @@ class fldRecurrence extends fldHandler {
 	}
 
 	/**
-	 * 	Regenerate task
+	 * 	Regenerate task or calendar document
 	 *
+	 *	@parm 	- Handler id
 	 * 	@parm 	- XML document
-	 * 	@return - TRUE = Ok; FALSE = Skipped
+	 * 	@parm 	- Unix time stamp to catch (0= now)
+	 * 	@return - TRUE = Regernerated; FALSE = Could not regenerate
 	 */
-	public function regenerate(XML &$doc): bool {
+	static public function regenerate(int $hid, XML &$doc, int $catch = 0): bool {
 
-		// is it completed?
-		if ($doc->getVar(fldCompleted::TAG) ||
-			// recurrence given?
-			$doc->getVar(self::TAG) === NULL &&
-			// regeneration allowed?
-			!$doc->getVar(self::AST_SUB['Regenerate'][2]))
-			return FALSE;
+		// is task completed?
+		if ($hid & DataStore::TASK) {
 
-		// check for counter
-		if ($cnt = $doc->getVar(self::AST_SUB['Occurrences'][2])) {
-			$doc->setVal(--$cnt);
-			return TRUE;
+			if ($doc->getVar(fldCompleted::TAG) ||
+				// recurrence given?
+				$doc->getVar(self::TAG) === NULL &&
+				// regeneration allowed?
+				!$doc->getVar(self::AST_SUB['Regenerate'][2]))
+				return FALSE;
+
+			// check for counter
+			if ($cnt = $doc->getVar(self::AST_SUB['Occurrences'][2])) {
+				$doc->setVal(--$cnt);
+				return TRUE;
+			}
+
+			// frequency
+			$freq = $doc->getVar(self::AST_SUB['Type'][2]);
+			// get due (end) date
+			$tme = $doc->getVar(fldDueDate::TAG);
+
+		} elseif ($hid & DataStore::CALENDAR) {
+
+			// frequency
+			$freq = $doc->getVar(self::ASC_SUB['Type'][2]);
+			// get start date
+			$tme = $doc->getVar(fldStartTime::TAG);
 		}
 
 		// regeneration only allowed for special frequencies
-		$reg = 0;
-		$freq = $doc->getVar(self::AST_SUB['Type'][2]);
+		$reg = FALSE;
 		foreach (self::AS_FREQ as $unused => $day)
 			if ($freq == $day) {
-				$reg = 1;
+				$reg = TRUE;
 				break;
 			}
 		$unused; // disable Eclipse warning
-
 		if (!$reg)
 			return FALSE;
 
-		// get due date
-		$due = $doc->getVar(fldDueDate::TAG);
-		// limited by "UTIL"?
-		$until = $doc->getVar(fldEndTime::TAG);
-		if ($until && $due >= $until)
+		// limited by "UNTIL"?
+		$doc->getVar(self::TAG);
+
+		$until = $doc->getVar(fldEndTime::TAG, FALSE);
+		if ($until && $tme >= $until)
 			return FALSE;
 
 		// remove completed flags
-		$doc->delVar(fldCompleted::TAG);
-		$doc->delVar(fldStatus::TAG);
+		if ($hid & DataStore::TASK) {
+			$doc->delVar(fldCompleted::TAG);
+			$doc->delVar(fldStatus::TAG);
+		}
 
-		$now = new \DateTime('now');
+		$now = new \DateTime($catch ? gmdate(Util::UTC_TIME, $catch) : 'now');
+		$now = $now->getTimestamp();
 		$ofs = new \DateTime();
-		$ofs->setTimestamp(intval($due));
+		$ofs->setTimestamp(intval($tme));
 
 		switch ($freq) {
 		case 'DAILY':
-			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+			while ($ofs->getTimestamp() - $now < 0)
 				$ofs->modify('+1 day');
 			break;
 
 		case 'WEEKLY':
-			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+			while ($ofs->getTimestamp() - $now < 0)
 				$ofs->modify('+1 week');
 			break;
 
 		case 'MONTHLY':
-			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+			while ($ofs->getTimestamp() - $now < 0)
 				$ofs->modify('+1 month');
 			break;
 
 		case 'YEARLY':
-			while ($ofs->getTimestamp() - $now->getTimestamp() < 0)
+			while ($ofs->getTimestamp() - $now < 0)
 				$ofs->modify('+1 year');
 			break;
 		}
 
 		// set new start time
-		$doc->updVar(fldDueDate::TAG, strval($ofs->getTimestamp()));
+		if ($hid & DataStore::TASK)
+			$doc->updVar(fldDueDate::TAG, strval($ofs->getTimestamp()));
 
 		$gid = $doc->getVar('GUID'); //3
 		$doc->setTop(); //3
-		Debug::Msg($doc, 'Record regenerated from '.$due.' ['.$gid.']'); //3
+		Debug::Msg($doc, 'Record regenerated from '.$tme.' ['.$gid.']'); //3
 
 		return TRUE;
 	}

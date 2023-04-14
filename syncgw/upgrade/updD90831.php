@@ -28,7 +28,7 @@ class updD90831 {
 
  		$rc = substr($ver, 0, 1) != '9' ? 0 : 2;
 
-//#  	Debug::Save('new%d.xml', $xml->saveXML(TRUE, TRUE)); //3
+//  	Debug::Save('new%d.xml', $xml->saveXML(TRUE, TRUE)); //3
 //    		$doc->updvar('Record', base64_encode(XML::cnvStr($xml->saveXML(), FALSE))); //3
 //       	    $rc = 1; //3
 // 	    } //3

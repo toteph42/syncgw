@@ -54,7 +54,7 @@ use syncgw\document\field\fldAttribute;
 class Calendar {
 
 	// module version number
-	const VER 			= 31;
+	const VER 			= 32;
 
     const MAP 		  	= [
     // ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -75,28 +75,28 @@ class Calendar {
  	//  'id'																	// Event ID used for editing
     	'uid'						=> [ 0, fldUid::TAG,	 				],	// Unique identifier of this event
     //	'calendar'																// Calendar identifier to add event to or where the event is stored
-    	'start'						=> [ 2, fldStartTime::TAG, 			],	// Event start date/time
+    	'start'						=> [ 2, fldStartTime::TAG, 				],	// Event start date/time
     	'end'						=> [ 2, fldEndTime::TAG,	 			],	// Event end date/time
 	// 	'allday'																// Boolean flag if this is an all-day event
     //	'changed'																// Last modification date of event
     	'title'						=> [ 0, fldSummary::TAG,	 			],	// Event title/summary
-	    'location'					=> [ 9, fldLocation::TAG, 			],	// Location string
-    	'description'               => [ 0, fldBody::TAG, 				],	// Event description
+	    'location'					=> [ 9, fldLocation::TAG, 				],	// Location string
+    	'description'               => [ 0, fldBody::TAG, 					],	// Event description
     	'url'                       => [ 0, fldConference::TAG, 			],	// URL to more information
 	    'recurrence'                => [ 3, fldRecurrence::TAG, 			],	// Recurrence definition according to iCalendar (RFC 2445)
 	//	'EXDATE'																// list of DateTime objects of exception
     //	'EXCEPTION'																// list of event objects which denote exceptions in the recurrence chain
     // 	'recurrence_id'															// ID of the recurrence group
-   		'_instance'					=> [ 10, fldExceptions::TAG			],	// ID of the recurring instance
+   		'_instance'					=> [ 10, fldExceptions::TAG				],	// ID of the recurring instance
 		'categories'                => [ 0, fldCategories::TAG, 			],	// Event category
 		'free_busy'    				=> [ 8, fldBusyStatus::TAG, 			],	// Show time as
 	    'status'                    => [ 0, fldStatus::TAG, 				],	// event status according to RFC 2445
-    	'priority'                  => [ 0, fldPriority::TAG, 			],	// Event priority - not used by MAS
-	    'sensitivity'               => [ 1, fldClass::TAG, 				],	// Event sensitivity
+    	'priority'                  => [ 0, fldPriority::TAG, 				],	// Event priority - not used by MAS
+	    'sensitivity'               => [ 1, fldClass::TAG, 					],	// Event sensitivity
 	//	'alarms'																// DEPRECATED
-    	'valarms'                   => [ 6, fldAlarm::TAG, 				],	// List of reminders
-		'attendees'                 => [ 4, fldAttendee::TAG, 			],	// list of email addresses to receive alarm messages
-    	'organizer'					=> [ 5, fldOrganizer::TAG 			],	// additional tag
+    	'valarms'                   => [ 6, fldAlarm::TAG, 					],	// List of reminders
+		'attendees'                 => [ 4, fldAttendee::TAG, 				],	// list of email addresses to receive alarm messages
+    	'organizer'					=> [ 5, fldOrganizer::TAG 				],	// additional tag
     	'attachments'	           	=> [ 7, fldAttach::TAG, 				],	// List of attachments
 	//	'deleted_attachments'													// array of attachment identifiers to delete when event is updated
 	// 	'_savemode'																// How changes on recurring event should be handled
@@ -695,9 +695,13 @@ class Calendar {
 			case 2:
 				// ensure UTC is set
 		        $rec[$key]->setTimezone(new \DateTimeZone('UTC'));
-	            if ($rec['allday'])
-					$int->addVar($tag[1], $val->format('U'), FALSE, [ 'VALUE' => 'date' ]);
-	            else
+		        // special handling for all day events
+		        if ($rec['allday']) {
+		        	$v = new \DateTime($rec[$key]->format('d.m.Y').' 00:00');
+		        	if ($key == 'end')
+		        		$v->add(new \DateInterval('PT24H'));
+					$int->addVar($tag[1], $v->format('U'), FALSE, [ 'VALUE' => 'date' ]);
+		        } else
 					$int->addVar($tag[1], Util::mkTZOffset($val->format('U')));
 				break;
 
@@ -949,7 +953,8 @@ class Calendar {
 			    	if (!$int->xpath($tag[1], FALSE))
 			    		break;
 			    	if ($val = $int->getItem()) {
-			    		$rec[$key] = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)), new \DateTimeZone('UTC'));
+			    		$rec[$key] = new \DateTime(gmdate(Util::UTC_TIME, intval(Util::mkTZOffset($val, TRUE))),
+			    					 new \DateTimeZone('UTC'));
 			    		if ($int->getAttr('VALUE') == 'date')
 			       	        $rec['allday'] = 1;
 			    	}
@@ -969,7 +974,8 @@ class Calendar {
 							$int->xpath($v, FALSE);
 							while (($val = $int->getItem()) !== NULL) {
 								if ($k == 'UNTIL')
-			    					$val = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)), new \DateTimeZone('UTC'));
+			    					$val = new \DateTime(gmdate(Util::UTC_TIME, intval(Util::mkTZOffset($val, TRUE))),
+			    						   new \DateTimeZone('UTC'));
 								$rec[$key][$k] = $val;
 							}
 							$int->restorePos($p);
@@ -985,12 +991,14 @@ class Calendar {
 						// <Delete>
 						if ($int->xpath('./'.fldExceptions::SUB_TAG[1], FALSE)) {
 							$int->restorePos($p);
-							// <InstanceId>
-							$rec[$key]['EXDATE'][] = new \DateTime(Util::utcTime(Util::mkTZOffset($int->getVar(fldExceptions::SUB_TAG[2], FALSE), TRUE)),
-										new \DateTimeZone('UTC'));
+							// excluded dates
+							$rec[$key]['EXDATE'][] = new \DateTime(gmdate(Util::STD_DATE,
+													 intval($int->getVar(fldExceptions::SUB_TAG[2], FALSE))),
+													 new \DateTimeZone('UTC'));
 						} else {
 							$doc = new XML();
-							$doc->loadXML('<syncgw><extID/><extGroup>'.$int->getVar('extGroup').'</extGroup></syncgw>');
+							$doc->loadXML('<syncgw><extID/><extGroup>'.$int->getVar('extGroup').
+										  '</extGroup></syncgw>');
 							$int->restorePos($p);
 							if ($rid)
 								$doc->updVar('extID', $rid);
@@ -1079,8 +1087,9 @@ class Calendar {
 		                	if ($int->getAttr('VALUE') == 'duration')
 	                        	$rec[$key][$n]['trigger'] = Util::cnvDuration(FALSE, $val);
 		                    else
-		                        $rec[$key][$n]['trigger'] = new \DateTime(Util::utcTime(Util::mkTZOffset($val, TRUE)),
-		                        		new \DateTimeZone('UTC'));
+		                        $rec[$key][$n]['trigger'] = new \DateTime(gmdate(Util::UTC_TIME,
+		                        								intval(Util::mkTZOffset($val, TRUE))),
+		                        								new \DateTimeZone('UTC'));
 			                if ($v = $int->getAttr('RELATED'))
 			                    $rec[$key][$n]['related'] = strtolower($v);
 	                    }
@@ -1160,7 +1169,7 @@ class Calendar {
 			    // Instance id
 	    		case 10:
 			    	if ($int->xpath(fldExceptions::SUB_TAG[2], FALSE))
-		    			$rec[$key] = Util::utcTime(Util::mkTZOffset($int->getItem(), TRUE));
+		    			$rec[$key] = gmdate(Util::UTC_TIME, intval(Util::mkTZOffset($int->getItem(), TRUE)));
 
 			    default:
 	               	break;
@@ -1265,6 +1274,9 @@ class Calendar {
 		// create external record
 		$rec = self::_swap2ext($int);
 
+		// dates to exclude
+		$exdate = [];
+
 		// create a new calendar?
 		if ($int->getVar('Type') == DataStore::TYP_GROUP) {
 
@@ -1310,6 +1322,86 @@ class Calendar {
 			// get data base handler (for group id)
 			$dbh = self::_getHandler($gid = $int->getVar('extGroup'));
 
+			// save exclude dates
+			$exdate = new \ArrayObject($rec['recurrence']['EXDATE']);
+			$extime = [];
+			foreach ($exdate as $d)
+				$extime[$d->format('Ymd')] = 1;
+
+			// special check to catch calendar handler error if too much exclude dates has been given
+			// because recurrence field is only VARCHAR(256) (and cannot be expanded)
+			if (count($rec['recurrence']['EXDATE']) > 8) {
+
+				$srec = new \ArrayObject($rec);
+
+				// get end date
+				$e = clone $rec['recurrence']['EXDATE'][8];
+				$srec['recurrence']['UNTIL'] = $e;
+				$t = $e->getTimestamp();
+				for ($i=count($srec['recurrence']['EXDATE'])-1; $i; $i--) {
+					if ($srec['recurrence']['EXDATE'][$i]->getTimestamp() > $t)
+						unset($srec['recurrence']['EXDATE'][$i]);
+				}
+
+				// save sub record
+				do {
+					$id = $dbh->new_event($srec);
+				} while ($this->_hd->chkRetry(DataStore::CALENDAR, __LINE__));
+
+
+				// get next offset
+				do {
+					switch ($rec['recurrence']['FREQ']) {
+					case 'DAILY':
+						$e->modify('+1 day');
+						break;
+
+					case 'WEEKLY':
+						$e->modify('+1 week');
+						break;
+
+					case 'MONTHLY':
+						$e->modify('+1 month');
+						break;
+
+					case 'YEARLY':
+						$e->modify('+1 year');
+						break;
+					}
+				} while (isset($extime[$e->format('Ymd')]));
+
+				// modify original record
+				$rec['recurrence_id'] = $id;
+				$rec['start']->setDate(intval($e->format('Y')), intval($e->format('m')),
+									   intval($e->format('d')));
+				$rec['end']->setDate(intval($e->format('Y')), intval($e->format('m')),
+									   intval($e->format('d')));
+
+				$e->setTime(intval($rec['start']->format('H')), intval($rec['start']->format('i')),
+							intval($rec['start']->format('s')));
+				$t = $e->getTimestamp();
+				for ($i=0; $i < count($rec['recurrence']['EXDATE']); $i++) {
+					if ($rec['recurrence']['EXDATE'][$i]->getTimestamp() <= $t)
+						unset($rec['recurrence']['EXDATE'][$i]);
+				}
+
+				// re-number array
+				$i = 0;
+				$a = $rec['recurrence']['EXDATE'];
+				unset($rec['recurrence']['EXDATE']);
+				foreach ($a as $t)
+					$rec['recurrence']['EXDATE'][] = $t;
+
+				if (!$this->_hd->Retry)
+        			return NULL;
+
+				// add records to known list
+				$this->_ids[DataStore::TYP_DATA.$id] = [
+						Handler::GROUP 	=> $gid,
+						Handler::ATTR	=> fldAttribute::READ|fldAttribute::WRITE|fldAttribute::EDIT|fldAttribute::DEL,
+				];
+			}
+
 			do {
 				$rid = $dbh->new_event($rec);
 			} while ($this->_hd->chkRetry(DataStore::CALENDAR, __LINE__));
@@ -1317,11 +1409,38 @@ class Calendar {
         	if (!$this->_hd->Retry)
         		return NULL;
 
+			// get table name
+		    $tab   = '`'.$this->_hd->RCube->config->get('db_table_lists',
+		    											$this->_hd->RCube->db->table_name('events')).'`';
+
+       		// delete exluded dates
+        	foreach ($exdate as $ex) {
+
+		        $sql = 'SELECT event_id FROM '.$tab.
+	                   ' WHERE recurrence_id in('.$id.','.$rid.') AND start = ? AND end = ?';
+			   	$st  = $ex->format('Y-m-d').' '.$rec['start']->format('H:i:s');
+			    $et  = $ex->format('Y-m-d').' '.$rec['end']->format('H:i:s');
+				do {
+					if ($res = $this->_hd->RCube->db->query($sql, $st, $et))
+				    	$r = $this->_hd->RCube->db->fetch_assoc($res);
+				} while ($this->_hd->chkRetry(DataStore::CALENDAR, __LINE__));
+
+	    		if (!$this->_hd->Retry)
+    	    		return NULL;
+
+    	    	if ($r) {
+    	    		$sql = 'DELETE FROM '.$tab.' WHERE event_id = ?';
+    	    		do {
+						$this->_hd->RCube->db->query($sql, $r['event_id']);
+					} while ($this->_hd->chkRetry(DataStore::CALENDAR, __LINE__));
+
+	    			if (!$this->_hd->Retry)
+    	    			return NULL;
+    	    	}
+        	}
+
 		    // because of special design in database_driver.php, we must handle exception records this way
 			if (isset($rec['recurrence']['EXCEPTIONS'])) {
-
-				// get table name
-		        $tab   = '`'.$this->_hd->RCube->config->get('db_table_lists', $this->_hd->RCube->db->table_name('events')).'`';
 
 				foreach ($rec['recurrence']['EXCEPTIONS'] as $xrec) {
 

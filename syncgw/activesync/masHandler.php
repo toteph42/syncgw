@@ -44,7 +44,7 @@ class masHandler extends XML {
 	const STOP 	   = 1;					// stop with HTPP 200
 	const EXIT     = 2; 				// exit processing
 
-	// filter times
+	// filter times = FilterType
 	const FILTER   = [
 	    // Val 	Meaning 							Email 	Calendar 	Tasks	Converted seconds
 		// 0 	No filter- synchronize all items 	Yes 	Yes 		Yes		0
@@ -328,6 +328,10 @@ class masHandler extends XML {
 					$dev = Device::getInstance();
 					$dev->updVar('DeviceType', $this->_parms['DeviceType']);
 				}
+			}
+			if (!is_object($ext)) {
+				$http->send(501);
+				return;
 			}
 			$ext->setTop();
 		}
@@ -868,6 +872,12 @@ class masHandler extends XML {
 
 		// save options
 		self::_saveOpts($tag);
+
+		$cnf = Config::getInstance(); //2
+        if (isset($opts['FilterType']) && $opts['FilterType'] && $cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) { //2
+           	Debug::Warn('Disabling filter for calendar debugging purpose (original is "'.$opts['FilterType'].'")'); //3
+           	$opts['FilterType'] = 0; //2
+		} //2
 
 		# Debug::Msg($this->_opts, '<Options> loaded'); //3
 	}

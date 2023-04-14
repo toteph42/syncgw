@@ -100,7 +100,7 @@ class updHandler {
 
 			$del = [];
 
-			// load load document list
+			// load document list
 			$ids = [];
 			foreach ($db->Query($hid, DataStore::RIDS, '') as $gid => $typ) {
 			    if ($typ != DataStore::TYP_DATA)
@@ -281,10 +281,13 @@ class updHandler {
 			ErrorHandler::Raise(18004, $p);
 			return [];
 		}
+
 		// read directory
 		while (($f = readdir($d)) !== FALSE) {
+
 			if ($f == '.' || $f == '..')
 				continue;
+
 			// typ
 			$t = substr($f, 0, 1);
 			// version
@@ -292,9 +295,11 @@ class updHandler {
 			// check upgrade version
 			if ($v < $ver)
 				continue;
+
 			// check type
 			if (($mod && $t != 'D') || (!$mod && $t != 'C'))
 				continue;
+
 			// allocate  object
 			$c = 'syncgw\\upgrade\\upd'.$t.$v;
 			$lst[$f] = new $c();
