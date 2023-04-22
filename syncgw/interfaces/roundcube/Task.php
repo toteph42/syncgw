@@ -1101,9 +1101,11 @@ class Task {
                     	if (!is_array($a['trigger']) && $a['trigger'][0] == '@') {
                     		$t = substr($a['trigger'], 1, 19);
                     		$t = Util::mkTZOffset(Util::unxTime($t));
-                            $rec['valarms'][$i]['trigger'] = new \DateTime(Util::utcTime($t), new \DateTimeZone('UTC'));
+                            $rec['valarms'][$i]['trigger'] = new \DateTime(gmdate(Util::UTC_TIME,
+                            									intval($t)), new \DateTimeZone('UTC'));
                     	} elseif (isset($a['trigger']['date']))
-                            $rec['valarms'][$i]['trigger'] = new \DateTime($a['trigger']['date'], new \DateTimeZone('UTC'));
+                            $rec['valarms'][$i]['trigger'] = new \DateTime($a['trigger']['date'],
+                            									new \DateTimeZone('UTC'));
                         else
                             $rec['valarms'][$i]['trigger'] = $a['trigger'];
                     }

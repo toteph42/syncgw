@@ -29,7 +29,7 @@ use rcube_user;
 class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 
 	// module version number
-	const VER = 26;
+	const VER = 27;
 
 	/**
 	 * 	Group record
@@ -371,6 +371,10 @@ class Handler extends \syncgw\interfaces\mysql\Handler implements DBextHandler {
 			ErrorHandler::resetReporting();
    	   		return FALSE;
    	    }
+
+   	    // set users time zone
+   	    $cnf = Config::getInstance();
+   	    $cnf->updVar(Config::TIME_ZONE, $this->RCube->config->get('timezone'));
 
 	    // load internal user object
 	    $usr = User::getInstance();

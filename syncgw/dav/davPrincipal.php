@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace syncgw\dav;
 
-use Sabre\DAV\MkCol;
 use syncgw\lib\Debug; //3
 use syncgw\lib\DB;
 use syncgw\lib\DataStore;
@@ -23,11 +22,12 @@ use syncgw\lib\User;
 use syncgw\lib\Util; //2
 use syncgw\lib\XML;
 use syncgw\lib\Config; //2
+use Sabre\DAV\MkCol;
 
 class davPrincipal implements \Sabre\DAVACL\PrincipalBackend\BackendInterface {
 
 	// module version number
-	const VER = 5;
+	const VER = 6;
 
    /**
      * 	Singleton instance of object

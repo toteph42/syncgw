@@ -522,21 +522,6 @@ class Util {
 	}
 
 	/**
-	 * 	Convert any date / time string to UTC time stamp
-	 *
-	 *  @param	- Date / time string
-	 *  @param	- Optional time zone ID (or NULL for default)
-	 *  @param  - TRUE=Date only; FALSE=Date/Time (Default)
-	 *  @return	- UTC time / date
-	 */
-	static function utcTime(string $str, ?string $tzid = NULL, bool $mod = FALSE): string {
-
-		$f = $mod ? self::STD_TIME: self::UTC_TIME;
-
-		return gmdate($f, intval(Util::unxTime($str, $tzid)));
-	}
-
-	/**
 	 * 	Get PHP time zone based on offset
 	 *
 	 * 	@param 	- Time zone name (Australia/Perth) or Short name (GMT) or UTC- / Daylight-offset (-3600/-3600)
@@ -613,18 +598,17 @@ class Util {
 	 *
 	 * 	@param 	- Unix time stamp
 	 * 	@param	- TRUE = Use negative offset; FALSE = Don't convert
-	 * 	@return	- Converted time
+	 * 	@return	- Converted time (Unix time stamp)
 	 */
 	static function mkTZOffset(string $tme, bool $neg = FALSE): string {
 
-        // compile time zone offset relativ to UTC (internal time zone format)
-        $cnf = Config::getInstance();
-		$def = new \DateTimeZone($cnf->getVar(Config::TIME_ZONE));
-		$tz  = new \DateTimeZone('UTC');
-		$s	 = gmdate(self::UTC_TIME, intval($tme));
-    	$udt = new \DateTime($s,  $def);
-    	$dt  = new \DateTime($s, $tz);
-    	$t   = $tz->getOffset($dt) - $def->getOffset($udt);
+        $cnf  = Config::getInstance();
+		$tzid = new \DateTimeZone($cnf->getVar(Config::TIME_ZONE));
+		$utc  = new \DateTimeZone('UTC');
+		$s	  = gmdate(self::UTC_TIME, intval($tme));
+    	$udt  = new \DateTime($s, $tzid);
+    	$dt   = new \DateTime($s, $utc);
+    	$t    = $utc->getOffset($dt) - $tzid->getOffset($udt);
 
 	    return strval($neg ? $tme + $t * -1 : $tme + $t);
 	}

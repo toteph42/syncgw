@@ -619,14 +619,14 @@ class Calendar {
 	/**
 	 * 	Get external record
 	 *
-	 *	@param	- External record ID
+	 *	@param	- External record ID (string) or record array
 	 * 	@return - Internal document or NULL
 	 */
-	private function _swap2int(string $rid): ?XML {
+	private function _swap2int($rid): ?XML {
 
 		$db = DB::getInstance();
 
-		if (substr($rid, 0, 1) == DataStore::TYP_GROUP) {
+		if (!is_array($rid) && substr($rid, 0, 1) == DataStore::TYP_GROUP) {
 			$int = $db->mkDoc(DataStore::CALENDAR, [
 						'GID' 				 => '',
    						'Typ'   			 => DataStore::TYP_GROUP,
@@ -648,7 +648,10 @@ class Calendar {
 		}
 
 		// load external record
-		if (!($rec = self::_get($rid)))
+		if (is_array($rid)) {
+			$rec = $rid;
+			$rid = 'R'.$rec['id'];
+		} elseif (!($rec = self::_get($rid)))
 			return NULL;
 
 		$att = Attachment::getInstance();
@@ -717,6 +720,7 @@ class Calendar {
 	    	    		$v = $v->format(Util::UTC_TIME);
 
 	   		   		if (!isset(fldRecurrence::RFC_SUB[$k])) {
+
 		    			// <Exceptions>
 	   		   			if (count($val[$k])) {
 	   		   				if (!$int->xpath('//Data/'.fldExceptions::TAG)) {
@@ -974,8 +978,9 @@ class Calendar {
 							$int->xpath($v, FALSE);
 							while (($val = $int->getItem()) !== NULL) {
 								if ($k == 'UNTIL')
-			    					$val = new \DateTime(gmdate(Util::UTC_TIME, intval(Util::mkTZOffset($val, TRUE))),
-			    						   new \DateTimeZone('UTC'));
+			    					$val = new \DateTime(gmdate(Util::UTC_TIME,
+			    										intval(Util::mkTZOffset($val, TRUE))),
+			    										new \DateTimeZone('UTC'));
 								$rec[$key][$k] = $val;
 							}
 							$int->restorePos($p);
@@ -1323,14 +1328,11 @@ class Calendar {
 			$dbh = self::_getHandler($gid = $int->getVar('extGroup'));
 
 			// save exclude dates
-			$exdate = new \ArrayObject($rec['recurrence']['EXDATE']);
-			$extime = [];
-			foreach ($exdate as $d)
-				$extime[$d->format('Ymd')] = 1;
+			$exdate = isset($rec['recurrence']['EXDATE']) ? new \ArrayObject($rec['recurrence']['EXDATE']) : [];
 
 			// special check to catch calendar handler error if too much exclude dates has been given
-			// because recurrence field is only VARCHAR(256) (and cannot be expanded)
-			if (count($rec['recurrence']['EXDATE']) > 8) {
+			// (recurrence field is only VARCHAR(256) and cannot be expanded)
+			if (count($exdate) > 8) {
 
 				$srec = new \ArrayObject($rec);
 
@@ -1348,35 +1350,21 @@ class Calendar {
 					$id = $dbh->new_event($srec);
 				} while ($this->_hd->chkRetry(DataStore::CALENDAR, __LINE__));
 
+				if (!$this->_hd->Retry)
+        			return NULL;
 
-				// get next offset
-				do {
-					switch ($rec['recurrence']['FREQ']) {
-					case 'DAILY':
-						$e->modify('+1 day');
-						break;
+       			// add records to known list
+				$this->_ids[DataStore::TYP_DATA.$id] = [
+						Handler::GROUP 	=> $gid,
+						Handler::ATTR	=> fldAttribute::READ|fldAttribute::WRITE|fldAttribute::EDIT|fldAttribute::DEL,
+				];
 
-					case 'WEEKLY':
-						$e->modify('+1 week');
-						break;
-
-					case 'MONTHLY':
-						$e->modify('+1 month');
-						break;
-
-					case 'YEARLY':
-						$e->modify('+1 year');
-						break;
-					}
-				} while (isset($extime[$e->format('Ymd')]));
-
-				// modify original record
-				$rec['recurrence_id'] = $id;
+        		// modify original record
+        		$rec['id'] = $rec['recurrence_id'] = $id;
 				$rec['start']->setDate(intval($e->format('Y')), intval($e->format('m')),
 									   intval($e->format('d')));
 				$rec['end']->setDate(intval($e->format('Y')), intval($e->format('m')),
 									   intval($e->format('d')));
-
 				$e->setTime(intval($rec['start']->format('H')), intval($rec['start']->format('i')),
 							intval($rec['start']->format('s')));
 				$t = $e->getTimestamp();
@@ -1392,14 +1380,10 @@ class Calendar {
 				foreach ($a as $t)
 					$rec['recurrence']['EXDATE'][] = $t;
 
-				if (!$this->_hd->Retry)
-        			return NULL;
-
-				// add records to known list
-				$this->_ids[DataStore::TYP_DATA.$id] = [
-						Handler::GROUP 	=> $gid,
-						Handler::ATTR	=> fldAttribute::READ|fldAttribute::WRITE|fldAttribute::EDIT|fldAttribute::DEL,
-				];
+				// get next offset
+				if (!($xml = fldRecurrence::regenerate(DataStore::CALENDAR, self::_swap2int($rec))))
+					return NULL;
+				$rec = self::_swap2ext($xml);
 			}
 
 			do {

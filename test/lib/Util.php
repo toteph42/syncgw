@@ -60,9 +60,6 @@ msg('unxTime()');
 $s = 'Thu Dec 20 08:15:39 2018 CET';
 Debug::Msg($s.' = "'.(Util::unxTime($s)).'"');
 
-msg('utcTime()');
-Debug::Msg('UTC = "'.Util::utcTime($s).'"');
-
 msg('cnvDuration()');
 Debug::Msg('12938 Sek: "'.Util::cnvDuration(FALSE, 12938).'"');
 

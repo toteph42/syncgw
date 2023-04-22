@@ -452,7 +452,7 @@ class masHandler extends XML {
 					if (!isset(self::FILTER[$val])) //3
 						Debug::Err('Undefined value "'.$val.'" for <Filtertype>'); //3
 					else //3
-						$opts['FilterType'] = time() - self::FILTER[$val];
+						$opts['FilterType'] = self::FILTER[$val];
 				}
 
 			 	// How to resolve the conflict that occurs when an object has been changed on both the client and the server
@@ -609,7 +609,7 @@ class masHandler extends XML {
 					if (!isset(self::FILTER[$val])) //3
 						Debug::Err('Undefined value "'.$val.'" for <Filtertype>'); //3
 					else //3
-					$opts['FilterType'] = time() - self::FILTER[$val];
+					$opts['FilterType'] = self::FILTER[$val];
 					// special hack for Tasks
 					if (self::FILTER[$val] == -1 && !($hid & DataStore::TASK))
 						$opts['FilterType'] = 0;
@@ -873,10 +873,13 @@ class masHandler extends XML {
 		// save options
 		self::_saveOpts($tag);
 
-		$cnf = Config::getInstance(); //2
-        if (isset($opts['FilterType']) && $opts['FilterType'] && $cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) { //2
-           	Debug::Warn('Disabling filter for calendar debugging purpose (original is "'.$opts['FilterType'].'")'); //3
-           	$opts['FilterType'] = 0; //2
+		Debug::Msg('Filtering of events and tasks from trace parameters enabled'); //3
+		if (0) { //2
+			$cnf = Config::getInstance(); //2
+			if (isset($opts['FilterType']) && $opts['FilterType'] && $cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) { //2
+	           	Debug::Warn('Disabling filter for calendar debugging purpose (original is "'.$opts['FilterType'].'")'); //3
+	           	$opts['FilterType'] = 0; //2
+			} //2
 		} //2
 
 		# Debug::Msg($this->_opts, '<Options> loaded'); //3

@@ -245,7 +245,7 @@
 <tr><td>&raquo; MySQL administration handler</td><td>v9.008</td></tr>
 <tr><td><font style="font-size: larger;"><strong>MyApp data base handler<strong></font></td><td>v9.001</td></tr>
 <tr><td>&raquo; MyApp administration handler</td><td>v1.0</td></tr>
-<tr><td><font style="font-size: larger;"><strong>RoundCube data base handler <strong></font></td><td>v9.026</td></tr>
+<tr><td><font style="font-size: larger;"><strong>RoundCube data base handler <strong></font></td><td>v9.027</td></tr>
 <tr><td>&raquo; RoundCube administration handler</td><td>v9.009</td></tr>
 <tr><td>&raquo; RoundCube v1.6.1</td><td>Impelemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/syncgw/roundcube-select_for_sync" target="_blank">syncgw_rc</a>  plugin v1.0.1</td><td>Implemented</td></tr>
@@ -284,20 +284,20 @@
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Ping&gt; handler</td><td>v9.016</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asprov" target="_blank">[MS-ASPROV]</a> Exchange ActiveSync: Provisioning handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; Exchange ActiveSync server policy version</td><td>v1.0</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;ResolveRecipients&gt; handler</td><td>v9.015</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;ResolveRecipients&gt; handler</td><td>v9.016</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Search&gt; handler</td><td>v9.012</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SendMail&gt; handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Settings&gt; handler</td><td>v9.012</td></tr>
 <tr><td>&raquo; Exchange ActiveSync right management settings</td><td>v1.0</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SmartForward&gt; handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;SmartReply&gt; handler</td><td>v9.006</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Sync&gt; handler</td><td>v9.024</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Sync&gt; handler</td><td>v9.025</td></tr>
 <tr><td><font style="font-size: larger;"><strong>WebDAV handler<strong></font></td><td>v9.012</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://github.com/sabre-io/dav" target="_blank">SabreDAV</a> framework for PHP</td><td>v4.4.0</td></tr>
 <tr><td>&raquo; Calendar CalDAV handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Contact CardDAV handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; WebDAV HTTP handler</td><td>v9.004</td></tr>
-<tr><td>&raquo; WebDAV principal handler</td><td>v9.005</td></tr>
+<tr><td>&raquo; WebDAV principal handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; Task CalDAV handler</td><td>v9.017</td></tr>
 <tr><td>&raquo; WebDAV user handler</td><td>v9.008</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="http://tools.ietf.org/html/rfc2617" target="_blank">RFC2617</a> Basic access authentication handler</td><td>Implemented</td></tr>
@@ -309,8 +309,8 @@
 <tr><td>&raquo; MIME type handler "text/vcard 3.0"</td><td>v9.006</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcard 3.0"</td><td>v9.006</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcard 2.1"</td><td>v9.006</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.contact+xml 1.0"</td><td>v9.010</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Calendar document handler<strong></font></td><td>v9.005</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"Calendar"</td></tr>
@@ -318,8 +318,8 @@
 <tr><td>&raquo; MIME type handler "text/calendar 2.0"</td><td>v9.007</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcalendar 2.0"</td><td>v9.007</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcalendar 1.0"</td><td>v9.007</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.calendar+xml 1.0"</td><td>v9.007</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Task document handler<strong></font></td><td>v9.005</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"Task"</td></tr>
@@ -327,8 +327,8 @@
 <tr><td>&raquo; MIME type handler "text/calendar 2.0"</td><td>v9.004</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcalendar 2.0"</td><td>v9.004</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vcalendar 1.0"</td><td>v9.004</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.task+xml 1.0"</td><td>v9.009</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Note document handler<strong></font></td><td>v9.005</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"Note"</td></tr>
@@ -338,23 +338,23 @@
 <tr><td>&raquo; MIME type handler "text/plain "</td><td>v9.009</td></tr>
 <tr><td>&raquo; MIME type base handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; MIME type handler "text/x-vnote 1.1"</td><td>v9.006</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.note+xml 1.0"</td><td>v9.008</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Global Address Book document handler<strong></font></td><td>v9.001</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"Global Address Book"</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.gal+xml 1.0"</td><td>v9.007</td></tr>
 <tr><td><font style="font-size: larger;"><strong>DocLib document handler<strong></font></td><td>v9.001</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"DocLib"</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.doclib+xml 1.0"</td><td>v9.002</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Mail document handler<strong></font></td><td>v9.006</td></tr>
 <tr><td>&raquo; Document base handler</td><td>v9.015</td></tr>
 <tr><td>&raquo; Internal data store name</td><td>"Mail"</td></tr>
-<tr><td>&raquo; ActiveSync base handler</td><td>v9.006</td></tr>
-<tr><td><font style="font-size: larger;"><strong>XML handler<strong></font></td><td>v9.011</td></tr>
+<tr><td>&raquo; ActiveSync base handler</td><td>v9.007</td></tr>
+<tr><td>&raquo; MIME type handler "application/activesync.mail+xml 1.0"</td><td>v9.004</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Field handler<strong></font></td><td>v9.007</td></tr>
 <tr><td>&raquo; &lt;AccountId&gt; field handler</td><td>v9.003</td></tr>
 <tr><td>&raquo; &lt;AccountName&gt; field handler</td><td>v9.005</td></tr>

@@ -12,15 +12,41 @@ declare(strict_types=1);
 
 namespace syncgw\document\mime;
 
+use syncgw\lib\Config;
 use syncgw\lib\Debug; //3
 use syncgw\lib\XML;
+use syncgw\lib\DataStore;
+use syncgw\document\field\fldTimezone;
 
 class mimAs extends XML {
 
 	// module version number
-	const VER = 6;
+	const VER = 7;
 
-    /**
+	/**
+	 *  Parents modul version
+	 *  @var integer
+	 */
+	protected $_ver = 0;
+
+	/**
+	 *  Handler ID
+	 *  @var int
+	 */
+	protected $_hid = 0;
+
+	/**
+	 *  mim types
+	 *  @var array
+	 */
+	public $_mime = [];
+
+	/**
+	 *  Mapping table
+	 */
+	public $_map = [];
+
+	/**
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
@@ -30,7 +56,11 @@ class mimAs extends XML {
 
 		$xml->addVar('Opt', 'ActiveSync base handler');
 		$xml->addVar('Ver', strval(self::VER));
-		parent::getInfo($xml, $status);
+
+		foreach ($this->_mime as $mime) {
+			$xml->addVar('Opt', sprintf(_('MIME type handler "%s %s"'), $mime[0], $mime[1] ? sprintf('%.1F', $mime[1]) : ''));
+			$xml->addVar('Ver', strval($this->_ver));
+		}
 	}
 
 	/**
@@ -78,6 +108,14 @@ class mimAs extends XML {
 		$int->getVar('syncgw');
 		Debug::Msg($int, 'Input document'); //3
 		$ip = $int->savePos();
+
+		// add time zone parameter
+		if ($this->_hid & DataStore::CALENDAR) {
+			$int->getVar('Data');
+			$cnf = Config::getInstance();
+			$int->addVar(fldTimezone::TAG, $cnf->getVar(Config::TIME_ZONE));
+		    $int->restorePos($ip);
+		}
 
 		$ext->addVar('ApplicationData');
 		$xp = $ext->savePos();

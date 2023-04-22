@@ -13,7 +13,6 @@ declare(strict_types=1);
 namespace syncgw\interfaces\mysql;
 
 use Exception;
-use PDOException;
 use syncgw\lib\Debug;//3
 use syncgw\interfaces\DBintHandler;
 use syncgw\lib\Config;

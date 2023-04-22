@@ -1,3 +1,10 @@
+## Version 9.19.72, published on 2023-04-22 ##
+* Changed: ActiveSync now sending timezone parameter for calendar events
+* Changed: Setting users time zone during logging in in RoundCube
+* Fixed: Typo in masResolveRecipients.php
+* Fixed: Classs reference in davPrincipal.php
+* Removed: Util::utcTime() - not used anymore
+
 ## Version 9.19.67, published on 2023-04-14 ##
 * Fixed: Bug in recurring event handling
 * Fixed: TRACE_MOD now survives upgrade handling

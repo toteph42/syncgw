@@ -14,6 +14,7 @@ namespace syncgw\document\field;
 
 use syncgw\lib\Debug; //3
 use syncgw\activesync\masHandler;
+use syncgw\lib\Config;
 use syncgw\lib\Util;
 use syncgw\lib\XML;
 use syncgw\lib\DataStore;
@@ -27,24 +28,24 @@ class fldRecurrence extends fldHandler {
 	const TAG 				= 'Recurrence';
 
 	const RFC_SUB		  	= [
-		'FREQ'				=> 'Frequency',					// SECONDLY, MINUTELY, HOURLY, DAILY, WEEKLY, MONTHLY, YEARLY
-		'X-START'			=> fldStartTime::TAG,	  	  	// recurrence start date
-		'UNTIL'			  	=> fldEndTime::TAG,	    		// recurrence end date
-		'COUNT'				=> 'Count',						// 1-n; 1=default
-		'INTERVAL'		 	=> 'Interval',					// 1-n; 1=default
+		'FREQ'				=> 'Frequency',			// SECONDLY, MINUTELY, HOURLY, DAILY, WEEKLY, MONTHLY, YEARLY
+		'X-START'			=> fldStartTime::TAG,	// recurrence start date
+		'UNTIL'			  	=> fldEndTime::TAG,	    // recurrence end date
+		'COUNT'				=> 'Count',				// 1-n; 1=default
+		'INTERVAL'		 	=> 'Interval',			// 1-n; 1=default
 
-		'BYSECOND'		   	=> 'Second',					// [0-60[,]] (absolute)
-		'BYMINUTE'		   	=> 'Minute',					// [0-60[,]] (absolute)
-		'BYHOUR'			=> 'Hour',						// [0-23[,]] (absolute)
-		'BYMONTH'			=> 'Month',						// [1-12[,]] (absolute)
+		'BYSECOND'		   	=> 'Second',			// [0-60[,]] (absolute)
+		'BYMINUTE'		   	=> 'Minute',			// [0-60[,]] (absolute)
+		'BYHOUR'			=> 'Hour',				// [0-23[,]] (absolute)
+		'BYMONTH'			=> 'Month',				// [1-12[,]] (absolute)
 
-		'BYYEARDAY'		  	=> 'YearDay',					// [[+/-]1-366[,]] (relativ)
-		'BYSETPOS'	   		=> 'YearDayPos',				// [[+/-]1-366[,]] (relativ)
-		'BYDAY'		   		=> 'DayPos',					// [[+/-][1-53]SU-SA[,]] (relative)
-		'BYMONTHDAY'		=> 'MonthDay',					// [[+/-]1-31; -1=last day of month[,]] (relative)
-		'BYWEEKNO'		 	=> 'YearWeek',					// [[+/-]1-53; -1=last week in year[,]] (relative)
+		'BYYEARDAY'		  	=> 'YearDay',			// [[+/-]1-366[,]] (relativ)
+		'BYSETPOS'	   		=> 'YearDayPos',		// [[+/-]1-366[,]] (relativ)
+		'BYDAY'		   		=> 'DayPos',			// [[+/-][1-53]SU-SA[,]] (relative)
+		'BYMONTHDAY'		=> 'MonthDay',			// [[+/-]1-31; -1=last day of month[,]] (relative)
+		'BYWEEKNO'		 	=> 'YearWeek',			// [[+/-]1-53; -1=last week in year[,]] (relative)
 
-		'WKST'				=> 'WeekStart',					// SU-SA
+		'WKST'				=> 'WeekStart',			// SU-SA
 	];
 
 	/*
@@ -675,37 +676,39 @@ class fldRecurrence extends fldHandler {
 	 *	@parm 	- Handler id
 	 * 	@parm 	- XML document
 	 * 	@parm 	- Unix time stamp to catch (0= now)
-	 * 	@return - TRUE = Regernerated; FALSE = Could not regenerate
+	 * 	@return - Regernerated document; NULL = Could not regenerate
 	 */
-	static public function regenerate(int $hid, XML &$doc, int $catch = 0): bool {
+	static public function regenerate(int $hid, XML $doc, int $catch = 0): ?XML {
+
+		$xml = new XML($doc);
 
 		// is task completed?
 		if ($hid & DataStore::TASK) {
 
-			if ($doc->getVar(fldCompleted::TAG) ||
+			if ($xml->getVar(fldCompleted::TAG) ||
 				// recurrence given?
-				$doc->getVar(self::TAG) === NULL &&
+				$xml->getVar(self::TAG) === NULL &&
 				// regeneration allowed?
-				!$doc->getVar(self::AST_SUB['Regenerate'][2]))
-				return FALSE;
+				!$xml->getVar(self::AST_SUB['Regenerate'][2]))
+				return NULL;
 
 			// check for counter
-			if ($cnt = $doc->getVar(self::AST_SUB['Occurrences'][2])) {
-				$doc->setVal(--$cnt);
-				return TRUE;
+			if ($cnt = $xml->getVar(self::AST_SUB['Occurrences'][2])) {
+				$xml->setVal(--$cnt);
+				return $xml;
 			}
 
 			// frequency
-			$freq = $doc->getVar(self::AST_SUB['Type'][2]);
+			$freq = $xml->getVar(self::AST_SUB['Type'][2]);
 			// get due (end) date
-			$tme = $doc->getVar(fldDueDate::TAG);
+			$tme = $xml->getVar(fldDueDate::TAG);
 
 		} elseif ($hid & DataStore::CALENDAR) {
 
 			// frequency
-			$freq = $doc->getVar(self::ASC_SUB['Type'][2]);
+			$freq = $xml->getVar(self::ASC_SUB['Type'][2]);
 			// get start date
-			$tme = $doc->getVar(fldStartTime::TAG);
+			$tme = $xml->getVar(fldStartTime::TAG);
 		}
 
 		// regeneration only allowed for special frequencies
@@ -717,57 +720,108 @@ class fldRecurrence extends fldHandler {
 			}
 		$unused; // disable Eclipse warning
 		if (!$reg)
-			return FALSE;
+			return NULL;
 
 		// limited by "UNTIL"?
-		$doc->getVar(self::TAG);
+		$xml->getVar(self::TAG);
+		$p = $xml->savePos();
 
-		$until = $doc->getVar(fldEndTime::TAG, FALSE);
+		$until = $xml->getVar(fldEndTime::TAG, FALSE);
 		if ($until && $tme >= $until)
-			return FALSE;
+			return NULL;
+
+		// get exception dates
+		$exd = [];
+		if ($xml->getVar(fldExceptions::TAG) !== NULL) {
+			$xml->xpath('//'.fldExceptions::SUB_TAG[2]);
+			// we assume for excluded dates this is 00:00
+			while (($t = $xml->getItem())) {
+				$xml->setParent();
+				if ($xml->getVar(fldExceptions::SUB_TAG[1]) !== NULL)
+					$exd[gmdate('Ymd', intval(Util::mkTZOffset($t, TRUE)))] = 1;
+			}
+		}
 
 		// remove completed flags
 		if ($hid & DataStore::TASK) {
-			$doc->delVar(fldCompleted::TAG);
-			$doc->delVar(fldStatus::TAG);
+			$xml->delVar(fldCompleted::TAG);
+			$xml->delVar(fldStatus::TAG);
 		}
 
-		$now = new \DateTime($catch ? gmdate(Util::UTC_TIME, $catch) : 'now');
-		$now = $now->getTimestamp();
-		$ofs = new \DateTime();
+		$chk = new \DateTime($catch ? gmdate(Util::UTC_TIME, $catch) : 'now', new \DateTimeZone('UTC'));
+		$ofs = new \DateTime('now', new \DateTimeZone('UTC'));
 		$ofs->setTimestamp(intval($tme));
 
-		switch ($freq) {
-		case 'DAILY':
-			while ($ofs->getTimestamp() - $now < 0)
-				$ofs->modify('+1 day');
-			break;
+		// get interval
+		$xml->restorePos($p);
+		if (!($intv = $xml->getVar(self::ASC_SUB['Interval'][2], FALSE)))
+			$intv = 1;
 
-		case 'WEEKLY':
-			while ($ofs->getTimestamp() - $now < 0)
-				$ofs->modify('+1 week');
-			break;
+		// prolongate date
+		do {
+			switch ($freq) {
+			case 'DAILY':
+				while ($ofs->getTimestamp() - $chk->getTimestamp() < 0)
+					$ofs->modify('+'.$intv.' day');
+				break;
 
-		case 'MONTHLY':
-			while ($ofs->getTimestamp() - $now < 0)
-				$ofs->modify('+1 month');
-			break;
+			case 'WEEKLY':
+				while ($ofs->getTimestamp() - $chk->getTimestamp() < 0)
+					$ofs->modify('+'.$intv.' week');
+				break;
 
-		case 'YEARLY':
-			while ($ofs->getTimestamp() - $now < 0)
-				$ofs->modify('+1 year');
-			break;
+			case 'MONTHLY':
+				while ($ofs->getTimestamp() - $chk->getTimestamp() < 0)
+					$ofs->modify('+'.$intv.' month');
+				break;
+
+			case 'YEARLY':
+				while ($ofs->getTimestamp() - $chk->getTimestamp() < 0)
+					$ofs->modify('+'.$intv.' year');
+				break;
+			}
+
+			if ($ofs->getTimestamp() - $chk->getTimestamp() >= 0 && isset($exd[$ofs->format('Ymd')])) {
+				// are we checking dynamic time?
+				if ($catch && $chk->getTimestamp() < time()) {
+					switch ($freq) {
+					case 'DAILY':
+						$chk->modify('+'.$intv.' day');
+						break;
+
+					case 'WEEKLY':
+						$chk->modify('+'.$intv.' week');
+						break;
+
+					case 'MONTHLY':
+						$chk->modify('+'.$intv.' month');
+						break;
+
+					case 'YEARLY':
+						$chk->modify('+'.$intv.' year');
+						break;
+					}
+
+				} else
+					return NULL;
+			}
+
+		} while (isset($exd[$ofs->format('Ymd')]));
+
+		// set new due date/time
+		if ($hid & DataStore::TASK)
+			$xml->updVar(fldDueDate::TAG, strval($ofs->getTimestamp()));
+		elseif ($hid & DataStore::CALENDAR) {
+			$dur = $xml->getVar(fldEndTime::TAG) - $xml->getVar(fldStartTime::TAG);
+			$xml->updVar(fldStartTime::TAG, strval($ofs->getTimestamp()));
+			$xml->updVar(fldEndTime::TAG, strval($ofs->getTimestamp() + $dur));
 		}
 
-		// set new start time
-		if ($hid & DataStore::TASK)
-			$doc->updVar(fldDueDate::TAG, strval($ofs->getTimestamp()));
+		$gid = $xml->getVar('GUID'); //3
+		$xml->setTop(); //3
+		Debug::Msg($xml, 'Record regenerated from '.$tme.' ['.$gid.']'); //3
 
-		$gid = $doc->getVar('GUID'); //3
-		$doc->setTop(); //3
-		Debug::Msg($doc, 'Record regenerated from '.$tme.' ['.$gid.']'); //3
-
-		return TRUE;
+		return $xml;
 	}
 
 }

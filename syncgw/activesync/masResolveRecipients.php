@@ -28,7 +28,7 @@ use syncgw\document\field\fldFullName;
 class masResolveRecipients {
 
 	// module version number
-	const VER 		= 15;
+	const VER 		= 16;
 
 	// status codes
 	const SUGGEST 	= '2';
@@ -122,24 +122,24 @@ class masResolveRecipients {
 		// specifies one or more recipients to be resolved
 		$op = $out->savePos();
 		$in->xpath('//To');
-		while (($usr = $in->getItem()) !== NULL) {
+		while (($uid = $in->getItem()) !== NULL) {
 
 			// change user name?
 			if ($cnf->getVar(Config::DBG_LEVEL) == Config::DBG_TRACE) //2
-				$usr = $cnf->getVar(Config::DBG_USR); //2
+				$uid = $cnf->getVar(Config::DBG_USR); //2
 
 			// perform search on user
-			$rc = self::_search(DataStore::USER, $usr, intval($start), intval($end));
+			$rc = self::_search(DataStore::USER, $uid, intval($start), intval($end));
 
 			// perform search on contacts
 			if (Util::HID(Util::HID_CNAME, DataStore::CONTACT))
-				$rc += self::_search(DataStore::CONTACT, $usr, intval($start), intval($end));
+				$rc += self::_search(DataStore::CONTACT, $uid, intval($start), intval($end));
 
 			$out->restorePos($op);
 			// contains information as to whether the recipient was resolved
 			$out->addVar('Response');
 			// specifies a recipient to be resolved
-			$out->addVar('To', $usr);
+			$out->addVar('To', $uid);
 
 			// anything found?
 			if (!count($rc)) {
@@ -275,9 +275,9 @@ class masResolveRecipients {
 	 *  @param  - End time window
 	 * 	@return - [ $gid => $hid, $typ (1-GAL, 2-contact), free-busy buffer ]
 	 */
-	private function _search(int $hid, string $usr, int $start, int $end): array {
+	private function _search(int $hid, string $uid, int $start, int $end): array {
 
-		Debug::Msg('Perform search for "'.$usr.'"'); //3
+		Debug::Msg('Perform search for "'.$uid.'"'); //3
 
 		$db = DB::getInstance();
 		$rc = [];
@@ -329,10 +329,10 @@ class masResolveRecipients {
 				}
 
 				$found = FALSE;
-				if (($email = $doc->getVar('EMailPrime')) !== $usr) {
+				if (($email = $doc->getVar('EMailPrime')) !== $uid) {
 					$doc->xpath('//EMailSec');
 					while($email = $doc->getItem())
-						if ($email == $usr) {
+						if ($email == $uid) {
 							$found = TRUE;
 							break;
 						}
@@ -391,7 +391,7 @@ class masResolveRecipients {
 				}
 
 				// perform search
-				if (stripos($xml->saveXML(), '>'.$usr) !== FALSE)
+				if (stripos($xml->saveXML(), '>'.$uid) !== FALSE)
 					$rc[$gid] = [ $hid, $xml->getVar('Group') == $gal ? '1' : '2', 0 ];
 
 				// special check

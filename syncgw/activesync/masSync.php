@@ -14,7 +14,6 @@ namespace syncgw\activesync;
 
 use syncgw\lib\Debug; //3
 use syncgw\document\field\fldAttribute;
-use syncgw\document\field\fldEndTime;
 use syncgw\document\field\fldExceptions;
 use syncgw\document\field\fldStartTime;
 use syncgw\document\field\fldStatus;
@@ -31,7 +30,7 @@ use syncgw\document\field\fldRecurrence;
 class masSync {
 
 	// module version number
-	const VER 		= 24;
+	const VER 		= 25;
 
 	// status codes
 	const SYNCKEY  	= '3';
@@ -899,16 +898,18 @@ class masSync {
 					}
 				} elseif ($hid & DataStore::CALENDAR) {
 
-					if (!fldRecurrence::regenerate($hid, $doc, $opts['FilterType'])) {
-
-						// deletes an object from the client when it falls outside the <FilterType>
-						$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
-						$out->addVar('ServerId', $rid);
-						$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
-						$out->restorePos($p);
-   						// jump to next document
-						continue;
-					}
+					if ($doc->getVar(fldStartTime::TAG) < time() - $opts['FilterType'])
+						if ($xml = fldRecurrence::regenerate($hid, $doc, time() - $opts['FilterType']))
+							$doc = $xml;
+						else {
+							// deletes an object from the client when it falls outside the <FilterType>
+							$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
+							$out->addVar('ServerId', $rid);
+							$db->setSyncStat($hid, $doc, DataStore::STAT_OK);
+							$out->restorePos($p);
+	   						// jump to next document
+							continue;
+						}
 				}
 			}
 
