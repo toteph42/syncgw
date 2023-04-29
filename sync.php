@@ -11,7 +11,7 @@ declare(strict_types=1);
  * 	@license 	https://github.com/toteph42/syncgw/blob/master/LICENSE
  */
 
-/**
+ /**
  *  Gettext extension loaded?
 */
 if (!function_exists('_')) {

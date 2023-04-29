@@ -14,7 +14,6 @@ namespace syncgw\document\field;
 
 use syncgw\lib\Debug; //3
 use syncgw\activesync\masHandler;
-use syncgw\lib\Config;
 use syncgw\lib\Util;
 use syncgw\lib\XML;
 use syncgw\lib\DataStore;

@@ -1,3 +1,10 @@
+## Version 9.19.76, published on 2023-04-29 ##
+* Fixed: pack() / unpack() changes in PHP > 5.5 imlemented in fldTimezone class
+* Fixed: Automatically add timezone only once
+* Fixed: Typo in masResolveRecipients
+* Changed: getTZName() reworked
+* Changed: Timezone ActiveSync test script modified
+
 ## Version 9.19.72, published on 2023-04-22 ##
 * Changed: ActiveSync now sending timezone parameter for calendar events
 * Changed: Setting users time zone during logging in in RoundCube

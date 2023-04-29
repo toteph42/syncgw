@@ -21,7 +21,7 @@ use syncgw\document\field\fldTimezone;
 class mimAs extends XML {
 
 	// module version number
-	const VER = 7;
+	const VER = 8;
 
 	/**
 	 *  Parents modul version
@@ -110,7 +110,7 @@ class mimAs extends XML {
 		$ip = $int->savePos();
 
 		// add time zone parameter
-		if ($this->_hid & DataStore::CALENDAR) {
+		if ($this->_hid & DataStore::CALENDAR && !$int->getVar(fldTimezone::TAG)) {
 			$int->getVar('Data');
 			$cnf = Config::getInstance();
 			$int->addVar(fldTimezone::TAG, $cnf->getVar(Config::TIME_ZONE));

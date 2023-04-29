@@ -19,7 +19,7 @@ use syncgw\lib\XML;
 class fldTimezone extends fldHandler {
 
 	// module version number
-	const VER = 9;
+	const VER = 10;
 
 	const TAG 				= 'Timezone';
 
@@ -192,10 +192,12 @@ class fldTimezone extends fldHandler {
 		case 'application/activesync.mail+xml':
 			if ($ext->xpath($xpath, FALSE))
 				parent::delTag($int, $ipath, $typ == 'application/activesync.calendar+xml' ? '16.0' : '');
+
 			while (($val = $ext->getItem()) !== NULL) {
 				if (!strlen($val))
 					continue;
 				//
+				// https://github.com/horde/ActiveSync/blob/master/lib/Horde/ActiveSync/Timezone.php
 				// http://msdn.microsoft.com/en-us/library/ms725481%28VS.85%29.aspx
 		   		//
 				// typedef struct TIME_ZONE_INFORMATION {
@@ -226,14 +228,16 @@ class fldTimezone extends fldHandler {
 				//
 				// PLEASE NOTE:
 				//
-				// ActiveSync provides all time stamps as UTC (this is "user intent time"). This time zone setting is only used
-				// "viewer local time", which means this information is used to display the time in proper time zone on client device,
-				// not more! As such we do not heavily analyse the provided time zone information - we only try to find the basic time
-				// zone used for viewing.
+				// ActiveSync provides all time stamps as UTC (this is "user intent time"). This time zone
+				// setting is only used "viewer local time", which means this information is used to display
+				// the time in proper time zone on client device, not more! As such we do not heavily analyse
+				// the provided time zone information - we only try to find the basic time zone used for viewing.
+				//
 				// -------------------------------------------------------------------------------------------------------------------------
 
 				$f = 'l'.	'utcOffset/'.
-		   			 'a64'.	'stdName/'.
+
+		   			 'Z64'.	'stdName/'.
 		   				'v'.'stdYear/'.
 		   			 	'v'.'stdMonth/'.
 		   			 	'v'.'stdDayOfWeek/'.
@@ -242,8 +246,9 @@ class fldTimezone extends fldHandler {
 			   			'v'.'stdMin/'.
 			   			'v'.'stdSec/'.
 			   			'v'.'stdMS/'.
-			   		 'l'.	'stdOffset/'.
-			   		 'a64'.	'dstName/'.
+			   		 	'l'.'stdOffset/'.
+
+			   		 'Z64'.	'dstName/'.
 		   				'v'.'dstYear/'.
 		   			 	'v'.'dstMonth/'.
 		   			 	'v'.'dstDayOfWeek/'.
@@ -252,7 +257,7 @@ class fldTimezone extends fldHandler {
 			   			'v'.'dstMin/'.
 			   			'v'.'dstSec/'.
 			   			'v'.'dstMS/'.
-			   		 'l'.	'dstOffset';
+			   		 	'l'.'dstOffset';
 				$tz = unpack($f, base64_decode($val));
 				// Debug::Msg(base64_decode($rec['D']), 'TimeZone field', 0, 10240); //3
 				if (!self::_isLittleEndian()) {
@@ -270,7 +275,7 @@ class fldTimezone extends fldHandler {
 				if (strlen($tz['stdName']))
 			  		$val = Util::getTZName($tz['stdName']);
 				if (!$val)
-					$val = Util::getTZName($tz['utcOffset'] * 60 .'/'. ($tz['utcOffset'] + $tz['dstOffset']) * 60);
+					$val = Util::getTZName($tz['utcOffset'] * -60 .'/'. ($tz['utcOffset'] + $tz['dstOffset']) * -60);
 				if ($val)
 					$int->addVar(self::TAG, $val);
 				else //3
@@ -452,6 +457,7 @@ class fldTimezone extends fldHandler {
 
 		   		$tz = [
 	   				'utcOffset' 		=> 0,
+
 		   			'stdName'			=> '',
 				 		'stdYear'		=> 0,
 		   				'stdMonth'  	=> 0,
@@ -461,8 +467,9 @@ class fldTimezone extends fldHandler {
 			   			'stdMin' 		=> 0,
 			   			'stdSec' 		=> 0,
 			   			'stdMS' 		=> 0,
-			   		'stdOffset'			=> 0,
-			   		'dstName'			=> '',
+			   			'stdOffset'		=> 0,
+
+		   			'dstName'			=> '',
 				 		'dstYear'		=> 0,
 		   				'dstMonth'  	=> 0,
 			   			'dstDayOfWeek'	=> 0,
@@ -471,10 +478,12 @@ class fldTimezone extends fldHandler {
 			   			'dstMin' 		=> 0,
 			   			'dstSec' 		=> 0,
 			   			'dstMS' 		=> 0,
-		   			'dstOffset'			=> 0,
+		   				'dstOffset'		=> 0,
 		  		];
+
 	   			// get new time zone object
-	   			$trans = Util::getTransitions($val, gmmktime(0, 0, 0, 1, 1, intval(date('Y'))), gmmktime(0, 0, 0, 12, 31, intval(date('Y'))));
+	   			$trans = Util::getTransitions($val, gmmktime(0, 0, 0, 1, 1, intval(date('Y'))),
+	   												gmmktime(0, 0, 0, 12, 31, intval(date('Y'))));
 				// we take only the fist two entries found
 				foreach ([ 'STANDARD', 'DAYLIGHT'] as $k) {
 
@@ -482,15 +491,16 @@ class fldTimezone extends fldHandler {
 						continue;
 
 					if ($k == 'STANDARD') {
-						$tz['utcOffset'] = $trans[$k][0]['offset'] / 60;
+						$tz['utcOffset'] = $trans[$k][0]['offset'] / -60;
 						$t = 'std';
-					} else
+					} else {
+						$tz['dstOffset'] = $trans[$k][0]['offset'] / -60 - $tz['utcOffset'];
 						$t = 'dst';
+					}
 
-		   			$tz[$t.'utcOffset'] = $trans[$k][0]['offset'] / 60;
 					$tz[$t.'Year']  	= gmdate('Y', intval($trans[$k][0]['ts']));
 		  			$tz[$t.'Month'] 	= gmdate('n', intval($trans[$k][0]['ts']));
-				  	$tz[$t.'DayofWeek'] = gmdate('w', intval($trans[$k][0]['ts']));
+				  	$tz[$t.'DayOfWeek'] = gmdate('w', intval($trans[$k][0]['ts']));
 		   		   	$tz[$t.'Day']		= gmdate('W', intval($trans[$k][0]['ts'])) -
 		   		   					  	  gmdate('W', strtotime(date('Y-m-01', intval($trans[$k][0]['ts'])))) + 1;
 			   		// check if week is last week in month
@@ -501,11 +511,13 @@ class fldTimezone extends fldHandler {
 			   		$tz[$t.'Sec'] 	= intval(gmdate('s', intval($trans[$k][0]['ts'])));
 			   		$tz[$t.'Name'] 	= $trans[$k][0]['abbr'];
 	   			}
+
 		   		if (!self::_isLittleEndian()) {
 		  			$tz['utcOffset'] = self::_chbo($tz['utcOffset']);
 		   			$tz['stdOffset'] = self::_chbo($tz['stdOffset']);
 		   			$tz['dstOffset'] = self::_chbo($tz['dstOffset']);
 		   		}
+
 		   		Debug::Msg($tz, 'Time zone buffer'); //3
 		   		$val = pack('la64vvvvvvvvla64vvvvvvvvl',
 			  			 	  $tz['utcOffset'], $tz['stdName'],
@@ -532,9 +544,10 @@ class fldTimezone extends fldHandler {
 	/**
 	 * Determine if the current machine is little endian.
 	 *
-	 * @return - TRUE=if endianness is little endian, otherwise FALSE.
+	 * @return - TRUE = If endianness is little endian, otherwise FALSE.
 	*/
 	private function _isLittleEndian(): bool {
+
 		$testint = 0x00FF;
 		$p = pack('S', $testint);
 
@@ -549,6 +562,7 @@ class fldTimezone extends fldHandler {
 	 * @return - The number, in the reverse byte order.
 	*/
 	private function _chbo(int $num): int {
+
 		$u = unpack('l', strrev(pack('l', $num)));
 
 		return $u[1];

@@ -28,7 +28,7 @@ use syncgw\document\field\fldFullName;
 class masResolveRecipients {
 
 	// module version number
-	const VER 		= 16;
+	const VER 		= 17;
 
 	// status codes
 	const SUGGEST 	= '2';
@@ -165,7 +165,8 @@ class masResolveRecipients {
 	 			// either a contact entry (2) or a GAL entry (1)
 				$out->addVar('Type', $r[1]);
 
-				$doc = $db->Query ($r[0], DataStore::RGID, $gid);
+				if (!($doc = $db->Query ($r[0], DataStore::RGID, $gid)))
+					break;
 
 				// load record
 				if ($r[0] & DataStore::USER) {

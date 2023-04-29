@@ -522,9 +522,9 @@ class Util {
 	}
 
 	/**
-	 * 	Get PHP time zone based on offset
+	 * 	Validate PHP time zone
 	 *
-	 * 	@param 	- Time zone name (Australia/Perth) or Short name (GMT) or UTC- / Daylight-offset (-3600/-3600)
+	 * 	@param 	- Time zone name (Australia/Perth) or Short name (GMT) or UTC- / Daylight-offset (3600/-3600)
 	 * 	@return	- Time zone name or NULL
 	 */
 	static function getTZName(string $name): ?string {
@@ -554,41 +554,44 @@ class Util {
 
         // get time zone name by offset (28800/-3600)
 		if (strpos($name, '/') === FALSE) {
-        	Debug::Msg('Invalid time zone "'.$name.'"'); //3
+        	Debug::Msg('Invalid time zone "'.$name.'" - must be "utc-offset/dst-offset"'); //3
 			return NULL;
 		}
 
 		list($utc, $dst) = explode('/', $name);
-       	$tzid = NULL;
-		$sb = [];
+		$chk  = [];
 
-		// save any time zone with proper offset
         foreach ($tz as $a) {
-            foreach ($a as $c) {
-            	if ($utc == $c['offset'] && !$c['dst'] && $c['timezone_id']) {
-            		$sb[] = $c['timezone_id'];
-            	}
-            }
+        	foreach ($a as $c) {
+
+            	if (!isset($c['timezone_id']))
+            		continue;
+
+	        	if (!isset($chk[$c['timezone_id']]))
+			        $chk[$c['timezone_id']] = 0;
+
+			    if ((!$c['dst'] && $c['offset'] == $utc) || ($c['dst'] && $c['offset'] == $dst))
+           			$chk[$c['timezone_id']]++;
+        	}
         }
 
-        // try to locate proper dst
-        foreach ($tz as $a) {
-            foreach ($a as $c) {
-            	if ($dst == $c['offset'] && $c['dst'] && in_array($c['timezone_id'], $sb)) {
-                    $tzid = $c['timezone_id'];
-                    break;
-            	}
-            }
-        }
+		// find best match
+        $tzid = NULL;
+		$fnd  = 0;
 
-        // did we find?
-        if (!$tzid && count($sb))
-        	$tzid = $sb[0];
+		foreach ($chk as $t => $c) {
+			if (!$c) //3
+				unset($chk[$t]); //3
+			if ($c > $fnd) {
+				$fnd  = $c;
+				$tzid = $t;
+			}
+		}
 
 		if ($tzid) //3
 	        Debug::Msg('Time zone "'.$name.'" converted to "'.$tzid.'"'); //3
 		else //3
-	        Debug::Warn('Time zone "'.$name.'" not found!'); //3
+	        Debug::Warn($chk, 'Time zone "'.$name.'" not found!'); //3
 
        	return $tzid;
 	}

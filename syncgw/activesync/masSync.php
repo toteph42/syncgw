@@ -30,7 +30,7 @@ use syncgw\document\field\fldRecurrence;
 class masSync {
 
 	// module version number
-	const VER 		= 25;
+	const VER 		= 26;
 
 	// status codes
 	const SYNCKEY  	= '3';
@@ -899,9 +899,7 @@ class masSync {
 				} elseif ($hid & DataStore::CALENDAR) {
 
 					if ($doc->getVar(fldStartTime::TAG) < time() - $opts['FilterType'])
-						if ($xml = fldRecurrence::regenerate($hid, $doc, time() - $opts['FilterType']))
-							$doc = $xml;
-						else {
+						if (!fldRecurrence::regenerate($hid, $doc, time() - $opts['FilterType'])) {
 							// deletes an object from the client when it falls outside the <FilterType>
 							$out->addVar('SoftDelete', NULL, FALSE, $out->setCP(XML::AS_AIR));
 							$out->addVar('ServerId', $rid);
@@ -922,7 +920,7 @@ class masSync {
 				$out->addVar('Add', NULL, FALSE, $out->setCP(XML::AS_AIR));
 				$out->addVar('ServerId', $rid);
 
-				// It contains data for a particular object, such as a contact, email message, calendar appointment, or task item
+				// it contains data for a particular object, such as a contact, email message, calendar appointment, or task item
 				$doc->restorePos($p);
 				if (!$ds->export($out, $doc))
 					return TRUE;
