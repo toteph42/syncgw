@@ -19,10 +19,10 @@ use syncgw\lib\XML;
 class fldStatus extends fldHandler {
 
 	// module version number
-	const VER = 10;
+	const VER = 9;
 
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
-	const TAG = 'Status';
+	const TAG 				= 'Status';
 
 	/*
 	 status     = "STATUS" statparam] ":" statvalue CRLF
@@ -153,14 +153,11 @@ class fldStatus extends fldHandler {
                 $int->restorePos($p);
 				parent::delTag($int, $ipath);
 		    } else
-		        $pc = '0';
+		        $pc = 0;
 		    while (($val = $ext->getItem()) !== NULL) {
-		    	if ($val == '1')
-					$int->addVar(self::TAG, 'COMPLETED', FALSE, [ self::AST_SUB => '1' ]);
-				else
-					$int->addVar(self::TAG, 'IN-PROCESS', FALSE, [ self::AST_SUB => $pc ]);
+				$int->addVar(self::TAG, $val == '1' ? 'COMPLETED' : 'IN-PROCESS', FALSE, [ self::AST_SUB => $pc ? $pc : '0' ]);
 				$rc = TRUE;
-		    }
+			}
 			break;
 
 		case 'application/activesync.mail+xml':

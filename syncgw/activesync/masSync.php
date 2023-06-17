@@ -602,11 +602,6 @@ class masSync {
   					$rc = self::EXIST;
   					break;
 				}
-
-				// do a special check on task records
-				if ($hid & DataStore::TASK) {
-						$db->Query(DataStore::EXT|$hid, DataStore::ADD, $doc);
-				}
 			}
 
 			// <Send> optional element that specifies whether an email is to be saved as a draft or sent

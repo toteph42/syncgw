@@ -24,7 +24,7 @@ use syncgw\document\field\fldAttribute;
 class masFolderSync {
 
 	// module version number
-	const VER 			 = 12;
+	const VER 			 = 13;
 
 	// status codes
 	const SERVER		 = '6';
@@ -123,12 +123,12 @@ class masFolderSync {
         $key = $usr->syncKey('All');
 
 		// <SyncKey> represent the synchronization state of a collection
-		if (($k = $in->getVar('SyncKey')) === NULL) {
+		if (($inkey = $in->getVar('SyncKey')) === NULL) {
 			Debug::Warn('<SyncKey> missing'); //3
 			$rc = self::FORMAT;
-		} elseif (!$k)
+		} elseif (!$inkey)
 		    $add = TRUE;
-		elseif ($k != $key) {
+		elseif ($inkey != $key) {
     		Debug::Warn('<SyncKey> "'.$k.'" does not match "'.$key.'"'); //3
     		$rc = self::SYNCKEY;
     	}
@@ -168,6 +168,12 @@ class masFolderSync {
 				// read document
 				if (!($xml = $db->Query($hid, DataStore::RGID, $gid)))
 					continue;
+
+				// delete all internal stored documents^
+				if (!$inkey) {
+					foreach ($db->getRIDS($hid, $gid) as $rid => $typ)
+						$db->Query($hid, DataStore::DEL, $rid);
+				}
 
 				// check for deleted records
 				switch ($stat = $xml->getVar('SyncStat')) {

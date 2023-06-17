@@ -85,8 +85,8 @@ class Debug {
 
  		if (self::$Conf['UseMercury'])
 			self::$Conf += [
-#				'ScriptUID'		=> 'debug@dev.fd',		// debug user id
-				'ScriptUID'		=> 't1@dev.fd',			// user id for testing scripts
+				'ScriptUID'		=> 'debug@dev.fd',		// debug user id
+#				'ScriptUID'		=> 't1@dev.fd',			// user id for testing scripts
 				'ScriptUPW'		=> 'mamma',				// password for testing script user id
 
 				'DebugUID'		=> 'debug@dev.fd',		// debug user id

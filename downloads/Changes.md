@@ -1,3 +1,8 @@
+## Version 9.19.77, published on 2023-06-15 ##
+* Changed: Always provide <Complete> flag for tasks from Roundcube records
+* Changed: Delete all internal records in datastore if ActiveSync <SyncKey> is "0"
+* Changed: Task completion date now calculated from due date 
+
 ## Version 9.19.76, published on 2023-04-29 ##
 * Fixed: pack() / unpack() changes in PHP > 5.5 imlemented in fldTimezone class
 * Fixed: Automatically add timezone only once

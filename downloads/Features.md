@@ -255,7 +255,7 @@
 <tr><td>&raquo; RoundCube Contact handler</td><td>v9.028</td></tr>
 <tr><td>&raquo; RoundCube Note handler</td><td>v9.019</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/dondominio/ddnotes" target="_blank">ddnotes</a>  plugin v1.0.2</td><td>Implemented</td></tr>
-<tr><td>&raquo; RoundCube Task handler</td><td>v9.029</td></tr>
+<tr><td>&raquo; RoundCube Task handler</td><td>v9.030</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/tasklist" target="_blank">tasklist</a>  plugin v3.5.10</td><td>Implemented</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://plugins.roundcube.net/#/packages/kolab/libcalendaring" target="_blank">libcalendaring</a>  plugin v3.5.11</td><td>Implemented</td></tr>
 <tr><td><font style="font-size: larger;"><strong>Mail data base handler<strong></font></td><td>v9.017</td></tr>
@@ -272,7 +272,7 @@
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;Find&gt; handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;FolderCreate&gt; handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;FolderDelete&gt; handler</td><td>v9.008</td></tr>
-<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;FolderSync&gt; handler</td><td>v9.012</td></tr>
+<tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;FolderSync&gt; handler</td><td>v9.013</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;FolderUpdate&gt; handler</td><td>v9.010</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;GetAttachment&gt; handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; <a style="text-decoration:underline;color:blue" href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ascmd" target="_blank">[MS-ASCMD]</a> Exchange ActiveSync &lt;GetHierarchy&gt; handler</td><td>v9.006</td></tr>
@@ -514,7 +514,7 @@
 <tr><td>&raquo; &lt;StartTime&gt; field handler</td><td>v9.012</td></tr>
 <tr><td>&raquo; &lt;StartTimeException&gt; field handler</td><td>v9.005</td></tr>
 <tr><td>&raquo; &lt;StartTimeProposal&gt; field handler</td><td>v9.004</td></tr>
-<tr><td>&raquo; &lt;Status&gt; field handler</td><td>v9.010</td></tr>
+<tr><td>&raquo; &lt;Status&gt; field handler</td><td>v9.009</td></tr>
 <tr><td>&raquo; &lt;Summary&gt; field handler</td><td>v9.006</td></tr>
 <tr><td>&raquo; &lt;ThreadTopic&gt; field handler</td><td>v9.002</td></tr>
 <tr><td>&raquo; &lt;Timezone&gt; field handler</td><td>v9.010</td></tr>

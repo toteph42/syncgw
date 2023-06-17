@@ -253,8 +253,9 @@ class HTTP {
 	 * 	@param 	- Body to send
 	 */
 	public function addBody($val): void {
-        Debug::Msg('['.self::TYPES[self::SND_BODY].']'); //3
 		self::$_http[self::SND_BODY] = $val;
+		Debug::Msg('['.self::TYPES[self::SND_BODY].']'); //3
+##		Debug::Msg('['.self::TYPES[self::SND_BODY].'] "'.(is_object($val) ? get_class($val) : $val).'"'); //3
 	}
 
 	/**

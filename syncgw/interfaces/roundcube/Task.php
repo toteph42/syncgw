@@ -41,7 +41,7 @@ use syncgw\document\field\fldCompleted;
 class Task {
 
 	// module version number
-	const VER  			= 29;
+	const VER  			= 30;
 
 	const MAP   		= [
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,12 +52,11 @@ class Task {
     //  3 - Recurrence array
    	//  4 - Attendee and Organizer array
     //  5 - VALARM
-    //  6 - Percent completed
-    //  7 - Related to
-   	//  8 - Skip
+    //  6 - Related to
+   	//  7 - Skip
 	// ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	// 	'id'																// Task ID used for editing
-		'parent_id'					=> [ 7, fldRelated::TAG, 			],	// ID of parent task - not used in MAS
+		'parent_id'					=> [ 6, fldRelated::TAG, 			],	// ID of parent task - not used in MAS
 		'uid'						=> [ 0, fldUid::TAG,				],	// Unique identifier of this task
 	//	'list'																// Task list identifier to add the task to or where the task is stored
     //	'changed'															// Last modification date/time of the record
@@ -70,8 +69,9 @@ class Task {
 	//	'starttime'															// Start time
 	//	'categories'														// Task category
 		'flagged'					=> [ 0, fldFlag::TAG,				],	// Boolean value whether this record is flagged - not used by MAS
-		'complete'                  => [ 6, fldCompleted::TAG,			],	// Float value representing the completeness state
-	    'status'                    => [ 0, fldStatus::TAG,				],	// Task status string - not use by MAS
+	//	'complete'                 											// Float value representing the completeness state (see fldStatus::TAG)
+	    'status'                    => [ 0, fldStatus::TAG,				],	// Task status string according to (NEEDS-ACTION, IN-PROCESS, COMPLETED, CANCELLED)
+	    																	// Attribute: X-PC= Value representing the completeness state
 		'valarms'                   => [ 5, fldAlarm::TAG, 				],	// List of reminders
 	    'recurrence'                => [ 3, fldRecurrence::TAG, 		],	// Recurrence definition according to iCalendar (RFC 2445)
     //	'_fromlist'															// List identifier where the task was stored before
@@ -83,9 +83,9 @@ class Task {
 
     // some fields only included for syncDS() - not part of data record
 
-    	'#trigger'					=> [ 8, fldTrigger::TAG,			],
-		'#grp_name'					=> [ 8, fldGroupName::TAG,	 		],
-		'#grp_attr'					=> [ 8, fldAttribute::TAG,			],
+    	'#trigger'					=> [ 7, fldTrigger::TAG,			],
+		'#grp_name'					=> [ 7, fldGroupName::TAG,	 		],
+		'#grp_attr'					=> [ 7, fldAttribute::TAG,			],
 
     // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 	];
@@ -429,6 +429,7 @@ class Task {
 
 		$rc = [];
 		foreach (self::MAP as $k => $v)
+			if ($k)
 			$rc[] = $v[1];
 		$k; // disable Eclipse warning
 
@@ -684,10 +685,7 @@ class Task {
 					'extGroup'	=> $this->_ids[$rid][Handler::GROUP],
 		]);
 
-		// percent completed
-        $pc = 0;
-
-        // swap data
+      	// swap data
 		foreach (self::MAP as $key => $tag) {
 
 			// empty field?
@@ -704,7 +702,7 @@ class Task {
 					$int->addVar($tag[1], $val, FALSE, [ 'X-TYP' => fldBody::TYP_TXT ]);
 				else {
 					if ($key == 'status')
-			    	    $int->addVar($tag[1], $val, FALSE, [ 'X-PC' => $pc ]);
+               			$int->addVar($tag[1], $val, FALSE, [ 'X-PC' => floatval($rec['complete']) * 100. ]);
 					else
 			    	    $int->addVar($tag[1], $val);
 				}
@@ -797,24 +795,21 @@ class Task {
 	            $int->restorePos($ip);
 		    	break;
 
-		    //  6 - Percent completed
+		    //  6 - Related to
     		case 6:
-                $pc = floatval($val) * 100.;
-			    if ($pc == 100) {
-			       	$val = $rec['date'].'T'.$rec['time'];
-			       	$int->addVar(fldCompleted::TAG, strval(Util::unxTime($val, 'UTC')));
-			    }
-                break;
-
-		    //  7 - Related to
-    		case 7:
 	            $int->addVar($tag[1], DataStore::TYP_DATA.$val);
 
-			// 8 - Skip
-			case 8:
+			// 7 - Skip
+			case 7:
 	            break;
 			}
 		}
+
+		// add missing data
+		if ($rec['complete'] == 1)
+			$int->addVar(fldCompleted::TAG, strval(Util::unxTime($rec['date'].'T'.$rec['time'])));
+		if ($int->getVar(fldStatus::TAG) === NULL)
+			$int->addVar(fldStatus::TAG, '0', FALSE, [ 'X-PC' => 0 ]);
 
 		if (Debug::$Conf['Script'] && Debug::$Conf['Script'] != 'Document') { //3
 			$int->setTop(); //3
@@ -1006,18 +1001,14 @@ class Task {
 					}
 			    	break;
 
-			    //  6 - Percent completed
+			    // 6 - Related to
 	    		case 6:
-			    	break;
-
-			    //  7 - Related to
-	    		case 7:
 	    			if (!($val = $int->getVar($tag[1], FALSE)))
 	    				break;
 	    			$rec[$key] = substr($val, 1);
 
-				// 8 - Skip
-				case 8:
+				// 7 - Skip
+				case 7:
 	                break;
 				}
 
